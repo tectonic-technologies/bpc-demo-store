@@ -11,10 +11,30 @@
 {%- assign s = block.settings -%}
 {%- assign group = product.metafields.merch.product_group.value -%}
 
-{%- comment -%} ---- Path A: product_group metaobject ---- {%- endcomment -%}
+{%- comment -%}
+  Some sources store product_group as a metaobject_reference LIST. In that case
+  `.value` is an array; take the first entry so `.members` resolves correctly.
+{%- endcomment -%}
+{%- if group.members == blank and group.first != blank and group.first.members != blank -%}
+  {%- assign group = group.first -%}
+{%- endif -%}
+
+{%- comment -%}
+  ---- Path A: product_group metaobject ----
+  Count members that resolve to a real product AND are not just the current product.
+  A group whose only member is this product is NOT a group — render nothing.
+{%- endcomment -%}
 {%- assign members = nil -%}
+{%- assign real_member_count = 0 -%}
 {%- if group != blank and group.members != blank and group.members.size > 0 -%}
-  {%- assign members = group.members -%}
+  {%- for m in group.members -%}
+    {%- if m.product != blank -%}
+      {%- assign real_member_count = real_member_count | plus: 1 -%}
+    {%- endif -%}
+  {%- endfor -%}
+  {%- if real_member_count > 1 -%}
+    {%- assign members = group.members -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- if members != blank -%}
@@ -43,10 +63,22 @@
     </ul>
   </section>
 
-{%- comment -%} ---- Path B: fallback to this product's own variant shades ---- {%- endcomment -%}
+{%- comment -%}
+  ---- Path B: fallback to this product's own variant shades ----
+  Only treat the FIRST option as a swatch row when it is genuinely a
+  shade/colour axis (name matches shade/color/colour/finish) AND it has more
+  than one value. This prevents non-shade options (e.g. Size) from rendering a
+  bogus swatch row, and prevents single-value options (e.g. a brush whose lone
+  "Color" value is just the product name) from rendering an empty heading.
+{%- endcomment -%}
 {%- elsif s.fallback_to_variants and product.has_only_default_variant == false -%}
   {%- assign opt = product.options_with_values | first -%}
-  {%- if opt != blank and opt.values.size > 1 -%}
+  {%- assign opt_name_lc = opt.name | downcase -%}
+  {%- assign is_shade_axis = false -%}
+  {%- if opt_name_lc contains 'shade' or opt_name_lc contains 'color' or opt_name_lc contains 'colour' or opt_name_lc contains 'finish' -%}
+    {%- assign is_shade_axis = true -%}
+  {%- endif -%}
+  {%- if opt != blank and is_shade_axis and opt.values.size > 1 -%}
     <section class="maren-pg" {{ block.shopify_attributes }}>
       {%- if s.show_heading -%}
         <p class="maren-pg__label">{{ opt.name }}</p>

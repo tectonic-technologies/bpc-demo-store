@@ -16,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Skin first. Considered essentials for a quiet, luminous everyday. Clean formulas, real shades, nothing loud.</p>",
+            "text": "<p>Skin-first beauty, considered. Clean formulas across makeup, skincare, body and scent. Fewer, better essentials.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -164,13 +164,13 @@
       "settings": {
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 6,
+        "columns": 5,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 48,
         "bento_gap": 8,
         "rows_gap": 24,
-        "max_collections": 4,
+        "max_collections": 5,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
@@ -179,107 +179,12 @@
         "padding-block-start": 40,
         "padding-block-end": 50,
         "collection_list": [
-          "best-sellers",
-          "new",
-          "cat-foundation",
-          "cat-lipstick"
+          "makeup",
+          "skincare",
+          "body",
+          "hair",
+          "fragrance"
         ]
-      }
-    },
-    "featured_product_pW7dEU": {
-      "type": "featured-product",
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "name": "t:names.product_media",
-          "static": true,
-          "settings": {
-            "media_type": "image",
-            "video_loop": true,
-            "video_autoplay": false,
-            "image_position": "cover",
-            "video_position": "cover"
-          },
-          "blocks": {}
-        },
-        "featured-product": {
-          "type": "_featured-product",
-          "name": "t:names.product",
-          "static": true,
-          "settings": {},
-          "blocks": {
-            "featured-product-title": {
-              "type": "product-title",
-              "name": "t:names.title",
-              "static": true,
-              "settings": {
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "h5",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "featured-product-price": {
-              "type": "_featured-product-price",
-              "name": "t:names.price",
-              "static": true,
-              "settings": {
-                "show_sale_price_first": true,
-                "type_preset": ""
-              },
-              "blocks": {}
-            },
-            "featured-product-gallery": {
-              "type": "_featured-product-gallery",
-              "name": "t:names.image",
-              "static": true,
-              "settings": {
-                "image_ratio": "adapt",
-                "constrain_to_viewport": "contain"
-              },
-              "blocks": {}
-            },
-            "featured-product-swatches": {
-              "type": "swatches",
-              "name": "t:names.swatches",
-              "static": true,
-              "settings": {
-                "product_swatches_alignment": "flex-start",
-                "product_swatches_alignment_mobile": "flex-start",
-                "hide_padding": true,
-                "product_swatches_padding_top": 4,
-                "product_swatches_padding_bottom": 0,
-                "product_swatches_padding_left": 0,
-                "product_swatches_padding_right": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
-        }
-      },
-      "name": "t:names.featured_product",
-      "settings": {
-        "layout": "media-left",
-        "color_scheme": "scheme-4",
-        "padding-block-start": 0,
-        "padding-block-end": 0,
-        "product": "skin-rewind-complexion-stick"
       }
     },
     "product_list_8kR3Hb": {
@@ -652,7 +557,7 @@
         "columns_gap": 0,
         "bento_gap": 8,
         "rows_gap": 8,
-        "max_collections": 4,
+        "max_collections": 1,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "full-width",
@@ -661,10 +566,7 @@
         "padding-block-start": 24,
         "padding-block-end": 0,
         "collection_list": [
-          "cat-serum-treatment",
-          "cat-blush",
-          "cat-mascara",
-          "sensitive-skin"
+          "new"
         ]
       }
     },
@@ -674,7 +576,7 @@
         "text_RGxHtE": {
           "type": "text",
           "settings": {
-            "text": "<h1><a href=\"/collections/best-sellers\" title=\"Best sellers\">MAREN &middot; SKIN-FIRST BEAUTY</a></h1>",
+            "text": "<h1><a href=\"/collections/best-sellers\" title=\"Best sellers\">MAREN &middot; SKIN-FIRST BEAUTY &middot; CLEAN FORMULAS, FEWER ESSENTIALS</a></h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -713,7 +615,6 @@
   "order": [
     "section_Fh7TFQ",
     "collection_list_FFV7jq",
-    "featured_product_pW7dEU",
     "product_list_8kR3Hb",
     "collection_list_iAQiBH",
     "marquee_9AMajF"
