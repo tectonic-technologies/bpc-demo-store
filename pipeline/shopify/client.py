@@ -24,14 +24,29 @@ _load_secrets()
 
 class Shopify:
     def __init__(self):
-        store = os.environ.get("SHOPIFY_STORE", "").replace(".myshopify.com", "")
+        self.store = os.environ.get("SHOPIFY_STORE", "").replace(".myshopify.com", "")
         self.token = os.environ.get("SHOPIFY_TOKEN", "")
         self.version = os.environ.get("SHOPIFY_API_VERSION", DEFAULT_VERSION)
-        if not store or not self.token:
-            raise SystemExit("Missing SHOPIFY_STORE / SHOPIFY_TOKEN (env or secrets.env).")
-        self.base = f"https://{store}.myshopify.com/admin/api/{self.version}"
+        self.cid = os.environ.get("SHOPIFY_CLIENT_ID", "")
+        self.secret = os.environ.get("SHOPIFY_CLIENT_SECRET", "")
+        if not self.store or (not self.token and not (self.cid and self.secret)):
+            raise SystemExit("Missing SHOPIFY_STORE and token/client creds (env or secrets.env).")
+        self.base = f"https://{self.store}.myshopify.com/admin/api/{self.version}"
+        if not self.token:
+            self.mint()
 
-    def _req(self, method, url, body=None):
+    def mint(self):
+        """Get an Admin API token via the client_credentials grant."""
+        url = f"https://{self.store}.myshopify.com/admin/oauth/access_token"
+        data = json.dumps({"client_id": self.cid, "client_secret": self.secret,
+                           "grant_type": "client_credentials"}).encode()
+        req = urllib.request.Request(url, data=data, method="POST",
+                                     headers={"Content-Type": "application/json", "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            self.token = json.loads(r.read())["access_token"]
+        return self.token
+
+    def _req(self, method, url, body=None, _retry=True):
         data = json.dumps(body).encode() if body is not None else None
         req = urllib.request.Request(url, data=data, method=method, headers={
             "X-Shopify-Access-Token": self.token,
@@ -39,10 +54,13 @@ class Shopify:
             "Accept": "application/json",
         })
         try:
-            with urllib.request.urlopen(req, timeout=30, context=ctx) as r:
+            with urllib.request.urlopen(req, timeout=60, context=ctx) as r:
                 txt = r.read().decode()
                 return json.loads(txt) if txt else {}
         except urllib.error.HTTPError as e:
+            if e.code == 401 and _retry and self.cid and self.secret:
+                self.mint()
+                return self._req(method, url, body, _retry=False)
             raise SystemExit(f"HTTP {e.code} {method} {url}\n{e.read().decode()[:500]}")
 
     def rest(self, method, path, body=None):
