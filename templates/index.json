@@ -1,3 +1,13 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+
 {
   "sections": {
     "section_Fh7TFQ": {
@@ -7,7 +17,7 @@
           "type": "custom-liquid",
           "name": "Hero background",
           "settings": {
-            "custom_liquid": "<style>\n#shopify-section-{{ section.id }} .section-background{background:linear-gradient(rgba(40,25,35,.42),rgba(40,25,35,.46)),url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=2400&q=80') center/cover no-repeat !important;}\n#shopify-section-{{ section.id }} :is(h1,h2,h3,p,span,a){color:#FBF6F2 !important;}\n#shopify-section-{{ section.id }} .button,#shopify-section-{{ section.id }} a.button{background:#FBF6F2 !important;color:#3E2433 !important;border-color:#FBF6F2 !important;}\n</style>"
+            "custom_liquid": "<style>\n#shopify-section-{{ section.id }} .section-background{background:linear-gradient(rgba(40,25,35,.42),rgba(40,25,35,.46)),url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=2400&q=80') center/cover no-repeat !important;}\n#shopify-section-{{ section.id }} :is(h1,h2,h3,p,span,a){color:#FBF6F2 !important;}\n#shopify-section-{{ section.id }} .button,#shopify-section-{{ section.id }} a.button{background:#FBF6F2 !important;color:#3E2433 !important;border-color:#FBF6F2 !important;}\n</style>"
           },
           "blocks": {}
         },
@@ -544,7 +554,7 @@
         "text_RGxHtE": {
           "type": "text",
           "settings": {
-            "text": "<h1>CLEAN FORMULAS &middot; VEGAN &middot; CRUELTY-FREE &middot; FREE SHIPPING OVER 40</h1>",
+            "text": "<p>Clean, vegan formulas&nbsp;&nbsp;&middot;&nbsp;&nbsp;Cruelty-free&nbsp;&nbsp;&middot;&nbsp;&nbsp;Free shipping over $40&nbsp;&nbsp;&middot;&nbsp;&nbsp;Ships worldwide&nbsp;&nbsp;&middot;&nbsp;&nbsp;Easy 30-day returns&nbsp;&nbsp;&middot;&nbsp;&nbsp;</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -988,7 +998,7 @@
           "type": "custom-liquid",
           "name": "Hero background",
           "settings": {
-            "custom_liquid": "<style>\n#shopify-section-{{ section.id }} .section-background{background:linear-gradient(rgba(40,25,35,.42),rgba(40,25,35,.46)),url('https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=2000&q=80') center/cover no-repeat !important;}\n#shopify-section-{{ section.id }} :is(h1,h2,h3,p,span,a){color:#FBF6F2 !important;}\n#shopify-section-{{ section.id }} .button,#shopify-section-{{ section.id }} a.button{background:#FBF6F2 !important;color:#3E2433 !important;border-color:#FBF6F2 !important;}\n</style>"
+            "custom_liquid": "<style>\n#shopify-section-{{ section.id }} .section-background{background:linear-gradient(rgba(40,25,35,.42),rgba(40,25,35,.46)),url('https://images.unsplash.com/photo-1556228720-195a672e8a03?w=2000&q=80') center/cover no-repeat !important;}\n#shopify-section-{{ section.id }} :is(h1,h2,h3,p,span,a){color:#FBF6F2 !important;}\n#shopify-section-{{ section.id }} .button,#shopify-section-{{ section.id }} a.button{background:#FBF6F2 !important;color:#3E2433 !important;border-color:#FBF6F2 !important;}\n</style>"
           },
           "blocks": {}
         },
