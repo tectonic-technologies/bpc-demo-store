@@ -7,3 +7,6 @@ __pycache__/
 
 # OS
 .DS_Store
+
+# Shopify credentials (never commit)
+pipeline/shopify/secrets.env
