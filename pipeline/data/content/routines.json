@@ -1,0 +1,86 @@
+[
+ {
+  "title": "The Five-Minute Face",
+  "editorial": "Tinted base, a wash of colour, a defined lash.",
+  "steps": [
+   {
+    "product": "glowy-super-skin-tint-foundation",
+    "note": "Even out with a sheer layer"
+   },
+   {
+    "product": "revealer-concealer",
+    "note": "Spot-conceal where needed"
+   },
+   {
+    "product": "impressionist-multistick",
+    "note": "A soft flush on the cheeks"
+   },
+   {
+    "product": "eye-want-you-mascara-le-brun-clean",
+    "note": "One coat to define"
+   }
+  ]
+ },
+ {
+  "title": "Dewy, No-Makeup Look",
+  "editorial": "Skin-first glow with the lightest touch.",
+  "steps": [
+   {
+    "product": "sun-serum-mineral-sunscreen-spf-50-ca",
+    "note": "Protect first"
+   },
+   {
+    "product": "slip-tint-undetectable-baked-setting-powder",
+    "note": "Sheer, where you want it"
+   },
+   {
+    "product": "lit-up-highlight-stick-petal",
+    "note": "Tap onto high points"
+   },
+   {
+    "product": "wet-lip-oil-gloss",
+    "note": "Finish with shine"
+   }
+  ]
+ },
+ {
+  "title": "Evening Definition",
+  "editorial": "Turn it up with structure and a bolder lip.",
+  "steps": [
+   {
+    "product": "face-trace-contour-stick-coco",
+    "note": "Add structure"
+   },
+   {
+    "product": "supersuede-radiant-baked-bronzer",
+    "note": "Warm it through"
+   },
+   {
+    "product": "hotliner",
+    "note": "Define the lip"
+   },
+   {
+    "product": "lip-suede-matte-lipstick-lou-lou",
+    "note": "Layer the colour"
+   }
+  ]
+ },
+ {
+  "title": "The Considered Routine",
+  "editorial": "A calm daily ritual for skin.",
+  "steps": [
+   {
+    "product": "sos-daily-barrier-recovery-cream",
+    "note": "Treat morning and night"
+   },
+   {
+    "product": "sos-daily-facial-rescue-spray",
+    "note": "Refresh and set"
+   },
+   {
+    "product": "sun-melt",
+    "note": "Always finish with protection"
+   }
+  ]
+ }
+]

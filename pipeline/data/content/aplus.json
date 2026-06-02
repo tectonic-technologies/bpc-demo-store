@@ -1,0 +1,567 @@
+{
+ "baby-cheeks-blush-stick-mimi": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Cheeks Blush Stick - Mimi",
+   "body": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color."
+  }
+ ],
+ "mini-glowy-super-gel": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by spf."
+  },
+  {
+   "type": "hero",
+   "heading": "Mini Glowy Super Gel",
+   "body": "Light, placed with intention. Welcome to the glowiest, lightest weight luminizer, now in a satisfyingly small size. A dewy finish. Made with spf."
+  }
+ ],
+ "lip-liner-101": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by shea butter, jojoba."
+  },
+  {
+   "type": "hero",
+   "heading": "Lip Liner 101",
+   "body": "A considered essential. Rethink everything you know about lip liner. A matte finish. Made with shea butter, jojoba."
+  }
+ ],
+ "supersuede-radiant-baked-bronzer": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Supersuede Radiant Baked Bronzer",
+   "body": "Warmth that reads natural. Introducing the elevated powder bronzer you always wished for: skin-like, talc-free, and naturally radiant. A dewy finish."
+  }
+ ],
+ "super-serum-skin-tint-spf-30-tinted-moisturizer-uk": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by spf."
+  },
+  {
+   "type": "hero",
+   "heading": "Serum Skin Tint SPF 30",
+   "body": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 30 is an award-winning skin tint that delivers light coverage, potent skincare, and mineral SPF, all with a dewy finish for skin that looks and feels alive. A dewy finish. Made with spf."
+  }
+ ],
+ "vital-skincare-concealer-atelier-l4": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by hyaluronic acid, peptide."
+  },
+  {
+   "type": "hero",
+   "heading": "Vital Skincare Concealer - Atelier L4",
+   "body": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide."
+  }
+ ],
+ "eye-want-you-mascara-clean-black": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by shea butter."
+  },
+  {
+   "type": "hero",
+   "heading": "Eye Want You Mascara - Clean Black",
+   "body": "Definition without the drama. Clean, buildable mascara lengthens, defines, and volumizes. Made with shea butter."
+  }
+ ],
+ "liquid-eyeshadow-powder-eye-tint": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Liquid Powder Eye Tint",
+   "body": "Skin, only more even. What it is: A clean, cream-to-powder eyeshadow that dries down to a smudge-resistant finish. A matte finish."
+  }
+ ],
+ "getset-blur-set-matte-powder-blush": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Matte Powder Blush",
+   "body": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish."
+  }
+ ],
+ "lip-shape-lip-liner-minou": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Lip Shape Lip Liner - Minou",
+   "body": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look."
+  }
+ ],
+ "lip-suede-matte-lipstick-lacker": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by peptide."
+  },
+  {
+   "type": "hero",
+   "heading": "Lip Suede Matte Lipstick - L\u00e4cker",
+   "body": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide."
+  }
+ ],
+ "revealer-skin-improving-foundation-spf-25": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by hyaluronic acid, niacinamide, squalane, peptide."
+  },
+  {
+   "type": "hero",
+   "heading": "Skin-improving Foundation SPF 25",
+   "body": "Skin, only more even. Clean SPF Foundation for Skincare Freaks. Made with hyaluronic acid, niacinamide, squalane."
+  }
+ ],
+ "overglaze-hydrating-tinted-lip-gloss": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Overglaze Hydrating Lip Gloss",
+   "body": "Glassy shine, real care. Glaze lips in dimensional shine + 24-hour hydration. A sheer finish."
+  }
+ ],
+ "skin-rewind-complexion-stick-foundation-concealer": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Skin Rewind Complexion Stick",
+   "body": "Skin, only more even. Looks like makeup, acts like skincare. A matte finish."
+  }
+ ],
+ "complexion-brush": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Complexion Brush",
+   "body": "Skin, only more even. Our Complexion Brush is designed to easily apply and buff product into the skin, including hard to reach places."
+  }
+ ],
+ "glow-sculpt": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Glow Sculpt",
+   "body": "Structure, softly. The flush of blush meets a radiant glow. A dewy finish."
+  }
+ ],
+ "mascara-101": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Mascara 101",
+   "body": "Definition without the drama. The perfect pick-me-up for long, lifted lashes."
+  }
+ ],
+ "vital-pressed-skincare-powder-translucent": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by vitamin c."
+  },
+  {
+   "type": "hero",
+   "heading": "Vital Pressed Skincare Powder - Translucent",
+   "body": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+  }
+ ],
+ "t28-x-toni-bravo-getset-powder-blush": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Toni Bravo Getset Matte Powder Blush",
+   "body": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish."
+  }
+ ],
+ "sos-faceguard-spf-30": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by spf."
+  },
+  {
+   "type": "hero",
+   "heading": "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "body": "Protection that disappears into skin. A daily SPF to rescue you from the rest. Made with spf."
+  }
+ ],
+ "sun-melt": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Sun Melt",
+   "body": "Protection that disappears into skin. A cream-balm bronzer with a natural-radiant finish that melts in for an effortless all-over bronze. A dewy finish."
+  }
+ ],
+ "soft-focus-finishing-powder": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by squalane."
+  },
+  {
+   "type": "hero",
+   "heading": "Soft Focus Finishing Powder",
+   "body": "A soft-focus finish, nothing cakey. Your skin, through a soft-focus filter. A satin finish. Made with squalane."
+  }
+ ],
+ "hotliner": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by hyaluronic acid."
+  },
+  {
+   "type": "hero",
+   "heading": "Hotliner",
+   "body": "A considered essential. A satin finish. Made with hyaluronic acid."
+  }
+ ],
+ "in-full-micro-tip-eyebrow-pencil": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "In Full Micro-tip Brow Pencil",
+   "body": "A considered essential. The art of the arch, made easy."
+  }
+ ],
+ "shine-on-lip-gloss-jelly": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Lip Oil Jelly",
+   "body": "Glassy shine, real care. The shine of a gloss, comfort of a balm + a touch of color."
+  }
+ ],
+ "barrier-build-skin-protectant-cream": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Barrier Build Skin Protectant Cream",
+   "body": "Daily care that earns its place."
+  }
+ ],
+ "vital-skincare-concealer-atelier-d3": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by hyaluronic acid, peptide."
+  },
+  {
+   "type": "hero",
+   "heading": "Vital Skincare Concealer - Atelier D3",
+   "body": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide."
+  }
+ ],
+ "clean-line-liquid-liner": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Line Liquid Liner",
+   "body": "A considered essential. What it is: A clean liquid liner with a flexible felt tip and rich black pigment."
+  }
+ ],
+ "vital-skincare-concealer-atelier-l3": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by hyaluronic acid, peptide."
+  },
+  {
+   "type": "hero",
+   "heading": "Vital Skincare Concealer - Atelier L3",
+   "body": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide."
+  }
+ ],
+ "weightless-lip-color": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Weightless Lip Color",
+   "body": "Comfortable colour that stays put. A satin finish."
+  }
+ ],
+ "slip-tint-undetectable-baked-setting-powder": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by squalane."
+  },
+  {
+   "type": "hero",
+   "heading": "Slip Tint Undetectable Baked Setting Powder",
+   "body": "Skin, only more even. Set your look for 8 hours with this unbelievably skin-like powder that is truly undetectable. A dewy finish. Made with squalane."
+  }
+ ],
+ "multi-stick-cream-blush-stick-lip-cheek-tint": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Multi-stick",
+   "body": "A worn-in flush. What it is: A buildable wash of color for cheeks and lips, now with 12 swipe-and-go shades. A dewy finish."
+  }
+ ],
+ "sunnydays-tinted-spf": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by spf."
+  },
+  {
+   "type": "hero",
+   "heading": "Tinted SPF 30",
+   "body": "Skin, only more even. A 2-in-1 mineral sunscreen foundation with broad spectrum SPF 30, light-medium buildable coverage, and a natural finish. A satin finish. Made with spf."
+  }
+ ],
+ "vital-pressed-skincare-powder-creme": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by vitamin c."
+  },
+  {
+   "type": "hero",
+   "heading": "Vital Pressed Skincare Powder - Cr\u00e8me",
+   "body": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+  }
+ ],
+ "wet-stick": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "ingredient",
+   "heading": "Key ingredients",
+   "body": "Powered by squalane, ceramide."
+  },
+  {
+   "type": "hero",
+   "heading": "Wet Stick",
+   "body": "A worn-in flush. A sheer finish. Made with squalane, ceramide."
+  }
+ ],
+ "the-powder-blush-brush": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Powder Blush Brush",
+   "body": "A soft-focus finish, nothing cakey. This sleek brush is thoughtfully designed to pair seamlessly with Baked Powder Blush."
+  }
+ ],
+ "the-base-face-milk-essence-lightweight-moisturizer": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Base Face Milk",
+   "body": "A considered essential."
+  }
+ ],
+ "eye-shadow-i-brush": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Eye Shadow I Brush",
+   "body": "A considered essential. This multi-tasking eye shadow brush with tapered, flat bristles is made for effortless color application."
+  }
+ ],
+ "lip-pulse": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Lip Pulse",
+   "body": "Glassy shine, real care. Lips in their fullest expression A high-impact clean lip plumper with a satisfying warming-cooling tingle for visibly fuller, glassy lips, always nourishing, not sticky or drying."
+  }
+ ],
+ "brow-pop-nano": [
+  {
+   "type": "story",
+   "heading": "Made with intention",
+   "body": "Fewer, better products. Clean formulas, considered packaging, skin first."
+  },
+  {
+   "type": "hero",
+   "heading": "Brow Pop Nano",
+   "body": "A considered essential."
+  }
+ ]
+}

@@ -1,0 +1,104 @@
+[
+ {
+  "name": "The Foundation Family",
+  "axis": "finish/shade",
+  "members": [
+   {
+    "product": "swipe-serum-concealer",
+    "label": "Serum Concealer"
+   },
+   {
+    "product": "sunnydays-tinted-spf",
+    "label": "Tinted SPF 30"
+   },
+   {
+    "product": "slip-tint-undetectable-baked-setting-powder",
+    "label": "Slip Tint Undetectable Baked Setting Powder"
+   },
+   {
+    "product": "slip-tint-concealer",
+    "label": "Slip Tint Radiant All-over Concealer"
+   }
+  ]
+ },
+ {
+  "name": "The Lipstick Family",
+  "axis": "finish/shade",
+  "members": [
+   {
+    "product": "weightless-lip-color",
+    "label": "Weightless Lip Color"
+   },
+   {
+    "product": "color-block-lipstick-natural",
+    "label": "Color Block Lipstick"
+   }
+  ]
+ },
+ {
+  "name": "The Blush Family",
+  "axis": "finish/shade",
+  "members": [
+   {
+    "product": "mini-dew-blush",
+    "label": "Mini Dew Blush"
+   },
+   {
+    "product": "blush-is-life",
+    "label": "Blush Is Life"
+   },
+   {
+    "product": "soft-focus-blurring-powder-blush",
+    "label": "Soft Focus Blurring Blush"
+   },
+   {
+    "product": "impressionist-multistick",
+    "label": "Multistick Blush"
+   }
+  ]
+ },
+ {
+  "name": "The Concealer Family",
+  "axis": "finish/shade",
+  "members": [
+   {
+    "product": "mini-revealer-concealer",
+    "label": "Mini Revealer Concealer"
+   },
+   {
+    "product": "revealer-concealer",
+    "label": "Concealer Concealer"
+   },
+   {
+    "product": "hydrating-skin-blur-serum-concealer",
+    "label": "Skin Blur Serum Concealer"
+   },
+   {
+    "product": "revealer-extra-bright",
+    "label": "Extra Bright Concealer"
+   }
+  ]
+ },
+ {
+  "name": "The Serum & Treatment Family",
+  "axis": "finish/shade",
+  "members": [
+   {
+    "product": "true-skin-radiant-priming-serum",
+    "label": "True Skin Radiant Priming Serum"
+   },
+   {
+    "product": "sos-rescue-relief-body-wash-treatment",
+    "label": "SOS Rescue + Relief Body Wash Treatment Serum"
+   },
+   {
+    "product": "plump-juicy-cleansing-oil",
+    "label": "Plump + Juicy Cleansing Oil"
+   },
+   {
+    "product": "plump-juicy-vegan-collagen-spray-on-serum",
+    "label": "Plump + Juicy Vegan Collagen Spray-on Serum"
+   }
+  ]
+ }
+]
