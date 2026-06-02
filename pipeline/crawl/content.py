@@ -27,7 +27,7 @@ NOUN = {"Foundation":"Foundation","Concealer":"Concealer","Powder":"Powder","Pri
         "Eyeliner":"Eyeliner","Brow":"Brow Pencil","Eyeshadow":"Eyeshadow","SPF & Sun":"Mineral SPF",
         "Serum & Treatment":"Serum","Mist & Spray":"Face Mist","Tool":"Brush","Other":"Multi-Stick"}
 
-NOUN_WORDS = set("foundation concealer powder primer blush bronzer contour highlighter lipstick lip oil gloss liner mascara eyeliner brow pencil eyeshadow shadow spf serum mist brush balm stick cream tint multistick multi-stick".split())
+NOUN_WORDS = set("foundation concealer powder primer blush bronzer contour highlighter lipstick lip oil gloss liner mascara eyeliner brow pencil eyeshadow shadow spf serum mist brush balm stick cream tint multistick multi-stick cleanser cleansing wash serum moisturizer moisturiser lotion scrub deodorant shampoo conditioner mask toner perfume parfum sunscreen treatment exfoliant body hand hair eau spray gel butter".split())
 
 def polish_title(t, cat):
     for bad, repl in PROP_FIX.items():
@@ -37,7 +37,7 @@ def polish_title(t, cat):
     words = [w for w in t.split() if w]
     # append a functional noun only if no recognised product noun is present
     if len(words) < 2 or not any(w.lower() in NOUN_WORDS for w in words):
-        t = (t + " " + NOUN[cat]).strip()
+        t = (t + " " + NOUN.get(cat, cat)).strip()
     return re.sub(r"\bSpf\b","SPF"," ".join(w if w.isupper() else w[:1].upper()+w[1:] for w in t.split())).strip()
 
 # --- description rewrite in MAREN voice ---

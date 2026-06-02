@@ -9,6 +9,42 @@
   }
  },
  {
+  "handle": "cat-body-care",
+  "title": "Body Care",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Body Care"
+  }
+ },
+ {
+  "handle": "cat-body-lotion",
+  "title": "Body Lotion",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Body Lotion"
+  }
+ },
+ {
+  "handle": "cat-body-mist",
+  "title": "Body Mist",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Body Mist"
+  }
+ },
+ {
+  "handle": "cat-body-wash",
+  "title": "Body Wash",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Body Wash"
+  }
+ },
+ {
   "handle": "cat-bronzer",
   "title": "Bronzer",
   "type": "smart",
@@ -27,6 +63,15 @@
   }
  },
  {
+  "handle": "cat-cleanser",
+  "title": "Cleanser",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Cleanser"
+  }
+ },
+ {
   "handle": "cat-concealer",
   "title": "Concealer",
   "type": "smart",
@@ -36,12 +81,57 @@
   }
  },
  {
+  "handle": "cat-conditioner",
+  "title": "Conditioner",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Conditioner"
+  }
+ },
+ {
   "handle": "cat-contour",
   "title": "Contour",
   "type": "smart",
   "rule": {
    "field": "category",
    "value": "Contour"
+  }
+ },
+ {
+  "handle": "cat-deodorant",
+  "title": "Deodorant",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Deodorant"
+  }
+ },
+ {
+  "handle": "cat-eau-de-parfum",
+  "title": "Eau de Parfum",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Eau de Parfum"
+  }
+ },
+ {
+  "handle": "cat-exfoliant",
+  "title": "Exfoliant",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Exfoliant"
+  }
+ },
+ {
+  "handle": "cat-eye-care",
+  "title": "Eye Care",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Eye Care"
   }
  },
  {
@@ -72,6 +162,33 @@
   }
  },
  {
+  "handle": "cat-hair-care",
+  "title": "Hair Care",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Hair Care"
+  }
+ },
+ {
+  "handle": "cat-hair-treatment",
+  "title": "Hair Treatment",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Hair Treatment"
+  }
+ },
+ {
+  "handle": "cat-hand-care",
+  "title": "Hand Care",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Hand Care"
+  }
+ },
+ {
   "handle": "cat-highlighter",
   "title": "Highlighter",
   "type": "smart",
@@ -81,12 +198,12 @@
   }
  },
  {
-  "handle": "cat-lip-balm-oil",
-  "title": "Lip Balm & Oil",
+  "handle": "cat-lip-gloss-oil",
+  "title": "Lip Gloss & Oil",
   "type": "smart",
   "rule": {
    "field": "category",
-   "value": "Lip Balm & Oil"
+   "value": "Lip Gloss & Oil"
   }
  },
  {
@@ -117,21 +234,30 @@
   }
  },
  {
-  "handle": "cat-mist-spray",
-  "title": "Mist & Spray",
+  "handle": "cat-mask",
+  "title": "Mask",
   "type": "smart",
   "rule": {
    "field": "category",
-   "value": "Mist & Spray"
+   "value": "Mask"
   }
  },
  {
-  "handle": "cat-other",
-  "title": "Other",
+  "handle": "cat-moisturizer",
+  "title": "Moisturizer",
   "type": "smart",
   "rule": {
    "field": "category",
-   "value": "Other"
+   "value": "Moisturizer"
+  }
+ },
+ {
+  "handle": "cat-other-makeup",
+  "title": "Other Makeup",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Other Makeup"
   }
  },
  {
@@ -144,15 +270,6 @@
   }
  },
  {
-  "handle": "cat-primer",
-  "title": "Primer",
-  "type": "smart",
-  "rule": {
-   "field": "category",
-   "value": "Primer"
-  }
- },
- {
   "handle": "cat-spf-sun",
   "title": "SPF & Sun",
   "type": "smart",
@@ -162,21 +279,57 @@
   }
  },
  {
-  "handle": "cat-serum-treatment",
-  "title": "Serum & Treatment",
+  "handle": "cat-serum",
+  "title": "Serum",
   "type": "smart",
   "rule": {
    "field": "category",
-   "value": "Serum & Treatment"
+   "value": "Serum"
   }
  },
  {
-  "handle": "cat-tool",
-  "title": "Tool",
+  "handle": "cat-setting-spray",
+  "title": "Setting Spray",
   "type": "smart",
   "rule": {
    "field": "category",
-   "value": "Tool"
+   "value": "Setting Spray"
+  }
+ },
+ {
+  "handle": "cat-shampoo",
+  "title": "Shampoo",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Shampoo"
+  }
+ },
+ {
+  "handle": "cat-styling",
+  "title": "Styling",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Styling"
+  }
+ },
+ {
+  "handle": "cat-tools",
+  "title": "Tools",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Tools"
+  }
+ },
+ {
+  "handle": "cat-treatment",
+  "title": "Treatment",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Treatment"
   }
  },
  {

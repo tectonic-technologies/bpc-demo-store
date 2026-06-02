@@ -56,6 +56,14 @@ TAX = {
     "Tool": "Health & Beauty > Personal Care > Cosmetics > Cosmetic Tools > Makeup Tools",
     "Other": "Health & Beauty > Personal Care > Cosmetics > Makeup",
 }
+TAX_TOP = {
+    "Makeup": "Health & Beauty > Personal Care > Cosmetics > Makeup",
+    "Skincare": "Health & Beauty > Personal Care > Cosmetics > Skin Care",
+    "Body": "Health & Beauty > Personal Care > Bath & Body",
+    "Hair": "Health & Beauty > Personal Care > Hair Care",
+    "Fragrance": "Health & Beauty > Personal Care > Cosmetics > Perfume & Cologne",
+    "Tools": "Health & Beauty > Personal Care > Cosmetics > Cosmetic Tools",
+}
 
 def select_images(imgs, cap=6):
     if len(imgs) <= cap: return imgs
@@ -79,7 +87,8 @@ def main():
             "src_handle": p["src_handle"],
             "display_title": p["display_title"],
             "category": p["category"],
-            "taxonomy_path": TAX.get(p["category"], TAX["Other"]),
+            "top": p.get("top"),
+            "taxonomy_path": TAX_TOP.get(p.get("top"), TAX.get(p["category"], TAX["Other"])),
             "facets": {
                 "finish": first(FINISH, hay),
                 "coverage": first(COVERAGE, hay),

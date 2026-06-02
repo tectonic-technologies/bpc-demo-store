@@ -44,7 +44,8 @@ def build_input(p):
         "productType": p["category"],
         "status": "ACTIVE",
         "tags": list(filter(None, [
-            p["category"], f.get("finish"), f.get("skin_type"), f.get("price_band"),
+            p["category"], "cat:" + (p.get("top") or "").lower().replace(" ", "-"),
+            f.get("finish"), f.get("skin_type"), f.get("price_band"),
             "best-seller" if m.get("best_seller") else None,
             "new" if m.get("is_new") else None,
             "clearance" if m.get("is_clearance") else None, "MAREN",

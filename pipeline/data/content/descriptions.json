@@ -1,243 +1,9 @@
 {
- "swipe-serum-concealer": {
-  "title": "Serum Concealer",
-  "description": "Skin, only more even. A hydrating concealer that glides on like a serum but has the medium-buildable coverage power to cover dark circles, redness, and blemishes.",
-  "seo_title": "Serum Concealer | MAREN",
-  "seo_description": "Skin, only more even. A hydrating concealer that glides on like a serum but has the medium-buildable coverage power to cover dark circles, redness, an."
- },
- "shineon-plumping-lip-jelly": {
-  "title": "Plumping Lip Jelly",
-  "description": "Glassy shine, real care. A pain-free lip plumping gloss that uses technology that vibrates volume into lips, without the burn or irritation.",
-  "seo_title": "Plumping Lip Jelly | MAREN",
-  "seo_description": "Glassy shine, real care. A pain-free lip plumping gloss that uses technology that vibrates volume into lips, without the burn or irritation."
- },
- "getset-blur-set-matte-powder-blush": {
-  "title": "Matte Powder Blush",
-  "description": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish.",
-  "seo_title": "Matte Powder Blush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof c."
- },
- "mini-revealer-concealer": {
-  "title": "Mini Revealer Concealer",
-  "description": "Quiet coverage where you want it.",
-  "seo_title": "Mini Revealer Concealer | MAREN",
-  "seo_description": "Quiet coverage where you want it."
- },
- "sos-lipsoftie-lip-treatment": {
-  "title": "SOS Lip Treatment",
-  "description": "Glassy shine, real care. A clinically-tested + derm-approved vegan lip treatment that delivers the intense hydration of a lip mask to rescue dry, chapped lips.",
-  "seo_title": "SOS Lip Treatment | MAREN",
-  "seo_description": "Glassy shine, real care. A clinically-tested + derm-approved vegan lip treatment that delivers the intense hydration of a lip mask to rescue dry, chap."
- },
- "weightless-lip-color": {
-  "title": "Weightless Lip Color",
-  "description": "Comfortable colour that stays put. A satin finish.",
-  "seo_title": "Weightless Lip Color | MAREN",
-  "seo_description": "Comfortable colour that stays put. A satin finish."
- },
- "mini-dew-blush": {
-  "title": "Mini Dew Blush",
-  "description": "A worn-in flush. A sheer finish.",
-  "seo_title": "Mini Dew Blush | MAREN",
-  "seo_description": "A worn-in flush. A sheer finish."
- },
- "the-fluffy-brush": {
-  "title": "Fluffy Brush",
-  "description": "A considered essential. We designed the Fluffy Brush to be first-time-powder-person friendly.",
-  "seo_title": "Fluffy Brush | MAREN",
-  "seo_description": "A considered essential. We designed the Fluffy Brush to be first-time-powder-person friendly."
- },
- "makewaves-mascara": {
-  "title": "Lengthening Mascara",
-  "description": "Definition without the drama. A safe for sensitive eyes vegan mascara that visibly volumizes, lengthens, and defines for the most amped-up, natural-looking lashes.",
-  "seo_title": "Lengthening Mascara | MAREN",
-  "seo_description": "Definition without the drama. A safe for sensitive eyes vegan mascara that visibly volumizes, lengthens, and defines for the most amped-up, natural-lo."
- },
- "true-skin-radiant-priming-serum": {
-  "title": "True Skin Radiant Priming Serum",
-  "description": "Daily care that earns its place. What it is: Bridging the gap between makeup and skincare, \u2019s True Skin Radiant Priming Serum does more than create a perfect base for makeup application. A dewy finish. Made with aloe.",
-  "seo_title": "True Skin Radiant Priming Serum | MAREN",
-  "seo_description": "Daily care that earns its place. What it is: Bridging the gap between makeup and skincare, \u2019s True Skin Radiant Priming Serum does more than create a."
- },
- "glow-sculpt": {
-  "title": "Cream Contour",
-  "description": "Structure, softly. The flush of blush meets a radiant glow. A dewy finish.",
-  "seo_title": "Cream Contour | MAREN",
-  "seo_description": "Structure, softly. The flush of blush meets a radiant glow. A dewy finish."
- },
- "lip-liner-101": {
-  "title": "Lip Liner 101",
-  "description": "A considered essential. Rethink everything you know about lip liner. A matte finish. Made with shea butter, jojoba.",
-  "seo_title": "Lip Liner 101 | MAREN",
-  "seo_description": "A considered essential. Rethink everything you know about lip liner. A matte finish. Made with shea butter, jojoba."
- },
- "mini-glowy-super-gel": {
-  "title": "Mini Glowy Super Gel Highlighter",
-  "description": "Light, placed with intention. Welcome to the glowiest, lightest weight luminizer, now in a satisfyingly small size. A dewy finish. Made with spf.",
-  "seo_title": "Mini Glowy Super Gel Highlighter | MAREN",
-  "seo_description": "Light, placed with intention. Welcome to the glowiest, lightest weight luminizer, now in a satisfyingly small size. A dewy finish. Made with spf."
- },
- "eye-stylus-eyeshadow-stick": {
-  "title": "Eye Stylus Shadow Stick",
-  "description": "A considered essential. Art inspired, no artistry required. A matte finish.",
-  "seo_title": "Eye Stylus Shadow Stick | MAREN",
-  "seo_description": "A considered essential. Art inspired, no artistry required. A matte finish."
- },
- "supersuede-radiant-baked-bronzer": {
-  "title": "Soft Matte Radiant Baked Bronzer",
-  "description": "Warmth that reads natural. Introducing the elevated powder bronzer you always wished for: skin-like, talc-free, and naturally radiant. A dewy finish.",
-  "seo_title": "Soft Matte Radiant Baked Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. Introducing the elevated powder bronzer you always wished for: skin-like, talc-free, and naturally radiant. A dewy finish."
- },
- "brow-pop": {
-  "title": "Brow Pop",
-  "description": "A considered essential.",
-  "seo_title": "Brow Pop | MAREN",
-  "seo_description": "A considered essential."
- },
- "sun-melt": {
-  "title": "Sun Melt Mineral SPF",
-  "description": "Protection that disappears into skin. A cream-balm bronzer with a natural-radiant finish that melts in for an effortless all-over bronze. A dewy finish.",
-  "seo_title": "Sun Melt Mineral SPF | MAREN",
-  "seo_description": "Protection that disappears into skin. A cream-balm bronzer with a natural-radiant finish that melts in for an effortless all-over bronze. A dewy finis."
- },
- "sos-rescue-spray-jumbo-refill": {
-  "title": "SOS Rescue Spray Refill Face Mist",
-  "description": "A considered essential. A soothing, purifying, and renewing toner treatment for fast angry skin relief.",
-  "seo_title": "SOS Rescue Spray Refill Face Mist | MAREN",
-  "seo_description": "A considered essential. A soothing, purifying, and renewing toner treatment for fast angry skin relief."
- },
- "soulgazer": {
-  "title": "Soulgazer Eyeliner",
-  "description": "A considered essential. A matte finish. Made with hyaluronic acid.",
-  "seo_title": "Soulgazer Eyeliner | MAREN",
-  "seo_description": "A considered essential. A matte finish. Made with hyaluronic acid."
- },
- "the-base-brush": {
-  "title": "Base Brush",
-  "description": "A considered essential. Our cruelty-free foundation brush is made with ultra-soft synthetic bristles and has a unique surface that disperses product seamlessly without waste. A dewy finish.",
-  "seo_title": "Base Brush | MAREN",
-  "seo_description": "A considered essential. Our cruelty-free foundation brush is made with ultra-soft synthetic bristles and has a unique surface that disperses product s."
- },
- "sunnydays-tinted-spf": {
-  "title": "Tinted SPF 30",
-  "description": "Skin, only more even. A 2-in-1 mineral sunscreen foundation with broad spectrum SPF 30, light-medium buildable coverage, and a natural finish. A satin finish. Made with spf.",
-  "seo_title": "Tinted SPF 30 | MAREN",
-  "seo_description": "Skin, only more even. A 2-in-1 mineral sunscreen foundation with broad spectrum SPF 30, light-medium buildable coverage, and a natural finish. A satin."
- },
- "the-mini-vanity-case": {
-  "title": "Mini Vanity Case Multi-Stick",
-  "description": "A considered essential. The bestselling Mini Vanity Case in four limited edition hues has returned. A matte finish.",
-  "seo_title": "Mini Vanity Case Multi-Stick | MAREN",
-  "seo_description": "A considered essential. The bestselling Mini Vanity Case in four limited edition hues has returned. A matte finish."
- },
- "t28-x-toni-bravo-getset-powder-blush": {
-  "title": "Toni Bravo Getset Matte Powder Blush",
-  "description": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish.",
-  "seo_title": "Toni Bravo Getset Matte Powder Blush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof c."
- },
- "revealer-concealer": {
-  "title": "Concealer Concealer",
-  "description": "Quiet coverage where you want it. Like a lightbulb for your skin A super creamy, skincare-packed clean concealer with medium coverage and a fresh, hydrated, radiant finish. A dewy finish. Made with hyaluronic acid, peptide, caffeine.",
-  "seo_title": "Concealer Concealer | MAREN",
-  "seo_description": "Quiet coverage where you want it. Like a lightbulb for your skin A super creamy, skincare-packed clean concealer with medium coverage and a fresh, hyd."
- },
- "lipsoftie-lip-treatment": {
-  "title": "Lip Treatment",
-  "description": "Glassy shine, real care. The hydration of a lip mask + a sweet sheer tint for instant comfort and smooth, softie lips. A sheer finish.",
-  "seo_title": "Lip Treatment | MAREN",
-  "seo_description": "Glassy shine, real care. The hydration of a lip mask + a sweet sheer tint for instant comfort and smooth, softie lips. A sheer finish."
- },
- "color-block-lipstick-natural": {
-  "title": "Color Block Lipstick",
-  "description": "Comfortable colour that stays put. What it is: A clean, handcrafted lipstick with high-impact color and supreme hydration, for all-day wear and care.",
-  "seo_title": "Color Block Lipstick | MAREN",
-  "seo_description": "Comfortable colour that stays put. What it is: A clean, handcrafted lipstick with high-impact color and supreme hydration, for all-day wear and care."
- },
- "the-double-brush": {
-  "title": "Double Brush",
-  "description": "A considered essential. Our dual purpose Double Brush is designed to highlight, sculpt, and conceal. A dewy finish.",
-  "seo_title": "Double Brush | MAREN",
-  "seo_description": "A considered essential. Our dual purpose Double Brush is designed to highlight, sculpt, and conceal. A dewy finish."
- },
- "sos-rescue-relief-body-wash-treatment": {
-  "title": "SOS Rescue + Relief Body Wash Treatment Serum",
-  "description": "Daily care that earns its place. This derm-approved + hypoallergenic body wash treatment cleanses, hydrates, and is clinically-proven to help soothe raw, itchy skin prone to irritation, flakiness, eczema, rosacea, psoriasis.",
-  "seo_title": "SOS Rescue + Relief Body Wash Treatment Serum | MAREN",
-  "seo_description": "Daily care that earns its place. This derm-approved + hypoallergenic body wash treatment cleanses, hydrates, and is clinically-proven to help soothe r."
- },
- "sculptino-soft-cream-contour": {
-  "title": "Sculptino Cream Contour",
-  "description": "Structure, softly. A foolproof cream contour to softly shape and sculpt your face with an easy-to-blend texture and neutral undertones.",
-  "seo_title": "Sculptino Cream Contour | MAREN",
-  "seo_description": "Structure, softly. A foolproof cream contour to softly shape and sculpt your face with an easy-to-blend texture and neutral undertones."
- },
- "hotliner": {
-  "title": "Hotliner Lip Liner",
-  "description": "A considered essential. A satin finish. Made with hyaluronic acid.",
-  "seo_title": "Hotliner Lip Liner | MAREN",
-  "seo_description": "A considered essential. A satin finish. Made with hyaluronic acid."
- },
- "gogo-shimmer-eyeshadow-stick": {
-  "title": "Gogo Cooling Shimmer Eyeshadow",
-  "description": "A considered essential. A cooling + soothing eyeshadow stick that gives high impact shimmer without the irritation and lasts up to 8-hrs.",
-  "seo_title": "Gogo Cooling Shimmer Eyeshadow | MAREN",
-  "seo_description": "A considered essential. A cooling + soothing eyeshadow stick that gives high impact shimmer without the irritation and lasts up to 8-hrs."
- },
- "dew-bronze": {
-  "title": "Dew Bronze Bronzer",
-  "description": "Warmth that reads natural.",
-  "seo_title": "Dew Bronze Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural."
- },
- "in-full-micro-tip-eyebrow-pencil": {
-  "title": "In Full Micro-tip Brow Pencil",
-  "description": "A considered essential. The art of the arch, made easy.",
-  "seo_title": "In Full Micro-tip Brow Pencil | MAREN",
-  "seo_description": "A considered essential. The art of the arch, made easy."
- },
- "sun-serum-mineral-sunscreen-spf-50-ca": {
-  "title": "Sun Serum Mineral Sunscreen SPF 50",
-  "description": "Protection that disappears into skin. SPF 50 that makes your skin better. Made with hyaluronic acid, spf.",
-  "seo_title": "Sun Serum Mineral Sunscreen SPF 50 | MAREN",
-  "seo_description": "Protection that disappears into skin. SPF 50 that makes your skin better. Made with hyaluronic acid, spf."
- },
- "sos-gel-cleanser": {
-  "title": "SOS Gel Cleanser Face Mist",
-  "description": "A considered essential. A gentle daily cleanser with the power to do everything you want aka easily remove makeup, SPF, oils, and dirt, without burning eyes or leaving skin tight. Made with spf.",
-  "seo_title": "SOS Gel Cleanser Face Mist | MAREN",
-  "seo_description": "A considered essential. A gentle daily cleanser with the power to do everything you want aka easily remove makeup, SPF, oils, and dirt, without burnin."
- },
- "clean-line-liquid-liner": {
-  "title": "Line Liquid Liner",
-  "description": "A considered essential. What it is: A clean liquid liner with a flexible felt tip and rich black pigment.",
-  "seo_title": "Line Liquid Liner | MAREN",
-  "seo_description": "A considered essential. What it is: A clean liquid liner with a flexible felt tip and rich black pigment."
- },
- "the-base-face-milk-essence-lightweight-moisturizer": {
-  "title": "Base Face Milk Primer",
-  "description": "A considered essential.",
-  "seo_title": "Base Face Milk Primer | MAREN",
-  "seo_description": "A considered essential."
- },
- "slip-tint-undetectable-baked-setting-powder": {
-  "title": "Slip Tint Undetectable Baked Setting Powder",
-  "description": "Skin, only more even. Set your look for 8 hours with this unbelievably skin-like powder that is truly undetectable. A dewy finish. Made with squalane.",
-  "seo_title": "Slip Tint Undetectable Baked Setting Powder | MAREN",
-  "seo_description": "Skin, only more even. Set your look for 8 hours with this unbelievably skin-like powder that is truly undetectable. A dewy finish. Made with squalane."
- },
- "glossybounce": {
-  "title": "Glossy Lip Oil",
-  "description": "Glassy shine, real care. The slip of a lip oil meets the high-shine of a tinted gloss. A sheer finish.",
-  "seo_title": "Glossy Lip Oil | MAREN",
-  "seo_description": "Glassy shine, real care. The slip of a lip oil meets the high-shine of a tinted gloss. A sheer finish."
- },
- "getset-blur-set-pressed-powder": {
-  "title": "Pressed Powder",
-  "description": "A soft-focus finish, nothing cakey. A talc-free, safe for sensitive skin setting powder that blurs and smooths skin, and makes any base transfer- and sweat-proof.",
-  "seo_title": "Pressed Powder | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A talc-free, safe for sensitive skin setting powder that blurs and smooths skin, and makes any base transfer- and."
+ "foundation-brush": {
+  "title": "Foundation Brush",
+  "description": "Skin, only more even. Paddle foundation brush with tapered, flat bristles that will quickly become your go-to for precise applications, correcting imperfections and achieving a naturally polished finish.",
+  "seo_title": "Foundation Brush | MAREN",
+  "seo_description": "Skin, only more even. Paddle foundation brush with tapered, flat bristles that will quickly become your go-to for precise applications, correcting imp."
  },
  "hydrating-skin-blur-serum-concealer": {
   "title": "Skin Blur Serum Concealer",
@@ -245,11 +11,95 @@
   "seo_title": "Skin Blur Serum Concealer | MAREN",
   "seo_description": "Quiet coverage where you want it. The search for your holy grail concealer is over. A satin finish. Made with peptide, caffeine."
  },
- "shine-on-lip-gloss-jelly": {
-  "title": "Lip Oil Jelly",
-  "description": "Glassy shine, real care. The shine of a gloss, comfort of a balm + a touch of color.",
-  "seo_title": "Lip Oil Jelly | MAREN",
-  "seo_description": "Glassy shine, real care. The shine of a gloss, comfort of a balm + a touch of color."
+ "shineon-plumping-lip-jelly": {
+  "title": "ShineOn Plumping Lip Jelly",
+  "description": "A considered essential. A pain-free lip plumping gloss that uses technology that vibrates volume into lips, without the burn or irritation.",
+  "seo_title": "ShineOn Plumping Lip Jelly | MAREN",
+  "seo_description": "A considered essential. A pain-free lip plumping gloss that uses technology that vibrates volume into lips, without the burn or irritation."
+ },
+ "supersuede-radiant-baked-bronzer": {
+  "title": "Soft Matte Radiant Baked Bronzer",
+  "description": "Warmth that reads natural. Introducing the elevated powder bronzer you always wished for: skin-like, talc-free, and naturally radiant. A dewy finish.",
+  "seo_title": "Soft Matte Radiant Baked Bronzer | MAREN",
+  "seo_description": "Warmth that reads natural. Introducing the elevated powder bronzer you always wished for: skin-like, talc-free, and naturally radiant. A dewy finish."
+ },
+ "impressionist-multistick": {
+  "title": "Multistick Other Makeup",
+  "description": "A considered essential.",
+  "seo_title": "Multistick Other Makeup | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "tripeptide-plumping-lip-balm-berry-tint": {
+  "title": "Tripeptide Plumping Berry Lip Balm",
+  "description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0new,\u00a0buildable and universally flattering berry lip tint to power up your plump. A sheer finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Tripeptide Plumping Berry Lip Balm | MAREN",
+  "seo_description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0n."
+ },
+ "the-lip-balm": {
+  "title": "The Lip Balm | Multi-Ceramide",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Lip Balm delivers instant relief for dry, chapped lips. Made with hyaluronic acid, niacinamide, ceramide.",
+  "seo_title": "The Lip Balm | Multi-Ceramide | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Lip Balm delivers instant relief for dry, chapped lips. Made wit."
+ },
+ "hydrobalm-tinted-lipstick-bob": {
+  "title": "HydroBalm Tinted Lipstick - Bob",
+  "description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish. Made with hyaluronic acid.",
+  "seo_title": "HydroBalm Tinted Lipstick - Bob | MAREN",
+  "seo_description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish."
+ },
+ "overglaze-hydrating-tinted-lip-gloss": {
+  "title": "Overglaze Hydrating Lip Gloss",
+  "description": "A considered essential. Glaze lips in dimensional shine + 24-hour hydration. A sheer finish.",
+  "seo_title": "Overglaze Hydrating Lip Gloss | MAREN",
+  "seo_description": "A considered essential. Glaze lips in dimensional shine + 24-hour hydration. A sheer finish."
+ },
+ "makewaves\u00ae-mascara-gift-with-purchase": {
+  "title": "Lengthening Mascara",
+  "description": "Definition without the drama. Free U.S shipping $30+ What is it? A safe for sensitive eyes vegan mascara that visibly volumizes, lengthens, and defines, for the most amped-up, natural-looking lashes.",
+  "seo_title": "Lengthening Mascara | MAREN",
+  "seo_description": "Definition without the drama. Free U.S shipping $30+ What is it? A safe for sensitive eyes vegan mascara that visibly volumizes, lengthens, and define."
+ },
+ "slip-tint-undetectable-baked-setting-powder": {
+  "title": "Slip Tint Undetectable Baked Setting Powder",
+  "description": "A soft-focus finish, nothing cakey. Set your look for 8 hours with this unbelievably skin-like powder that is truly undetectable. A dewy finish. Made with squalane.",
+  "seo_title": "Slip Tint Undetectable Baked Setting Powder | MAREN",
+  "seo_description": "A soft-focus finish, nothing cakey. Set your look for 8 hours with this unbelievably skin-like powder that is truly undetectable. A dewy finish. Made."
+ },
+ "soulgazer": {
+  "title": "Soulgazer Eyeliner",
+  "description": "A considered essential. A matte finish. Made with hyaluronic acid.",
+  "seo_title": "Soulgazer Eyeliner | MAREN",
+  "seo_description": "A considered essential. A matte finish. Made with hyaluronic acid."
+ },
+ "tripeptide-plumping-lip-balm-pink-tint": {
+  "title": "Tripeptide Plumping Pink Lip Balm",
+  "description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0new,\u00a0buildable and universally flattering berry lip tint to power up your plump. A sheer finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Tripeptide Plumping Pink Lip Balm | MAREN",
+  "seo_description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0n."
+ },
+ "hydrobalm-tinted-lipstick-english-rose": {
+  "title": "HydroBalm Tinted Lipstick - English Rose",
+  "description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish. Made with hyaluronic acid.",
+  "seo_title": "HydroBalm Tinted Lipstick - English Rose | MAREN",
+  "seo_description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish."
+ },
+ "the-ethereal-baked-face-palette": {
+  "title": "The Ethereal Baked Face Palette Other Makeup",
+  "description": "A considered essential. Last year\u2019s solid-out artist palettes are back for a limited time. A satin finish.",
+  "seo_title": "The Ethereal Baked Face Palette Other Makeup | MAREN",
+  "seo_description": "A considered essential. Last year\u2019s solid-out artist palettes are back for a limited time. A satin finish."
+ },
+ "getset-blur-set-matte-powder-blush": {
+  "title": "GetSet Matte Powder Blush",
+  "description": "A worn-in flush. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish.",
+  "seo_title": "GetSet Matte Powder Blush | MAREN",
+  "seo_description": "A worn-in flush. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred sk."
+ },
+ "supersuede": {
+  "title": "Soft Matte Baked Powder Blush",
+  "description": "A worn-in flush. Super luxurious and super plush, Baked Powder Blush is the new standard for baked powder blush.",
+  "seo_title": "Soft Matte Baked Powder Blush | MAREN",
+  "seo_description": "A worn-in flush. Super luxurious and super plush, Baked Powder Blush is the new standard for baked powder blush."
  },
  "blush-is-life": {
   "title": "Blush Is Life",
@@ -257,101 +107,17 @@
   "seo_title": "Blush Is Life | MAREN",
   "seo_description": "A worn-in flush. Turned-on cheeks A clean, silky-smooth talc-free powder blush baked with squalane + hyaluronic acid in dimensional color duos for a h."
  },
- "the-big-brush": {
-  "title": "Big Brush",
-  "description": "A considered essential. A dense yet incredibly soft buffing and blending brush designed to achieve a smooth and seamless finish. A sheer finish.",
-  "seo_title": "Big Brush | MAREN",
-  "seo_description": "A considered essential. A dense yet incredibly soft buffing and blending brush designed to achieve a smooth and seamless finish. A sheer finish."
+ "tripeptide-plumping-lip-balm-mocha-tint": {
+  "title": "Tripeptide Plumping Mocha Brown Lip Balm",
+  "description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0new,\u00a0buildable and universally flattering berry lip tint to power up your plump. A sheer finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Tripeptide Plumping Mocha Brown Lip Balm | MAREN",
+  "seo_description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, our viral, award-winning Tripeptide Plumping Lip Balm is back in a\u00a0n."
  },
- "plump-juicy-cleansing-oil": {
-  "title": "Plump + Juicy Cleansing Oil",
-  "description": "Daily care that earns its place. Step 1 of the Double Cleanse A lightweight cleansing oil with a luxe, cushiony glide that dissolves impurities, makeup + sunscreen for super soft, soothed skin. Made with ceramide, spf.",
-  "seo_title": "Plump + Juicy Cleansing Oil | MAREN",
-  "seo_description": "Daily care that earns its place. Step 1 of the Double Cleanse A lightweight cleansing oil with a luxe, cushiony glide that dissolves impurities, makeu."
- },
- "face-trace-contour-stick-truffle": {
-  "title": "Face Trace Contour Stick - Truffle",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Truffle | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "oneliner-multi-liner": {
-  "title": "Oneliner Lip Liner",
-  "description": "A considered essential. A creamy, high-pigment, non-drying matte liner for lips, eyes, and cheeks to create infinite looks. A matte finish.",
-  "seo_title": "Oneliner Lip Liner | MAREN",
-  "seo_description": "A considered essential. A creamy, high-pigment, non-drying matte liner for lips, eyes, and cheeks to create infinite looks. A matte finish."
- },
- "lightshift-cream-highlighter-non-comedogenic": {
-  "title": "Lightshift Cream Highlighter",
-  "description": "Light, placed with intention. A dewy finish.",
-  "seo_title": "Lightshift Cream Highlighter | MAREN",
-  "seo_description": "Light, placed with intention. A dewy finish."
- },
- "eye-shadow-ii-brush": {
-  "title": "Eye Shadow II Brush",
-  "description": "A considered essential. Fluffy bristles and a soft rounded shape make this eye shadow brush a blending essential.",
-  "seo_title": "Eye Shadow II Brush | MAREN",
-  "seo_description": "A considered essential. Fluffy bristles and a soft rounded shape make this eye shadow brush a blending essential."
- },
- "sunshift-cream-bronzer": {
-  "title": "Sunshift Cream Bronzer",
-  "description": "Warmth that reads natural. A dewy finish.",
-  "seo_title": "Sunshift Cream Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. A dewy finish."
- },
- "in-frame-clear-eyebrow-gel": {
-  "title": "In Frame Brow Gel",
-  "description": "A considered essential.",
-  "seo_title": "In Frame Brow Gel | MAREN",
-  "seo_description": "A considered essential."
- },
- "try-sos-daily-rescue-facial-spray": {
-  "title": "SOS Rescue Spray - Standard Size Face Mist",
-  "description": "A considered essential. What is it? A soothing, purifying, and repairing daily rescue spray for angry, stressed out skin.",
-  "seo_title": "SOS Rescue Spray - Standard Size Face Mist | MAREN",
-  "seo_description": "A considered essential. What is it? A soothing, purifying, and repairing daily rescue spray for angry, stressed out skin."
- },
- "clean-line-gel-eyeliner": {
-  "title": "Line Gel Liner",
-  "description": "A considered essential. What it is: A clean, thoughtfully formulated gel eyeliner.",
-  "seo_title": "Line Gel Liner | MAREN",
-  "seo_description": "A considered essential. What it is: A clean, thoughtfully formulated gel eyeliner."
- },
- "slip-tint-concealer": {
-  "title": "Slip Tint Radiant All-over Concealer",
-  "description": "Skin, only more even. hello to Slip Tint Radiant All-Over Concealer, your multi-tasking essential for instant skin confidence. A dewy finish. Made with hyaluronic acid, niacinamide.",
-  "seo_title": "Slip Tint Radiant All-over Concealer | MAREN",
-  "seo_description": "Skin, only more even. hello to Slip Tint Radiant All-Over Concealer, your multi-tasking essential for instant skin confidence. A dewy finish. Made wit."
- },
- "airset": {
-  "title": "Setting Powder",
-  "description": "A soft-focus finish, nothing cakey. Set, smooth, and diffuse with our unbelievably weightless and radiant loose powder. A dewy finish. Made with squalane.",
-  "seo_title": "Setting Powder | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Set, smooth, and diffuse with our unbelievably weightless and radiant loose powder. A dewy finish. Made with squal."
- },
- "supersuede": {
-  "title": "Soft Matte Baked Powder Blush",
-  "description": "A soft-focus finish, nothing cakey. Super luxurious and super plush, Baked Powder Blush is the new standard for baked powder blush.",
-  "seo_title": "Soft Matte Baked Powder Blush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Super luxurious and super plush, Baked Powder Blush is the new standard for baked powder blush."
- },
- "revealer-extra-bright": {
-  "title": "Extra Bright Concealer",
-  "description": "Quiet coverage where you want it. Supercharged dark circle eraser A full-coverage dark circle corrector, brightening + depuffing serum in one that's the fastest way to transform tired eyes. Made with peptide.",
-  "seo_title": "Extra Bright Concealer | MAREN",
-  "seo_description": "Quiet coverage where you want it. Supercharged dark circle eraser A full-coverage dark circle corrector, brightening + depuffing serum in one that's t."
- },
- "shineon-milky-lip-jelly": {
-  "title": "Milky Lip Oil Jelly",
-  "description": "Glassy shine, real care. The shine of a gloss, comfort of a balm + a touch of color.",
-  "seo_title": "Milky Lip Oil Jelly | MAREN",
-  "seo_description": "Glassy shine, real care. The shine of a gloss, comfort of a balm + a touch of color."
- },
- "lip-suede-matte-lipstick-je-reve": {
-  "title": "Lip Suede Matte Lipstick - Je R\u00eave",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Je R\u00eave | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "hydrobalm-tinted-lipstick-ballerine": {
+  "title": "HydroBalm Tinted Lipstick - Ballerine",
+  "description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish. Made with hyaluronic acid.",
+  "seo_title": "HydroBalm Tinted Lipstick - Ballerine | MAREN",
+  "seo_description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish."
  },
  "soft-focus-blurring-powder-blush": {
   "title": "Soft Focus Blurring Blush",
@@ -359,455 +125,35 @@
   "seo_title": "Soft Focus Blurring Blush | MAREN",
   "seo_description": "A worn-in flush. Featherweight color meets a soft-focus filter. A satin finish. Made with squalane."
  },
- "guld-kuppen-brush-cup": {
-  "title": "Guld Kuppen Brush Cup",
-  "description": "A considered essential. This timelessly modern brush cup is the vanity accessory you didn\u2019t know you needed.",
-  "seo_title": "Guld Kuppen Brush Cup | MAREN",
-  "seo_description": "A considered essential. This timelessly modern brush cup is the vanity accessory you didn\u2019t know you needed."
- },
- "mascara-101": {
-  "title": "Mascara 101",
-  "description": "Definition without the drama. The perfect pick-me-up for long, lifted lashes.",
-  "seo_title": "Mascara 101 | MAREN",
-  "seo_description": "Definition without the drama. The perfect pick-me-up for long, lifted lashes."
- },
- "plump-juicy-vegan-collagen-spray-on-serum": {
-  "title": "Plump + Juicy Vegan Collagen Spray-on Serum",
-  "description": "Daily care that earns its place.",
-  "seo_title": "Plump + Juicy Vegan Collagen Spray-on Serum | MAREN",
-  "seo_description": "Daily care that earns its place."
- },
- "face-trace-contour-stick-biscuit": {
-  "title": "Face Trace Contour Stick - Biscuit",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Biscuit | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-mink": {
-  "title": "Lip Shape Lip Liner - Mink",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Mink | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-nectar": {
-  "title": "Lit Up Highlight Stick - Nectar",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Nectar | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "eye-shadow-i-brush": {
-  "title": "Eye Shadow I Brush",
-  "description": "A considered essential. This multi-tasking eye shadow brush with tapered, flat bristles is made for effortless color application.",
-  "seo_title": "Eye Shadow I Brush | MAREN",
-  "seo_description": "A considered essential. This multi-tasking eye shadow brush with tapered, flat bristles is made for effortless color application."
- },
- "bronzino-illuminating-bronzer": {
-  "title": "Bronzino Cream Bronzer",
-  "description": "Warmth that reads natural. An illuminating cream bronzer that adds instant warmth and a subtle shimmer for that healthy fresh-from-vacay glow. A dewy finish.",
-  "seo_title": "Bronzino Cream Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. An illuminating cream bronzer that adds instant warmth and a subtle shimmer for that healthy fresh-from-vacay glow. A dewy."
- },
- "brow-pop-nano": {
-  "title": "Brow Pop Nano",
-  "description": "A considered essential.",
-  "seo_title": "Brow Pop Nano | MAREN",
-  "seo_description": "A considered essential."
- },
- "sos-daily-rescue-facial-spray-travel": {
-  "title": "Travel SOS Rescue Spray Face Mist",
-  "description": "A considered essential. Free shipping for orders $30+ What is it? A soothing, purifying, and repairing daily rescue spray for angry, stressed out skin. Made with hyaluronic acid, ceramide.",
-  "seo_title": "Travel SOS Rescue Spray Face Mist | MAREN",
-  "seo_description": "A considered essential. Free shipping for orders $30+ What is it? A soothing, purifying, and repairing daily rescue spray for angry, stressed out skin."
- },
- "glowy-super-skin-tint-foundation": {
-  "title": "Glowy Super Skin Tint Foundation",
-  "description": "Skin, only more even. 85% skincare serum, 15% weightless pigment for 100% your best skin ever. A dewy finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Glowy Super Skin Tint Foundation | MAREN",
-  "seo_description": "Skin, only more even. 85% skincare serum, 15% weightless pigment for 100% your best skin ever. A dewy finish. Made with hyaluronic acid, peptide."
- },
- "impressionist-multistick": {
-  "title": "Multistick Blush",
-  "description": "A worn-in flush.",
-  "seo_title": "Multistick Blush | MAREN",
-  "seo_description": "A worn-in flush."
- },
- "soft-focus-setting-powder": {
-  "title": "Soft Focus Setting Powder",
-  "description": "A soft-focus finish, nothing cakey. A dewy finish.",
-  "seo_title": "Soft Focus Setting Powder | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A dewy finish."
- },
- "vital-skincare-concealer-atelier-t3": {
-  "title": "Vital Skincare Concealer - Atelier T3",
-  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Vital Skincare Concealer - Atelier T3 | MAREN",
-  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
- },
- "lipfuel": {
-  "title": "Lipfuel Lip Balm",
-  "description": "Glassy shine, real care. Made with hyaluronic acid.",
-  "seo_title": "Lipfuel Lip Balm | MAREN",
-  "seo_description": "Glassy shine, real care. Made with hyaluronic acid."
- },
- "lip-suede-matte-lipstick-mimi": {
-  "title": "Lip Suede Matte Lipstick - Mimi",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Mimi | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
- },
- "beachplease-luminous-tinted-balm-blush": {
-  "title": "Beachplease Cream Blush",
-  "description": "A worn-in flush. A silicone-free, multi-use cream blush that blends seamlessly for a natural luminous finish. A dewy finish.",
-  "seo_title": "Beachplease Cream Blush | MAREN",
-  "seo_description": "A worn-in flush. A silicone-free, multi-use cream blush that blends seamlessly for a natural luminous finish. A dewy finish."
- },
- "revealer-dual-ended-makeup-blender": {
-  "title": "Dual-ended Makeup Blender Brush",
-  "description": "A considered essential. The Ultimate Beauty Blender for Revealer Formulas.",
-  "seo_title": "Dual-ended Makeup Blender Brush | MAREN",
-  "seo_description": "A considered essential. The Ultimate Beauty Blender for Revealer Formulas."
- },
- "limitless-lash-lengthening-mascara": {
-  "title": "Limitless Lash Mascara",
-  "description": "Definition without the drama.",
-  "seo_title": "Limitless Lash Mascara | MAREN",
-  "seo_description": "Definition without the drama."
- },
- "bright-start-retinol-alternative-brightening-eye-cream": {
-  "title": "Bright Start Retinol Alternative Eye Cream",
-  "description": "Daily care that earns its place. Slow down your morning and wake up eyes with a potent eye cream that delivers the benefits of retinol without the drawbacks. Made with retinol.",
-  "seo_title": "Bright Start Retinol Alternative Eye Cream | MAREN",
-  "seo_description": "Daily care that earns its place. Slow down your morning and wake up eyes with a potent eye cream that delivers the benefits of retinol without the dra."
- },
- "face-trace-contour-stick-ganache": {
-  "title": "Face Trace Contour Stick - Ganache",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Ganache | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-lou-lou": {
-  "title": "Lip Shape Lip Liner - Lou Lou",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Lou Lou | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-brulee": {
-  "title": "Lit Up Highlight Stick - Br\u00fbl\u00e9e",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Br\u00fbl\u00e9e | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "the-necessary-eyeshadow-palette": {
-  "title": "Necessary Eyeshadow Palette",
-  "description": "A considered essential. What it is: Our 6 pan, Talc-free and cleanly formulated powder eyeshadow palettes have a buttery texture that allows for a smooth application. A matte finish.",
-  "seo_title": "Necessary Eyeshadow Palette | MAREN",
-  "seo_description": "A considered essential. What it is: Our 6 pan, Talc-free and cleanly formulated powder eyeshadow palettes have a buttery texture that allows for a smo."
- },
- "sun-tone-bronzing-drops-parfait-2": {
-  "title": "Sun Tone Bronzing Drops - Soleil Parfait 2 Bronzer",
-  "description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish.",
-  "seo_title": "Sun Tone Bronzing Drops - Soleil Parfait 2 Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish."
- },
- "bonne-brow-defining-pencil-clay": {
-  "title": "Bonne Brow Defining Pencil - Clay",
-  "description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full.",
-  "seo_title": "Bonne Brow Defining Pencil - Clay | MAREN",
-  "seo_description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full."
- },
- "sos-faceguard-spf-30": {
-  "title": "SOS Faceguard SPF 30 Sunscreen Pa+++",
-  "description": "Protection that disappears into skin. A daily SPF to rescue you from the rest. Made with spf.",
-  "seo_title": "SOS Faceguard SPF 30 Sunscreen Pa+++ | MAREN",
-  "seo_description": "Protection that disappears into skin. A daily SPF to rescue you from the rest. Made with spf."
- },
- "sos-daily-facial-rescue-spray": {
-  "title": "SOS Rescue Spray Face Mist",
-  "description": "A considered essential. Got angry skin? Not on our watch.",
-  "seo_title": "SOS Rescue Spray Face Mist | MAREN",
-  "seo_description": "A considered essential. Got angry skin? Not on our watch."
- },
- "slip-tint-tinted-moisturizer": {
-  "title": "Slip Tint Tinted Moisturizer",
-  "description": "Skin, only more even. Slip into something effortless, award-winning, and multitasking. A dewy finish. Made with hyaluronic acid, spf.",
-  "seo_title": "Slip Tint Tinted Moisturizer | MAREN",
-  "seo_description": "Skin, only more even. Slip into something effortless, award-winning, and multitasking. A dewy finish. Made with hyaluronic acid, spf."
- },
- "wet-stick": {
-  "title": "Wet Stick",
-  "description": "A worn-in flush. A sheer finish. Made with squalane, ceramide.",
-  "seo_title": "Wet Stick | MAREN",
-  "seo_description": "A worn-in flush. A sheer finish. Made with squalane, ceramide."
- },
- "mini-cityset-lightweight-setting-spray": {
-  "title": "Mini Cityset Lightweight Setting Spray Powder",
-  "description": "A soft-focus finish, nothing cakey. 16-hour wear, comfortable, and travel friendly. A dewy finish.",
-  "seo_title": "Mini Cityset Lightweight Setting Spray Powder | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. 16-hour wear, comfortable, and travel friendly. A dewy finish."
- },
- "vital-skincare-concealer-atelier-m2": {
-  "title": "Vital Skincare Concealer - Atelier M2",
-  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Vital Skincare Concealer - Atelier M2 | MAREN",
-  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
- },
- "wet-lip-oil-gloss": {
-  "title": "Wet Lip Oil Gloss",
-  "description": "Glassy shine, real care.",
-  "seo_title": "Wet Lip Oil Gloss | MAREN",
-  "seo_description": "Glassy shine, real care."
- },
- "lip-suede-matte-lipstick-figue": {
-  "title": "Lip Suede Matte Lipstick - Figue",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Figue | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
- },
- "the-blush-stack": {
-  "title": "Blush Stack",
-  "description": "A worn-in flush. The art of blush is about having options. A dewy finish.",
-  "seo_title": "Blush Stack | MAREN",
-  "seo_description": "A worn-in flush. The art of blush is about having options. A dewy finish."
- },
- "blender-ii-brush": {
-  "title": "Blender II Brush",
-  "description": "A considered essential. Handmade in Japan with luxuriously soft, recycled synthetic bristles and a lacquered wooden handle in Sun Tone\u2019s signature blue.",
-  "seo_title": "Blender II Brush | MAREN",
-  "seo_description": "A considered essential. Handmade in Japan with luxuriously soft, recycled synthetic bristles and a lacquered wooden handle in Sun Tone\u2019s signature blu."
- },
- "gift-with-purchase-makewaves-mini-mascara": {
-  "title": "Mini Lengthening Mascara In Jet",
-  "description": "Definition without the drama. What is it? A safe for sensitive eyes, vegan mascara that lengthens, defines, and holds a curl with Aquaflex Technology for amped up, natural looking lashes.",
-  "seo_title": "Mini Lengthening Mascara In Jet | MAREN",
-  "seo_description": "Definition without the drama. What is it? A safe for sensitive eyes, vegan mascara that lengthens, defines, and holds a curl with Aquaflex Technology."
- },
- "barrier-build-skin-protectant-cream": {
-  "title": "Barrier Build Skin Protectant Cream",
-  "description": "Daily care that earns its place.",
-  "seo_title": "Barrier Build Skin Protectant Cream | MAREN",
-  "seo_description": "Daily care that earns its place."
- },
- "contour-fan-brush": {
-  "title": "Contour Fan Brush",
-  "description": "Structure, softly. Play > Precision Vegan, fluffy, fan-shaped brush that sculpts and bronzes like a dream.",
-  "seo_title": "Contour Fan Brush | MAREN",
-  "seo_description": "Structure, softly. Play > Precision Vegan, fluffy, fan-shaped brush that sculpts and bronzes like a dream."
- },
- "lip-shape-lip-liner-biscuit": {
-  "title": "Lip Shape Lip Liner - Biscuit",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Biscuit | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "superdew-shimmer-free-highlighter": {
-  "title": "Superdew Highlighter",
-  "description": "Light, placed with intention. A clear highlight balm with no shimmer or glitter for that healthy, glassy skin effect.",
-  "seo_title": "Superdew Highlighter | MAREN",
-  "seo_description": "Light, placed with intention. A clear highlight balm with no shimmer or glitter for that healthy, glassy skin effect."
- },
- "eye-pods-eye-shadow-toujours": {
-  "title": "Eye Pods Eye Shadow - Toujours",
-  "description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish.",
-  "seo_title": "Eye Pods Eye Shadow - Toujours | MAREN",
-  "seo_description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish."
- },
- "the-sun-show": {
-  "title": "Sun Show Bronzer",
-  "description": "Warmth that reads natural. A dewy finish.",
-  "seo_title": "Sun Show Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. A dewy finish."
- },
- "bonne-brow-defining-pencil-slate": {
-  "title": "Bonne Brow Defining Pencil - Slate",
-  "description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full.",
-  "seo_title": "Bonne Brow Defining Pencil - Slate | MAREN",
-  "seo_description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full."
- },
- "dreambeam-mini": {
-  "title": "Mini Dreambeam SPF 40 Pa++++",
-  "description": "Protection that disappears into skin. SPF Skincare Meets Dreamy Makeup Prep Clean, comfy mineral sunscreen packed with ceramides + peptides to moisturize, smooth, brighten, and create the dreamiest makeup base. Made with peptide, ceramide, spf.",
-  "seo_title": "Mini Dreambeam SPF 40 Pa++++ | MAREN",
-  "seo_description": "Protection that disappears into skin. SPF Skincare Meets Dreamy Makeup Prep Clean, comfy mineral sunscreen packed with ceramides + peptides to moistur."
- },
- "sos-store-our-stuff-makeup-bag": {
-  "title": "SOS (store. Our. Stuff.) Makeup Bag Face Mist",
-  "description": "A considered essential. This lightweight, padded mesh bag is designed for function and generously sized to hold all your beauty essentials (and then some).",
-  "seo_title": "SOS (store. Our. Stuff.) Makeup Bag Face Mist | MAREN",
-  "seo_description": "A considered essential. This lightweight, padded mesh bag is designed for function and generously sized to hold all your beauty essentials (and then s."
- },
- "revealer-skin-improving-foundation-spf-25": {
-  "title": "Skin-improving Foundation SPF 25",
-  "description": "Skin, only more even. Clean SPF Foundation for Skincare Freaks. Made with hyaluronic acid, niacinamide, squalane.",
-  "seo_title": "Skin-improving Foundation SPF 25 | MAREN",
-  "seo_description": "Skin, only more even. Clean SPF Foundation for Skincare Freaks. Made with hyaluronic acid, niacinamide, squalane."
- },
- "the-ethereal-baked-face-palette": {
-  "title": "Ethereal Baked Face Palette Eyeshadow",
-  "description": "A considered essential. Last year\u2019s solid-out artist palettes are back for a limited time. A satin finish.",
-  "seo_title": "Ethereal Baked Face Palette Eyeshadow | MAREN",
-  "seo_description": "A considered essential. Last year\u2019s solid-out artist palettes are back for a limited time. A satin finish."
- },
- "vital-skincare-concealer-atelier-l4": {
-  "title": "Vital Skincare Concealer - Atelier L4",
-  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Vital Skincare Concealer - Atelier L4 | MAREN",
-  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
- },
- "overglaze-hydrating-tinted-lip-gloss": {
-  "title": "Overglaze Hydrating Lip Gloss",
-  "description": "Glassy shine, real care. Glaze lips in dimensional shine + 24-hour hydration. A sheer finish.",
-  "seo_title": "Overglaze Hydrating Lip Gloss | MAREN",
-  "seo_description": "Glassy shine, real care. Glaze lips in dimensional shine + 24-hour hydration. A sheer finish."
- },
- "lip-suede-matte-lipstick-petal": {
-  "title": "Lip Suede Matte Lipstick - Petal",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Petal | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
- },
- "baby-cheeks-blush-stick-dou-dou": {
-  "title": "Cheeks Blush Stick - Dou Dou",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Dou Dou | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
- },
- "baby-blender-brush": {
-  "title": "Blender Brush",
-  "description": "A considered essential. A specialized blending brush and perfect match to Baby Cheeks blush.",
-  "seo_title": "Blender Brush | MAREN",
-  "seo_description": "A considered essential. A specialized blending brush and perfect match to Baby Cheeks blush."
- },
- "shiny-objects": {
-  "title": "Shiny Objects Mascara",
-  "description": "Definition without the drama. Pure beam of light that lets your skin shine through A wet-pressed powder highlighter that melts into skin for a transparent, glistening finish on face and eyes. A dewy finish.",
-  "seo_title": "Shiny Objects Mascara | MAREN",
-  "seo_description": "Definition without the drama. Pure beam of light that lets your skin shine through A wet-pressed powder highlighter that melts into skin for a transpa."
- },
- "face-trace-contour-stick-kola": {
-  "title": "Face Trace Contour Stick - Kola",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Kola | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-sable": {
-  "title": "Lip Shape Lip Liner - Sable",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Sable | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-lit": {
-  "title": "Lit Up Highlight Stick - Lit",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Lit | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "eye-pods-eye-shadow-rendez-vous": {
-  "title": "Eye Pods Eye Shadow - Rendez-vous",
-  "description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish.",
-  "seo_title": "Eye Pods Eye Shadow - Rendez-vous | MAREN",
-  "seo_description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish."
- },
- "sun-tone-bronzing-drops-parfait-3": {
-  "title": "Sun Tone Bronzing Drops - Soleil Parfait 3 Bronzer",
-  "description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish.",
-  "seo_title": "Sun Tone Bronzing Drops - Soleil Parfait 3 Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish."
- },
- "bonne-brow-defining-pencil-bark": {
-  "title": "Bonne Brow Defining Pencil - Bark",
-  "description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full.",
-  "seo_title": "Bonne Brow Defining Pencil - Bark | MAREN",
-  "seo_description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full."
- },
- "chemistry-deodorant": {
-  "title": "Chemistry Deodorant Face Mist",
-  "description": "A considered essential. Your pits need an AHA moment A clean stain-free serum deodorant with a unique blend of AHAs for the ultimate BO-fighting treatment.",
-  "seo_title": "Chemistry Deodorant Face Mist | MAREN",
-  "seo_description": "A considered essential. Your pits need an AHA moment A clean stain-free serum deodorant with a unique blend of AHAs for the ultimate BO-fighting treat."
- },
- "air-brow-tinted": {
-  "title": "Air Brow - Tinted",
-  "description": "Skin, only more even. A sheer finish.",
-  "seo_title": "Air Brow - Tinted | MAREN",
-  "seo_description": "Skin, only more even. A sheer finish."
- },
- "multi-stick-cream-blush-stick-lip-cheek-tint": {
-  "title": "Multi-stick Blush",
-  "description": "A worn-in flush. What it is: A buildable wash of color for cheeks and lips, now with 12 swipe-and-go shades. A dewy finish.",
-  "seo_title": "Multi-stick Blush | MAREN",
-  "seo_description": "A worn-in flush. What it is: A buildable wash of color for cheeks and lips, now with 12 swipe-and-go shades. A dewy finish."
- },
- "the-all-over-powder-brush": {
-  "title": "All-over Powder Brush",
-  "description": "A soft-focus finish, nothing cakey. This artisanal brush is thoughtfully designed to pair seamlessly with Slip Tint Baked Setting Powder. A sheer finish.",
-  "seo_title": "All-over Powder Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. This artisanal brush is thoughtfully designed to pair seamlessly with Slip Tint Baked Setting Powder. A sheer fini."
- },
- "vital-skincare-concealer-atelier-d3": {
-  "title": "Vital Skincare Concealer - Atelier D3",
-  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Vital Skincare Concealer - Atelier D3 | MAREN",
-  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
- },
- "lip-pulse": {
-  "title": "Lip Pulse",
-  "description": "Glassy shine, real care. Lips in their fullest expression A high-impact clean lip plumper with a satisfying warming-cooling tingle for visibly fuller, glassy lips, always nourishing, not sticky or drying.",
-  "seo_title": "Lip Pulse | MAREN",
-  "seo_description": "Glassy shine, real care. Lips in their fullest expression A high-impact clean lip plumper with a satisfying warming-cooling tingle for visibly fuller,."
- },
- "lip-suede-matte-lipstick-rue": {
-  "title": "Lip Suede Matte Lipstick - Rue",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Rue | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
- },
- "baby-cheeks-blush-stick-petal": {
-  "title": "Cheeks Blush Stick - Petal",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Petal | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
- },
- "liquid-foundation-blender-brush": {
-  "title": "Liquid Blender Brush",
-  "description": "A considered essential. An essential blending brush for liquid formulas and ideal companion to Vital Skincare Complexion Drops.",
-  "seo_title": "Liquid Blender Brush | MAREN",
-  "seo_description": "A considered essential. An essential blending brush for liquid formulas and ideal companion to Vital Skincare Complexion Drops."
- },
- "face-trace-contour-stick-whiskey": {
-  "title": "Face Trace Contour Stick - Whiskey",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Whiskey | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-coucou": {
-  "title": "Lip Shape Lip Liner - Coucou",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Coucou | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-petal": {
-  "title": "Lit Up Highlight Stick - Petal",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Petal | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "eye-pods-eye-shadow-les-nuits": {
-  "title": "Eye Pods Eye Shadow - Les Nuits",
-  "description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish.",
-  "seo_title": "Eye Pods Eye Shadow - Les Nuits | MAREN",
-  "seo_description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish."
- },
- "sun-tone-bronzing-drops-parfait-4": {
-  "title": "Sun Tone Bronzing Drops - Soleil Parfait 4 Bronzer",
-  "description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish.",
-  "seo_title": "Sun Tone Bronzing Drops - Soleil Parfait 4 Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish."
- },
- "bonne-brow-defining-pencil-stone": {
-  "title": "Bonne Brow Defining Pencil - Stone",
-  "description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full.",
-  "seo_title": "Bonne Brow Defining Pencil - Stone | MAREN",
-  "seo_description": "A considered essential. The ultimate \u2018Bonne Brow.\u2019 Buildable finish goes from soft and defined to bold and full."
+ "t28-x-toni-bravo-getset-powder-blush": {
+  "title": "Toni Bravo GetSet Matte Powder Blush",
+  "description": "A worn-in flush. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred skin. A matte finish.",
+  "seo_title": "Toni Bravo GetSet Matte Powder Blush | MAREN",
+  "seo_description": "A worn-in flush. The setting blush, combining the benefits of a setting powder with a richly pigmented blush for 12-hr fade-proof color and blurred sk."
+ },
+ "lip-liner-101": {
+  "title": "Lip Liner 101",
+  "description": "A considered essential. Rethink everything you know about lip liner. A matte finish. Made with shea butter, jojoba.",
+  "seo_title": "Lip Liner 101 | MAREN",
+  "seo_description": "A considered essential. Rethink everything you know about lip liner. A matte finish. Made with shea butter, jojoba."
+ },
+ "hotliner": {
+  "title": "Hotliner Lip Liner",
+  "description": "A considered essential. A satin finish. Made with hyaluronic acid.",
+  "seo_title": "Hotliner Lip Liner | MAREN",
+  "seo_description": "A considered essential. A satin finish. Made with hyaluronic acid."
+ },
+ "tripeptide-plumping-lip-balm": {
+  "title": "Tripeptide Plumping Lip Balm",
+  "description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, Tripeptide Plumping Lip Balm hydrates, repairs and plumps lips leaving them looking naturally fuller and healthier. Made with hyaluronic acid, peptide.",
+  "seo_title": "Tripeptide Plumping Lip Balm | MAREN",
+  "seo_description": "A considered essential. Clinically proven to plump lips by up to 40% in 4 weeks*, Tripeptide Plumping Lip Balm hydrates, repairs and plumps lips leavi."
+ },
+ "hydrobalm-tinted-lipstick-nectar": {
+  "title": "HydroBalm Tinted Lipstick - Nectar",
+  "description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish. Made with hyaluronic acid.",
+  "seo_title": "HydroBalm Tinted Lipstick - Nectar | MAREN",
+  "seo_description": "Comfortable colour that stays put. All the cushion-soft comfort of a balm, with a sheer, buildable tint and a hydrated, subtle sheen. A sheer finish."
  },
  "true-skin-serum-foundation-medium-coverage": {
   "title": "True Skin Serum Foundation",
@@ -815,17 +161,143 @@
   "seo_title": "True Skin Serum Foundation | MAREN",
   "seo_description": "Skin, only more even. A dewy finish. Made with niacinamide."
  },
- "lip-sketch-hydrating-crayon-lipstick-lip-liner": {
-  "title": "Lip Sketch Hydrating Crayon",
-  "description": "A considered essential. The creamy comfort of a lipstick. A matte finish.",
-  "seo_title": "Lip Sketch Hydrating Crayon | MAREN",
-  "seo_description": "A considered essential. The creamy comfort of a lipstick. A matte finish."
+ "getset-blur-set-pressed-powder": {
+  "title": "GetSet Pressed Powder",
+  "description": "A soft-focus finish, nothing cakey. A talc-free, safe for sensitive skin setting powder that blurs and smooths skin, and makes any base transfer- and sweat-proof.",
+  "seo_title": "GetSet Pressed Powder | MAREN",
+  "seo_description": "A soft-focus finish, nothing cakey. A talc-free, safe for sensitive skin setting powder that blurs and smooths skin, and makes any base transfer- and."
  },
- "the-powder-blush-brush": {
-  "title": "Powder Blush Brush",
-  "description": "A soft-focus finish, nothing cakey. This sleek brush is thoughtfully designed to pair seamlessly with Baked Powder Blush.",
-  "seo_title": "Powder Blush Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. This sleek brush is thoughtfully designed to pair seamlessly with Baked Powder Blush."
+ "dew-bronze": {
+  "title": "Dew Bronze Bronzer",
+  "description": "Warmth that reads natural.",
+  "seo_title": "Dew Bronze Bronzer | MAREN",
+  "seo_description": "Warmth that reads natural."
+ },
+ "weightless-lip-color": {
+  "title": "Weightless Lip Color",
+  "description": "Comfortable colour that stays put. A satin finish.",
+  "seo_title": "Weightless Lip Color | MAREN",
+  "seo_description": "Comfortable colour that stays put. A satin finish."
+ },
+ "vital-skincare-concealer-atelier-t3": {
+  "title": "Vital Skincare Concealer - Atelier T3",
+  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Vital Skincare Concealer - Atelier T3 | MAREN",
+  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
+ },
+ "balmy-tint-hydrating-tinted-lip-balm": {
+  "title": "Balmy Tint Hydrating Lip Balm",
+  "description": "A considered essential. What it is: A clean, tinted lip balm with potent levels of moisture-boosting ingredients and sheer, buildable color. A sheer finish. Made with shea butter.",
+  "seo_title": "Balmy Tint Hydrating Lip Balm | MAREN",
+  "seo_description": "A considered essential. What it is: A clean, tinted lip balm with potent levels of moisture-boosting ingredients and sheer, buildable color. A sheer f."
+ },
+ "sos-lipsoftie-lip-treatment": {
+  "title": "SOS Lip Treatment",
+  "description": "A considered essential. A clinically-tested + derm-approved vegan lip treatment that delivers the intense hydration of a lip mask to rescue dry, chapped lips.",
+  "seo_title": "SOS Lip Treatment | MAREN",
+  "seo_description": "A considered essential. A clinically-tested + derm-approved vegan lip treatment that delivers the intense hydration of a lip mask to rescue dry, chapp."
+ },
+ "slip-tint-concealer": {
+  "title": "Slip Tint Radiant All-Over Concealer",
+  "description": "Quiet coverage where you want it. hello to Slip Tint Radiant All-Over Concealer, your multi-tasking essential for instant skin confidence. A dewy finish. Made with hyaluronic acid, niacinamide.",
+  "seo_title": "Slip Tint Radiant All-Over Concealer | MAREN",
+  "seo_description": "Quiet coverage where you want it. hello to Slip Tint Radiant All-Over Concealer, your multi-tasking essential for instant skin confidence. A dewy fini."
+ },
+ "wet-stick": {
+  "title": "Wet Stick",
+  "description": "A considered essential. A sheer finish. Made with squalane, ceramide.",
+  "seo_title": "Wet Stick | MAREN",
+  "seo_description": "A considered essential. A sheer finish. Made with squalane, ceramide."
+ },
+ "vital-skincare-concealer-atelier-m2": {
+  "title": "Vital Skincare Concealer - Atelier M2",
+  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Vital Skincare Concealer - Atelier M2 | MAREN",
+  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
+ },
+ "in-full-micro-tip-eyebrow-pencil": {
+  "title": "In Full Micro-Tip Brow Pencil",
+  "description": "A considered essential. The art of the arch, made easy.",
+  "seo_title": "In Full Micro-Tip Brow Pencil | MAREN",
+  "seo_description": "A considered essential. The art of the arch, made easy."
+ },
+ "lipsoftie-lip-treatment": {
+  "title": "Lip Treatment",
+  "description": "A considered essential. The hydration of a lip mask + a sweet sheer tint for instant comfort and smooth, softie lips. A sheer finish.",
+  "seo_title": "Lip Treatment | MAREN",
+  "seo_description": "A considered essential. The hydration of a lip mask + a sweet sheer tint for instant comfort and smooth, softie lips. A sheer finish."
+ },
+ "glossybounce": {
+  "title": "Glossy Other Makeup",
+  "description": "A considered essential. The slip of a lip oil meets the high-shine of a tinted gloss. A sheer finish.",
+  "seo_title": "Glossy Other Makeup | MAREN",
+  "seo_description": "A considered essential. The slip of a lip oil meets the high-shine of a tinted gloss. A sheer finish."
+ },
+ "lipfuel": {
+  "title": "LipFuel Lip Balm",
+  "description": "A considered essential. Made with hyaluronic acid.",
+  "seo_title": "LipFuel Lip Balm | MAREN",
+  "seo_description": "A considered essential. Made with hyaluronic acid."
+ },
+ "vital-skincare-concealer-atelier-l4": {
+  "title": "Vital Skincare Concealer - Atelier L4",
+  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Vital Skincare Concealer - Atelier L4 | MAREN",
+  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
+ },
+ "multi-stick-cream-blush-stick-lip-cheek-tint": {
+  "title": "Multi-Stick Other Makeup",
+  "description": "A considered essential. What it is: A buildable wash of color for cheeks and lips, now with 12 swipe-and-go shades. A dewy finish.",
+  "seo_title": "Multi-Stick Other Makeup | MAREN",
+  "seo_description": "A considered essential. What it is: A buildable wash of color for cheeks and lips, now with 12 swipe-and-go shades. A dewy finish."
+ },
+ "shine-on-lip-gloss-jelly": {
+  "title": "ShineOn Lip Oil Jelly",
+  "description": "A considered essential. The shine of a gloss, comfort of a balm + a touch of color.",
+  "seo_title": "ShineOn Lip Oil Jelly | MAREN",
+  "seo_description": "A considered essential. The shine of a gloss, comfort of a balm + a touch of color."
+ },
+ "glow-sculpt": {
+  "title": "Cream Contour",
+  "description": "A considered essential. The flush of blush meets a radiant glow. A dewy finish.",
+  "seo_title": "Cream Contour | MAREN",
+  "seo_description": "A considered essential. The flush of blush meets a radiant glow. A dewy finish."
+ },
+ "revealer-skin-improving-foundation-spf-25": {
+  "title": "Revealer Skin-Improving Foundation SPF 25",
+  "description": "Skin, only more even. Clean SPF Foundation for Skincare Freaks. Made with hyaluronic acid, niacinamide, squalane.",
+  "seo_title": "Revealer Skin-Improving Foundation SPF 25 | MAREN",
+  "seo_description": "Skin, only more even. Clean SPF Foundation for Skincare Freaks. Made with hyaluronic acid, niacinamide, squalane."
+ },
+ "vital-skincare-concealer-atelier-d3": {
+  "title": "Vital Skincare Concealer - Atelier D3",
+  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Vital Skincare Concealer - Atelier D3 | MAREN",
+  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
+ },
+ "limitless-lash-lengthening-mascara": {
+  "title": "Limitless Lash Mascara",
+  "description": "Definition without the drama.",
+  "seo_title": "Limitless Lash Mascara | MAREN",
+  "seo_description": "Definition without the drama."
+ },
+ "shineon-milky-lip-jelly": {
+  "title": "ShineOn Milky Lip Oil Jelly",
+  "description": "A considered essential. The shine of a gloss, comfort of a balm + a touch of color.",
+  "seo_title": "ShineOn Milky Lip Oil Jelly | MAREN",
+  "seo_description": "A considered essential. The shine of a gloss, comfort of a balm + a touch of color."
+ },
+ "glowy-super-skin-tint-foundation": {
+  "title": "Glowy Super Skin Tint Foundation",
+  "description": "Skin, only more even. 85% skincare serum, 15% weightless pigment for 100% your best skin ever. A dewy finish. Made with hyaluronic acid, peptide.",
+  "seo_title": "Glowy Super Skin Tint Foundation | MAREN",
+  "seo_description": "Skin, only more even. 85% skincare serum, 15% weightless pigment for 100% your best skin ever. A dewy finish. Made with hyaluronic acid, peptide."
+ },
+ "brow-pop": {
+  "title": "Brow Pop",
+  "description": "A considered essential.",
+  "seo_title": "Brow Pop | MAREN",
+  "seo_description": "A considered essential."
  },
  "vital-skincare-concealer-atelier-l1": {
   "title": "Vital Skincare Concealer - Atelier L1",
@@ -833,89 +305,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier L1 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "plump-juicy-lip-booster": {
-  "title": "Plump + Juicy Lip Booster",
-  "description": "Glassy shine, real care. Full, cushiony, smooth like butter.",
-  "seo_title": "Plump + Juicy Lip Booster | MAREN",
-  "seo_description": "Glassy shine, real care. Full, cushiony, smooth like butter."
+ "super-serum-skin-tint-spf-30-tinted-moisturizer-uk": {
+  "title": "Super Serum Skin Tint SPF 30",
+  "description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 30 is an award-winning skin tint that delivers light coverage, potent skincare, and mineral SPF, all with a dewy finish for skin that looks and feels alive. A dewy finish. Made with spf.",
+  "seo_title": "Super Serum Skin Tint SPF 30 | MAREN",
+  "seo_description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 30 is an award-winning skin tint that delivers light coverage, potent skincare, and min."
  },
- "lip-suede-matte-lipstick-ma-biche": {
-  "title": "Lip Suede Matte Lipstick - Ma Biche",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Ma Biche | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "swipe-serum-concealer": {
+  "title": "Swipe Serum Concealer",
+  "description": "Skin, only more even. A hydrating concealer that glides on like a serum but has the medium-buildable coverage power to cover dark circles, redness, and blemishes.",
+  "seo_title": "Swipe Serum Concealer | MAREN",
+  "seo_description": "Skin, only more even. A hydrating concealer that glides on like a serum but has the medium-buildable coverage power to cover dark circles, redness, an."
  },
- "baby-cheeks-blush-stick-poppet": {
-  "title": "Cheeks Blush Stick - Poppet",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Poppet | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "airset": {
+  "title": "Setting Other Makeup",
+  "description": "A considered essential. Set, smooth, and diffuse with our unbelievably weightless and radiant loose powder. A dewy finish. Made with squalane.",
+  "seo_title": "Setting Other Makeup | MAREN",
+  "seo_description": "A considered essential. Set, smooth, and diffuse with our unbelievably weightless and radiant loose powder. A dewy finish. Made with squalane."
  },
- "spot-check-brush": {
-  "title": "Spot Check Brush",
-  "description": "A considered essential. Targeted coverage just where you need it.",
-  "seo_title": "Spot Check Brush | MAREN",
-  "seo_description": "A considered essential. Targeted coverage just where you need it."
- },
- "mini-soulgazer-mascara": {
-  "title": "Mini Soulgazer Mascara",
-  "description": "Definition without the drama. Lengthening mascara + lash-boosting peptide serum in 1 A lengthening mascara that builds without clumping, powered by a lash-boosting peptide serum for visibly longer, fuller lashes in 6\u20138 weeks. Made with peptide.",
-  "seo_title": "Mini Soulgazer Mascara | MAREN",
-  "seo_description": "Definition without the drama. Lengthening mascara + lash-boosting peptide serum in 1 A lengthening mascara that builds without clumping, powered by a."
- },
- "supreme-c-serum": {
-  "title": "Supr\u00eame C Serum",
-  "description": "Daily care that earns its place. This single-ingredient serum is made with 100% THD Ascorbate, a potent-yet-gentle Vitamin C derivative crafted in Japan. Made with vitamin c.",
-  "seo_title": "Supr\u00eame C Serum | MAREN",
-  "seo_description": "Daily care that earns its place. This single-ingredient serum is made with 100% THD Ascorbate, a potent-yet-gentle Vitamin C derivative crafted in Jap."
- },
- "face-trace-contour-stick-coco": {
-  "title": "Face Trace Contour Stick - Coco",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Coco | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-minou": {
-  "title": "Lip Shape Lip Liner - Minou",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Minou | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-garconne": {
-  "title": "Lit Up Highlight Stick - Gar\u00e7onne",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Gar\u00e7onne | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "eye-pods-eye-shadow-les-jours": {
-  "title": "Eye Pods Eye Shadow - Les Jours",
-  "description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish.",
-  "seo_title": "Eye Pods Eye Shadow - Les Jours | MAREN",
-  "seo_description": "A considered essential. Supremely wearable eye shadow trios for natural definition and a sumptuous finish. A matte finish."
- },
- "sun-tone-bronzing-drops-parfait-1": {
-  "title": "Sun Tone Bronzing Drops - Soleil Parfait 1 Bronzer",
-  "description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish.",
-  "seo_title": "Sun Tone Bronzing Drops - Soleil Parfait 1 Bronzer | MAREN",
-  "seo_description": "Warmth that reads natural. This liquid bronzer melts into skin for a just-back-from-the-beach hint of tint. A sheer finish."
- },
- "balmy-tint-hydrating-tinted-lip-balm": {
-  "title": "Balmy Tint Hydrating Lip Balm",
-  "description": "Skin, only more even. What it is: A clean, tinted lip balm with potent levels of moisture-boosting ingredients and sheer, buildable color. A sheer finish. Made with shea butter.",
-  "seo_title": "Balmy Tint Hydrating Lip Balm | MAREN",
-  "seo_description": "Skin, only more even. What it is: A clean, tinted lip balm with potent levels of moisture-boosting ingredients and sheer, buildable color. A sheer fin."
- },
- "lip-wrap-hydrating-lip-balm-hyaluronic-acid": {
-  "title": "Lip Wrap Reviving Balm",
-  "description": "A considered essential. What It Is: An everyday, barrier-building balm that hydrates lips and over time with potent levels of Hyaluronic Acid and Sea Succulent. Made with hyaluronic acid.",
-  "seo_title": "Lip Wrap Reviving Balm | MAREN",
-  "seo_description": "A considered essential. What It Is: An everyday, barrier-building balm that hydrates lips and over time with potent levels of Hyaluronic Acid and Sea."
- },
- "vital-pressed-skincare-powder-translucent": {
-  "title": "Vital Pressed Skincare Powder - Translucent",
-  "description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c.",
-  "seo_title": "Vital Pressed Skincare Powder - Translucent | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+ "air-brow-tinted": {
+  "title": "Air Brow - Tinted",
+  "description": "A considered essential. A sheer finish.",
+  "seo_title": "Air Brow - Tinted | MAREN",
+  "seo_description": "A considered essential. A sheer finish."
  },
  "vital-skincare-concealer-atelier-t1": {
   "title": "Vital Skincare Concealer - Atelier T1",
@@ -923,65 +335,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier T1 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-nana": {
-  "title": "Squeaky Clean Liquid Lip Balm - Nana",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Nana | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "super-serum-skin-tint-spf-40-tinted-moisturizer": {
+  "title": "Super Serum Skin Tint SPF 40",
+  "description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 40 is an award-winning skin tint that delivers light coverage, potent skincare, and mineral SPF, all with a dewy finish for skin that looks and feels alive. A dewy finish. Made with spf.",
+  "seo_title": "Super Serum Skin Tint SPF 40 | MAREN",
+  "seo_description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 40 is an award-winning skin tint that delivers light coverage, potent skincare, and min."
  },
- "lip-suede-matte-lipstick-pique": {
-  "title": "Lip Suede Matte Lipstick - Piqu\u00e9",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Piqu\u00e9 | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "sunnydays-tinted-spf": {
+  "title": "SunnyDays Tinted SPF 30",
+  "description": "Skin, only more even. A 2-in-1 mineral sunscreen foundation with broad spectrum SPF 30, light-medium buildable coverage, and a natural finish. A satin finish. Made with spf.",
+  "seo_title": "SunnyDays Tinted SPF 30 | MAREN",
+  "seo_description": "Skin, only more even. A 2-in-1 mineral sunscreen foundation with broad spectrum SPF 30, light-medium buildable coverage, and a natural finish. A satin."
  },
- "baby-cheeks-blush-stick-mimi": {
-  "title": "Cheeks Blush Stick - Mimi",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Mimi | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "dew-blush": {
+  "title": "Dew Blush",
+  "description": "A worn-in flush. A sheer finish.",
+  "seo_title": "Dew Blush | MAREN",
+  "seo_description": "A worn-in flush. A sheer finish."
  },
- "lip-brush": {
-  "title": "Lip Brush",
-  "description": "A considered essential. An essential makeup tool and perfect match to Lip Suede.",
-  "seo_title": "Lip Brush | MAREN",
-  "seo_description": "A considered essential. An essential makeup tool and perfect match to Lip Suede."
- },
- "skin-activator-rollerball": {
-  "title": "Skin Activator Rollerball Serum",
-  "description": "Daily care that earns its place. Expertly crafted, this cool-to-the-touch rollerball swiftly depuffs, helps boost microcirculation, cools and soothes. Made with hyaluronic acid, niacinamide, peptide.",
-  "seo_title": "Skin Activator Rollerball Serum | MAREN",
-  "seo_description": "Daily care that earns its place. Expertly crafted, this cool-to-the-touch rollerball swiftly depuffs, helps boost microcirculation, cools and soothes."
- },
- "face-trace-contour-stick-toast": {
-  "title": "Face Trace Contour Stick - Toast",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Toast | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-je-reve": {
-  "title": "Lip Shape Lip Liner - Je R\u00eave",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Je R\u00eave | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "lit-up-highlight-stick-biscuit": {
-  "title": "Lit Up Highlight Stick - Biscuit",
-  "description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish.",
-  "seo_title": "Lit Up Highlight Stick - Biscuit | MAREN",
-  "seo_description": "Light, placed with intention. This clean, translucent gel highlighter imparts skin with radiant clarity to perk up dull skin. A dewy finish."
- },
- "super-serum-skin-tint-spf-30-tinted-moisturizer-uk": {
-  "title": "Serum Skin Tint SPF 30",
-  "description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 30 is an award-winning skin tint that delivers light coverage, potent skincare, and mineral SPF, all with a dewy finish for skin that looks and feels alive. A dewy finish. Made with spf.",
-  "seo_title": "Serum Skin Tint SPF 30 | MAREN",
-  "seo_description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 30 is an award-winning skin tint that delivers light coverage, potent skincare, and min."
- },
- "vital-pressed-skincare-powder-dune": {
-  "title": "Vital Pressed Skincare Powder - Dune",
-  "description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c.",
-  "seo_title": "Vital Pressed Skincare Powder - Dune | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+ "revealer-concealer": {
+  "title": "Revealer Concealer",
+  "description": "Quiet coverage where you want it. Like a lightbulb for your skin A super creamy, skincare-packed clean concealer with medium coverage and a fresh, hydrated, radiant finish. A dewy finish. Made with hyaluronic acid, peptide, caffeine.",
+  "seo_title": "Revealer Concealer | MAREN",
+  "seo_description": "Quiet coverage where you want it. Like a lightbulb for your skin A super creamy, skincare-packed clean concealer with medium coverage and a fresh, hyd."
  },
  "vital-skincare-concealer-atelier-m4": {
   "title": "Vital Skincare Concealer - Atelier M4",
@@ -989,53 +365,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier M4 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-chou-chou": {
-  "title": "Squeaky Clean Liquid Lip Balm - Chou Chou",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Chou Chou | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "lip-sketch-hydrating-crayon-lipstick-lip-liner": {
+  "title": "Lip Sketch Hydrating Crayon",
+  "description": "A considered essential. The creamy comfort of a lipstick. A matte finish.",
+  "seo_title": "Lip Sketch Hydrating Crayon | MAREN",
+  "seo_description": "A considered essential. The creamy comfort of a lipstick. A matte finish."
  },
- "lip-suede-matte-lipstick-lfg": {
-  "title": "Lip Suede Matte Lipstick - LFG",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - LFG | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "gogo-shimmer-eyeshadow-stick": {
+  "title": "GoGo Cooling Shimmer Eyeshadow",
+  "description": "A considered essential. A cooling + soothing eyeshadow stick that gives high impact shimmer without the irritation and lasts up to 8-hrs.",
+  "seo_title": "GoGo Cooling Shimmer Eyeshadow | MAREN",
+  "seo_description": "A considered essential. A cooling + soothing eyeshadow stick that gives high impact shimmer without the irritation and lasts up to 8-hrs."
  },
- "baby-cheeks-blush-stick-minette": {
-  "title": "Cheeks Blush Stick - Minette",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Minette | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "mascara-101": {
+  "title": "Mascara 101",
+  "description": "Definition without the drama. The perfect pick-me-up for long, lifted lashes.",
+  "seo_title": "Mascara 101 | MAREN",
+  "seo_description": "Definition without the drama. The perfect pick-me-up for long, lifted lashes."
  },
- "growpotion": {
-  "title": "Growpotion Mascara",
-  "description": "Definition without the drama. Manifest Your Best Brows + Lashes. Made with peptide.",
-  "seo_title": "Growpotion Mascara | MAREN",
-  "seo_description": "Definition without the drama. Manifest Your Best Brows + Lashes. Made with peptide."
- },
- "face-trace-contour-stick-au-lait": {
-  "title": "Face Trace Contour Stick - Au Lait",
-  "description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba.",
-  "seo_title": "Face Trace Contour Stick - Au Lait | MAREN",
-  "seo_description": "Structure, softly. Clean, creamy contour stick that adds authentic-looking definition with one, effortless swipe. Made with jojoba."
- },
- "lip-shape-lip-liner-petal": {
-  "title": "Lip Shape Lip Liner - Petal",
-  "description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enhanced look.",
-  "seo_title": "Lip Shape Lip Liner - Petal | MAREN",
-  "seo_description": "A considered essential. Inspired by Gucci\u2019s signature technique, trace this smooth, no-tug liner along your natural lip shape for an effortlessly enha."
- },
- "super-serum-skin-tint-spf-40-tinted-moisturizer": {
-  "title": "Serum Skin Tint SPF 40",
-  "description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 40 is an award-winning skin tint that delivers light coverage, potent skincare, and mineral SPF, all with a dewy finish for skin that looks and feels alive. A dewy finish. Made with spf.",
-  "seo_title": "Serum Skin Tint SPF 40 | MAREN",
-  "seo_description": "Skin, only more even. SPF MADE SUPER Super Serum Skin Tint SPF 40 is an award-winning skin tint that delivers light coverage, potent skincare, and min."
- },
- "soft-focus-finishing-powder": {
-  "title": "Soft Focus Finishing Powder",
-  "description": "A soft-focus finish, nothing cakey. Your skin, through a soft-focus filter. A satin finish. Made with squalane.",
-  "seo_title": "Soft Focus Finishing Powder | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Your skin, through a soft-focus filter. A satin finish. Made with squalane."
+ "wet-lip-oil-gloss": {
+  "title": "Wet Lip Oil Gloss",
+  "description": "A considered essential.",
+  "seo_title": "Wet Lip Oil Gloss | MAREN",
+  "seo_description": "A considered essential."
  },
  "vital-skincare-concealer-atelier-t2": {
   "title": "Vital Skincare Concealer - Atelier T2",
@@ -1043,53 +395,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier T2 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-garconne": {
-  "title": "Squeaky Clean Liquid Lip Balm - Gar\u00e7onne",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Gar\u00e7onne | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "eye-stylus-eyeshadow-stick": {
+  "title": "Eye Stylus Shadow Stick",
+  "description": "A considered essential. Art inspired, no artistry required. A matte finish.",
+  "seo_title": "Eye Stylus Shadow Stick | MAREN",
+  "seo_description": "A considered essential. Art inspired, no artistry required. A matte finish."
  },
- "lip-suede-matte-lipstick-lou-lou": {
-  "title": "Lip Suede Matte Lipstick - Lou Lou",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Lou Lou | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "sculptino-soft-cream-contour": {
+  "title": "Sculptino Cream Contour",
+  "description": "Structure, softly. A foolproof cream contour to softly shape and sculpt your face with an easy-to-blend texture and neutral undertones.",
+  "seo_title": "Sculptino Cream Contour | MAREN",
+  "seo_description": "Structure, softly. A foolproof cream contour to softly shape and sculpt your face with an easy-to-blend texture and neutral undertones."
  },
- "baby-cheeks-blush-stick-chouchette": {
-  "title": "Cheeks Blush Stick - Chouchette",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Chouchette | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "cityset-lightweight-setting-spray": {
+  "title": "CitySet Lightweight Setting Spray",
+  "description": "A considered essential. Introducing the first clean setting spray with no compromises: 16-hour wear, comfortable, and actually good for your skin. A dewy finish.",
+  "seo_title": "CitySet Lightweight Setting Spray | MAREN",
+  "seo_description": "A considered essential. Introducing the first clean setting spray with no compromises: 16-hour wear, comfortable, and actually good for your skin. A d."
  },
- "face-detailer-brush": {
-  "title": "Face Detailer Brush",
-  "description": "A considered essential. Play > Precision Vegan, fluffy, tapered brush for setting more targeted areas with powder.",
-  "seo_title": "Face Detailer Brush | MAREN",
-  "seo_description": "A considered essential. Play > Precision Vegan, fluffy, tapered brush for setting more targeted areas with powder."
- },
- "fullest-volumizing-mascara": {
-  "title": "Fullest Volumizing Mascara",
-  "description": "Definition without the drama. What It Is: A clean volumizing mascara that wraps each lash in weightless, buildable volume without flaking or smudging. A dewy finish.",
-  "seo_title": "Fullest Volumizing Mascara | MAREN",
-  "seo_description": "Definition without the drama. What It Is: A clean volumizing mascara that wraps each lash in weightless, buildable volume without flaking or smudging."
- },
- "skin-activator-serum": {
-  "title": "Skin Activator Serum",
-  "description": "Daily care that earns its place. This all-in-1 serum works in 3 ways for happier skin with every dose.",
-  "seo_title": "Skin Activator Serum | MAREN",
-  "seo_description": "Daily care that earns its place. This all-in-1 serum works in 3 ways for happier skin with every dose."
- },
- "sculpting-brush": {
-  "title": "Sculpting Brush",
-  "description": "Structure, softly. Add seamless radiance and dimension to skin with this cruelty-free sculpting brush.",
-  "seo_title": "Sculpting Brush | MAREN",
-  "seo_description": "Structure, softly. Add seamless radiance and dimension to skin with this cruelty-free sculpting brush."
- },
- "powder-ii-brush": {
-  "title": "Powder II Brush",
-  "description": "A soft-focus finish, nothing cakey. Luxuriously bristled powder brush for precise applications.",
-  "seo_title": "Powder II Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Luxuriously bristled powder brush for precise applications."
+ "lip-pulse": {
+  "title": "Lip Pulse",
+  "description": "A considered essential. Lips in their fullest expression A high-impact clean lip plumper with a satisfying warming-cooling tingle for visibly fuller, glassy lips, always nourishing, not sticky or drying.",
+  "seo_title": "Lip Pulse | MAREN",
+  "seo_description": "A considered essential. Lips in their fullest expression A high-impact clean lip plumper with a satisfying warming-cooling tingle for visibly fuller,."
  },
  "vital-skincare-concealer-atelier-m1": {
   "title": "Vital Skincare Concealer - Atelier M1",
@@ -1097,53 +425,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier M1 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-nou-nou": {
-  "title": "Squeaky Clean Liquid Lip Balm - Nou Nou",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Nou Nou | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "lightshift-cream-highlighter-non-comedogenic": {
+  "title": "Lightshift Cream Highlighter",
+  "description": "Light, placed with intention. A dewy finish.",
+  "seo_title": "Lightshift Cream Highlighter | MAREN",
+  "seo_description": "Light, placed with intention. A dewy finish."
  },
- "lip-suede-matte-lipstick-le-rouge": {
-  "title": "Lip Suede Matte Lipstick - Le Rouge",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Le Rouge | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "oneliner-multi-liner": {
+  "title": "OneLiner Lip Liner",
+  "description": "A considered essential. A creamy, high-pigment, non-drying matte liner for lips, eyes, and cheeks to create infinite looks. A matte finish.",
+  "seo_title": "OneLiner Lip Liner | MAREN",
+  "seo_description": "A considered essential. A creamy, high-pigment, non-drying matte liner for lips, eyes, and cheeks to create infinite looks. A matte finish."
  },
- "baby-cheeks-blush-stick-bichette": {
-  "title": "Cheeks Blush Stick - Bichette",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Bichette | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "the-blush-stack": {
+  "title": "The Blush Stack",
+  "description": "A worn-in flush. The art of blush is about having options. A dewy finish.",
+  "seo_title": "The Blush Stack | MAREN",
+  "seo_description": "A worn-in flush. The art of blush is about having options. A dewy finish."
  },
- "multitasking-eye-brush": {
-  "title": "Multitasking Eye Brush",
-  "description": "A considered essential. Play > Precision Vegan rounded fan brush for the dreamiest eyeshadow application ever.",
-  "seo_title": "Multitasking Eye Brush | MAREN",
-  "seo_description": "A considered essential. Play > Precision Vegan rounded fan brush for the dreamiest eyeshadow application ever."
- },
- "eye-want-you-mascara-clean-black": {
-  "title": "Eye Want You Mascara - Clean Black",
-  "description": "Definition without the drama. Clean, buildable mascara lengthens, defines, and volumizes. Made with shea butter.",
-  "seo_title": "Eye Want You Mascara - Clean Black | MAREN",
-  "seo_description": "Definition without the drama. Clean, buildable mascara lengthens, defines, and volumizes. Made with shea butter."
- },
- "sos-daily-barrier-recovery-cream": {
-  "title": "SOS Recovery Cream",
-  "description": "Daily care that earns its place. An intentionally basic, non-greasy daily moisturizer with ceramides and hyaluronic acid designed for sensitive skin. Made with hyaluronic acid, ceramide.",
-  "seo_title": "SOS Recovery Cream | MAREN",
-  "seo_description": "Daily care that earns its place. An intentionally basic, non-greasy daily moisturizer with ceramides and hyaluronic acid designed for sensitive skin."
- },
- "liquid-eyeshadow-powder-eye-tint": {
-  "title": "Liquid Powder Eye Tint",
-  "description": "Skin, only more even. What it is: A clean, cream-to-powder eyeshadow that dries down to a smudge-resistant finish. A matte finish.",
-  "seo_title": "Liquid Powder Eye Tint | MAREN",
-  "seo_description": "Skin, only more even. What it is: A clean, cream-to-powder eyeshadow that dries down to a smudge-resistant finish. A matte finish."
- },
- "vital-pressed-skincare-powder-creme": {
-  "title": "Vital Pressed Skincare Powder - Cr\u00e8me",
-  "description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c.",
-  "seo_title": "Vital Pressed Skincare Powder - Cr\u00e8me | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+ "brow-pop-nano": {
+  "title": "Brow Pop Nano",
+  "description": "A considered essential.",
+  "seo_title": "Brow Pop Nano | MAREN",
+  "seo_description": "A considered essential."
  },
  "vital-skincare-concealer-atelier-d4": {
   "title": "Vital Skincare Concealer - Atelier D4",
@@ -1151,47 +455,29 @@
   "seo_title": "Vital Skincare Concealer - Atelier D4 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-ma-puce": {
-  "title": "Squeaky Clean Liquid Lip Balm - Ma Puce",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Ma Puce | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "sunshift-cream-bronzer": {
+  "title": "Sunshift Cream Bronzer",
+  "description": "Warmth that reads natural. A dewy finish.",
+  "seo_title": "Sunshift Cream Bronzer | MAREN",
+  "seo_description": "Warmth that reads natural. A dewy finish."
  },
- "lip-suede-matte-lipstick-lacker": {
-  "title": "Lip Suede Matte Lipstick - L\u00e4cker",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - L\u00e4cker | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "bronzino-illuminating-bronzer": {
+  "title": "Bronzino Cream Bronzer",
+  "description": "Warmth that reads natural. An illuminating cream bronzer that adds instant warmth and a subtle shimmer for that healthy fresh-from-vacay glow. A dewy finish.",
+  "seo_title": "Bronzino Cream Bronzer | MAREN",
+  "seo_description": "Warmth that reads natural. An illuminating cream bronzer that adds instant warmth and a subtle shimmer for that healthy fresh-from-vacay glow. A dewy."
  },
- "baby-cheeks-blush-stick-garconne": {
-  "title": "Cheeks Blush Stick - Gar\u00e7onne",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Gar\u00e7onne | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "the-supersuede-stack": {
+  "title": "The Soft Matte Stack Other Makeup",
+  "description": "A considered essential. Thoughtfully designed to pair seamlessly together, Baked Powder Blush and The Powder Blush Brush are the perfect duo for a diffused flush of color.",
+  "seo_title": "The Soft Matte Stack Other Makeup | MAREN",
+  "seo_description": "A considered essential. Thoughtfully designed to pair seamlessly together, Baked Powder Blush and The Powder Blush Brush are the perfect duo for a dif."
  },
- "perfecting-buff-brush": {
-  "title": "Perfecting Buff Brush",
-  "description": "A considered essential. Our Perfecting Buff Brush is a versatile tool that helps set complexion products faster.",
-  "seo_title": "Perfecting Buff Brush | MAREN",
-  "seo_description": "A considered essential. Our Perfecting Buff Brush is a versatile tool that helps set complexion products faster."
- },
- "sos-intensive-rescue-serum": {
-  "title": "SOS Rescue Serum",
-  "description": "Daily care that earns its place. A lightweight treatment serum powered by Hypochlorous Acid to help soothe chronically sensitive, inflamed skin.",
-  "seo_title": "SOS Rescue Serum | MAREN",
-  "seo_description": "Daily care that earns its place. A lightweight treatment serum powered by Hypochlorous Acid to help soothe chronically sensitive, inflamed skin."
- },
- "skin-rewind-complexion-stick-foundation-concealer": {
-  "title": "Skin Rewind Complexion Stick",
-  "description": "Skin, only more even. Looks like makeup, acts like skincare. A matte finish.",
-  "seo_title": "Skin Rewind Complexion Stick | MAREN",
-  "seo_description": "Skin, only more even. Looks like makeup, acts like skincare. A matte finish."
- },
- "vital-pressed-skincare-powder-cafe": {
-  "title": "Vital Pressed Skincare Powder - Caf\u00e9",
-  "description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c.",
-  "seo_title": "Vital Pressed Skincare Powder - Caf\u00e9 | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. A sheer finish. Made with vitamin c."
+ "revealer-extra-bright": {
+  "title": "Revealer Extra Bright Concealer",
+  "description": "Quiet coverage where you want it. Supercharged dark circle eraser A full-coverage dark circle corrector, brightening + depuffing serum in one that's the fastest way to transform tired eyes. Made with peptide.",
+  "seo_title": "Revealer Extra Bright Concealer | MAREN",
+  "seo_description": "Quiet coverage where you want it. Supercharged dark circle eraser A full-coverage dark circle corrector, brightening + depuffing serum in one that's t."
  },
  "vital-skincare-concealer-atelier-l3": {
   "title": "Vital Skincare Concealer - Atelier L3",
@@ -1199,82 +485,1018 @@
   "seo_title": "Vital Skincare Concealer - Atelier L3 | MAREN",
   "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
  },
- "squeaky-clean-liquid-lip-balm-pipsqueak": {
-  "title": "Squeaky Clean Liquid Lip Balm - Pipsqueak",
-  "description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish.",
-  "seo_title": "Squeaky Clean Liquid Lip Balm - Pipsqueak | MAREN",
-  "seo_description": "Glassy shine, real care. Tinted clean lip treatment that cushions lips with weightless, \u201cjuicy\u201d nourishment to hydrate and protect. A matte finish."
+ "in-frame-clear-eyebrow-gel": {
+  "title": "In Frame Brow Gel",
+  "description": "A considered essential.",
+  "seo_title": "In Frame Brow Gel | MAREN",
+  "seo_description": "A considered essential."
  },
- "lip-suede-matte-lipstick-pinch": {
-  "title": "Lip Suede Matte Lipstick - Pinch",
-  "description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they look. A matte finish. Made with peptide.",
-  "seo_title": "Lip Suede Matte Lipstick - Pinch | MAREN",
-  "seo_description": "Comfortable colour that stays put. A hydrating matte lipstick with a dreamy, airy feel and vivid, clean pigment \u2013 for lips that feel as good as they l."
+ "beachplease-luminous-tinted-balm-blush": {
+  "title": "BeachPlease Cream Blush",
+  "description": "A worn-in flush. A silicone-free, multi-use cream blush that blends seamlessly for a natural luminous finish. A dewy finish.",
+  "seo_title": "BeachPlease Cream Blush | MAREN",
+  "seo_description": "A worn-in flush. A silicone-free, multi-use cream blush that blends seamlessly for a natural luminous finish. A dewy finish."
  },
- "baby-cheeks-blush-stick-coquette": {
-  "title": "Cheeks Blush Stick - Coquette",
-  "description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushed-from-within pop of color.",
-  "seo_title": "Cheeks Blush Stick - Coquette | MAREN",
-  "seo_description": "A worn-in flush. The creamy, multi-purpose formula for Cheeks and lips is infused with hydrating ingredients for seamless blendability for that flushe."
+ "the-powder-blush-brush": {
+  "title": "The Powder Blush Brush",
+  "description": "A worn-in flush. This sleek brush is thoughtfully designed to pair seamlessly with Baked Powder Blush.",
+  "seo_title": "The Powder Blush Brush | MAREN",
+  "seo_description": "A worn-in flush. This sleek brush is thoughtfully designed to pair seamlessly with Baked Powder Blush."
  },
- "angled-cheek-brush": {
-  "title": "Angled Cheek Brush",
-  "description": "A considered essential. Play > Precision Vegan, soft fluffy brush with an angled head that\u2019s perfect for a lifted blush look.",
-  "seo_title": "Angled Cheek Brush | MAREN",
-  "seo_description": "A considered essential. Play > Precision Vegan, soft fluffy brush with an angled head that\u2019s perfect for a lifted blush look."
+ "soulgazer-mascara": {
+  "title": "Soulgazer Mascara",
+  "description": "Definition without the drama. Lengthening mascara + lash-boosting peptide serum in 1 A lengthening mascara that builds without clumping, powered by a lash-boosting peptide serum for visibly longer, fuller lashes in 6\u20138 weeks. Made with peptide.",
+  "seo_title": "Soulgazer Mascara | MAREN",
+  "seo_description": "Definition without the drama. Lengthening mascara + lash-boosting peptide serum in 1 A lengthening mascara that builds without clumping, powered by a."
  },
- "eye-want-you-mascara-le-brun-clean": {
-  "title": "Eye Want You Mascara - Le Brun Clean",
-  "description": "Definition without the drama. Clean, buildable mascara lengthens, defines, and volumizes. Made with shea butter.",
-  "seo_title": "Eye Want You Mascara - Le Brun Clean | MAREN",
-  "seo_description": "Definition without the drama. Clean, buildable mascara lengthens, defines, and volumizes. Made with shea butter."
+ "the-body-essentials-3-step": {
+  "title": "The Body Essentials",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Essentials (3 Step) Fragrance-Free features three (3) award-winning, best-selling body essentials in our fragrance-free option. Made with niacinamide, peptide.",
+  "seo_title": "The Body Essentials | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Essentials (3 Step) Fragranc."
+ },
+ "beach-skin-shimmering-body-oil": {
+  "title": "Beach Skin - Shimmering Body Oil",
+  "description": "A considered essential. A silky, lightweight body oil with a sheer wash of golden shimmer, infused with skin-mimicking lipids and floral oils to help support a healthy-looking skin barrier. A sheer finish.",
+  "seo_title": "Beach Skin - Shimmering Body Oil | MAREN",
+  "seo_description": "A considered essential. A silky, lightweight body oil with a sheer wash of golden shimmer, infused with skin-mimicking lipids and floral oils to help."
+ },
+ "deodorant-st-barts-scent": {
+  "title": "Deodorant - St. Barts Scent",
+  "description": "A considered essential. Get an instant -cation when you swipe on our tropical St. Made with shea butter.",
+  "seo_title": "Deodorant - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential. Get an instant -cation when you swipe on our tropical St. Made with shea butter."
+ },
+ "sos-rescue-relief-body-wash-treatment": {
+  "title": "SOS Rescue + Relief Body Wash Treatment",
+  "description": "A considered essential. This derm-approved + hypoallergenic body wash treatment cleanses, hydrates, and is clinically-proven to help soothe raw, itchy skin prone to irritation, flakiness, eczema, rosacea, psoriasis.",
+  "seo_title": "SOS Rescue + Relief Body Wash Treatment | MAREN",
+  "seo_description": "A considered essential. This derm-approved + hypoallergenic body wash treatment cleanses, hydrates, and is clinically-proven to help soothe raw, itchy."
+ },
+ "chemistry-deodorant": {
+  "title": "Chemistry Deodorant",
+  "description": "A considered essential. Your pits need an AHA moment A clean stain-free serum deodorant with a unique blend of AHAs for the ultimate BO-fighting treatment.",
+  "seo_title": "Chemistry Deodorant | MAREN",
+  "seo_description": "A considered essential. Your pits need an AHA moment A clean stain-free serum deodorant with a unique blend of AHAs for the ultimate BO-fighting treat."
+ },
+ "the-deodorant-olibanum": {
+  "title": "The Deodorant | Mandelic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Deodorant is an Extra-Strength Aluminum-Free Deodorant for odor protection. Made with vitamin e.",
+  "seo_title": "The Deodorant | Mandelic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Deodorant is an Extra-Strength Al."
+ },
+ "rose-whip-deodorant": {
+  "title": "Rose Whip - Deodorant",
+  "description": "A considered essential.",
+  "seo_title": "Rose Whip - Deodorant | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "deodorant-cape-town": {
+  "title": "Deodorant - Cape Town",
+  "description": "A considered essential. Smell like you just stepped out of the shower when you swipe on our invigorating Cape Town scent. Made with shea butter.",
+  "seo_title": "Deodorant - Cape Town | MAREN",
+  "seo_description": "A considered essential. Smell like you just stepped out of the shower when you swipe on our invigorating Cape Town scent. Made with shea butter."
+ },
+ "the-hand-cream": {
+  "title": "The Hand Cream | Multi-Butter",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care. Made with niacinamide, vitamin c, ceramide.",
+  "seo_title": "The Hand Cream | Multi-Butter | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care. Made with niacinamide, vitamin c, ce."
+ },
+ "vanilla-skin-body-oil": {
+  "title": "Vanilla Skin - Body Oil",
+  "description": "A considered essential. A silky, lightweight body oil infused with ceramide-rich floral oils and skin-mimicking lipids that nourishes and easily absorbs into the skin. Made with ceramide.",
+  "seo_title": "Vanilla Skin - Body Oil | MAREN",
+  "seo_description": "A considered essential. A silky, lightweight body oil infused with ceramide-rich floral oils and skin-mimicking lipids that nourishes and easily absor."
+ },
+ "deodorant-melrose-place": {
+  "title": "Deodorant - Melrose Place",
+  "description": "A considered essential. Everything\u2019s coming up roses when you swipe on our velvety-rich & rosy Melrose Place scent. Made with shea butter.",
+  "seo_title": "Deodorant - Melrose Place | MAREN",
+  "seo_description": "A considered essential. Everything\u2019s coming up roses when you swipe on our velvety-rich & rosy Melrose Place scent. Made with shea butter."
+ },
+ "the-body-serum": {
+  "title": "The Body Serum | 0.5% Hyaluronic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Serum is a hydrating serum for the skin. Made with hyaluronic acid, niacinamide.",
+  "seo_title": "The Body Serum | 0.5% Hyaluronic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Serum is a hydrating serum f."
+ },
+ "father-figure-natural-deodorant": {
+  "title": "Father Figure - Deodorant",
+  "description": "A considered essential.",
+  "seo_title": "Father Figure - Deodorant | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "hand-lotion": {
+  "title": "Hand Lotion",
+  "description": "A considered essential. Lightweight lotion that lends a hydrated hand. Made with jojoba.",
+  "seo_title": "Hand Lotion | MAREN",
+  "seo_description": "A considered essential. Lightweight lotion that lends a hydrated hand. Made with jojoba."
+ },
+ "the-hand-wash-lotion-duo": {
+  "title": "The Hand Wash + The Hand Lotion",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care.",
+  "seo_title": "The Hand Wash + The Hand Lotion | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care."
+ },
+ "vanilla-skin-natural-deodorant": {
+  "title": "Vanilla Skin - Deodorant",
+  "description": "A considered essential.",
+  "seo_title": "Vanilla Skin - Deodorant | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "hand-wash": {
+  "title": "Hand Wash",
+  "description": "A considered essential. Made with jojoba.",
+  "seo_title": "Hand Wash | MAREN",
+  "seo_description": "A considered essential. Made with jojoba."
+ },
+ "the-body-lotion": {
+  "title": "The Body Lotion 200 Ml | Multi-Peptide",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vitamin lotion for skin. Made with niacinamide, vitamin c, peptide.",
+  "seo_title": "The Body Lotion 200 Ml | Multi-Peptide | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vita."
+ },
+ "missing-person-body-oil": {
+  "title": "Missing Person - Body Oil",
+  "description": "A considered essential. A silky, lightweight body oil infused with ceramide-rich floral oils and skin-mimicking lipids that nourishes and easily absorbs into the skin. A dewy finish. Made with ceramide.",
+  "seo_title": "Missing Person - Body Oil | MAREN",
+  "seo_description": "A considered essential. A silky, lightweight body oil infused with ceramide-rich floral oils and skin-mimicking lipids that nourishes and easily absor."
+ },
+ "hand-lotion-refill-pouch": {
+  "title": "Hand Lotion Refill Pouch",
+  "description": "A considered essential. A sustainable to load up on our lightweight, everyday hand lotion. Made with jojoba.",
+  "seo_title": "Hand Lotion Refill Pouch | MAREN",
+  "seo_description": "A considered essential. A sustainable to load up on our lightweight, everyday hand lotion. Made with jojoba."
+ },
+ "the-body-serum-0-5-hyaluronic-acid-travel-copy": {
+  "title": "The Body Serum | 0.5% Hyaluronic Acid | Travel",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Serum is a hydrating serum for the skin. Made with hyaluronic acid, niacinamide.",
+  "seo_title": "The Body Serum | 0.5% Hyaluronic Acid | Travel | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Serum is a hydrating serum f."
+ },
+ "missing-person-hand-cream": {
+  "title": "Missing Person - Hand Cream",
+  "description": "A considered essential. A fast-absorbing, humectant enriched hand cream infused with skincare ingredients that moisturize, hydrate and soften. A dewy finish. Made with squalane.",
+  "seo_title": "Missing Person - Hand Cream | MAREN",
+  "seo_description": "A considered essential. A fast-absorbing, humectant enriched hand cream infused with skincare ingredients that moisturize, hydrate and soften. A dewy."
+ },
+ "the-body-lotion-450-ml-hinoki-resurfacing": {
+  "title": "The Body Lotion 450 Ml | Multi-Peptide",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vitamin lotion for skin. Made with niacinamide, vitamin c, peptide.",
+  "seo_title": "The Body Lotion 450 Ml | Multi-Peptide | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vita."
+ },
+ "the-body-wash-pump-cypres-citronne": {
+  "title": "The Body Wash | Multi-Oil",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide, vitamin c.",
+  "seo_title": "The Body Wash | Multi-Oil | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "rosemary-hair-essentials-multi-protein-5-capixyl\u2122": {
+  "title": "Rosemary Hair Essentials | Multi-Protein",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Hair Essentials is a 3-step system for scalp and hair. Made with ceramide.",
+  "seo_title": "Rosemary Hair Essentials | Multi-Protein | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Hair Essentials is a 3-step system for scalp and hair."
+ },
+ "the-body-cream-multi-ceramide": {
+  "title": "The Body Cream | Barrier Complex",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Cream delivers instant relief for dry, sensitive skin. Made with hyaluronic acid, niacinamide, ceramide.",
+  "seo_title": "The Body Cream | Barrier Complex | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Cream delivers instant relie."
+ },
+ "the-body-wash-pump-olibanum": {
+  "title": "The Body Wash | Multi-Enzyme",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide, vitamin c, vitamin e.",
+  "seo_title": "The Body Wash | Multi-Enzyme | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "the-body-wash-pump-santal": {
+  "title": "The Body Wash | Multi-Mineral",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide.",
+  "seo_title": "The Body Wash | Multi-Mineral | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "the-body-wash-pump-hinoki": {
+  "title": "The Body Wash | Multi-Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide.",
+  "seo_title": "The Body Wash | Multi-Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "the-hand-lotion-santal": {
+  "title": "The Hand Lotion",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care.",
+  "seo_title": "The Hand Lotion | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care."
+ },
+ "the-hand-wash-santal": {
+  "title": "The Hand Wash",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care.",
+  "seo_title": "The Hand Wash | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care."
+ },
+ "the-body-wash-multi-oil-fragrance-free-250ml": {
+  "title": "The Body Wash | Barrier Complex",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-stripping, non-drying barrier cleanse for dry, sensitive skin. Made with hyaluronic acid, niacinamide, ceramide.",
+  "seo_title": "The Body Wash | Barrier Complex | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-strippin."
+ },
+ "the-body-wash-100-ml-multi-mineral-santal": {
+  "title": "The Body Wash 100 Ml | Multi-Mineral | Santal",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide.",
+  "seo_title": "The Body Wash 100 Ml | Multi-Mineral | Santal | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "the-body-wash-100-ml-multi-oil-olibanum": {
+  "title": "The Body Wash 100 Ml | Multi-Enzyme | Olibanum",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide, vitamin c, vitamin e.",
+  "seo_title": "The Body Wash 100 Ml | Multi-Enzyme | Olibanum | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "the-body-lotion-70-ml-multi-peptide-olibanum": {
+  "title": "The Body Lotion 70 Ml | Multi-Peptide | Olibanum",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vitamin lotion for skin. Made with niacinamide, vitamin c, peptide.",
+  "seo_title": "The Body Lotion 70 Ml | Multi-Peptide | Olibanum | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vita."
+ },
+ "the-body-lotion-70-ml-multi-peptide-santal": {
+  "title": "The Body Lotion 70 Ml | Multi-Peptide | Santal",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vitamin lotion for skin. Made with niacinamide, vitamin c, peptide.",
+  "seo_title": "The Body Lotion 70 Ml | Multi-Peptide | Santal | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vita."
+ },
+ "the-body-lotion-70-ml-multi-peptide-eucalyptus": {
+  "title": "The Body Lotion 70 Ml | Multi-Peptide | Eucalyptus",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vitamin lotion for skin. Made with niacinamide, vitamin c, peptide.",
+  "seo_title": "The Body Lotion 70 Ml | Multi-Peptide | Eucalyptus | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Lotion is a daily multi-vita."
+ },
+ "the-gym-towel": {
+  "title": "The Towel Body Care",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Limited Edition.",
+  "seo_title": "The Towel Body Care | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Limited Edition."
+ },
+ "the-body-oil-multi-oil": {
+  "title": "The Body Oil Grapefruit | 2% Capsaicin",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face Limited Edition | The Body Oil is a 2% Capsaicin oil for the skin.",
+  "seo_title": "The Body Oil Grapefruit | 2% Capsaicin | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face Limited Edition | The Body Oil is a 2."
+ },
+ "the-body-wash-100-ml": {
+  "title": "The Body Wash 100 Ml | Multi-Oil | Eucalyptus",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying, non-stripping cleanse for the skin. Made with niacinamide, vitamin c.",
+  "seo_title": "The Body Wash 100 Ml | Multi-Oil | Eucalyptus | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Wash is a rich, non-drying,."
+ },
+ "oat-cleansing-balm-50ml": {
+  "title": "Oat Cleansing Balm - 50ml",
+  "description": "A considered essential. What you get: Our better than ever gentle cleansing balm has a buttery smooth texture that effectively removes makeup, SPF, and impurities in 30 seconds*. Made with ceramide, spf.",
+  "seo_title": "Oat Cleansing Balm - 50ml | MAREN",
+  "seo_description": "A considered essential. What you get: Our better than ever gentle cleansing balm has a buttery smooth texture that effectively removes makeup, SPF, an."
+ },
+ "the-body-exfoliator": {
+  "title": "The Body Exfoliator | Physical + Chemical",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Exfoliator is a mild-to-moderate in-shower physical and chemical exfoliant cleanse for the skin.",
+  "seo_title": "The Body Exfoliator | Physical + Chemical | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Exfoliator is a mild-to-mode."
+ },
+ "sun-serum-mineral-sunscreen-spf-50-ca": {
+  "title": "Sun Serum Mineral Sunscreen SPF 50",
+  "description": "A considered essential. SPF 50 that makes your skin better. Made with hyaluronic acid, spf.",
+  "seo_title": "Sun Serum Mineral Sunscreen SPF 50 | MAREN",
+  "seo_description": "A considered essential. SPF 50 that makes your skin better. Made with hyaluronic acid, spf."
+ },
+ "body-cleanser-dean-street": {
+  "title": "Body Cleanser Dean Street",
+  "description": "A considered essential. An inclusive, luxe lather that lifts odors and moods. Made with jojoba.",
+  "seo_title": "Body Cleanser Dean Street | MAREN",
+  "seo_description": "A considered essential. An inclusive, luxe lather that lifts odors and moods. Made with jojoba."
+ },
+ "supreme-c-serum": {
+  "title": "Supr\u00eame C Serum",
+  "description": "A considered essential. This single-ingredient serum is made with 100% THD Ascorbate, a potent-yet-gentle Vitamin C derivative crafted in Japan. Made with vitamin c.",
+  "seo_title": "Supr\u00eame C Serum | MAREN",
+  "seo_description": "A considered essential. This single-ingredient serum is made with 100% THD Ascorbate, a potent-yet-gentle Vitamin C derivative crafted in Japan. Made."
+ },
+ "plump-juicy-cleansing-oil": {
+  "title": "Plump + Juicy Cleansing Oil",
+  "description": "A considered essential. Step 1 of the Double Cleanse A lightweight cleansing oil with a luxe, cushiony glide that dissolves impurities, makeup + sunscreen for super soft, soothed skin. Made with ceramide, spf.",
+  "seo_title": "Plump + Juicy Cleansing Oil | MAREN",
+  "seo_description": "A considered essential. Step 1 of the Double Cleanse A lightweight cleansing oil with a luxe, cushiony glide that dissolves impurities, makeup + sunsc."
+ },
+ "sun-melt": {
+  "title": "Sun Melt Mineral SPF",
+  "description": "Protection that disappears into skin. A cream-balm bronzer with a natural-radiant finish that melts in for an effortless all-over bronze. A dewy finish.",
+  "seo_title": "Sun Melt Mineral SPF | MAREN",
+  "seo_description": "Protection that disappears into skin. A cream-balm bronzer with a natural-radiant finish that melts in for an effortless all-over bronze. A dewy finis."
+ },
+ "sos-faceguard-spf-30": {
+  "title": "SOS FaceGuard SPF 30 Sunscreen PA+++",
+  "description": "Protection that disappears into skin. A daily SPF to rescue you from the rest. Made with spf.",
+  "seo_title": "SOS FaceGuard SPF 30 Sunscreen PA+++ | MAREN",
+  "seo_description": "Protection that disappears into skin. A daily SPF to rescue you from the rest. Made with spf."
+ },
+ "oat-cleansing-balm-150ml": {
+  "title": "Oat Cleansing Balm - 150ml",
+  "description": "A considered essential. What you get: Our better than ever gentle cleansing balm has a buttery smooth texture that effectively removes makeup, SPF, and impurities in 30 seconds*. Made with ceramide, spf.",
+  "seo_title": "Oat Cleansing Balm - 150ml | MAREN",
+  "seo_description": "A considered essential. What you get: Our better than ever gentle cleansing balm has a buttery smooth texture that effectively removes makeup, SPF, an."
+ },
+ "the-sunscreen-spf-30-pa-150-ml": {
+  "title": "The Sunscreen | 100% Mineral",
+  "description": "Protection that disappears into skin. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Sunscreen is an SPF 30 PFA+++ Mineral Sunscreen for the skin. Made with hyaluronic acid, vitamin e, spf.",
+  "seo_title": "The Sunscreen | 100% Mineral | MAREN",
+  "seo_description": "Protection that disappears into skin. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Sunscreen is an SPF."
+ },
+ "true-skin-radiant-priming-serum": {
+  "title": "True Skin Radiant Priming Serum",
+  "description": "A considered essential. What it is: Bridging the gap between makeup and skincare, \u2019s True Skin Radiant Priming Serum does more than create a perfect base for makeup application. A dewy finish. Made with aloe.",
+  "seo_title": "True Skin Radiant Priming Serum | MAREN",
+  "seo_description": "A considered essential. What it is: Bridging the gap between makeup and skincare, \u2019s True Skin Radiant Priming Serum does more than create a perfect b."
+ },
+ "body-cleanser-travel-st-barts-scent": {
+  "title": "Body Cleanser Travel - St. Barts Scent",
+  "description": "A considered essential.",
+  "seo_title": "Body Cleanser Travel - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "skin-activator-rollerball": {
+  "title": "Skin Activator Rollerball Serum",
+  "description": "A considered essential. Expertly crafted, this cool-to-the-touch rollerball swiftly depuffs, helps boost microcirculation, cools and soothes. Made with hyaluronic acid, niacinamide, peptide.",
+  "seo_title": "Skin Activator Rollerball Serum | MAREN",
+  "seo_description": "A considered essential. Expertly crafted, this cool-to-the-touch rollerball swiftly depuffs, helps boost microcirculation, cools and soothes. Made wit."
+ },
+ "plump-juicy-vegan-collagen-spray-on-serum": {
+  "title": "Plump + Juicy Vegan Collagen Spray-On Serum",
+  "description": "A considered essential.",
+  "seo_title": "Plump + Juicy Vegan Collagen Spray-On Serum | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "slip-tint-tinted-moisturizer": {
+  "title": "Slip Tint Tinted Moisturizer",
+  "description": "A considered essential. Slip into something effortless, award-winning, and multitasking. A dewy finish. Made with hyaluronic acid, spf.",
+  "seo_title": "Slip Tint Tinted Moisturizer | MAREN",
+  "seo_description": "A considered essential. Slip into something effortless, award-winning, and multitasking. A dewy finish. Made with hyaluronic acid, spf."
+ },
+ "sos-intensive-rescue-serum": {
+  "title": "SOS Rescue Serum",
+  "description": "A considered essential. A lightweight treatment serum powered by Hypochlorous Acid to help soothe chronically sensitive, inflamed skin.",
+  "seo_title": "SOS Rescue Serum | MAREN",
+  "seo_description": "A considered essential. A lightweight treatment serum powered by Hypochlorous Acid to help soothe chronically sensitive, inflamed skin."
+ },
+ "advanced-retinal": {
+  "title": "Advanced 0.2% Retinal Serum",
+  "description": "A considered essential. WHAT YOU GET A high-strength Retinal serum, clinically proven to target all 5 visible signs of aging, without irritation - smoothing deep wrinkles, fading dark spots, visibly firming and lifting while boosting skin\u2019s luminosity. Made with spf, retinol.",
+  "seo_title": "Advanced 0.2% Retinal Serum | MAREN",
+  "seo_description": "A considered essential. WHAT YOU GET A high-strength Retinal serum, clinically proven to target all 5 visible signs of aging, without irritation - smo."
+ },
+ "the-hand-retinol": {
+  "title": "The Hand Retinol | 0.25% Retinol",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care. Made with retinol.",
+  "seo_title": "The Hand Retinol | 0.25% Retinol | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Hand Care Is The New Face Care. Made with retinol."
+ },
+ "bright-start-retinol-alternative-brightening-eye-cream": {
+  "title": "Bright Start Retinol Alternative Eye Cream",
+  "description": "A considered essential. Slow down your morning and wake up eyes with a potent eye cream that delivers the benefits of retinol without the drawbacks. Made with retinol.",
+  "seo_title": "Bright Start Retinol Alternative Eye Cream | MAREN",
+  "seo_description": "A considered essential. Slow down your morning and wake up eyes with a potent eye cream that delivers the benefits of retinol without the drawbacks. M."
+ },
+ "detox-face-cleanser-v2": {
+  "title": "Detox Face Cleanser",
+  "description": "A considered essential. This is a Detox you can do on the daily. Made with niacinamide.",
+  "seo_title": "Detox Face Cleanser | MAREN",
+  "seo_description": "A considered essential. This is a Detox you can do on the daily. Made with niacinamide."
+ },
+ "skin-activator-serum": {
+  "title": "Skin Activator Serum",
+  "description": "A considered essential. This all-in-1 serum works in 3 ways for happier skin with every dose.",
+  "seo_title": "Skin Activator Serum | MAREN",
+  "seo_description": "A considered essential. This all-in-1 serum works in 3 ways for happier skin with every dose."
+ },
+ "dreambeam-spf-40-pa": {
+  "title": "DreamBeam SPF 40 PA++++",
+  "description": "Protection that disappears into skin. Skincare with SPF 40 PA++++ meets dreamy makeup prep A clean, silicone-free, comfy mineral sunscreen packed with ceramides and peptides to moisturize, visibly smooth and brighten, and create the dreamiest makeup base. A dewy finish. Made with peptide, ceramide, spf.",
+  "seo_title": "DreamBeam SPF 40 PA++++ | MAREN",
+  "seo_description": "Protection that disappears into skin. Skincare with SPF 40 PA++++ meets dreamy makeup prep A clean, silicone-free, comfy mineral sunscreen packed with."
+ },
+ "starter-retinol": {
+  "title": "Starter Retinol Serum",
+  "description": "A considered essential. WHAT YOU GET A gentle yet effective beginner Retinol serum, clinically proven to visibly smooth fine lines in just 7 days -without irritation*. Made with spf, retinol.",
+  "seo_title": "Starter Retinol Serum | MAREN",
+  "seo_description": "A considered essential. WHAT YOU GET A gentle yet effective beginner Retinol serum, clinically proven to visibly smooth fine lines in just 7 days -wit."
+ },
+ "the-body-peel-1": {
+  "title": "The Body Peel | 12% AHA/BHA/PHA",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Peel is a leave-on exfoliation serum for the skin. Made with niacinamide.",
+  "seo_title": "The Body Peel | 12% AHA/BHA/PHA | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Peel is a leave-on exfoliati."
+ },
+ "barrier-build-skin-protectant-cream": {
+  "title": "Barrier Build Skin Protectant Cream",
+  "description": "A considered essential.",
+  "seo_title": "Barrier Build Skin Protectant Cream | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "body-cleanser-st-barts-1": {
+  "title": "Body Cleanser - St. Barts Scent",
+  "description": "A considered essential.",
+  "seo_title": "Body Cleanser - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential."
  },
  "eye-activator": {
   "title": "Eye Activator Serum",
-  "description": "Daily care that earns its place. This multi-lamellar, skin compatible formula delivers a layered release of 12 actives - without disrupting skin. Made with niacinamide, peptide.",
+  "description": "A considered essential. This multi-lamellar, skin compatible formula delivers a layered release of 12 actives - without disrupting skin. Made with niacinamide, peptide.",
   "seo_title": "Eye Activator Serum | MAREN",
-  "seo_description": "Daily care that earns its place. This multi-lamellar, skin compatible formula delivers a layered release of 12 actives - without disrupting skin. Made."
+  "seo_description": "A considered essential. This multi-lamellar, skin compatible formula delivers a layered release of 12 actives - without disrupting skin. Made with nia."
  },
- "foundation-brush": {
-  "title": "Foundation Brush",
-  "description": "Skin, only more even. Paddle foundation brush with tapered, flat bristles that will quickly become your go-to for precise applications, correcting imperfections and achieving a naturally polished finish.",
-  "seo_title": "Foundation Brush | MAREN",
-  "seo_description": "Skin, only more even. Paddle foundation brush with tapered, flat bristles that will quickly become your go-to for precise applications, correcting imp."
+ "the-bestselling-intro-to-great-skin": {
+  "title": "The Bestselling Intro To Great Skin Treatment",
+  "description": "A considered essential. This nourishing 4-step routine cleanses, hydrates, treats, and strengthens your skin. A dewy finish. Made with vitamin c, ceramide, caffeine.",
+  "seo_title": "The Bestselling Intro To Great Skin Treatment | MAREN",
+  "seo_description": "A considered essential. This nourishing 4-step routine cleanses, hydrates, treats, and strengthens your skin. A dewy finish. Made with vitamin c, cera."
  },
- "powder-brush": {
-  "title": "Powder Brush",
-  "description": "A soft-focus finish, nothing cakey. Play > Precision Vegan, fluffy tapered brush that does so many things.",
-  "seo_title": "Powder Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Play > Precision Vegan, fluffy tapered brush that does so many things."
+ "the-body-retinol": {
+  "title": "The Body Retinol | 0.1% Retinol",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Retinol is a repair serum for the skin. Made with retinol.",
+  "seo_title": "The Body Retinol | 0.1% Retinol | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Retinol is a repair serum fo."
  },
- "vital-skincare-concealer-atelier-t4": {
-  "title": "Vital Skincare Concealer - Atelier T4",
-  "description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A satin finish. Made with hyaluronic acid, peptide.",
-  "seo_title": "Vital Skincare Concealer - Atelier T4 | MAREN",
-  "seo_description": "Quiet coverage where you want it. Pro pigments and serum strength actives combine for precise, melt-in coverage that feels as good as it looks. A sati."
+ "the-cleanse-ph-balanced-foaming-facial-cleanser": {
+  "title": "The Cleanse Soft Foaming Cleanser",
+  "description": "A considered essential. Made with spf.",
+  "seo_title": "The Cleanse Soft Foaming Cleanser | MAREN",
+  "seo_description": "A considered essential. Made with spf."
  },
- "makewaves\u00ae-lash-curler": {
-  "title": "Lengthening Lash Curler Mascara",
-  "description": "Definition without the drama. Easy on the eyes, the curved design captures every lash without pinching for an instant lash lift.",
-  "seo_title": "Lengthening Lash Curler Mascara | MAREN",
-  "seo_description": "Definition without the drama. Easy on the eyes, the curved design captures every lash without pinching for an instant lash lift."
+ "melrose-place-body-cleanser-travel": {
+  "title": "Melrose Place Body Cleanser Travel",
+  "description": "A considered essential. This hydrating cleanser gently washes\u00a0your bod with a blend of skin-softening oils in our Melrose Place scent.",
+  "seo_title": "Melrose Place Body Cleanser Travel | MAREN",
+  "seo_description": "A considered essential. This hydrating cleanser gently washes\u00a0your bod with a blend of skin-softening oils in our Melrose Place scent."
  },
- "complexion-brush": {
-  "title": "Complexion Brush",
-  "description": "Skin, only more even. Our Complexion Brush is designed to easily apply and buff product into the skin, including hard to reach places.",
-  "seo_title": "Complexion Brush | MAREN",
-  "seo_description": "Skin, only more even. Our Complexion Brush is designed to easily apply and buff product into the skin, including hard to reach places."
+ "omega-water-cream-100ml": {
+  "title": "Supersize Omega Water Cream - 100ml",
+  "description": "A considered essential. Searching for an oil-free moisturizer that hydrates without feeling greasy or heavy on the skin? We've got it!. A dewy finish. Made with niacinamide.",
+  "seo_title": "Supersize Omega Water Cream - 100ml | MAREN",
+  "seo_description": "A considered essential. Searching for an oil-free moisturizer that hydrates without feeling greasy or heavy on the skin? We've got it!. A dewy finish."
  },
- "finishing-powder-brush": {
-  "title": "Finishing Powder Brush",
-  "description": "A soft-focus finish, nothing cakey. Our Finishing Powder Brush is designed to seamlessly blend and buff powder for a natural-looking finish.",
-  "seo_title": "Finishing Powder Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. Our Finishing Powder Brush is designed to seamlessly blend and buff powder for a natural-looking finish."
+ "the-neck-serum": {
+  "title": "The Neck Serum | 7.5% Peptide",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Neck Serum is a firming serum for the skin. Made with niacinamide, peptide.",
+  "seo_title": "The Neck Serum | 7.5% Peptide | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Neck Serum is a firming serum for."
  },
- "precision-powder-brush": {
-  "title": "Precision Powder Brush",
-  "description": "A soft-focus finish, nothing cakey. This cruelty-free powder brush features a softly tapered tip to place blush, bronzer, and highlighter exactly where you want.",
-  "seo_title": "Precision Powder Brush | MAREN",
-  "seo_description": "A soft-focus finish, nothing cakey. This cruelty-free powder brush features a softly tapered tip to place blush, bronzer, and highlighter exactly wher."
+ "lip-wrap-overnight-hydrating-lip-mask": {
+  "title": "Lip Wrap Overnight Mask",
+  "description": "A considered essential. An overnight mask that helps reveal your smoothest, softest lips. Made with hyaluronic acid.",
+  "seo_title": "Lip Wrap Overnight Mask | MAREN",
+  "seo_description": "A considered essential. An overnight mask that helps reveal your smoothest, softest lips. Made with hyaluronic acid."
+ },
+ "melrose-place-body-cleanser": {
+  "title": "Melrose Place Body Cleanser",
+  "description": "A considered essential. Made with jojoba.",
+  "seo_title": "Melrose Place Body Cleanser | MAREN",
+  "seo_description": "A considered essential. Made with jojoba."
+ },
+ "glycerin-gentle-purifying-cleanser": {
+  "title": "Glycerin Gentle Purifying Cleanser",
+  "description": "A considered essential. WHAT YOU GET: A gentle cleans ing gel that lifts away excess oil and impurities and helps reduce the look of pores without stripping the skin.",
+  "seo_title": "Glycerin Gentle Purifying Cleanser | MAREN",
+  "seo_description": "A considered essential. WHAT YOU GET: A gentle cleans ing gel that lifts away excess oil and impurities and helps reduce the look of pores without str."
+ },
+ "the-body-vitamin-c": {
+  "title": "The Body Vitamin C | 2.5% Vitamin C",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Vitamin C is a radiance serum for skin. A dewy finish. Made with vitamin c.",
+  "seo_title": "The Body Vitamin C | 2.5% Vitamin C | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Body Vitamin C is a radiance seru."
+ },
+ "360-acne-clearing-serum": {
+  "title": "360\u00b0 Acne Clearing Serum",
+  "description": "A considered essential. WHAT YOU GET: A high-performance, daily anti-blemish serum that targets all 3 stages of breakouts in one step. Made with spf.",
+  "seo_title": "360\u00b0 Acne Clearing Serum | MAREN",
+  "seo_description": "A considered essential. WHAT YOU GET: A high-performance, daily anti-blemish serum that targets all 3 stages of breakouts in one step. Made with spf."
+ },
+ "rosemary-serum-90-day-supply-5-capixyl": {
+  "title": "Rosemary Serum | 90-Day Supply",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Serum (90-Day Supply) is an advanced leave-in serum for daily use. Made with ceramide.",
+  "seo_title": "Rosemary Serum | 90-Day Supply | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Serum (90-Day Supply) is an advanced leave-in serum for."
+ },
+ "hydrating-cream-to-milk-cleanser": {
+  "title": "Milk Cleanser - 240ml",
+  "description": "A considered essential. Introducing Milk Cleanser, for a gentle yet effective cleanse that leaves skin hydrated and balanced without a hint of tightness. Made with hyaluronic acid.",
+  "seo_title": "Milk Cleanser - 240ml | MAREN",
+  "seo_description": "A considered essential. Introducing Milk Cleanser, for a gentle yet effective cleanse that leaves skin hydrated and balanced without a hint of tightne."
+ },
+ "exosome-hydro-glow-complex": {
+  "title": "Exosome Hydro-Glow Complex Treatment",
+  "description": "A considered essential. Resurface, rejuvenate, and hydrate your skin with Exosome Hydro-Glow Complex. A dewy finish. Made with hyaluronic acid.",
+  "seo_title": "Exosome Hydro-Glow Complex Treatment | MAREN",
+  "seo_description": "A considered essential. Resurface, rejuvenate, and hydrate your skin with Exosome Hydro-Glow Complex. A dewy finish. Made with hyaluronic acid."
+ },
+ "ectoin-hydro-barrier-serum": {
+  "title": "Ectoin Hydro-Barrier Serum",
+  "description": "A considered essential. Ectoin Hydro-Barrier Serum is your daily non-negotiable for the ultimate healthy-looking skin. Made with hyaluronic acid.",
+  "seo_title": "Ectoin Hydro-Barrier Serum | MAREN",
+  "seo_description": "A considered essential. Ectoin Hydro-Barrier Serum is your daily non-negotiable for the ultimate healthy-looking skin. Made with hyaluronic acid."
+ },
+ "supersize-hyaluronic-acid-serum": {
+  "title": "Supersize Hyaluronic Acid Serum - 100ml",
+  "description": "A considered essential. A dewy finish. Made with hyaluronic acid.",
+  "seo_title": "Supersize Hyaluronic Acid Serum - 100ml | MAREN",
+  "seo_description": "A considered essential. A dewy finish. Made with hyaluronic acid."
+ },
+ "hyaluronic-acid-serum-60ml": {
+  "title": "Hyaluronic Acid Serum - 60ml",
+  "description": "A considered essential. Our #1 bestseller now available in 60ml. A dewy finish. Made with hyaluronic acid.",
+  "seo_title": "Hyaluronic Acid Serum - 60ml | MAREN",
+  "seo_description": "A considered essential. Our #1 bestseller now available in 60ml. A dewy finish. Made with hyaluronic acid."
+ },
+ "glycolic-acid-exfoliating-body-stick": {
+  "title": "Glycolic Acid Exfoliating Body Stick",
+  "description": "A considered essential. What you get: Our viral glycolic acid exfoliating body stick powered by chemical exfoliation that targets multiple body skin concerns fast - keratosis pilaris (KP) bumps, ingrown hairs, rough skin and breakouts. Made with shea butter.",
+  "seo_title": "Glycolic Acid Exfoliating Body Stick | MAREN",
+  "seo_description": "A considered essential. What you get: Our viral glycolic acid exfoliating body stick powered by chemical exfoliation that targets multiple body skin c."
+ },
+ "pha-body-water-cream": {
+  "title": "PHA Body Water Cream",
+  "description": "A considered essential. For your healthiest-looking body skin, moisturization is not enough. Made with jojoba.",
+  "seo_title": "PHA Body Water Cream | MAREN",
+  "seo_description": "A considered essential. For your healthiest-looking body skin, moisturization is not enough. Made with jojoba."
+ },
+ "bio-active-ceramide-moisturizer": {
+  "title": "Bio-Active Ceramide Moisturizer",
+  "description": "A considered essential. A new age in skincare technology. Made with ceramide, shea butter.",
+  "seo_title": "Bio-Active Ceramide Moisturizer | MAREN",
+  "seo_description": "A considered essential. A new age in skincare technology. Made with ceramide, shea butter."
+ },
+ "dry-and-rough-skin-solution": {
+  "title": "10% Urea Moisturizer",
+  "description": "A considered essential. A clinically proven, fast absorbing moisturiser formulated with 10% Urea that delivers instant hydration to very dry skin.",
+  "seo_title": "10% Urea Moisturizer | MAREN",
+  "seo_description": "A considered essential. A clinically proven, fast absorbing moisturiser formulated with 10% Urea that delivers instant hydration to very dry skin."
+ },
+ "redness-relief-solution": {
+  "title": "10% Azelaic Acid Serum For Redness Relief",
+  "description": "A considered essential. A fast-absorbing, non-pilling azelaic acid serum is formulated with 10% Azelaic Acid.",
+  "seo_title": "10% Azelaic Acid Serum For Redness Relief | MAREN",
+  "seo_description": "A considered essential. A fast-absorbing, non-pilling azelaic acid serum is formulated with 10% Azelaic Acid."
+ },
+ "mandelic-acid-treatment": {
+  "title": "Mandelic Acid Treatment",
+  "description": "A considered essential. A gentle, yet powerful treatment that helps to significantly reduce hyperpigmentation and fade marks caused by blemishes or breakouts. Made with retinol.",
+  "seo_title": "Mandelic Acid Treatment | MAREN",
+  "seo_description": "A considered essential. A gentle, yet powerful treatment that helps to significantly reduce hyperpigmentation and fade marks caused by blemishes or br."
+ },
+ "omega-water-cream": {
+  "title": "Omega Water Cream - 50ml",
+  "description": "A considered essential. Searching for an oil-free moisturizer that hydrates without feeling greasy or heavy on the skin? We've got it!. A dewy finish. Made with niacinamide.",
+  "seo_title": "Omega Water Cream - 50ml | MAREN",
+  "seo_description": "A considered essential. Searching for an oil-free moisturizer that hydrates without feeling greasy or heavy on the skin? We've got it!. A dewy finish."
+ },
+ "salicylic-acid-cleanser": {
+  "title": "Salicylic Acid Cleanser - 150ml",
+  "description": "A considered essential. Specially formulated for acne blemishes, combination and oily-prone skin, our bestselling Salicylic Acid Cleanser is your ultimate skin-clearing facial cleanser that\u00a0visibly reduces acne blemishes and blackheads for a clearer-looking complexion.",
+  "seo_title": "Salicylic Acid Cleanser - 150ml | MAREN",
+  "seo_description": "A considered essential. Specially formulated for acne blemishes, combination and oily-prone skin, our bestselling Salicylic Acid Cleanser is your ulti."
+ },
+ "fulvic-acid-cleanser": {
+  "title": "Fulvic Acid Cleanser - 150ml",
+  "description": "A considered essential. This luxurious gel Fulvic Acid Cleanser gently exfoliates to reveal a brighter, healthy looking complexion whilst removing makeup, including eye makeup. Made with vitamin c.",
+  "seo_title": "Fulvic Acid Cleanser - 150ml | MAREN",
+  "seo_description": "A considered essential. This luxurious gel Fulvic Acid Cleanser gently exfoliates to reveal a brighter, healthy looking complexion whilst removing mak."
+ },
+ "succinic-acid": {
+  "title": "Succinic Acid Acne Treatment",
+  "description": "A considered essential. Clear blemishes fast, reduce inflammation and prevent clogged pores with our non-drying, targeted treatment.",
+  "seo_title": "Succinic Acid Acne Treatment | MAREN",
+  "seo_description": "A considered essential. Clear blemishes fast, reduce inflammation and prevent clogged pores with our non-drying, targeted treatment."
+ },
+ "tranexamic-acid-serum": {
+  "title": "Tranexamic Acid Serum",
+  "description": "A considered essential. This gel treatment targets hyperpigmentation, uneven patches and dark spots. Made with vitamin c.",
+  "seo_title": "Tranexamic Acid Serum | MAREN",
+  "seo_description": "A considered essential. This gel treatment targets hyperpigmentation, uneven patches and dark spots. Made with vitamin c."
+ },
+ "niacinamide-serum": {
+  "title": "10% Niacinamide Serum",
+  "description": "A considered essential. A lightweight, power-packed Niacinamide Serum that can be easily layered into your skincare routine. Made with hyaluronic acid, niacinamide.",
+  "seo_title": "10% Niacinamide Serum | MAREN",
+  "seo_description": "A considered essential. A lightweight, power-packed Niacinamide Serum that can be easily layered into your skincare routine. Made with hyaluronic acid."
+ },
+ "retinol-eye-cream": {
+  "title": "Retinol Eye Cream",
+  "description": "A considered essential. A night time eye cream for fine lines, formulated to reduce the appearance of wrinkles while giving extra support to your most fragile skin. Made with retinol.",
+  "seo_title": "Retinol Eye Cream | MAREN",
+  "seo_description": "A considered essential. A night time eye cream for fine lines, formulated to reduce the appearance of wrinkles while giving extra support to your most."
+ },
+ "peptide-moisturizer": {
+  "title": "Peptide Moisturizer",
+  "description": "A considered essential. A nurturing yet fast-absorbing daily face moisturizer for dry skin. Made with peptide.",
+  "seo_title": "Peptide Moisturizer | MAREN",
+  "seo_description": "A considered essential. A nurturing yet fast-absorbing daily face moisturizer for dry skin. Made with peptide."
+ },
+ "glycolic-acid-toner": {
+  "title": "Glycolic Acid Toner",
+  "description": "A considered essential. This 10% Glycolic Acid exfoliator works as a pore minimising toner, reducing blackheads and fine lines, as well as supporting smoother and brighter skin.",
+  "seo_title": "Glycolic Acid Toner | MAREN",
+  "seo_description": "A considered essential. This 10% Glycolic Acid exfoliator works as a pore minimising toner, reducing blackheads and fine lines, as well as supporting."
+ },
+ "beta-hydroxy-acid-serum": {
+  "title": "Beta Hydroxy Acid (BHA) Serum",
+  "description": "A considered essential. This BHA serum contains 2% Salicylic Acid which means it can penetrate deeper into your skin, helping to unclog pores. Made with hyaluronic acid.",
+  "seo_title": "Beta Hydroxy Acid (BHA) Serum | MAREN",
+  "seo_description": "A considered essential. This BHA serum contains 2% Salicylic Acid which means it can penetrate deeper into your skin, helping to unclog pores. Made wi."
+ },
+ "caffeine-eye-cream": {
+  "title": "Caffeine Eye Cream",
+  "description": "A considered essential. Tired, puffy eyes in need of a wake-up call? This is the product for you. Made with peptide, caffeine.",
+  "seo_title": "Caffeine Eye Cream | MAREN",
+  "seo_description": "A considered essential. Tired, puffy eyes in need of a wake-up call? This is the product for you. Made with peptide, caffeine."
+ },
+ "polyglutamic-acid-serum": {
+  "title": "Polyglutamic Acid Serum",
+  "description": "A considered essential. A powerful hydrator for the skin's surface, Polyglutamic Acid can hold 4x more moisture than Hyaluronic Acid, locking in moisture and helping the skin appear smoother. Made with hyaluronic acid.",
+  "seo_title": "Polyglutamic Acid Serum | MAREN",
+  "seo_description": "A considered essential. A powerful hydrator for the skin's surface, Polyglutamic Acid can hold 4x more moisture than Hyaluronic Acid, locking in moist."
+ },
+ "guldbaggen-makeup-tray": {
+  "title": "Guldbaggen Makeup Tray Tools",
+  "description": "A considered essential. This limited edition gold tray is a collaboration with Skultuna, the Swedish luxury heritage brand known for its exquisite craftsmanship.",
+  "seo_title": "Guldbaggen Makeup Tray Tools | MAREN",
+  "seo_description": "A considered essential. This limited edition gold tray is a collaboration with Skultuna, the Swedish luxury heritage brand known for its exquisite cra."
+ },
+ "the-vanity-case-1": {
+  "title": "The Vanity Case Tools",
+  "description": "A considered essential. The Vanity Case is more than just a cosmetic bag\u2013 it\u2019s a travel essential. A matte finish.",
+  "seo_title": "The Vanity Case Tools | MAREN",
+  "seo_description": "A considered essential. The Vanity Case is more than just a cosmetic bag\u2013 it\u2019s a travel essential. A matte finish."
+ },
+ "revealer-dual-ended-makeup-blender": {
+  "title": "Revealer Dual-Ended Makeup Blender Tools",
+  "description": "A considered essential. The Ultimate Beauty Blender for Revealer Formulas.",
+  "seo_title": "Revealer Dual-Ended Makeup Blender Tools | MAREN",
+  "seo_description": "A considered essential. The Ultimate Beauty Blender for Revealer Formulas."
+ },
+ "perfecting-buff-brush": {
+  "title": "Perfecting Buff Brush",
+  "description": "A considered essential. Our Perfecting Buff Brush is a versatile tool that helps set complexion products faster.",
+  "seo_title": "Perfecting Buff Brush | MAREN",
+  "seo_description": "A considered essential. Our Perfecting Buff Brush is a versatile tool that helps set complexion products faster."
+ },
+ "travel-case": {
+  "title": "Travel Case Tools",
+  "description": "A considered essential. Protect your travel fragrances in this Vegan Leather Travel Case.",
+  "seo_title": "Travel Case Tools | MAREN",
+  "seo_description": "A considered essential. Protect your travel fragrances in this Vegan Leather Travel Case."
+ },
+ "the-inkey-list-washbag": {
+  "title": "Washbag Tools",
+  "description": "A considered essential.",
+  "seo_title": "Washbag Tools | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "sos-store-our-stuff-makeup-bag": {
+  "title": "SOS (Store. Our. Stuff.) Makeup Bag Tools",
+  "description": "A considered essential. This lightweight, padded mesh bag is designed for function and generously sized to hold all your beauty essentials (and then some).",
+  "seo_title": "SOS (Store. Our. Stuff.) Makeup Bag Tools | MAREN",
+  "seo_description": "A considered essential. This lightweight, padded mesh bag is designed for function and generously sized to hold all your beauty essentials (and then s."
+ },
+ "the-case": {
+  "title": "The Case Tools",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Signature x Pelican Micro Case.",
+  "seo_title": "The Case Tools | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Signature x Pelican Micro Case."
+ },
+ "wave-spray": {
+  "title": "Wave Spray",
+  "description": "A considered essential. The same beachy texture you know & love, but with a better feel. A dewy finish.",
+  "seo_title": "Wave Spray | MAREN",
+  "seo_description": "A considered essential. The same beachy texture you know & love, but with a better feel. A dewy finish."
+ },
+ "the-scalp-serum-travel": {
+  "title": "The Scalp Serum | 30-Day Supply | 1% Hyaluronic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Scalp Serum (30-Day Supply) is a foundational fragrance-free serum for the scalp. Made with hyaluronic acid.",
+  "seo_title": "The Scalp Serum | 30-Day Supply | 1% Hyaluronic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Scalp Serum (30-Day Supply) is a foundational fragrance-free ser."
+ },
+ "glycolic-acid-exfoliating-scalp-scrub": {
+  "title": "Glycolic Acid Exfoliating Scalp Scrub",
+  "description": "A considered essential. 10 minutes to a healthier scalp, this treatment helps to boost healthy hair growth & plump roots from the first use.",
+  "seo_title": "Glycolic Acid Exfoliating Scalp Scrub | MAREN",
+  "seo_description": "A considered essential. 10 minutes to a healthier scalp, this treatment helps to boost healthy hair growth & plump roots from the first use."
+ },
+ "glowy-super-gel-luminizer": {
+  "title": "Glowy Super Gel",
+  "description": "A considered essential. Our #1 bestseller for a reason. A dewy finish. Made with squalane.",
+  "seo_title": "Glowy Super Gel | MAREN",
+  "seo_description": "A considered essential. Our #1 bestseller for a reason. A dewy finish. Made with squalane."
+ },
+ "sos-gel-cleanser": {
+  "title": "SOS Gel Cleanser",
+  "description": "A considered essential. A gentle daily cleanser with the power to do everything you want aka easily remove makeup, SPF, oils, and dirt, without burning eyes or leaving skin tight. Made with spf.",
+  "seo_title": "SOS Gel Cleanser | MAREN",
+  "seo_description": "A considered essential. A gentle daily cleanser with the power to do everything you want aka easily remove makeup, SPF, oils, and dirt, without burnin."
+ },
+ "plump-juicy-gel-cleanser": {
+  "title": "Plump + Juicy Gel Cleanser",
+  "description": "A considered essential. Step 2 of the Double Cleanse A refreshing, soft gel cleanser that deeply yet gently clarifies pores, removing excess oil + buildup while replenishing essential moisture for supple, bouncy skin. A dewy finish. Made with hyaluronic acid.",
+  "seo_title": "Plump + Juicy Gel Cleanser | MAREN",
+  "seo_description": "A considered essential. Step 2 of the Double Cleanse A refreshing, soft gel cleanser that deeply yet gently clarifies pores, removing excess oil + bui."
+ },
+ "clean-line-gel-eyeliner": {
+  "title": "Clean Line Gel Liner",
+  "description": "A considered essential. What it is: A clean, thoughtfully formulated gel eyeliner.",
+  "seo_title": "Clean Line Gel Liner | MAREN",
+  "seo_description": "A considered essential. What it is: A clean, thoughtfully formulated gel eyeliner."
+ },
+ "detox-shampoo": {
+  "title": "Detox Shampoo",
+  "description": "A considered essential. This clarifying shampoo deeply cleanses away dirt, oil, and product buildup with detoxifying apple cider vinegar and hair-strengthening keratin.",
+  "seo_title": "Detox Shampoo | MAREN",
+  "seo_description": "A considered essential. This clarifying shampoo deeply cleanses away dirt, oil, and product buildup with detoxifying apple cider vinegar and hair-stre."
+ },
+ "rosemary-serum-30-day-supply-5-capixyl": {
+  "title": "Rosemary Serum | 30-Day Supply",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Serum (30-Day Supply) is an advanced leave-in serum for daily use. Made with ceramide.",
+  "seo_title": "Rosemary Serum | 30-Day Supply | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Serum (30-Day Supply) is an advanced leave-in serum for."
+ },
+ "caffeine-stimulating-scalp-treatment-150ml": {
+  "title": "Caffeine Stimulating Scalp Treatment",
+  "description": "A considered essential. An overnight hair growth serum that uses caffeine powder and an ingredient called Redensyl to help reduce hair loss by stimulating the scalp and hair follicles, therefore encouraging hair growth and helping to improve hair thickness. Made with caffeine.",
+  "seo_title": "Caffeine Stimulating Scalp Treatment | MAREN",
+  "seo_description": "A considered essential. An overnight hair growth serum that uses caffeine powder and an ingredient called Redensyl to help reduce hair loss by stimula."
+ },
+ "super-dry-shampoo-melrose-place": {
+  "title": "Super Dry Shampoo - Melrose Place",
+  "description": "A considered essential. Super Dry Shampoo is back and more super than ever.",
+  "seo_title": "Super Dry Shampoo - Melrose Place | MAREN",
+  "seo_description": "A considered essential. Super Dry Shampoo is back and more super than ever."
+ },
+ "the-shampoo": {
+  "title": "The Shampoo | Hyaluronic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Shampoo is a foundational fragrance-free shampoo for scalp health. Made with hyaluronic acid, aloe.",
+  "seo_title": "The Shampoo | Hyaluronic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Shampoo is a foundational fragrance-free shampoo for scalp healt."
+ },
+ "salicylic-acid-exfoliating-scalp-treatment-150ml": {
+  "title": "Salicylic Acid Exfoliating Scalp Treatment",
+  "description": "A considered essential. Tackle flaky, oily and itchy-feeling scalps head on with our Salicylic Acid Exfoliating Scalp Treatment.",
+  "seo_title": "Salicylic Acid Exfoliating Scalp Treatment | MAREN",
+  "seo_description": "A considered essential. Tackle flaky, oily and itchy-feeling scalps head on with our Salicylic Acid Exfoliating Scalp Treatment."
+ },
+ "anti-frizz-creme": {
+  "title": "Anti-Frizz Cr\u00e8me Styling",
+  "description": "A considered essential.",
+  "seo_title": "Anti-Frizz Cr\u00e8me Styling | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "the-detox-shampoo": {
+  "title": "The Detox Shampoo",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Detox Shampoo is a weekly treatment cleanse that removes buildup from products, pollutants, and hard water to reset your hair for the week ahead. Made with ceramide.",
+  "seo_title": "The Detox Shampoo | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Detox Shampoo is a weekly treatment cleanse that removes buildup."
+ },
+ "fur-bebe": {
+  "title": "Fur B\u00e9b\u00e9 Shampoo",
+  "description": "A considered essential.",
+  "seo_title": "Fur B\u00e9b\u00e9 Shampoo | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "the-deodorant-gel-fragrance-free": {
+  "title": "The Deodorant Gel | Mandelic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Deodorant Gel is an Aluminum-Free Mandelic Acid Deodorant for odor protection.",
+  "seo_title": "The Deodorant Gel | Mandelic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Treat Your Body Like Your Face The Deodorant Gel is an Aluminum-Free."
+ },
+ "bond-repair-balm": {
+  "title": "Bond Repair Balm",
+  "description": "A considered essential. Bond Repair Balm reverses hair damage in just 3 minutes.* Use it in the shower to strengthen & repair broken bonds so you can get out of the door & get on your with healthy hair.",
+  "seo_title": "Bond Repair Balm | MAREN",
+  "seo_description": "A considered essential. Bond Repair Balm reverses hair damage in just 3 minutes.* Use it in the shower to strengthen & repair broken bonds so you can."
+ },
+ "rosemary-pump-conditioner-multi-protein": {
+  "title": "Rosemary Conditioner | Multi-Protein",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Conditioner is a daily strengthening conditioner for hair. Made with peptide, ceramide.",
+  "seo_title": "Rosemary Conditioner | Multi-Protein | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Conditioner is a daily strengthening conditioner for hair."
+ },
+ "curl-creme-travel": {
+  "title": "Curl Cr\u00e8me Travel Styling",
+  "description": "A considered essential. For our curlfriends, this silicone-free cream that defines curls, tames frizz, and adds shine to all curl types.",
+  "seo_title": "Curl Cr\u00e8me Travel Styling | MAREN",
+  "seo_description": "A considered essential. For our curlfriends, this silicone-free cream that defines curls, tames frizz, and adds shine to all curl types."
+ },
+ "rosemary-pump-shampoo-multi-protein": {
+  "title": "Rosemary Shampoo | Multi-Protein",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Shampoo is a daily strengthening cleanse for hair. Made with peptide, ceramide.",
+  "seo_title": "Rosemary Shampoo | Multi-Protein | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Shampoo is a daily strengthening cleanse for hair. Made wit."
+ },
+ "super-dry-shampoo-cape-town": {
+  "title": "Super Dry Shampoo - Cape Town",
+  "description": "A considered essential. Super Dry Shampoo is back and more super than ever.",
+  "seo_title": "Super Dry Shampoo - Cape Town | MAREN",
+  "seo_description": "A considered essential. Super Dry Shampoo is back and more super than ever."
+ },
+ "the-conditioner": {
+  "title": "The Conditioner | Hyaluronic Acid",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Conditioner is a foundational fragrance-free conditioner for scalp health. Made with hyaluronic acid.",
+  "seo_title": "The Conditioner | Hyaluronic Acid | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Conditioner is a foundational fragrance-free conditioner for sca."
+ },
+ "body-creme-travel-st-barts-scent": {
+  "title": "Body Cr\u00e8me Travel - St. Barts Scent",
+  "description": "A considered essential. Dehydrated much? This whipped Body Cr\u00e8me whisks you a- with our St. Made with squalane.",
+  "seo_title": "Body Cr\u00e8me Travel - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential. Dehydrated much? This whipped Body Cr\u00e8me whisks you a- with our St. Made with squalane."
+ },
+ "rosemary-leave-in-mask": {
+  "title": "Rosemary Leave-In Mask",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Leave-In Mask an advanced leave-in treatment mask for use 1-2 times per week or as needed.",
+  "seo_title": "Rosemary Leave-In Mask | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet The Rosemary Leave-In Mask an advanced leave-in treatment mask for u."
+ },
+ "curl-creme": {
+  "title": "Curl Cr\u00e8me Styling",
+  "description": "A considered essential. For our curlfriends, this silicone-free cream that defines curls, tames frizz, and adds shine to all curl types.",
+  "seo_title": "Curl Cr\u00e8me Styling | MAREN",
+  "seo_description": "A considered essential. For our curlfriends, this silicone-free cream that defines curls, tames frizz, and adds shine to all curl types."
+ },
+ "rosemary-conditioner-multi-protein-travel": {
+  "title": "Rosemary Conditioner | Multi-Protein | Travel",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Conditioner is a daily strengthening conditioner for hair. Made with peptide, ceramide.",
+  "seo_title": "Rosemary Conditioner | Multi-Protein | Travel | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Conditioner is a daily strengthening conditioner for hair."
+ },
+ "super-dry-shampoo-travel-melrose-place": {
+  "title": "Super Dry Shampoo Travel - Melrose Place",
+  "description": "A considered essential. Super Dry Shampoo is back and more super than ever.",
+  "seo_title": "Super Dry Shampoo Travel - Melrose Place | MAREN",
+  "seo_description": "A considered essential. Super Dry Shampoo is back and more super than ever."
+ },
+ "rosemary-shampoo-multi-protein-travel": {
+  "title": "Rosemary Shampoo | Multi-Protein | Travel",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Shampoo is a daily strengthening cleanse for hair. Made with peptide, ceramide.",
+  "seo_title": "Rosemary Shampoo | Multi-Protein | Travel | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Rosemary Shampoo is a daily strengthening cleanse for hair. Made wit."
+ },
+ "leave-in-conditioner-st-barts-scent": {
+  "title": "Leave In Conditioner - St. Barts Scent",
+  "description": "A considered essential. This is a scent you\u201a\u00c4\u00f4ll want to Leave In.",
+  "seo_title": "Leave In Conditioner - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential. This is a scent you\u201a\u00c4\u00f4ll want to Leave In."
+ },
+ "cherry-stem-50ml": {
+  "title": "Cherry Stem - 50mL Eau De Parfum",
+  "description": "A considered essential. Cherry Stem is a cocktail of juicy, dark, lacquered fruits \u2013 served with a twist.",
+  "seo_title": "Cherry Stem - 50mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. Cherry Stem is a cocktail of juicy, dark, lacquered fruits \u2013 served with a twist."
+ },
+ "hair-and-body-mist-st-barts-scent": {
+  "title": "Hair And Body Mist - St. Barts Scent",
+  "description": "A considered essential. This scent is not a basic beach.",
+  "seo_title": "Hair And Body Mist - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential. This scent is not a basic beach."
+ },
+ "olibanum-eau-de-parfum": {
+  "title": "Eau De Parfum | Olibanum Gift Edition",
+  "description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Eau de Parfum | Olibanum Gift Edition is a clean, modern fragrance in its purest form.",
+  "seo_title": "Eau De Parfum | Olibanum Gift Edition | MAREN",
+  "seo_description": "A considered essential. The Necessary | Care For Your Body | Care For Your Planet Eau de Parfum | Olibanum Gift Edition is a clean, modern fragrance i."
+ },
+ "island-swim-full-size-body-mist": {
+  "title": "Island Swim - Full Size Body Mist",
+  "description": "A considered essential. Dive into tropical waters with Island Swim, a bright, airy, and effortlessly fresh mist.",
+  "seo_title": "Island Swim - Full Size Body Mist | MAREN",
+  "seo_description": "A considered essential. Dive into tropical waters with Island Swim, a bright, airy, and effortlessly fresh mist."
+ },
+ "santorini-hair-and-body-fragrance-mist": {
+  "title": "Hair & Body Fragrance Mist - Santorini",
+  "description": "A considered essential. Dive all in with Santorini Hair & Body Fragrance Mist.",
+  "seo_title": "Hair & Body Fragrance Mist - Santorini | MAREN",
+  "seo_description": "A considered essential. Dive all in with Santorini Hair & Body Fragrance Mist."
+ },
+ "paradise-nectar-full-size-body-mist": {
+  "title": "Paradise Nectar - Full Size Body Mist",
+  "description": "A considered essential. Paradise Nectar is the scent of a seaside garden, bursting with tropical freshness and soft floral blooms. A dewy finish.",
+  "seo_title": "Paradise Nectar - Full Size Body Mist | MAREN",
+  "seo_description": "A considered essential. Paradise Nectar is the scent of a seaside garden, bursting with tropical freshness and soft floral blooms. A dewy finish."
+ },
+ "ibiza-hair-and-body-fragrance-mist": {
+  "title": "Hair & Body Fragrance Mist - Ibiza",
+  "description": "A considered essential. Ibiza, Ibitha, Eivissa, smell like you\u2019re that beach no matter how you pronounce it with this Hair & Body Fragrance Mist. A matte finish.",
+  "seo_title": "Hair & Body Fragrance Mist - Ibiza | MAREN",
+  "seo_description": "A considered essential. Ibiza, Ibitha, Eivissa, smell like you\u2019re that beach no matter how you pronounce it with this Hair & Body Fragrance Mist. A ma."
+ },
+ "honey-moon-duet": {
+  "title": "Honey Moon - Fragrance Duet Eau De Parfum",
+  "description": "A considered essential. This luminous fragrance is a dreamy floral, dripped in honey. A dewy finish.",
+  "seo_title": "Honey Moon - Fragrance Duet Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. This luminous fragrance is a dreamy floral, dripped in honey. A dewy finish."
+ },
+ "hair-and-body-fragrance-mist-melrose-place": {
+  "title": "Hair & Body Fragrance Mist - Melrose Place",
+  "description": "A considered essential. Melrose Place Hair & Body Mist is your one- ticket to LA.",
+  "seo_title": "Hair & Body Fragrance Mist - Melrose Place | MAREN",
+  "seo_description": "A considered essential. Melrose Place Hair & Body Mist is your one- ticket to LA."
+ },
+ "honey-moon-50ml": {
+  "title": "Honey Moon - 50mL Eau De Parfum",
+  "description": "A considered essential. This luminous fragrance is a dreamy floral, dripped in honey. A dewy finish.",
+  "seo_title": "Honey Moon - 50mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. This luminous fragrance is a dreamy floral, dripped in honey. A dewy finish."
+ },
+ "melrose-place-eau-de-parfum": {
+  "title": "Melrose Place Eau De Parfum",
+  "description": "A considered essential. A velvety-rich rose perfume that smells like our Rose Hair & Body Oil.",
+  "seo_title": "Melrose Place Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. A velvety-rich rose perfume that smells like our Rose Hair & Body Oil."
+ },
+ "matcha-milk-body-mist": {
+  "title": "Matcha Milk - Body Mist",
+  "description": "A considered essential. Matcha Milk is a creamy indulgence.",
+  "seo_title": "Matcha Milk - Body Mist | MAREN",
+  "seo_description": "A considered essential. Matcha Milk is a creamy indulgence."
+ },
+ "melrose-place-eau-de-parfum-travel": {
+  "title": "Melrose Place Eau De Parfum Travel",
+  "description": "A considered essential. A travel size Eau de Parfum of Melrose Place so you can smell good on-the-go.",
+  "seo_title": "Melrose Place Eau De Parfum Travel | MAREN",
+  "seo_description": "A considered essential. A travel size Eau de Parfum of Melrose Place so you can smell good on-the-go."
+ },
+ "berry-cream-body-mist": {
+  "title": "Berry Cream - Body Mist",
+  "description": "A considered essential. Berry Cream blends bright, juicy berries with soft sweet cream, rounded by hibiscus flower, vanilla and sugared amber.",
+  "seo_title": "Berry Cream - Body Mist | MAREN",
+  "seo_description": "A considered essential. Berry Cream blends bright, juicy berries with soft sweet cream, rounded by hibiscus flower, vanilla and sugared amber."
+ },
+ "rue-st-honore-eau-de-parfum": {
+  "title": "Rue St Honor\u00e9 Eau De Parfum",
+  "description": "A considered essential.",
+  "seo_title": "Rue St Honor\u00e9 Eau De Parfum | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "afterglow-duet": {
+  "title": "Afterglow - Fragrance Duet Eau De Parfum",
+  "description": "A considered essential. Afterglow evokes the spark and exhilarating rush of a first connection. A dewy finish.",
+  "seo_title": "Afterglow - Fragrance Duet Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. Afterglow evokes the spark and exhilarating rush of a first connection. A dewy finish."
+ },
+ "dean-street-eau-de-parfum": {
+  "title": "Dean Street Eau De Parfum",
+  "description": "A considered essential.",
+  "seo_title": "Dean Street Eau De Parfum | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "afterglow-50ml": {
+  "title": "Afterglow - 50mL Eau De Parfum",
+  "description": "A considered essential. Afterglow evokes the spark and exhilarating rush of a first connection. A dewy finish.",
+  "seo_title": "Afterglow - 50mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. Afterglow evokes the spark and exhilarating rush of a first connection. A dewy finish."
+ },
+ "st-barts-hair-and-body-mist": {
+  "title": "Hair And Body Mist Travel - St. Barts Scent",
+  "description": "A considered essential. This scent is not a basic beach.",
+  "seo_title": "Hair And Body Mist Travel - St. Barts Scent | MAREN",
+  "seo_description": "A considered essential. This scent is not a basic beach."
+ },
+ "cashmere-skin-body-mist": {
+  "title": "Cashmere Skin - Body Mist",
+  "description": "A considered essential. Cashmere Skin is an almond-toned skin musk with layers of distinctive texture, featuring warm, comforting fragrance with soft floral notes, smooth santal and balsam, and a hint of sweet vanilla.",
+  "seo_title": "Cashmere Skin - Body Mist | MAREN",
+  "seo_description": "A considered essential. Cashmere Skin is an almond-toned skin musk with layers of distinctive texture, featuring warm, comforting fragrance with soft."
+ },
+ "cherry-stem-fragrance-duet": {
+  "title": "Cherry Stem - Fragrance Duet Eau De Parfum",
+  "description": "A considered essential. Cherry Stem is a cocktail of juicy, dark, lacquered fruits \u2013 served with a twist.",
+  "seo_title": "Cherry Stem - Fragrance Duet Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. Cherry Stem is a cocktail of juicy, dark, lacquered fruits \u2013 served with a twist."
+ },
+ "mrs-smith-body-mist": {
+  "title": "Mrs. Smith - Body Mist",
+  "description": "A considered essential. Classic and crisp with a mouthwatering bite, Mrs.",
+  "seo_title": "Mrs. Smith - Body Mist | MAREN",
+  "seo_description": "A considered essential. Classic and crisp with a mouthwatering bite, Mrs."
+ },
+ "vanilla-skin-100ml": {
+  "title": "Vanilla Skin - 100mL Eau De Parfum",
+  "description": "A considered essential.",
+  "seo_title": "Vanilla Skin - 100mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential."
+ },
+ "missing-person-100ml": {
+  "title": "Missing Person - 100mL Eau De Parfum",
+  "description": "A considered essential. A delicate, yet addictive fragrance that evokes the lingering scent of your lover\u2019s skin. A dewy finish.",
+  "seo_title": "Missing Person - 100mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. A delicate, yet addictive fragrance that evokes the lingering scent of your lover\u2019s skin. A dewy finish."
+ },
+ "rose-whip-50ml": {
+  "title": "Rose Whip - 50mL Eau De Parfum",
+  "description": "A considered essential. Rose Whip is a delicate, powerful, and provocative scent that challenges the traditional idea of a rose fragrance.",
+  "seo_title": "Rose Whip - 50mL Eau De Parfum | MAREN",
+  "seo_description": "A considered essential. Rose Whip is a delicate, powerful, and provocative scent that challenges the traditional idea of a rose fragrance."
  }
 }

@@ -4,34 +4,20 @@
   "axis": "finish/shade",
   "members": [
    {
-    "product": "swipe-serum-concealer",
-    "label": "Serum Concealer"
+    "product": "true-skin-serum-foundation-medium-coverage",
+    "label": "True Skin Serum Foundation"
    },
    {
-    "product": "sunnydays-tinted-spf",
-    "label": "Tinted SPF 30"
+    "product": "revealer-skin-improving-foundation-spf-25",
+    "label": "Revealer Skin-Improving Foundation SPF 25"
    },
    {
-    "product": "slip-tint-undetectable-baked-setting-powder",
-    "label": "Slip Tint Undetectable Baked Setting Powder"
+    "product": "glowy-super-skin-tint-foundation",
+    "label": "Glowy Super Skin Tint Foundation"
    },
    {
-    "product": "slip-tint-concealer",
-    "label": "Slip Tint Radiant All-over Concealer"
-   }
-  ]
- },
- {
-  "name": "The Lipstick Family",
-  "axis": "finish/shade",
-  "members": [
-   {
-    "product": "weightless-lip-color",
-    "label": "Weightless Lip Color"
-   },
-   {
-    "product": "color-block-lipstick-natural",
-    "label": "Color Block Lipstick"
+    "product": "super-serum-skin-tint-spf-30-tinted-moisturizer-uk",
+    "label": "Super Serum Skin Tint SPF 30"
    }
   ]
  },
@@ -40,8 +26,12 @@
   "axis": "finish/shade",
   "members": [
    {
-    "product": "mini-dew-blush",
-    "label": "Mini Dew Blush"
+    "product": "getset-blur-set-matte-powder-blush",
+    "label": "GetSet Matte Powder Blush"
+   },
+   {
+    "product": "supersuede",
+    "label": "Soft Matte Baked Powder Blush"
    },
    {
     "product": "blush-is-life",
@@ -50,10 +40,6 @@
    {
     "product": "soft-focus-blurring-powder-blush",
     "label": "Soft Focus Blurring Blush"
-   },
-   {
-    "product": "impressionist-multistick",
-    "label": "Multistick Blush"
    }
   ]
  },
@@ -62,42 +48,20 @@
   "axis": "finish/shade",
   "members": [
    {
-    "product": "mini-revealer-concealer",
-    "label": "Mini Revealer Concealer"
-   },
-   {
-    "product": "revealer-concealer",
-    "label": "Concealer Concealer"
-   },
-   {
     "product": "hydrating-skin-blur-serum-concealer",
     "label": "Skin Blur Serum Concealer"
    },
    {
+    "product": "slip-tint-concealer",
+    "label": "Slip Tint Radiant All-Over Concealer"
+   },
+   {
+    "product": "revealer-concealer",
+    "label": "Revealer Concealer"
+   },
+   {
     "product": "revealer-extra-bright",
-    "label": "Extra Bright Concealer"
-   }
-  ]
- },
- {
-  "name": "The Serum & Treatment Family",
-  "axis": "finish/shade",
-  "members": [
-   {
-    "product": "true-skin-radiant-priming-serum",
-    "label": "True Skin Radiant Priming Serum"
-   },
-   {
-    "product": "sos-rescue-relief-body-wash-treatment",
-    "label": "SOS Rescue + Relief Body Wash Treatment Serum"
-   },
-   {
-    "product": "plump-juicy-cleansing-oil",
-    "label": "Plump + Juicy Cleansing Oil"
-   },
-   {
-    "product": "plump-juicy-vegan-collagen-spray-on-serum",
-    "label": "Plump + Juicy Vegan Collagen Spray-on Serum"
+    "label": "Revealer Extra Bright Concealer"
    }
   ]
  }
