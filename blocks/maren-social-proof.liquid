@@ -1,0 +1,66 @@
+{%- comment -%}
+  MAREN · Social proof + FOMO block (PDP Kit, Module 14 + Reviews)
+  Data-driven only: reads real (synthetic-but-consistent) metafields. No fabricated scarcity.
+  Namespaces (see pipeline/data/schema.md): reviews.rating, reviews.count,
+  merch.units_sold_30d, inv.tier, inv.on_hand. Renders nothing if metafields are absent.
+{%- endcomment -%}
+
+{%- assign s = block.settings -%}
+{%- assign rating = product.metafields.reviews.rating.value -%}
+{%- assign review_count = product.metafields.reviews.count.value -%}
+{%- assign sold30 = product.metafields.merch.units_sold_30d.value -%}
+{%- assign inv_tier = product.metafields.inv.tier.value -%}
+{%- assign on_hand = product.metafields.inv.on_hand.value -%}
+
+<div class="maren-social-proof" {{ block.shopify_attributes }}>
+  {%- if s.show_rating and rating != blank -%}
+    <div class="maren-sp__rating" aria-label="Rated {{ rating }} out of 5">
+      <span class="maren-sp__stars" style="--rating: {{ rating }};" aria-hidden="true">★★★★★</span>
+      <span class="maren-sp__rating-num">{{ rating }}</span>
+      {%- if review_count != blank -%}
+        <span class="maren-sp__count">({{ review_count }})</span>
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  {%- if s.show_velocity and sold30 != blank and sold30 >= s.velocity_threshold -%}
+    <p class="maren-sp__line maren-sp__velocity">{{ sold30 }} sold in the last 30 days</p>
+  {%- endif -%}
+
+  {%- if s.show_stock and inv_tier != blank -%}
+    {%- if inv_tier == 'critical' -%}
+      <p class="maren-sp__line maren-sp__stock is-critical">Low stock{% if on_hand != blank %}, only {{ on_hand }} left{% endif %}</p>
+    {%- elsif inv_tier == 'low' -%}
+      <p class="maren-sp__line maren-sp__stock is-low">Selling quickly{% if on_hand != blank %}, {{ on_hand }} left{% endif %}</p>
+    {%- endif -%}
+  {%- endif -%}
+</div>
+
+{% stylesheet %}
+  .maren-social-proof { display: flex; flex-direction: column; gap: var(--margin-2xs, 6px); margin-block: var(--margin-xs, 10px); }
+  .maren-sp__rating { display: flex; align-items: center; gap: 6px; font-size: 0.9rem; }
+  .maren-sp__stars { position: relative; display: inline-block; letter-spacing: 1px; color: color-mix(in srgb, currentColor 22%, transparent); }
+  .maren-sp__stars::before { content: "★★★★★"; position: absolute; inset-block: 0; inset-inline-start: 0; overflow: hidden; white-space: nowrap; width: calc(var(--rating, 0) / 5 * 100%); color: currentColor; }
+  .maren-sp__rating-num { font-weight: 600; }
+  .maren-sp__count { opacity: 0.6; }
+  .maren-sp__line { margin: 0; font-size: 0.85rem; opacity: 0.85; }
+  .maren-sp__stock.is-critical { color: #9a3b2f; opacity: 1; }
+  .maren-sp__stock.is-low { opacity: 0.9; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "MAREN · Social proof",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Data-driven rating, sales velocity, and low-stock signals. Reads product metafields loaded by the MAREN data pipeline." },
+    { "type": "checkbox", "id": "show_rating", "label": "Show star rating", "default": true },
+    { "type": "checkbox", "id": "show_velocity", "label": "Show units sold (30 days)", "default": true },
+    { "type": "range", "id": "velocity_threshold", "label": "Hide velocity below", "min": 0, "max": 200, "step": 5, "default": 10 },
+    { "type": "checkbox", "id": "show_stock", "label": "Show low-stock signal", "default": true }
+  ],
+  "presets": [
+    { "name": "MAREN · Social proof" }
+  ]
+}
+{% endschema %}
