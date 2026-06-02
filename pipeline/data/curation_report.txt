@@ -1,0 +1,35 @@
+CURATED CATALOG REPORT
+count: 236
+
+by category:
+   19 Powder
+   17 Foundation
+   17 Lip Balm & Oil
+   16 Concealer
+   16 Mascara
+   16 Serum & Treatment
+   15 Lipstick
+   15 Blush
+   15 Tool
+   12 Contour
+   11 Lip Liner
+   10 Other
+   10 Highlighter
+    9 Eyeshadow
+    9 Bronzer
+    9 Brow
+    8 SPF & Sun
+    7 Mist & Spray
+    3 Eyeliner
+    2 Primer
+
+by source brand:
+   95 westman
+   41 ilia
+   37 kosas
+   33 tower28
+   30 saie
+
+products with shade ranges (>1): 80
+total variants: 1041
+total images: 3462

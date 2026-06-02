@@ -1,0 +1,9 @@
+# Bulk scraped source dumps — reproducible via pipeline/crawl/crawl.py, not committed
+pipeline/crawl/raw/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
