@@ -630,6 +630,12 @@
       },
       "name": "t:names.collection_links_text",
       "settings": {
+        "collection_list": [
+          "makeup",
+          "skincare",
+          "body",
+          "fragrance"
+        ],
         "layout": "text",
         "section_width": "page-width",
         "alignment": "left",
