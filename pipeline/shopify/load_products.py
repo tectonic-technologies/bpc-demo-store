@@ -77,7 +77,10 @@ def build_input(p):
             "inventoryItem": {"sku": v.get("sku") or "", "tracked": False},
         } for v, ovals in valid]
     else:
-        inp["variants"] = [{"price": price0, "inventoryPolicy": "CONTINUE",
+        # single-variant product still needs the default option + optionValue
+        inp["productOptions"] = [{"name": "Title", "values": [{"name": "Default Title"}]}]
+        inp["variants"] = [{"optionValues": [{"optionName": "Title", "name": "Default Title"}],
+                            "price": price0, "inventoryPolicy": "CONTINUE",
                             "inventoryItem": {"tracked": False}}]
     # metafields
     mfs = [
@@ -109,8 +112,19 @@ def build_input(p):
 def main():
     limit = int(sys.argv[1]) if len(sys.argv) > 1 else len(CAT)
     s = Shopify()
-    ok, fail = 0, 0
+    # idempotency: skip products already in the store (match by title)
+    existing, cursor = set(), None
+    while True:
+        d = s.gql('query($c:String){products(first:100,after:$c){pageInfo{hasNextPage endCursor} nodes{title}}}', {"c": cursor})["products"]
+        existing.update(n["title"] for n in d["nodes"])
+        if not d["pageInfo"]["hasNextPage"]: break
+        cursor = d["pageInfo"]["endCursor"]
+    print(f"already in store: {len(existing)} products (will skip these)")
+    ok, fail, skip = 0, 0, 0
     for i, p in enumerate(CAT[:limit]):
+        title = DESC.get(p["src_handle"], {}).get("title") or p["display_title"]
+        if title in existing:
+            skip += 1; continue
         inp = build_input(p)
         if not inp.get("variants"):
             print(f"  skip (no variants): {p['display_title']}"); continue
@@ -130,7 +144,7 @@ def main():
             if ok <= 3 or ok % 25 == 0:
                 print(f"  [{ok}] {res['product']['title']} -> {res['product']['handle']}")
         time.sleep(0.6)
-    print(f"\nLOADED ok={ok} fail={fail} (of {min(limit,len(CAT))})")
+    print(f"\nLOADED ok={ok} fail={fail} skipped={skip} (of {min(limit,len(CAT))})")
 
 if __name__ == "__main__":
     main()
