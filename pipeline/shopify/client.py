@@ -5,7 +5,7 @@ Credentials come from env vars or pipeline/shopify/secrets.env (gitignored):
   SHOPIFY_TOKEN=shpat_xxx                   (Admin API access token)
   SHOPIFY_API_VERSION=2025-07               (optional; default below)
 """
-import os, json, ssl, urllib.request, urllib.error
+import os, json, ssl, time, urllib.request, urllib.error
 
 ctx = ssl.create_default_context()
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -61,6 +61,10 @@ class Shopify:
             if e.code == 401 and _retry and self.cid and self.secret:
                 self.mint()
                 return self._req(method, url, body, _retry=False)
+            if e.code == 429:
+                ra = e.headers.get("Retry-After")
+                time.sleep(float(ra) if ra else 2.0)
+                return self._req(method, url, body, _retry=_retry)
             raise SystemExit(f"HTTP {e.code} {method} {url}\n{e.read().decode()[:500]}")
 
     def rest(self, method, path, body=None):
