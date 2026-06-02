@@ -1,0 +1,9141 @@
+{
+ "0": {
+  "display_title": "Serum Concealer",
+  "category": "Foundation",
+  "price": 24.0,
+  "units_sold_total": 33,
+  "units_sold_30d": 6,
+  "revenue": 792.0,
+  "best_seller": false,
+  "on_hand": 94,
+  "inv_tier": "healthy",
+  "margin": 0.672,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Soft Focus Finishing Powder",
+   "Lip Pulse",
+   "Vital Skincare Concealer - Atelier D3",
+   "Base Brush"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 24.0
+   }
+  ]
+ },
+ "1": {
+  "display_title": "Plumping Lip Jelly",
+  "category": "Lip Balm & Oil",
+  "price": 18.0,
+  "units_sold_total": 13,
+  "units_sold_30d": 4,
+  "revenue": 234.0,
+  "best_seller": false,
+  "on_hand": 123,
+  "inv_tier": "healthy",
+  "margin": 0.702,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Weightless Lip Color",
+   "Lip Suede Matte Lipstick - Figue",
+   "Face Trace Contour Stick - Toast",
+   "Mascara 101"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "2": {
+  "display_title": "Matte Powder Blush",
+  "category": "Powder",
+  "price": 22.0,
+  "units_sold_total": 57,
+  "units_sold_30d": 15,
+  "revenue": 1254.0,
+  "best_seller": true,
+  "on_hand": 90,
+  "inv_tier": "healthy",
+  "margin": 0.755,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Vital Pressed Skincare Powder - Translucent",
+   "Lip Suede Matte Lipstick - Le Rouge",
+   "Tinted SPF 30",
+   "Slip Tint Tinted Moisturizer"
+  ],
+  "live_viewers_base": 10,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.5
+   }
+  ]
+ },
+ "3": {
+  "display_title": "Mini Revealer Concealer",
+  "category": "Concealer",
+  "price": 16.0,
+  "units_sold_total": 27,
+  "units_sold_30d": 10,
+  "revenue": 432.0,
+  "best_seller": false,
+  "on_hand": 41,
+  "inv_tier": "healthy",
+  "margin": 0.725,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Matte Powder Blush",
+   "Skin-improving Foundation SPF 25",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Complexion Brush"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "4": {
+  "display_title": "SOS Lipsoftie Lip Treatment",
+  "category": "Lip Balm & Oil",
+  "price": 16.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 1,
+  "revenue": 128.0,
+  "best_seller": false,
+  "on_hand": 3,
+  "inv_tier": "critical",
+  "margin": 0.714,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Petal",
+   "Lip Shape Lip Liner - Minou",
+   "Lip Shape Lip Liner - Coucou",
+   "Sun Tone Bronzing Drops - Soleil Parfait 1"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "5": {
+  "display_title": "Weightless Lip Color",
+  "category": "Lipstick",
+  "price": 26.0,
+  "units_sold_total": 40,
+  "units_sold_30d": 10,
+  "revenue": 1040.0,
+  "best_seller": true,
+  "on_hand": 93,
+  "inv_tier": "healthy",
+  "margin": 0.645,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Oneliner Lip Liner",
+   "Plumping Lip Jelly",
+   "Squeaky Clean Liquid Lip Balm - Nou Nou"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "6": {
+  "display_title": "Mini Dew Blush",
+  "category": "Blush",
+  "price": 17.0,
+  "units_sold_total": 12,
+  "units_sold_30d": 1,
+  "revenue": 204.0,
+  "best_seller": false,
+  "on_hand": 4,
+  "inv_tier": "critical",
+  "margin": 0.781,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS (store. Our. Stuff.) Makeup Bag",
+   "Vital Skincare Concealer - Atelier L3",
+   "Lit Up Highlight Stick - Petal",
+   "Hotliner"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 17.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 17.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 17.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 17.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 17.0
+   }
+  ]
+ },
+ "7": {
+  "display_title": "Fluffy Brush",
+  "category": "Tool",
+  "price": 28.0,
+  "units_sold_total": 24,
+  "units_sold_30d": 4,
+  "revenue": 672.0,
+  "best_seller": false,
+  "on_hand": 16,
+  "inv_tier": "low",
+  "margin": 0.553,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Color Block Lipstick",
+   "Powder Blush Brush",
+   "Barrier Build Skin Protectant Cream",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "8": {
+  "display_title": "Makewaves Mascara",
+  "category": "Mascara",
+  "price": 20.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 5,
+  "revenue": 220.0,
+  "best_seller": false,
+  "on_hand": 31,
+  "inv_tier": "healthy",
+  "margin": 0.686,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "In Full Micro-tip Brow Pencil",
+   "Eye Pods Eye Shadow - Rendez-vous",
+   "Eye Shadow I Brush",
+   "Line Gel Liner"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "9": {
+  "display_title": "True Skin Radiant Priming Serum",
+  "category": "Serum & Treatment",
+  "price": 52.0,
+  "units_sold_total": 26,
+  "units_sold_30d": 3,
+  "revenue": 1352.0,
+  "best_seller": false,
+  "on_hand": 298,
+  "inv_tier": "healthy",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Sun Serum Mineral Sunscreen SPF 50",
+   "Travel SOS Rescue Spray",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 52.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 52.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 52.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 52.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 52.0
+   }
+  ]
+ },
+ "10": {
+  "display_title": "Glow Sculpt",
+  "category": "Contour",
+  "price": 28.0,
+  "units_sold_total": 50,
+  "units_sold_30d": 15,
+  "revenue": 1400.0,
+  "best_seller": true,
+  "on_hand": 27,
+  "inv_tier": "healthy",
+  "margin": 0.63,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Pressed Skincare Powder - Translucent",
+   "Wet Stick",
+   "Cheeks Blush Stick - Mimi",
+   "Blush Is Life"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "11": {
+  "display_title": "Lip Liner 101",
+  "category": "Lip Liner",
+  "price": 20.0,
+  "units_sold_total": 68,
+  "units_sold_30d": 12,
+  "revenue": 1360.0,
+  "best_seller": true,
+  "on_hand": 59,
+  "inv_tier": "healthy",
+  "margin": 0.641,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Oil Jelly",
+   "Lip Pulse",
+   "Lip Suede Matte Lipstick - Lou Lou",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 12,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "12": {
+  "display_title": "Mini Glowy Super Gel",
+  "category": "Highlighter",
+  "price": 18.0,
+  "units_sold_total": 81,
+  "units_sold_30d": 19,
+  "revenue": 1458.0,
+  "best_seller": true,
+  "on_hand": 12,
+  "inv_tier": "low",
+  "margin": 0.71,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Multi-stick",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4",
+   "Face Trace Contour Stick - Whiskey"
+  ],
+  "live_viewers_base": 18,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "13": {
+  "display_title": "Eye Stylus Shadow Stick",
+  "category": "Eyeshadow",
+  "price": 33.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 4,
+  "revenue": 528.0,
+  "best_seller": false,
+  "on_hand": 8,
+  "inv_tier": "low",
+  "margin": 0.735,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mascara 101",
+   "Eye Want You Mascara - Clean Black",
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Spot Check Brush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 33.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 33.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 33.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 33.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 33.0
+   }
+  ]
+ },
+ "14": {
+  "display_title": "Supersuede Radiant Baked Bronzer",
+  "category": "Bronzer",
+  "price": 32.0,
+  "units_sold_total": 64,
+  "units_sold_30d": 13,
+  "revenue": 2048.0,
+  "best_seller": true,
+  "on_hand": 182,
+  "inv_tier": "healthy",
+  "margin": 0.708,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Lit Up Highlight Stick - Nectar",
+   "Lightshift Cream Highlighter",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 10,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 24.0
+   }
+  ]
+ },
+ "15": {
+  "display_title": "Brow Pop",
+  "category": "Brow",
+  "price": 26.0,
+  "units_sold_total": 33,
+  "units_sold_30d": 7,
+  "revenue": 858.0,
+  "best_seller": false,
+  "on_hand": 82,
+  "inv_tier": "healthy",
+  "margin": 0.673,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black",
+   "In Full Micro-tip Brow Pencil",
+   "Vital Skincare Concealer - Atelier L4",
+   "Limitless Lash Mascara"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "16": {
+  "display_title": "Sun Melt",
+  "category": "SPF & Sun",
+  "price": 33.0,
+  "units_sold_total": 44,
+  "units_sold_30d": 12,
+  "revenue": 1452.0,
+  "best_seller": true,
+  "on_hand": 79,
+  "inv_tier": "healthy",
+  "margin": 0.748,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Skin Rewind Complexion Stick",
+   "Serum Skin Tint SPF 30",
+   "Base Brush",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 33.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 33.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 33.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 33.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 33.0
+   }
+  ]
+ },
+ "17": {
+  "display_title": "SOS Rescue Spray Refill",
+  "category": "Mist & Spray",
+  "price": 68.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 7,
+  "revenue": 1156.0,
+  "best_seller": false,
+  "on_hand": 65,
+  "inv_tier": "healthy",
+  "margin": 0.741,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Barrier Build Skin Protectant Cream",
+   "Eye Activator Serum",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Chemistry Deodorant"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 68.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 68.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 68.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 68.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 68.0
+   }
+  ]
+ },
+ "18": {
+  "display_title": "Soulgazer",
+  "category": "Eyeliner",
+  "price": 24.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 1,
+  "revenue": 192.0,
+  "best_seller": false,
+  "on_hand": 104,
+  "inv_tier": "healthy",
+  "margin": 0.697,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Eye Want You Mascara - Le Brun Clean",
+   "Eye Want You Mascara - Clean Black",
+   "Line Liquid Liner",
+   "Mascara 101"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "19": {
+  "display_title": "Base Brush",
+  "category": "Primer",
+  "price": 30.0,
+  "units_sold_total": 33,
+  "units_sold_30d": 12,
+  "revenue": 990.0,
+  "best_seller": false,
+  "on_hand": 186,
+  "inv_tier": "healthy",
+  "margin": 0.545,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Serum Skin Tint SPF 30",
+   "Sun Melt",
+   "Skin-improving Foundation SPF 25",
+   "Slip Tint Radiant All-over Concealer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.5
+   }
+  ]
+ },
+ "20": {
+  "display_title": "Tinted SPF 30",
+  "category": "Foundation",
+  "price": 32.0,
+  "units_sold_total": 38,
+  "units_sold_30d": 6,
+  "revenue": 1216.0,
+  "best_seller": false,
+  "on_hand": 217,
+  "inv_tier": "healthy",
+  "margin": 0.673,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Extra Bright",
+   "Vital Skincare Concealer - Atelier L4",
+   "Matte Powder Blush",
+   "Lip Suede Matte Lipstick - Rue"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "21": {
+  "display_title": "Mini Vanity Case",
+  "category": "Other",
+  "price": 45.0,
+  "units_sold_total": 15,
+  "units_sold_30d": 2,
+  "revenue": 675.0,
+  "best_seller": false,
+  "on_hand": 42,
+  "inv_tier": "healthy",
+  "margin": 0.546,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Supersuede Radiant Baked Bronzer",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Lip Suede Matte Lipstick - Rue"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 45.0
+   }
+  ]
+ },
+ "22": {
+  "display_title": "Toni Bravo Getset Matte Powder Blush",
+  "category": "Powder",
+  "price": 22.0,
+  "units_sold_total": 45,
+  "units_sold_30d": 15,
+  "revenue": 990.0,
+  "best_seller": true,
+  "on_hand": 55,
+  "inv_tier": "healthy",
+  "margin": 0.734,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Finishing Powder Brush",
+   "Vital Skincare Concealer - Atelier D3",
+   "Vital Pressed Skincare Powder - Translucent"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "23": {
+  "display_title": "Concealer",
+  "category": "Concealer",
+  "price": 32.0,
+  "units_sold_total": 5,
+  "units_sold_30d": 1,
+  "revenue": 160.0,
+  "best_seller": false,
+  "on_hand": 47,
+  "inv_tier": "healthy",
+  "margin": 0.789,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Blush Is Life",
+   "In Frame Brow Gel",
+   "Supr\u00eame C Serum",
+   "Matte Powder Blush"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "24": {
+  "display_title": "Lipsoftie Lip Treatment",
+  "category": "Lip Balm & Oil",
+  "price": 16.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 2,
+  "revenue": 144.0,
+  "best_seller": false,
+  "on_hand": 105,
+  "inv_tier": "healthy",
+  "margin": 0.821,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Weightless Lip Color",
+   "Lip Liner 101",
+   "Lip Suede Matte Lipstick - Ma Biche",
+   "Powder Blush Brush"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "25": {
+  "display_title": "Color Block Lipstick",
+  "category": "Lipstick",
+  "price": 29.0,
+  "units_sold_total": 32,
+  "units_sold_30d": 8,
+  "revenue": 928.0,
+  "best_seller": false,
+  "on_hand": 88,
+  "inv_tier": "healthy",
+  "margin": 0.695,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Barrier Build Skin Protectant Cream",
+   "Lip Pulse",
+   "Hotliner",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "26": {
+  "display_title": "Double Brush",
+  "category": "Tool",
+  "price": 32.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 2,
+  "revenue": 224.0,
+  "best_seller": false,
+  "on_hand": 20,
+  "inv_tier": "low",
+  "margin": 0.608,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Chemistry Deodorant",
+   "Lip Shape Lip Liner - Sable",
+   "Bronzino Cream Bronzer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "27": {
+  "display_title": "SOS Rescue + Relief Body Wash Treatment",
+  "category": "Serum & Treatment",
+  "price": 22.0,
+  "units_sold_total": 28,
+  "units_sold_30d": 9,
+  "revenue": 616.0,
+  "best_seller": false,
+  "on_hand": 55,
+  "inv_tier": "healthy",
+  "margin": 0.717,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "SOS (store. Our. Stuff.) Makeup Bag",
+   "Complexion Brush",
+   "Slip Tint Tinted Moisturizer"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "28": {
+  "display_title": "Sculptino Cream Contour",
+  "category": "Contour",
+  "price": 20.0,
+  "units_sold_total": 24,
+  "units_sold_30d": 5,
+  "revenue": 480.0,
+  "best_seller": false,
+  "on_hand": 164,
+  "inv_tier": "healthy",
+  "margin": 0.774,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Lip Shape Lip Liner - Minou",
+   "Eye Pods Eye Shadow - Toujours",
+   "Cheeks Blush Stick - Poppet"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "29": {
+  "display_title": "Hotliner",
+  "category": "Lip Liner",
+  "price": 22.0,
+  "units_sold_total": 43,
+  "units_sold_30d": 9,
+  "revenue": 946.0,
+  "best_seller": true,
+  "on_hand": 49,
+  "inv_tier": "healthy",
+  "margin": 0.643,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Lip Suede Matte Lipstick - Lou Lou",
+   "Lip Liner 101",
+   "Color Block Lipstick"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "30": {
+  "display_title": "Gogo Cooling Shimmer Eyeshadow",
+  "category": "Eyeshadow",
+  "price": 20.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 6,
+  "revenue": 380.0,
+  "best_seller": false,
+  "on_hand": 100,
+  "inv_tier": "healthy",
+  "margin": 0.747,
+  "is_new": true,
+  "is_clearance": true,
+  "fbt": [
+   "Mini Soulgazer Mascara",
+   "Mini Makewaves Mascara In Jet",
+   "Shiny Objects",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 15.0
+   }
+  ]
+ },
+ "31": {
+  "display_title": "Dew Bronze",
+  "category": "Bronzer",
+  "price": 26.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 7,
+  "revenue": 468.0,
+  "best_seller": false,
+  "on_hand": 16,
+  "inv_tier": "low",
+  "margin": 0.707,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Face Trace Contour Stick - Toast",
+   "Lit Up Highlight Stick - Gar\u00e7onne",
+   "Blush Stack",
+   "Contour Fan Brush"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "32": {
+  "display_title": "In Full Micro-tip Brow Pencil",
+  "category": "Brow",
+  "price": 26.0,
+  "units_sold_total": 42,
+  "units_sold_30d": 10,
+  "revenue": 1092.0,
+  "best_seller": true,
+  "on_hand": 58,
+  "inv_tier": "healthy",
+  "margin": 0.713,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black",
+   "Mini Glowy Super Gel",
+   "Eye Want You Mascara - Le Brun Clean",
+   "Mascara 101"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "33": {
+  "display_title": "Sun Serum Mineral Sunscreen SPF 50",
+  "category": "SPF & Sun",
+  "price": 40.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 5,
+  "revenue": 1000.0,
+  "best_seller": false,
+  "on_hand": 40,
+  "inv_tier": "healthy",
+  "margin": 0.7,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "True Skin Radiant Priming Serum",
+   "Slip Tint Undetectable Baked Setting Powder",
+   "Skin-improving Foundation SPF 25",
+   "Barrier Build Skin Protectant Cream"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 30.0
+   }
+  ]
+ },
+ "34": {
+  "display_title": "SOS Gel Cleanser",
+  "category": "Mist & Spray",
+  "price": 20.0,
+  "units_sold_total": 3,
+  "units_sold_30d": 2,
+  "revenue": 60.0,
+  "best_seller": false,
+  "on_hand": 13,
+  "inv_tier": "low",
+  "margin": 0.699,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Recovery Cream",
+   "Air Brow - Tinted",
+   "Supersuede Radiant Baked Bronzer",
+   "Face Trace Contour Stick - Au Lait"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "35": {
+  "display_title": "Line Liquid Liner",
+  "category": "Eyeliner",
+  "price": 29.0,
+  "units_sold_total": 41,
+  "units_sold_30d": 9,
+  "revenue": 1189.0,
+  "best_seller": true,
+  "on_hand": 44,
+  "inv_tier": "healthy",
+  "margin": 0.803,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black",
+   "Mascara 101",
+   "Limitless Lash Mascara",
+   "Mini Soulgazer Mascara"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "36": {
+  "display_title": "Base Face Milk",
+  "category": "Primer",
+  "price": 58.0,
+  "units_sold_total": 35,
+  "units_sold_30d": 7,
+  "revenue": 2030.0,
+  "best_seller": false,
+  "on_hand": 156,
+  "inv_tier": "healthy",
+  "margin": 0.579,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Skin Rewind Complexion Stick",
+   "Serum Skin Tint SPF 30",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Slip Tint Radiant All-over Concealer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "37": {
+  "display_title": "Slip Tint Undetectable Baked Setting Powder",
+  "category": "Foundation",
+  "price": 32.0,
+  "units_sold_total": 40,
+  "units_sold_30d": 7,
+  "revenue": 1280.0,
+  "best_seller": true,
+  "on_hand": 72,
+  "inv_tier": "healthy",
+  "margin": 0.791,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Vital Skincare Concealer - Atelier M1",
+   "Liquid Powder Eye Tint",
+   "Serum Skin Tint SPF 30"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "38": {
+  "display_title": "Glossybounce",
+  "category": "Lip Balm & Oil",
+  "price": 22.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 9,
+  "revenue": 352.0,
+  "best_seller": false,
+  "on_hand": 56,
+  "inv_tier": "healthy",
+  "margin": 0.788,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Lip Shape Lip Liner - Sable",
+   "Lip Suede Matte Lipstick - Rue",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Wet Stick"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.5
+   }
+  ]
+ },
+ "39": {
+  "display_title": "Pressed Powder",
+  "category": "Powder",
+  "price": 28.0,
+  "units_sold_total": 12,
+  "units_sold_30d": 1,
+  "revenue": 336.0,
+  "best_seller": false,
+  "on_hand": 130,
+  "inv_tier": "healthy",
+  "margin": 0.85,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Serum Skin Tint SPF 30",
+   "Cheeks Blush Stick - Dou Dou",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "40": {
+  "display_title": "Skin Blur Serum Concealer",
+  "category": "Concealer",
+  "price": 32.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 4,
+  "revenue": 256.0,
+  "best_seller": false,
+  "on_hand": 86,
+  "inv_tier": "healthy",
+  "margin": 0.695,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Lou Lou",
+   "Skin Rewind Complexion Stick",
+   "Vital Skincare Concealer - Atelier L3",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "41": {
+  "display_title": "Lip Oil Jelly",
+  "category": "Lip Balm & Oil",
+  "price": 16.0,
+  "units_sold_total": 42,
+  "units_sold_30d": 13,
+  "revenue": 672.0,
+  "best_seller": true,
+  "on_hand": 4,
+  "inv_tier": "critical",
+  "margin": 0.562,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Liner 101",
+   "Lip Suede Matte Lipstick - Piqu\u00e9",
+   "Lip Suede Matte Lipstick - Ma Biche",
+   "Superdew Highlighter"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "42": {
+  "display_title": "Blush Is Life",
+  "category": "Blush",
+  "price": 29.0,
+  "units_sold_total": 28,
+  "units_sold_30d": 4,
+  "revenue": 812.0,
+  "best_seller": false,
+  "on_hand": 46,
+  "inv_tier": "healthy",
+  "margin": 0.68,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Glow Sculpt",
+   "Sunshift Cream Bronzer",
+   "Lit Up Highlight Stick - Nectar",
+   "Face Trace Contour Stick - Coco"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 21.75
+   }
+  ]
+ },
+ "43": {
+  "display_title": "Big Brush",
+  "category": "Tool",
+  "price": 32.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 3,
+  "revenue": 192.0,
+  "best_seller": false,
+  "on_hand": 38,
+  "inv_tier": "healthy",
+  "margin": 0.577,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Sunshift Cream Bronzer",
+   "Slip Tint Radiant All-over Concealer",
+   "Lip Shape Lip Liner - Sable",
+   "Blender Brush"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "44": {
+  "display_title": "Plump + Juicy Cleansing Oil",
+  "category": "Serum & Treatment",
+  "price": 48.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 2,
+  "revenue": 768.0,
+  "best_seller": false,
+  "on_hand": 124,
+  "inv_tier": "healthy",
+  "margin": 0.689,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Skin Rewind Complexion Stick",
+   "Color Block Lipstick",
+   "Fluffy Brush"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "45": {
+  "display_title": "Face Trace Contour Stick - Truffle",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 7,
+  "revenue": 864.0,
+  "best_seller": false,
+  "on_hand": 137,
+  "inv_tier": "healthy",
+  "margin": 0.722,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier L4",
+   "Multi-stick",
+   "Lip Suede Matte Lipstick - Mimi",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "46": {
+  "display_title": "Oneliner Lip Liner",
+  "category": "Lip Liner",
+  "price": 15.0,
+  "units_sold_total": 32,
+  "units_sold_30d": 5,
+  "revenue": 480.0,
+  "best_seller": false,
+  "on_hand": 50,
+  "inv_tier": "healthy",
+  "margin": 0.757,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Lip Suede Matte Lipstick - Rue",
+   "Weightless Lip Color",
+   "Lip Pulse"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 15.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 15.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 15.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 15.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 15.0
+   }
+  ]
+ },
+ "47": {
+  "display_title": "Lightshift Cream Highlighter",
+  "category": "Highlighter",
+  "price": 40.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 7,
+  "revenue": 1000.0,
+  "best_seller": false,
+  "on_hand": 10,
+  "inv_tier": "low",
+  "margin": 0.803,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Supersuede Radiant Baked Bronzer",
+   "Face Trace Contour Stick - Whiskey",
+   "Vital Skincare Concealer - Atelier L4"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 40.0
+   }
+  ]
+ },
+ "48": {
+  "display_title": "Eye Shadow II Brush",
+  "category": "Eyeshadow",
+  "price": 62.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 1,
+  "revenue": 558.0,
+  "best_seller": false,
+  "on_hand": 2,
+  "inv_tier": "critical",
+  "margin": 0.718,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Base Brush",
+   "Squeaky Clean Liquid Lip Balm - Chou Chou",
+   "Eye Want You Mascara - Le Brun Clean",
+   "Tinted SPF 30"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 62.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 62.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 62.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 62.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 46.5
+   }
+  ]
+ },
+ "49": {
+  "display_title": "Sunshift Cream Bronzer",
+  "category": "Bronzer",
+  "price": 40.0,
+  "units_sold_total": 29,
+  "units_sold_30d": 9,
+  "revenue": 1160.0,
+  "best_seller": false,
+  "on_hand": 161,
+  "inv_tier": "healthy",
+  "margin": 0.666,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Cheeks Blush Stick - Mimi",
+   "Blush Is Life",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 40.0
+   }
+  ]
+ },
+ "50": {
+  "display_title": "In Frame Brow Gel",
+  "category": "Brow",
+  "price": 25.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 1,
+  "revenue": 175.0,
+  "best_seller": false,
+  "on_hand": 4,
+  "inv_tier": "critical",
+  "margin": 0.725,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Skin Rewind Complexion Stick",
+   "Growpotion",
+   "Supr\u00eame C Serum",
+   "Concealer"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.75
+   }
+  ]
+ },
+ "51": {
+  "display_title": "SOS Rescue Spray - Standard Size",
+  "category": "Mist & Spray",
+  "price": 28.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 1,
+  "revenue": 280.0,
+  "best_seller": false,
+  "on_hand": 29,
+  "inv_tier": "healthy",
+  "margin": 0.57,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Barrier Build Skin Protectant Cream",
+   "Vital Skincare Concealer - Atelier L4",
+   "Mini Glowy Super Gel",
+   "SOS (store. Our. Stuff.) Makeup Bag"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "52": {
+  "display_title": "Line Gel Liner",
+  "category": "Eyeliner",
+  "price": 26.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 1,
+  "revenue": 468.0,
+  "best_seller": false,
+  "on_hand": 91,
+  "inv_tier": "healthy",
+  "margin": 0.79,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Soulgazer Mascara",
+   "Line Liquid Liner",
+   "Mascara 101",
+   "In Full Micro-tip Brow Pencil"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "53": {
+  "display_title": "Slip Tint Radiant All-over Concealer",
+  "category": "Foundation",
+  "price": 28.0,
+  "units_sold_total": 21,
+  "units_sold_30d": 4,
+  "revenue": 588.0,
+  "best_seller": false,
+  "on_hand": 64,
+  "inv_tier": "healthy",
+  "margin": 0.781,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Base Face Milk",
+   "Lip Shape Lip Liner - Sable",
+   "Base Brush"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "54": {
+  "display_title": "Airset",
+  "category": "Powder",
+  "price": 30.0,
+  "units_sold_total": 27,
+  "units_sold_30d": 5,
+  "revenue": 810.0,
+  "best_seller": false,
+  "on_hand": 44,
+  "inv_tier": "healthy",
+  "margin": 0.639,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Complexion Brush",
+   "Matte Powder Blush",
+   "Line Liquid Liner",
+   "Cheeks Blush Stick - Poppet"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 30.0
+   }
+  ]
+ },
+ "55": {
+  "display_title": "Supersuede Baked Powder Blush",
+  "category": "Powder",
+  "price": 28.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 0,
+  "revenue": 56.0,
+  "best_seller": false,
+  "on_hand": 26,
+  "inv_tier": "healthy",
+  "margin": 0.752,
+  "is_new": true,
+  "is_clearance": true,
+  "fbt": [
+   "Powder Brush",
+   "Soft Focus Setting Powder",
+   "Complexion Brush",
+   "Lip Suede Matte Lipstick - Pinch"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 21.0
+   }
+  ]
+ },
+ "56": {
+  "display_title": "Extra Bright",
+  "category": "Concealer",
+  "price": 32.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 5,
+  "revenue": 608.0,
+  "best_seller": false,
+  "on_hand": 128,
+  "inv_tier": "healthy",
+  "margin": 0.69,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Tinted SPF 30",
+   "Vital Skincare Concealer - Atelier L4",
+   "True Skin Serum Foundation",
+   "Oneliner Lip Liner"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "57": {
+  "display_title": "Milky Lip Oil Jelly",
+  "category": "Lip Balm & Oil",
+  "price": 16.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 6,
+  "revenue": 272.0,
+  "best_seller": false,
+  "on_hand": 47,
+  "inv_tier": "healthy",
+  "margin": 0.793,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "True Skin Serum Foundation",
+   "Face Trace Contour Stick - Kola",
+   "Serum Skin Tint SPF 30"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "58": {
+  "display_title": "Lip Suede Matte Lipstick - Je R\u00eave",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 1,
+  "revenue": 300.0,
+  "best_seller": false,
+  "on_hand": 164,
+  "inv_tier": "healthy",
+  "margin": 0.694,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lit Up Highlight Stick - Petal",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Wet Lip Oil Gloss",
+   "Lip Shape Lip Liner - Biscuit"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "59": {
+  "display_title": "Soft Focus Blurring Blush",
+  "category": "Blush",
+  "price": 36.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 2,
+  "revenue": 288.0,
+  "best_seller": false,
+  "on_hand": 19,
+  "inv_tier": "low",
+  "margin": 0.712,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Eye Pods Eye Shadow - Toujours",
+   "Serum Concealer",
+   "Weightless Lip Color"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 36.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 36.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 36.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 36.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "60": {
+  "display_title": "Guld Kuppen Brush Cup",
+  "category": "Tool",
+  "price": 175.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 1,
+  "revenue": 350.0,
+  "best_seller": false,
+  "on_hand": 4,
+  "inv_tier": "critical",
+  "margin": 0.588,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Multi-stick",
+   "Cheeks Blush Stick - Mimi",
+   "Lit Up Highlight Stick - Gar\u00e7onne"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 175.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 175.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 175.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 175.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 175.0
+   }
+  ]
+ },
+ "61": {
+  "display_title": "Mascara 101",
+  "category": "Mascara",
+  "price": 26.0,
+  "units_sold_total": 47,
+  "units_sold_30d": 10,
+  "revenue": 1222.0,
+  "best_seller": true,
+  "on_hand": 1,
+  "inv_tier": "critical",
+  "margin": 0.641,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Line Liquid Liner",
+   "Eye Shadow I Brush",
+   "Eye Stylus Shadow Stick",
+   "In Full Micro-tip Brow Pencil"
+  ],
+  "live_viewers_base": 18,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 19.5
+   }
+  ]
+ },
+ "62": {
+  "display_title": "Plump + Juicy Vegan Collagen Spray-on Serum",
+  "category": "Serum & Treatment",
+  "price": 48.0,
+  "units_sold_total": 5,
+  "units_sold_30d": 2,
+  "revenue": 240.0,
+  "best_seller": false,
+  "on_hand": 38,
+  "inv_tier": "healthy",
+  "margin": 0.811,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Bright Start Retinol Alternative Eye Cream",
+   "SOS Rescue Spray Refill",
+   "Skin-improving Foundation SPF 25",
+   "Brow Pop Nano"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "63": {
+  "display_title": "Face Trace Contour Stick - Biscuit",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 20,
+  "units_sold_30d": 2,
+  "revenue": 960.0,
+  "best_seller": false,
+  "on_hand": 11,
+  "inv_tier": "low",
+  "margin": 0.707,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Impressionist Multistick",
+   "Cheeks Blush Stick - Mimi",
+   "Limitless Lash Mascara"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "64": {
+  "display_title": "Lip Shape Lip Liner - Mink",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 0,
+  "revenue": 306.0,
+  "best_seller": false,
+  "on_hand": 72,
+  "inv_tier": "healthy",
+  "margin": 0.716,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Lip Suede Matte Lipstick - Le Rouge",
+   "Lip Shape Lip Liner - Coucou",
+   "Vital Pressed Skincare Powder - Caf\u00e9"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "65": {
+  "display_title": "Lit Up Highlight Stick - Nectar",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 14,
+  "units_sold_30d": 5,
+  "revenue": 672.0,
+  "best_seller": false,
+  "on_hand": 214,
+  "inv_tier": "healthy",
+  "margin": 0.818,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Blush Is Life",
+   "Bonne Brow Defining Pencil - Clay",
+   "Foundation Brush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "66": {
+  "display_title": "Eye Shadow I Brush",
+  "category": "Eyeshadow",
+  "price": 58.0,
+  "units_sold_total": 35,
+  "units_sold_30d": 5,
+  "revenue": 2030.0,
+  "best_seller": false,
+  "on_hand": 7,
+  "inv_tier": "low",
+  "margin": 0.772,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mascara 101",
+   "Growpotion",
+   "Eye Pods Eye Shadow - Rendez-vous",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "67": {
+  "display_title": "Bronzino Cream Bronzer",
+  "category": "Bronzer",
+  "price": 20.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 1,
+  "revenue": 340.0,
+  "best_seller": false,
+  "on_hand": 51,
+  "inv_tier": "healthy",
+  "margin": 0.73,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Activator Serum",
+   "Wet Stick",
+   "Cheeks Blush Stick - Mimi",
+   "Overglaze Hydrating Lip Gloss"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "68": {
+  "display_title": "Brow Pop Nano",
+  "category": "Brow",
+  "price": 23.0,
+  "units_sold_total": 34,
+  "units_sold_30d": 8,
+  "revenue": 782.0,
+  "best_seller": false,
+  "on_hand": 45,
+  "inv_tier": "healthy",
+  "margin": 0.74,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black",
+   "Mini Glowy Super Gel",
+   "Shiny Objects",
+   "Sun Tone Bronzing Drops - Soleil Parfait 1"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 23.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 23.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 23.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 23.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 23.0
+   }
+  ]
+ },
+ "69": {
+  "display_title": "Travel SOS Rescue Spray",
+  "category": "Mist & Spray",
+  "price": 12.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 1,
+  "revenue": 96.0,
+  "best_seller": false,
+  "on_hand": 58,
+  "inv_tier": "healthy",
+  "margin": 0.796,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "True Skin Radiant Priming Serum",
+   "Skin Activator Serum",
+   "Liquid Powder Eye Tint",
+   "Vital Skincare Concealer - Atelier T2"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 12.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 12.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 12.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 12.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 12.0
+   }
+  ]
+ },
+ "70": {
+  "display_title": "Glowy Super Skin Tint Foundation",
+  "category": "Foundation",
+  "price": 40.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 4,
+  "revenue": 760.0,
+  "best_seller": false,
+  "on_hand": 37,
+  "inv_tier": "healthy",
+  "margin": 0.778,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier M1",
+   "Lip Shape Lip Liner - Minou",
+   "Vital Skincare Concealer - Atelier L3",
+   "Eye Pods Eye Shadow - Toujours"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 40.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 40.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 40.0
+   }
+  ]
+ },
+ "71": {
+  "display_title": "Impressionist Multistick",
+  "category": "Blush",
+  "price": 34.0,
+  "units_sold_total": 20,
+  "units_sold_30d": 5,
+  "revenue": 680.0,
+  "best_seller": false,
+  "on_hand": 43,
+  "inv_tier": "healthy",
+  "margin": 0.65,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Fluffy Brush",
+   "Sun Tone Bronzing Drops - Soleil Parfait 1",
+   "Mascara 101",
+   "All-over Powder Brush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "72": {
+  "display_title": "Soft Focus Setting Powder",
+  "category": "Powder",
+  "price": 38.0,
+  "units_sold_total": 14,
+  "units_sold_30d": 3,
+  "revenue": 532.0,
+  "best_seller": false,
+  "on_hand": 124,
+  "inv_tier": "healthy",
+  "margin": 0.684,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier L4",
+   "Matte Powder Blush",
+   "Lip Shape Lip Liner - Minou",
+   "Lightshift Cream Highlighter"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "73": {
+  "display_title": "Vital Skincare Concealer - Atelier T3",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 20,
+  "units_sold_30d": 6,
+  "revenue": 960.0,
+  "best_seller": false,
+  "on_hand": 24,
+  "inv_tier": "healthy",
+  "margin": 0.737,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Pods Eye Shadow - Toujours",
+   "Skin Rewind Complexion Stick",
+   "Cheeks Blush Stick - Coquette",
+   "Vital Pressed Skincare Powder - Translucent"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "74": {
+  "display_title": "Lipfuel Lip Balm",
+  "category": "Lip Balm & Oil",
+  "price": 20.0,
+  "units_sold_total": 21,
+  "units_sold_30d": 8,
+  "revenue": 420.0,
+  "best_seller": false,
+  "on_hand": 138,
+  "inv_tier": "healthy",
+  "margin": 0.683,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Shape Lip Liner - Minou",
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Slip Tint Radiant All-over Concealer",
+   "Eye Pods Eye Shadow - Toujours"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "75": {
+  "display_title": "Lip Suede Matte Lipstick - Mimi",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 23,
+  "units_sold_30d": 4,
+  "revenue": 1150.0,
+  "best_seller": false,
+  "on_hand": 18,
+  "inv_tier": "low",
+  "margin": 0.677,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Ma Biche",
+   "Squeaky Clean Liquid Lip Balm - Nana",
+   "Sun Melt",
+   "Wet Lip Oil Gloss"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "76": {
+  "display_title": "Beachplease Cream Blush",
+  "category": "Blush",
+  "price": 20.0,
+  "units_sold_total": 5,
+  "units_sold_30d": 2,
+  "revenue": 100.0,
+  "best_seller": false,
+  "on_hand": 195,
+  "inv_tier": "healthy",
+  "margin": 0.747,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Blush Is Life",
+   "Lit Up Highlight Stick - Nectar",
+   "Supersuede Radiant Baked Bronzer",
+   "Oneliner Lip Liner"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "77": {
+  "display_title": "Dual-ended Makeup Blender",
+  "category": "Tool",
+  "price": 14.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 4,
+  "revenue": 140.0,
+  "best_seller": false,
+  "on_hand": 203,
+  "inv_tier": "healthy",
+  "margin": 0.511,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier M4",
+   "Vital Pressed Skincare Powder - Cr\u00e8me",
+   "Vital Skincare Concealer - Atelier L3",
+   "Squeaky Clean Liquid Lip Balm - Nana"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 14.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 14.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 14.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 14.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 14.0
+   }
+  ]
+ },
+ "78": {
+  "display_title": "Limitless Lash Mascara",
+  "category": "Mascara",
+  "price": 29.0,
+  "units_sold_total": 26,
+  "units_sold_30d": 7,
+  "revenue": 754.0,
+  "best_seller": false,
+  "on_hand": 22,
+  "inv_tier": "healthy",
+  "margin": 0.721,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Line Liquid Liner",
+   "Brow Pop",
+   "Chemistry Deodorant",
+   "Hotliner"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "79": {
+  "display_title": "Bright Start Retinol Alternative Eye Cream",
+  "category": "Serum & Treatment",
+  "price": 46.0,
+  "units_sold_total": 3,
+  "units_sold_30d": 1,
+  "revenue": 138.0,
+  "best_seller": false,
+  "on_hand": 51,
+  "inv_tier": "healthy",
+  "margin": 0.837,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Slip Tint Radiant All-over Concealer",
+   "Lip Shape Lip Liner - Sable",
+   "SOS Rescue Spray Refill",
+   "Skin-improving Foundation SPF 25"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 46.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 46.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 46.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 46.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 46.0
+   }
+  ]
+ },
+ "80": {
+  "display_title": "Face Trace Contour Stick - Ganache",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 14,
+  "units_sold_30d": 3,
+  "revenue": 672.0,
+  "best_seller": false,
+  "on_hand": 180,
+  "inv_tier": "healthy",
+  "margin": 0.729,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Cheeks Blush Stick - Poppet",
+   "Mini Soulgazer Mascara",
+   "Lip Suede Matte Lipstick - Lou Lou"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "81": {
+  "display_title": "Lip Shape Lip Liner - Lou Lou",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 4,
+  "units_sold_30d": 1,
+  "revenue": 136.0,
+  "best_seller": false,
+  "on_hand": 115,
+  "inv_tier": "healthy",
+  "margin": 0.597,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Piqu\u00e9",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "82": {
+  "display_title": "Lit Up Highlight Stick - Br\u00fbl\u00e9e",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 2,
+  "revenue": 768.0,
+  "best_seller": false,
+  "on_hand": 14,
+  "inv_tier": "healthy",
+  "margin": 0.774,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Wet Stick",
+   "Weightless Lip Color",
+   "Mini Glowy Super Gel",
+   "Sunshift Cream Bronzer"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "83": {
+  "display_title": "Necessary Eyeshadow Palette",
+  "category": "Eyeshadow",
+  "price": 41.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 3,
+  "revenue": 246.0,
+  "best_seller": false,
+  "on_hand": 87,
+  "inv_tier": "healthy",
+  "margin": 0.761,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Weightless Lip Color",
+   "SOS Rescue + Relief Body Wash Treatment",
+   "Mini Dreambeam SPF 40 Pa++++",
+   "Lip Suede Matte Lipstick - Ma Biche"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 41.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 41.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 41.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 41.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 41.0
+   }
+  ]
+ },
+ "84": {
+  "display_title": "Sun Tone Bronzing Drops - Soleil Parfait 2",
+  "category": "Bronzer",
+  "price": 58.0,
+  "units_sold_total": 15,
+  "units_sold_30d": 1,
+  "revenue": 870.0,
+  "best_seller": false,
+  "on_hand": 91,
+  "inv_tier": "healthy",
+  "margin": 0.713,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Glow Sculpt",
+   "Matte Powder Blush",
+   "Cheeks Blush Stick - Poppet"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "85": {
+  "display_title": "Bonne Brow Defining Pencil - Clay",
+  "category": "Brow",
+  "price": 38.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 2,
+  "revenue": 418.0,
+  "best_seller": false,
+  "on_hand": 86,
+  "inv_tier": "healthy",
+  "margin": 0.708,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Face Trace Contour Stick - Toast",
+   "Foundation Brush",
+   "Lit Up Highlight Stick - Nectar",
+   "Air Brow - Tinted"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "86": {
+  "display_title": "SOS Faceguard SPF 30 Sunscreen Pa+++",
+  "category": "SPF & Sun",
+  "price": 32.0,
+  "units_sold_total": 45,
+  "units_sold_30d": 13,
+  "revenue": 1440.0,
+  "best_seller": true,
+  "on_hand": 285,
+  "inv_tier": "healthy",
+  "margin": 0.744,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Slip Tint Radiant All-over Concealer",
+   "SOS Rescue + Relief Body Wash Treatment",
+   "Sun Melt"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 32.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 32.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 32.0
+   }
+  ]
+ },
+ "87": {
+  "display_title": "SOS Rescue Spray",
+  "category": "Mist & Spray",
+  "price": 28.0,
+  "units_sold_total": 14,
+  "units_sold_30d": 2,
+  "revenue": 392.0,
+  "best_seller": false,
+  "on_hand": 81,
+  "inv_tier": "healthy",
+  "margin": 0.733,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Rescue + Relief Body Wash Treatment",
+   "Tinted SPF 30",
+   "Slip Tint Tinted Moisturizer",
+   "Skin Activator Serum"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "88": {
+  "display_title": "Slip Tint Tinted Moisturizer",
+  "category": "Foundation",
+  "price": 38.0,
+  "units_sold_total": 28,
+  "units_sold_30d": 7,
+  "revenue": 1064.0,
+  "best_seller": false,
+  "on_hand": 2,
+  "inv_tier": "critical",
+  "margin": 0.662,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Matte Powder Blush",
+   "Vital Skincare Concealer - Atelier L3",
+   "Liquid Powder Eye Tint",
+   "Base Brush"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "89": {
+  "display_title": "Wet Stick",
+  "category": "Blush",
+  "price": 25.0,
+  "units_sold_total": 37,
+  "units_sold_30d": 9,
+  "revenue": 925.0,
+  "best_seller": false,
+  "on_hand": 28,
+  "inv_tier": "healthy",
+  "margin": 0.73,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Glow Sculpt",
+   "Lit Up Highlight Stick - Br\u00fbl\u00e9e",
+   "Mascara 101",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 25.0
+   }
+  ]
+ },
+ "90": {
+  "display_title": "Mini Cityset Lightweight Setting Spray",
+  "category": "Powder",
+  "price": 18.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 1,
+  "revenue": 126.0,
+  "best_seller": false,
+  "on_hand": 18,
+  "inv_tier": "low",
+  "margin": 0.714,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier L3",
+   "Mascara 101",
+   "Eye Pods Eye Shadow - Rendez-vous",
+   "Soulgazer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "91": {
+  "display_title": "Vital Skincare Concealer - Atelier M2",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 14,
+  "units_sold_30d": 1,
+  "revenue": 672.0,
+  "best_seller": false,
+  "on_hand": 24,
+  "inv_tier": "healthy",
+  "margin": 0.76,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Face Trace Contour Stick - Whiskey",
+   "Superdew Highlighter",
+   "Impressionist Multistick"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "92": {
+  "display_title": "Wet Lip Oil Gloss",
+  "category": "Lip Balm & Oil",
+  "price": 24.0,
+  "units_sold_total": 31,
+  "units_sold_30d": 10,
+  "revenue": 744.0,
+  "best_seller": false,
+  "on_hand": 67,
+  "inv_tier": "healthy",
+  "margin": 0.769,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Pinch",
+   "Overglaze Hydrating Lip Gloss",
+   "Eye Want You Mascara - Clean Black",
+   "Lip Suede Matte Lipstick - Mimi"
+  ],
+  "live_viewers_base": 9,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 24.0
+   }
+  ]
+ },
+ "93": {
+  "display_title": "Lip Suede Matte Lipstick - Figue",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 2,
+  "revenue": 550.0,
+  "best_seller": false,
+  "on_hand": 146,
+  "inv_tier": "healthy",
+  "margin": 0.782,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Plumping Lip Jelly",
+   "Weightless Lip Color",
+   "Brow Pop Nano"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "94": {
+  "display_title": "Blush Stack",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 2,
+  "revenue": 336.0,
+  "best_seller": false,
+  "on_hand": 101,
+  "inv_tier": "healthy",
+  "margin": 0.626,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Dew Bronze",
+   "Lip Suede Matte Lipstick - Piqu\u00e9",
+   "Face Trace Contour Stick - Toast",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "95": {
+  "display_title": "Blender II Brush",
+  "category": "Tool",
+  "price": 85.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 0,
+  "revenue": 170.0,
+  "best_seller": false,
+  "on_hand": 17,
+  "inv_tier": "low",
+  "margin": 0.495,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 85.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 85.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 85.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 85.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 85.0
+   }
+  ]
+ },
+ "96": {
+  "display_title": "Mini Makewaves Mascara In Jet",
+  "category": "Mascara",
+  "price": 12.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 3,
+  "revenue": 120.0,
+  "best_seller": false,
+  "on_hand": 120,
+  "inv_tier": "healthy",
+  "margin": 0.639,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Gogo Cooling Shimmer Eyeshadow",
+   "Lip Suede Matte Lipstick - Piqu\u00e9",
+   "Lip Shape Lip Liner - Minou",
+   "In Full Micro-tip Brow Pencil"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 12.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 12.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 12.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 12.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 12.0
+   }
+  ]
+ },
+ "97": {
+  "display_title": "Barrier Build Skin Protectant Cream",
+  "category": "Serum & Treatment",
+  "price": 64.0,
+  "units_sold_total": 42,
+  "units_sold_30d": 9,
+  "revenue": 2688.0,
+  "best_seller": true,
+  "on_hand": 31,
+  "inv_tier": "healthy",
+  "margin": 0.741,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Color Block Lipstick",
+   "Chemistry Deodorant",
+   "Sun Melt",
+   "Fluffy Brush"
+  ],
+  "live_viewers_base": 14,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 64.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 64.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 64.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 64.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 64.0
+   }
+  ]
+ },
+ "98": {
+  "display_title": "Contour Fan Brush",
+  "category": "Contour",
+  "price": 34.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 5,
+  "revenue": 544.0,
+  "best_seller": false,
+  "on_hand": 39,
+  "inv_tier": "healthy",
+  "margin": 0.78,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Complexion Brush",
+   "Barrier Build Skin Protectant Cream",
+   "Cheeks Blush Stick - Bichette"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "99": {
+  "display_title": "Lip Shape Lip Liner - Biscuit",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 1,
+  "revenue": 68.0,
+  "best_seller": false,
+  "on_hand": 42,
+  "inv_tier": "healthy",
+  "margin": 0.73,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Je R\u00eave"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "100": {
+  "display_title": "Superdew Highlighter",
+  "category": "Highlighter",
+  "price": 18.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 2,
+  "revenue": 108.0,
+  "best_seller": false,
+  "on_hand": 55,
+  "inv_tier": "healthy",
+  "margin": 0.663,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Oil Jelly",
+   "Vital Skincare Concealer - Atelier M2",
+   "Face Trace Contour Stick - Whiskey",
+   "Impressionist Multistick"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 18.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 18.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "101": {
+  "display_title": "Eye Pods Eye Shadow - Toujours",
+  "category": "Eyeshadow",
+  "price": 88.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 5,
+  "revenue": 2200.0,
+  "best_seller": false,
+  "on_hand": 7,
+  "inv_tier": "low",
+  "margin": 0.622,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Pulse",
+   "Eye Want You Mascara - Clean Black",
+   "Vital Skincare Concealer - Atelier T3",
+   "Cheeks Blush Stick - Poppet"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 88.0
+   }
+  ]
+ },
+ "102": {
+  "display_title": "Sun Show",
+  "category": "Bronzer",
+  "price": 38.0,
+  "units_sold_total": 23,
+  "units_sold_30d": 9,
+  "revenue": 874.0,
+  "best_seller": false,
+  "on_hand": 8,
+  "inv_tier": "low",
+  "margin": 0.766,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Cheeks Blush Stick - Mimi",
+   "Wet Stick",
+   "Lit Up Highlight Stick - Biscuit"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "103": {
+  "display_title": "Bonne Brow Defining Pencil - Slate",
+  "category": "Brow",
+  "price": 38.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 2,
+  "revenue": 418.0,
+  "best_seller": false,
+  "on_hand": 7,
+  "inv_tier": "low",
+  "margin": 0.667,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Shiny Objects",
+   "Brow Pop Nano",
+   "Eye Shadow I Brush",
+   "Matte Powder Blush"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "104": {
+  "display_title": "Mini Dreambeam SPF 40 Pa++++",
+  "category": "SPF & Sun",
+  "price": 22.0,
+  "units_sold_total": 29,
+  "units_sold_30d": 5,
+  "revenue": 638.0,
+  "best_seller": false,
+  "on_hand": 7,
+  "inv_tier": "low",
+  "margin": 0.77,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Complexion Brush",
+   "Vital Skincare Concealer - Atelier L3",
+   "SOS Rescue Serum",
+   "Base Face Milk"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "105": {
+  "display_title": "SOS (store. Our. Stuff.) Makeup Bag",
+  "category": "Mist & Spray",
+  "price": 24.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 5,
+  "revenue": 456.0,
+  "best_seller": false,
+  "on_hand": 152,
+  "inv_tier": "healthy",
+  "margin": 0.735,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Skin Activator Rollerball",
+   "Eye Want You Mascara - Clean Black",
+   "SOS Rescue + Relief Body Wash Treatment",
+   "SOS Recovery Cream"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 24.0
+   }
+  ]
+ },
+ "106": {
+  "display_title": "Skin-improving Foundation SPF 25",
+  "category": "Foundation",
+  "price": 45.0,
+  "units_sold_total": 54,
+  "units_sold_30d": 14,
+  "revenue": 2430.0,
+  "best_seller": true,
+  "on_hand": 86,
+  "inv_tier": "healthy",
+  "margin": 0.778,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Base Brush",
+   "Vital Skincare Concealer - Atelier L4",
+   "Vital Skincare Concealer - Atelier L3",
+   "Sun Melt"
+  ],
+  "live_viewers_base": 13,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 45.0
+   }
+  ]
+ },
+ "107": {
+  "display_title": "Ethereal Baked Face Palette",
+  "category": "Eyeshadow",
+  "price": 59.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 2,
+  "revenue": 1062.0,
+  "best_seller": false,
+  "on_hand": 172,
+  "inv_tier": "healthy",
+  "margin": 0.663,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Clean Black",
+   "Vital Pressed Skincare Powder - Dune",
+   "Vital Skincare Concealer - Atelier T3",
+   "Eye Pods Eye Shadow - Toujours"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 59.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 59.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 59.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 59.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 59.0
+   }
+  ]
+ },
+ "108": {
+  "display_title": "Vital Skincare Concealer - Atelier L4",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 61,
+  "units_sold_30d": 16,
+  "revenue": 2928.0,
+  "best_seller": true,
+  "on_hand": 14,
+  "inv_tier": "low",
+  "margin": 0.638,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Skin-improving Foundation SPF 25",
+   "Tinted SPF 30",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 14,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "109": {
+  "display_title": "Overglaze Hydrating Lip Gloss",
+  "category": "Lip Balm & Oil",
+  "price": 26.0,
+  "units_sold_total": 53,
+  "units_sold_30d": 11,
+  "revenue": 1378.0,
+  "best_seller": true,
+  "on_hand": 93,
+  "inv_tier": "healthy",
+  "margin": 0.684,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Pinch",
+   "Hotliner",
+   "Weightless Lip Color",
+   "Lip Shape Lip Liner - Coucou"
+  ],
+  "live_viewers_base": 15,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 19.5
+   }
+  ]
+ },
+ "110": {
+  "display_title": "Lip Suede Matte Lipstick - Petal",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 2,
+  "revenue": 450.0,
+  "best_seller": false,
+  "on_hand": 69,
+  "inv_tier": "healthy",
+  "margin": 0.728,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "SOS Lipsoftie Lip Treatment",
+   "Lip Pulse",
+   "Color Block Lipstick"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "111": {
+  "display_title": "Cheeks Blush Stick - Dou Dou",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 31,
+  "units_sold_30d": 10,
+  "revenue": 1488.0,
+  "best_seller": false,
+  "on_hand": 58,
+  "inv_tier": "healthy",
+  "margin": 0.691,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Matte Powder Blush",
+   "Sculpting Brush",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "112": {
+  "display_title": "Blender Brush",
+  "category": "Tool",
+  "price": 64.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 0,
+  "revenue": 640.0,
+  "best_seller": false,
+  "on_hand": 20,
+  "inv_tier": "low",
+  "margin": 0.436,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Revealer Concealer",
+   "Cheeks Blush Stick - Dou Dou",
+   "Angled Cheek Brush",
+   "Powder II Brush"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 64.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 64.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 64.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 64.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 64.0
+   }
+  ]
+ },
+ "113": {
+  "display_title": "Shiny Objects",
+  "category": "Mascara",
+  "price": 34.0,
+  "units_sold_total": 21,
+  "units_sold_30d": 7,
+  "revenue": 714.0,
+  "best_seller": false,
+  "on_hand": 76,
+  "inv_tier": "healthy",
+  "margin": 0.695,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "In Full Micro-tip Brow Pencil",
+   "Brow Pop Nano",
+   "Gogo Cooling Shimmer Eyeshadow",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "114": {
+  "display_title": "Face Trace Contour Stick - Kola",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 4,
+  "revenue": 1200.0,
+  "best_seller": false,
+  "on_hand": 76,
+  "inv_tier": "healthy",
+  "margin": 0.702,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Coquette",
+   "Serum Skin Tint SPF 30",
+   "Cheeks Blush Stick - Mimi",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "115": {
+  "display_title": "Lip Shape Lip Liner - Sable",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 29,
+  "units_sold_30d": 5,
+  "revenue": 986.0,
+  "best_seller": false,
+  "on_hand": 118,
+  "inv_tier": "healthy",
+  "margin": 0.781,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Slip Tint Radiant All-over Concealer",
+   "Glossybounce",
+   "Lip Suede Matte Lipstick - Pinch"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "116": {
+  "display_title": "Lit Up Highlight Stick - Lit",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 3,
+  "revenue": 336.0,
+  "best_seller": false,
+  "on_hand": 27,
+  "inv_tier": "healthy",
+  "margin": 0.72,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Multi-stick",
+   "Supersuede Radiant Baked Bronzer",
+   "Slip Tint Undetectable Baked Setting Powder",
+   "Fluffy Brush"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "117": {
+  "display_title": "Eye Pods Eye Shadow - Rendez-vous",
+  "category": "Eyeshadow",
+  "price": 88.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 4,
+  "revenue": 1408.0,
+  "best_seller": false,
+  "on_hand": 41,
+  "inv_tier": "healthy",
+  "margin": 0.754,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Shadow I Brush",
+   "Balmy Tint Hydrating Lip Balm",
+   "Mascara 101",
+   "Makewaves Mascara"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 88.0
+   }
+  ]
+ },
+ "118": {
+  "display_title": "Sun Tone Bronzing Drops - Soleil Parfait 3",
+  "category": "Bronzer",
+  "price": 58.0,
+  "units_sold_total": 21,
+  "units_sold_30d": 8,
+  "revenue": 1218.0,
+  "best_seller": false,
+  "on_hand": 99,
+  "inv_tier": "healthy",
+  "margin": 0.673,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Sculpting Brush",
+   "Glow Sculpt",
+   "Shiny Objects"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "119": {
+  "display_title": "Bonne Brow Defining Pencil - Bark",
+  "category": "Brow",
+  "price": 38.0,
+  "units_sold_total": 1,
+  "units_sold_30d": 0,
+  "revenue": 38.0,
+  "best_seller": false,
+  "on_hand": 45,
+  "inv_tier": "healthy",
+  "margin": 0.76,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lightshift Cream Highlighter",
+   "Extra Bright",
+   "Powder Blush Brush"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "120": {
+  "display_title": "Chemistry Deodorant",
+  "category": "Mist & Spray",
+  "price": 20.0,
+  "units_sold_total": 23,
+  "units_sold_30d": 8,
+  "revenue": 460.0,
+  "best_seller": false,
+  "on_hand": 59,
+  "inv_tier": "healthy",
+  "margin": 0.782,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Barrier Build Skin Protectant Cream",
+   "Matte Powder Blush",
+   "Skin Activator Rollerball",
+   "Limitless Lash Mascara"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 20.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 20.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 20.0
+   }
+  ]
+ },
+ "121": {
+  "display_title": "Air Brow - Tinted",
+  "category": "Foundation",
+  "price": 26.0,
+  "units_sold_total": 32,
+  "units_sold_30d": 11,
+  "revenue": 832.0,
+  "best_seller": false,
+  "on_hand": 46,
+  "inv_tier": "healthy",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Barrier Build Skin Protectant Cream",
+   "Base Face Milk",
+   "Bonne Brow Defining Pencil - Clay"
+  ],
+  "live_viewers_base": 10,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "122": {
+  "display_title": "Multi-stick",
+  "category": "Blush",
+  "price": 36.0,
+  "units_sold_total": 40,
+  "units_sold_30d": 11,
+  "revenue": 1440.0,
+  "best_seller": true,
+  "on_hand": 127,
+  "inv_tier": "healthy",
+  "margin": 0.735,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4",
+   "True Skin Serum Foundation",
+   "Supersuede Radiant Baked Bronzer"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 36.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 36.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 36.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 36.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "123": {
+  "display_title": "All-over Powder Brush",
+  "category": "Powder",
+  "price": 30.0,
+  "units_sold_total": 3,
+  "units_sold_30d": 0,
+  "revenue": 90.0,
+  "best_seller": false,
+  "on_hand": 117,
+  "inv_tier": "healthy",
+  "margin": 0.718,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Pods Eye Shadow - Les Jours",
+   "Impressionist Multistick",
+   "Shiny Objects",
+   "Eye Shadow I Brush"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 30.0
+   }
+  ]
+ },
+ "124": {
+  "display_title": "Vital Skincare Concealer - Atelier D3",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 42,
+  "units_sold_30d": 9,
+  "revenue": 2016.0,
+  "best_seller": true,
+  "on_hand": 46,
+  "inv_tier": "healthy",
+  "margin": 0.809,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Powder Blush Brush",
+   "Serum Concealer",
+   "Toni Bravo Getset Matte Powder Blush"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "125": {
+  "display_title": "Lip Pulse",
+  "category": "Lip Balm & Oil",
+  "price": 25.0,
+  "units_sold_total": 35,
+  "units_sold_30d": 3,
+  "revenue": 875.0,
+  "best_seller": false,
+  "on_hand": 50,
+  "inv_tier": "healthy",
+  "margin": 0.643,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Liner 101",
+   "Lip Shape Lip Liner - Minou",
+   "Eye Pods Eye Shadow - Toujours",
+   "Color Block Lipstick"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 25.0
+   }
+  ]
+ },
+ "126": {
+  "display_title": "Lip Suede Matte Lipstick - Rue",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 4,
+  "revenue": 850.0,
+  "best_seller": false,
+  "on_hand": 192,
+  "inv_tier": "healthy",
+  "margin": 0.823,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Oneliner Lip Liner",
+   "Lip Shape Lip Liner - Minou",
+   "Lip Pulse",
+   "Plump + Juicy Lip Booster"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "127": {
+  "display_title": "Cheeks Blush Stick - Petal",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 1,
+  "revenue": 288.0,
+  "best_seller": false,
+  "on_hand": 177,
+  "inv_tier": "healthy",
+  "margin": 0.779,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Liner 101",
+   "Supersuede Radiant Baked Bronzer",
+   "Barrier Build Skin Protectant Cream",
+   "Face Trace Contour Stick - Coco"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "128": {
+  "display_title": "Liquid Blender Brush",
+  "category": "Tool",
+  "price": 125.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 5,
+  "revenue": 1125.0,
+  "best_seller": false,
+  "on_hand": 57,
+  "inv_tier": "healthy",
+  "margin": 0.636,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Sunshift Cream Bronzer",
+   "Mini Glowy Super Gel",
+   "Skin-improving Foundation SPF 25",
+   "Wet Stick"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 125.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 125.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 125.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 125.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 125.0
+   }
+  ]
+ },
+ "129": {
+  "display_title": "Face Trace Contour Stick - Whiskey",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 30,
+  "units_sold_30d": 7,
+  "revenue": 1440.0,
+  "best_seller": false,
+  "on_hand": 117,
+  "inv_tier": "healthy",
+  "margin": 0.722,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Precision Powder Brush",
+   "Vital Skincare Concealer - Atelier L4",
+   "Sun Tone Bronzing Drops - Soleil Parfait 1"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "130": {
+  "display_title": "Lip Shape Lip Liner - Coucou",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 5,
+  "revenue": 612.0,
+  "best_seller": false,
+  "on_hand": 48,
+  "inv_tier": "healthy",
+  "margin": 0.755,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Lip Shape Lip Liner - Minou",
+   "Squeaky Clean Liquid Lip Balm - Pipsqueak",
+   "Lip Suede Matte Lipstick - Le Rouge"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "131": {
+  "display_title": "Lit Up Highlight Stick - Petal",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 24,
+  "units_sold_30d": 5,
+  "revenue": 1152.0,
+  "best_seller": false,
+  "on_hand": 123,
+  "inv_tier": "healthy",
+  "margin": 0.782,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Pressed Skincare Powder - Translucent",
+   "Cheeks Blush Stick - Mimi",
+   "Liquid Powder Eye Tint",
+   "Mini Glowy Super Gel"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "132": {
+  "display_title": "Eye Pods Eye Shadow - Les Nuits",
+  "category": "Eyeshadow",
+  "price": 88.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 0,
+  "revenue": 176.0,
+  "best_seller": false,
+  "on_hand": 89,
+  "inv_tier": "healthy",
+  "margin": 0.602,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Lipsoftie Lip Treatment",
+   "Serum Concealer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 88.0
+   }
+  ]
+ },
+ "133": {
+  "display_title": "Sun Tone Bronzing Drops - Soleil Parfait 4",
+  "category": "Bronzer",
+  "price": 58.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 4,
+  "revenue": 1450.0,
+  "best_seller": false,
+  "on_hand": 3,
+  "inv_tier": "critical",
+  "margin": 0.742,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Cheeks Blush Stick - Mimi",
+   "Multi-stick",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "134": {
+  "display_title": "Bonne Brow Defining Pencil - Stone",
+  "category": "Brow",
+  "price": 38.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 1,
+  "revenue": 76.0,
+  "best_seller": false,
+  "on_hand": 91,
+  "inv_tier": "healthy",
+  "margin": 0.737,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Want You Mascara - Le Brun Clean",
+   "Brow Pop"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "135": {
+  "display_title": "True Skin Serum Foundation",
+  "category": "Foundation",
+  "price": 56.0,
+  "units_sold_total": 30,
+  "units_sold_30d": 6,
+  "revenue": 1680.0,
+  "best_seller": false,
+  "on_hand": 32,
+  "inv_tier": "healthy",
+  "margin": 0.845,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Base Brush",
+   "Multi-stick",
+   "Supersuede Radiant Baked Bronzer",
+   "Extra Bright"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 56.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 56.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 56.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 56.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 56.0
+   }
+  ]
+ },
+ "136": {
+  "display_title": "Lip Sketch Hydrating Crayon",
+  "category": "Other",
+  "price": 27.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 1,
+  "revenue": 162.0,
+  "best_seller": false,
+  "on_hand": 30,
+  "inv_tier": "healthy",
+  "margin": 0.612,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Brush",
+   "Barrier Build Skin Protectant Cream",
+   "Mini Dreambeam SPF 40 Pa++++",
+   "SOS Rescue Spray Refill"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 27.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 27.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 27.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 27.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 27.0
+   }
+  ]
+ },
+ "137": {
+  "display_title": "Powder Blush Brush",
+  "category": "Powder",
+  "price": 30.0,
+  "units_sold_total": 37,
+  "units_sold_30d": 5,
+  "revenue": 1110.0,
+  "best_seller": false,
+  "on_hand": 74,
+  "inv_tier": "healthy",
+  "margin": 0.801,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier D3",
+   "Line Liquid Liner",
+   "Skin Rewind Complexion Stick",
+   "Fluffy Brush"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 30.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 30.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 30.0
+   }
+  ]
+ },
+ "138": {
+  "display_title": "Vital Skincare Concealer - Atelier L1",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 1,
+  "revenue": 480.0,
+  "best_seller": false,
+  "on_hand": 87,
+  "inv_tier": "healthy",
+  "margin": 0.706,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Liquid Powder Eye Tint",
+   "Vital Skincare Concealer - Atelier M2",
+   "Line Liquid Liner",
+   "Cheeks Blush Stick - Chouchette"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "139": {
+  "display_title": "Plump + Juicy Lip Booster",
+  "category": "Lip Balm & Oil",
+  "price": 25.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 3,
+  "revenue": 225.0,
+  "best_seller": false,
+  "on_hand": 41,
+  "inv_tier": "healthy",
+  "margin": 0.718,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Rue",
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Hotliner",
+   "Wet Stick"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 25.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 25.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 25.0
+   }
+  ]
+ },
+ "140": {
+  "display_title": "Lip Suede Matte Lipstick - Ma Biche",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 33,
+  "units_sold_30d": 2,
+  "revenue": 1650.0,
+  "best_seller": false,
+  "on_hand": 38,
+  "inv_tier": "healthy",
+  "margin": 0.736,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Oil Jelly",
+   "Lip Suede Matte Lipstick - Mimi",
+   "Overglaze Hydrating Lip Gloss",
+   "Squeaky Clean Liquid Lip Balm - Pipsqueak"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "141": {
+  "display_title": "Cheeks Blush Stick - Poppet",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 21,
+  "units_sold_30d": 6,
+  "revenue": 1008.0,
+  "best_seller": false,
+  "on_hand": 47,
+  "inv_tier": "healthy",
+  "margin": 0.65,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Pods Eye Shadow - Toujours",
+   "Face Trace Contour Stick - Ganache",
+   "Sculptino Cream Contour",
+   "Sun Tone Bronzing Drops - Soleil Parfait 2"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "142": {
+  "display_title": "Spot Check Brush",
+  "category": "Tool",
+  "price": 38.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 2,
+  "revenue": 266.0,
+  "best_seller": false,
+  "on_hand": 114,
+  "inv_tier": "healthy",
+  "margin": 0.493,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Stylus Shadow Stick",
+   "Lightshift Cream Highlighter",
+   "Cheeks Blush Stick - Gar\u00e7onne",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "143": {
+  "display_title": "Mini Soulgazer Mascara",
+  "category": "Mascara",
+  "price": 16.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 5,
+  "revenue": 288.0,
+  "best_seller": false,
+  "on_hand": 46,
+  "inv_tier": "healthy",
+  "margin": 0.65,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Line Liquid Liner",
+   "Gogo Cooling Shimmer Eyeshadow",
+   "Line Gel Liner",
+   "Eye Shadow I Brush"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "144": {
+  "display_title": "Supr\u00eame C Serum",
+  "category": "Serum & Treatment",
+  "price": 325.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 0,
+  "revenue": 2275.0,
+  "best_seller": false,
+  "on_hand": 38,
+  "inv_tier": "healthy",
+  "margin": 0.707,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "In Frame Brow Gel",
+   "Concealer",
+   "Eye Pods Eye Shadow - Toujours",
+   "Skin Activator Rollerball"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 325.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 325.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 325.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 325.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 325.0
+   }
+  ]
+ },
+ "145": {
+  "display_title": "Face Trace Contour Stick - Coco",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 3,
+  "revenue": 528.0,
+  "best_seller": false,
+  "on_hand": 195,
+  "inv_tier": "healthy",
+  "margin": 0.696,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Blush Is Life",
+   "Pressed Powder",
+   "Base Face Milk",
+   "Liquid Powder Eye Tint"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "146": {
+  "display_title": "Lip Shape Lip Liner - Minou",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 57,
+  "units_sold_30d": 10,
+  "revenue": 1938.0,
+  "best_seller": true,
+  "on_hand": 61,
+  "inv_tier": "healthy",
+  "margin": 0.694,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Lip Pulse",
+   "Overglaze Hydrating Lip Gloss",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "147": {
+  "display_title": "Lit Up Highlight Stick - Gar\u00e7onne",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 20,
+  "units_sold_30d": 5,
+  "revenue": 960.0,
+  "best_seller": false,
+  "on_hand": 56,
+  "inv_tier": "healthy",
+  "margin": 0.766,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Dew Bronze",
+   "Growpotion",
+   "Skin Rewind Complexion Stick",
+   "Cheeks Blush Stick - Coquette"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "148": {
+  "display_title": "Eye Pods Eye Shadow - Les Jours",
+  "category": "Eyeshadow",
+  "price": 88.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 2,
+  "revenue": 792.0,
+  "best_seller": false,
+  "on_hand": 37,
+  "inv_tier": "healthy",
+  "margin": 0.613,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "All-over Powder Brush",
+   "Impressionist Multistick",
+   "Shiny Objects",
+   "Skin Blur Serum Concealer"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 88.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 88.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 88.0
+   }
+  ]
+ },
+ "149": {
+  "display_title": "Sun Tone Bronzing Drops - Soleil Parfait 1",
+  "category": "Bronzer",
+  "price": 58.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 8,
+  "revenue": 1044.0,
+  "best_seller": false,
+  "on_hand": 127,
+  "inv_tier": "healthy",
+  "margin": 0.707,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Brow Pop Nano",
+   "Mini Glowy Super Gel",
+   "Face Trace Contour Stick - Whiskey",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 58.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 58.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 58.0
+   }
+  ]
+ },
+ "150": {
+  "display_title": "Balmy Tint Hydrating Lip Balm",
+  "category": "Foundation",
+  "price": 29.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 2,
+  "revenue": 261.0,
+  "best_seller": false,
+  "on_hand": 13,
+  "inv_tier": "low",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Pods Eye Shadow - Rendez-vous",
+   "Lip Suede Matte Lipstick - Rue",
+   "Wet Lip Oil Gloss",
+   "True Skin Serum Foundation"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "151": {
+  "display_title": "Lip Wrap Reviving Balm",
+  "category": "Other",
+  "price": 26.0,
+  "units_sold_total": 4,
+  "units_sold_30d": 1,
+  "revenue": 104.0,
+  "best_seller": false,
+  "on_hand": 100,
+  "inv_tier": "healthy",
+  "margin": 0.609,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Hotliner",
+   "Powder Blush Brush",
+   "SOS Rescue + Relief Body Wash Treatment",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 26.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 26.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 26.0
+   }
+  ]
+ },
+ "152": {
+  "display_title": "Vital Pressed Skincare Powder - Translucent",
+  "category": "Powder",
+  "price": 75.0,
+  "units_sold_total": 47,
+  "units_sold_30d": 5,
+  "revenue": 3525.0,
+  "best_seller": true,
+  "on_hand": 49,
+  "inv_tier": "healthy",
+  "margin": 0.655,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Glow Sculpt",
+   "Base Face Milk",
+   "Skin Rewind Complexion Stick",
+   "Matte Powder Blush"
+  ],
+  "live_viewers_base": 12,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 75.0
+   }
+  ]
+ },
+ "153": {
+  "display_title": "Vital Skincare Concealer - Atelier T1",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 12,
+  "units_sold_30d": 3,
+  "revenue": 576.0,
+  "best_seller": false,
+  "on_hand": 28,
+  "inv_tier": "healthy",
+  "margin": 0.664,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Powder Blush Brush",
+   "Base Brush",
+   "Oneliner Lip Liner",
+   "Lip Suede Matte Lipstick - Rue"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "154": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Nana",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 3,
+  "revenue": 684.0,
+  "best_seller": false,
+  "on_hand": 59,
+  "inv_tier": "healthy",
+  "margin": 0.75,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Mimi",
+   "Color Block Lipstick",
+   "Lip Suede Matte Lipstick - LFG",
+   "Lip Shape Lip Liner - Sable"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "155": {
+  "display_title": "Lip Suede Matte Lipstick - Piqu\u00e9",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 5,
+  "revenue": 950.0,
+  "best_seller": false,
+  "on_hand": 117,
+  "inv_tier": "healthy",
+  "margin": 0.698,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Oil Jelly",
+   "Lip Liner 101",
+   "Mini Makewaves Mascara In Jet",
+   "Squeaky Clean Liquid Lip Balm - Pipsqueak"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "156": {
+  "display_title": "Cheeks Blush Stick - Mimi",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 102,
+  "units_sold_30d": 22,
+  "revenue": 4896.0,
+  "best_seller": true,
+  "on_hand": 71,
+  "inv_tier": "healthy",
+  "margin": 0.701,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Supersuede Radiant Baked Bronzer",
+   "Lightshift Cream Highlighter",
+   "Sculptino Cream Contour"
+  ],
+  "live_viewers_base": 34,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "157": {
+  "display_title": "Lip Brush",
+  "category": "Tool",
+  "price": 38.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 6,
+  "revenue": 684.0,
+  "best_seller": false,
+  "on_hand": 35,
+  "inv_tier": "healthy",
+  "margin": 0.595,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Sketch Hydrating Crayon",
+   "Supersuede Radiant Baked Bronzer",
+   "Glowy Super Skin Tint Foundation",
+   "Matte Powder Blush"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "158": {
+  "display_title": "Skin Activator Rollerball",
+  "category": "Serum & Treatment",
+  "price": 295.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 5,
+  "revenue": 5015.0,
+  "best_seller": false,
+  "on_hand": 39,
+  "inv_tier": "healthy",
+  "margin": 0.723,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS (store. Our. Stuff.) Makeup Bag",
+   "Chemistry Deodorant",
+   "Serum Concealer",
+   "Sun Serum Mineral Sunscreen SPF 50"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 295.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 295.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 295.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 295.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 295.0
+   }
+  ]
+ },
+ "159": {
+  "display_title": "Face Trace Contour Stick - Toast",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 31,
+  "units_sold_30d": 4,
+  "revenue": 1488.0,
+  "best_seller": false,
+  "on_hand": 109,
+  "inv_tier": "healthy",
+  "margin": 0.678,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Dew Bronze",
+   "Mascara 101",
+   "Cheeks Blush Stick - Mimi",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "160": {
+  "display_title": "Lip Shape Lip Liner - Je R\u00eave",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 13,
+  "units_sold_30d": 4,
+  "revenue": 442.0,
+  "best_seller": false,
+  "on_hand": 13,
+  "inv_tier": "low",
+  "margin": 0.727,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - Pinch",
+   "Squeaky Clean Liquid Lip Balm - Pipsqueak",
+   "Eye Shadow I Brush",
+   "Matte Powder Blush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "161": {
+  "display_title": "Lit Up Highlight Stick - Biscuit",
+  "category": "Highlighter",
+  "price": 48.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 1,
+  "revenue": 336.0,
+  "best_seller": false,
+  "on_hand": 74,
+  "inv_tier": "healthy",
+  "margin": 0.768,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Sun Show",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4",
+   "Cheeks Blush Stick - Mimi",
+   "Dew Bronze"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "162": {
+  "display_title": "Serum Skin Tint SPF 30",
+  "category": "Foundation",
+  "price": 48.0,
+  "units_sold_total": 64,
+  "units_sold_30d": 14,
+  "revenue": 3072.0,
+  "best_seller": true,
+  "on_hand": 36,
+  "inv_tier": "healthy",
+  "margin": 0.629,
+  "is_new": true,
+  "is_clearance": true,
+  "fbt": [
+   "Base Face Milk",
+   "Sun Melt",
+   "Base Brush",
+   "Eye Activator Serum"
+  ],
+  "live_viewers_base": 14,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "163": {
+  "display_title": "Vital Pressed Skincare Powder - Dune",
+  "category": "Powder",
+  "price": 75.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 4,
+  "revenue": 1875.0,
+  "best_seller": false,
+  "on_hand": 44,
+  "inv_tier": "healthy",
+  "margin": 0.654,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Ethereal Baked Face Palette",
+   "Overglaze Hydrating Lip Gloss",
+   "Slip Tint Radiant All-over Concealer",
+   "Cheeks Blush Stick - Mimi"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 75.0
+   }
+  ]
+ },
+ "164": {
+  "display_title": "Vital Skincare Concealer - Atelier M4",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 3,
+  "revenue": 528.0,
+  "best_seller": false,
+  "on_hand": 240,
+  "inv_tier": "healthy",
+  "margin": 0.75,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Dual-ended Makeup Blender",
+   "True Skin Serum Foundation",
+   "Multi-stick",
+   "Liquid Powder Eye Tint"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "165": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Chou Chou",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 12,
+  "units_sold_30d": 0,
+  "revenue": 456.0,
+  "best_seller": false,
+  "on_hand": 45,
+  "inv_tier": "healthy",
+  "margin": 0.835,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Lip Liner 101",
+   "Base Brush",
+   "Eye Shadow II Brush",
+   "Brow Pop"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.5
+   }
+  ]
+ },
+ "166": {
+  "display_title": "Lip Suede Matte Lipstick - LFG",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 22,
+  "units_sold_30d": 10,
+  "revenue": 1100.0,
+  "best_seller": false,
+  "on_hand": 184,
+  "inv_tier": "healthy",
+  "margin": 0.746,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Liner 101",
+   "Squeaky Clean Liquid Lip Balm - Nana",
+   "Squeaky Clean Liquid Lip Balm - Gar\u00e7onne",
+   "Overglaze Hydrating Lip Gloss"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "167": {
+  "display_title": "Cheeks Blush Stick - Minette",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 1,
+  "units_sold_30d": 0,
+  "revenue": 48.0,
+  "best_seller": false,
+  "on_hand": 53,
+  "inv_tier": "healthy",
+  "margin": 0.728,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier D3"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "168": {
+  "display_title": "Growpotion",
+  "category": "Mascara",
+  "price": 48.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 4,
+  "revenue": 864.0,
+  "best_seller": false,
+  "on_hand": 166,
+  "inv_tier": "healthy",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Eye Shadow I Brush",
+   "Brow Pop Nano",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4",
+   "Lit Up Highlight Stick - Gar\u00e7onne"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "169": {
+  "display_title": "Face Trace Contour Stick - Au Lait",
+  "category": "Contour",
+  "price": 48.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 3,
+  "revenue": 432.0,
+  "best_seller": false,
+  "on_hand": 18,
+  "inv_tier": "low",
+  "margin": 0.747,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Color Block Lipstick",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "170": {
+  "display_title": "Lip Shape Lip Liner - Petal",
+  "category": "Lip Liner",
+  "price": 34.0,
+  "units_sold_total": 25,
+  "units_sold_30d": 8,
+  "revenue": 850.0,
+  "best_seller": false,
+  "on_hand": 35,
+  "inv_tier": "healthy",
+  "margin": 0.627,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Hotliner",
+   "Lip Suede Matte Lipstick - L\u00e4cker",
+   "Overglaze Hydrating Lip Gloss",
+   "Squeaky Clean Liquid Lip Balm - Gar\u00e7onne"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "171": {
+  "display_title": "Serum Skin Tint SPF 40",
+  "category": "Foundation",
+  "price": 48.0,
+  "units_sold_total": 15,
+  "units_sold_30d": 8,
+  "revenue": 720.0,
+  "best_seller": false,
+  "on_hand": 278,
+  "inv_tier": "healthy",
+  "margin": 0.631,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier L3",
+   "Mini Glowy Super Gel",
+   "Sun Tone Bronzing Drops - Soleil Parfait 4",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "172": {
+  "display_title": "Soft Focus Finishing Powder",
+  "category": "Powder",
+  "price": 44.0,
+  "units_sold_total": 44,
+  "units_sold_30d": 11,
+  "revenue": 1936.0,
+  "best_seller": true,
+  "on_hand": 52,
+  "inv_tier": "healthy",
+  "margin": 0.768,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Serum Concealer",
+   "Precision Powder Brush",
+   "Liquid Powder Eye Tint",
+   "Vital Skincare Concealer - Atelier L3"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 44.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 44.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 44.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 44.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 44.0
+   }
+  ]
+ },
+ "173": {
+  "display_title": "Vital Skincare Concealer - Atelier T2",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 5,
+  "revenue": 528.0,
+  "best_seller": false,
+  "on_hand": 168,
+  "inv_tier": "healthy",
+  "margin": 0.745,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Powder Blush Brush",
+   "Mini Glowy Super Gel",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Toni Bravo Getset Matte Powder Blush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "174": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Gar\u00e7onne",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 6,
+  "revenue": 380.0,
+  "best_seller": false,
+  "on_hand": 119,
+  "inv_tier": "healthy",
+  "margin": 0.835,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Suede Matte Lipstick - LFG",
+   "Weightless Lip Color",
+   "Color Block Lipstick",
+   "Vital Pressed Skincare Powder - Translucent"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "175": {
+  "display_title": "Lip Suede Matte Lipstick - Lou Lou",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 2,
+  "revenue": 950.0,
+  "best_seller": false,
+  "on_hand": 70,
+  "inv_tier": "healthy",
+  "margin": 0.649,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Lip Liner 101",
+   "Hotliner",
+   "Lip Oil Jelly",
+   "Vital Pressed Skincare Powder - Translucent"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 37.5
+   }
+  ]
+ },
+ "176": {
+  "display_title": "Cheeks Blush Stick - Chouchette",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 13,
+  "units_sold_30d": 4,
+  "revenue": 624.0,
+  "best_seller": false,
+  "on_hand": 58,
+  "inv_tier": "healthy",
+  "margin": 0.794,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Line Liquid Liner",
+   "Vital Skincare Concealer - Atelier L1",
+   "Powder Brush"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "177": {
+  "display_title": "Face Detailer Brush",
+  "category": "Tool",
+  "price": 22.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 2,
+  "revenue": 242.0,
+  "best_seller": false,
+  "on_hand": 116,
+  "inv_tier": "healthy",
+  "margin": 0.624,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Cheeks Blush Stick - Mimi",
+   "Mini Revealer Concealer",
+   "Matte Powder Blush",
+   "Vital Pressed Skincare Powder - Translucent"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "178": {
+  "display_title": "Fullest Volumizing Mascara",
+  "category": "Mascara",
+  "price": 29.0,
+  "units_sold_total": 12,
+  "units_sold_30d": 3,
+  "revenue": 348.0,
+  "best_seller": false,
+  "on_hand": 8,
+  "inv_tier": "low",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Soft Focus Finishing Powder",
+   "Eye Pods Eye Shadow - Toujours",
+   "Lip Suede Matte Lipstick - Pinch",
+   "Glow Sculpt"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "179": {
+  "display_title": "Skin Activator Serum",
+  "category": "Serum & Treatment",
+  "price": 150.0,
+  "units_sold_total": 15,
+  "units_sold_30d": 1,
+  "revenue": 2250.0,
+  "best_seller": false,
+  "on_hand": 72,
+  "inv_tier": "healthy",
+  "margin": 0.667,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "True Skin Serum Foundation",
+   "Vital Pressed Skincare Powder - Cr\u00e8me",
+   "Barrier Build Skin Protectant Cream",
+   "Chemistry Deodorant"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 150.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 150.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 150.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 150.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 150.0
+   }
+  ]
+ },
+ "180": {
+  "display_title": "Sculpting Brush",
+  "category": "Contour",
+  "price": 37.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 4,
+  "revenue": 592.0,
+  "best_seller": false,
+  "on_hand": 56,
+  "inv_tier": "healthy",
+  "margin": 0.76,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Wet Stick",
+   "Sun Tone Bronzing Drops - Soleil Parfait 3",
+   "Cheeks Blush Stick - Dou Dou",
+   "Lip Suede Matte Lipstick - Figue"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 37.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 37.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 37.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 37.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 37.0
+   }
+  ]
+ },
+ "181": {
+  "display_title": "Powder II Brush",
+  "category": "Powder",
+  "price": 85.0,
+  "units_sold_total": 17,
+  "units_sold_30d": 2,
+  "revenue": 1445.0,
+  "best_seller": false,
+  "on_hand": 54,
+  "inv_tier": "healthy",
+  "margin": 0.759,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Squeaky Clean Liquid Lip Balm - Pipsqueak",
+   "Angled Cheek Brush",
+   "Eye Shadow I Brush",
+   "Vital Pressed Skincare Powder - Cr\u00e8me"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 85.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 85.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 85.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 85.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 85.0
+   }
+  ]
+ },
+ "182": {
+  "display_title": "Vital Skincare Concealer - Atelier M1",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 4,
+  "revenue": 864.0,
+  "best_seller": false,
+  "on_hand": 20,
+  "inv_tier": "low",
+  "margin": 0.75,
+  "is_new": true,
+  "is_clearance": true,
+  "fbt": [
+   "Slip Tint Undetectable Baked Setting Powder",
+   "Liquid Powder Eye Tint",
+   "Cheeks Blush Stick - Mimi",
+   "Glowy Super Skin Tint Foundation"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "183": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Nou Nou",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 13,
+  "units_sold_30d": 0,
+  "revenue": 494.0,
+  "best_seller": false,
+  "on_hand": 139,
+  "inv_tier": "healthy",
+  "margin": 0.762,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Weightless Lip Color",
+   "Oneliner Lip Liner",
+   "Lip Shape Lip Liner - Minou",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "184": {
+  "display_title": "Lip Suede Matte Lipstick - Le Rouge",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 3,
+  "revenue": 500.0,
+  "best_seller": false,
+  "on_hand": 133,
+  "inv_tier": "healthy",
+  "margin": 0.724,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Matte Powder Blush",
+   "Color Block Lipstick",
+   "Overglaze Hydrating Lip Gloss",
+   "Lip Shape Lip Liner - Coucou"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "185": {
+  "display_title": "Cheeks Blush Stick - Bichette",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 2,
+  "revenue": 336.0,
+  "best_seller": false,
+  "on_hand": 47,
+  "inv_tier": "healthy",
+  "margin": 0.813,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Contour Fan Brush",
+   "Vital Skincare Concealer - Atelier M1",
+   "Face Trace Contour Stick - Biscuit"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "186": {
+  "display_title": "Multitasking Eye Brush",
+  "category": "Tool",
+  "price": 22.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 2,
+  "revenue": 220.0,
+  "best_seller": false,
+  "on_hand": 34,
+  "inv_tier": "healthy",
+  "margin": 0.544,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Skin Rewind Complexion Stick",
+   "Cheeks Blush Stick - Mimi",
+   "Tinted SPF 30",
+   "Brow Pop"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 22.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 22.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 22.0
+   }
+  ]
+ },
+ "187": {
+  "display_title": "Eye Want You Mascara - Clean Black",
+  "category": "Mascara",
+  "price": 45.0,
+  "units_sold_total": 61,
+  "units_sold_30d": 11,
+  "revenue": 2745.0,
+  "best_seller": true,
+  "on_hand": 118,
+  "inv_tier": "healthy",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Line Liquid Liner",
+   "Brow Pop Nano",
+   "Brow Pop",
+   "In Full Micro-tip Brow Pencil"
+  ],
+  "live_viewers_base": 24,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 45.0
+   }
+  ]
+ },
+ "188": {
+  "display_title": "SOS Recovery Cream",
+  "category": "Serum & Treatment",
+  "price": 24.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 2,
+  "revenue": 216.0,
+  "best_seller": false,
+  "on_hand": 8,
+  "inv_tier": "low",
+  "margin": 0.736,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "SOS (store. Our. Stuff.) Makeup Bag",
+   "Eye Want You Mascara - Le Brun Clean",
+   "SOS Gel Cleanser",
+   "Air Brow - Tinted"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 24.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 24.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 18.0
+   }
+  ]
+ },
+ "189": {
+  "display_title": "Liquid Powder Eye Tint",
+  "category": "Foundation",
+  "price": 29.0,
+  "units_sold_total": 60,
+  "units_sold_30d": 11,
+  "revenue": 1740.0,
+  "best_seller": true,
+  "on_hand": 45,
+  "inv_tier": "healthy",
+  "margin": 0.632,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "True Skin Radiant Priming Serum",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++",
+   "Vital Skincare Concealer - Atelier L4",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 16,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 29.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 29.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 29.0
+   }
+  ]
+ },
+ "190": {
+  "display_title": "Vital Pressed Skincare Powder - Cr\u00e8me",
+  "category": "Powder",
+  "price": 75.0,
+  "units_sold_total": 38,
+  "units_sold_30d": 8,
+  "revenue": 2850.0,
+  "best_seller": false,
+  "on_hand": 127,
+  "inv_tier": "healthy",
+  "margin": 0.751,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Skincare Concealer - Atelier L4",
+   "Skin Rewind Complexion Stick",
+   "Eye Want You Mascara - Clean Black",
+   "Liquid Powder Eye Tint"
+  ],
+  "live_viewers_base": 7,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 75.0
+   }
+  ]
+ },
+ "191": {
+  "display_title": "Vital Skincare Concealer - Atelier D4",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 9,
+  "units_sold_30d": 3,
+  "revenue": 432.0,
+  "best_seller": false,
+  "on_hand": 161,
+  "inv_tier": "healthy",
+  "margin": 0.733,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "SOS Rescue Spray Refill",
+   "Lip Suede Matte Lipstick - Pinch",
+   "Serum Skin Tint SPF 40",
+   "Wet Stick"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "192": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Ma Puce",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 19,
+  "units_sold_30d": 4,
+  "revenue": 722.0,
+  "best_seller": false,
+  "on_hand": 62,
+  "inv_tier": "healthy",
+  "margin": 0.669,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Sun Tone Bronzing Drops - Soleil Parfait 1",
+   "Fluffy Brush",
+   "Glow Sculpt",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 38.0
+   }
+  ]
+ },
+ "193": {
+  "display_title": "Lip Suede Matte Lipstick - L\u00e4cker",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 55,
+  "units_sold_30d": 12,
+  "revenue": 2750.0,
+  "best_seller": true,
+  "on_hand": 84,
+  "inv_tier": "healthy",
+  "margin": 0.764,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Oneliner Lip Liner",
+   "Lip Shape Lip Liner - Minou",
+   "Lip Liner 101",
+   "Eye Stylus Shadow Stick"
+  ],
+  "live_viewers_base": 12,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "194": {
+  "display_title": "Cheeks Blush Stick - Gar\u00e7onne",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 8,
+  "units_sold_30d": 2,
+  "revenue": 384.0,
+  "best_seller": false,
+  "on_hand": 11,
+  "inv_tier": "low",
+  "margin": 0.693,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Eye Stylus Shadow Stick",
+   "Lightshift Cream Highlighter",
+   "Spot Check Brush"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 36.0
+   }
+  ]
+ },
+ "195": {
+  "display_title": "Perfecting Buff Brush",
+  "category": "Tool",
+  "price": 41.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 2,
+  "revenue": 287.0,
+  "best_seller": false,
+  "on_hand": 29,
+  "inv_tier": "healthy",
+  "margin": 0.568,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Contour Fan Brush",
+   "Vital Skincare Concealer - Atelier L4",
+   "Mini Glowy Super Gel",
+   "Line Liquid Liner"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 41.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 41.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 41.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 41.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 41.0
+   }
+  ]
+ },
+ "196": {
+  "display_title": "SOS Rescue Serum",
+  "category": "Serum & Treatment",
+  "price": 34.0,
+  "units_sold_total": 6,
+  "units_sold_30d": 0,
+  "revenue": 204.0,
+  "best_seller": false,
+  "on_hand": 14,
+  "inv_tier": "low",
+  "margin": 0.787,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Dreambeam SPF 40 Pa++++",
+   "Lip Liner 101",
+   "Sun Melt",
+   "Skin Rewind Complexion Stick"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "197": {
+  "display_title": "Skin Rewind Complexion Stick",
+  "category": "Foundation",
+  "price": 50.0,
+  "units_sold_total": 53,
+  "units_sold_30d": 11,
+  "revenue": 2650.0,
+  "best_seller": true,
+  "on_hand": 214,
+  "inv_tier": "healthy",
+  "margin": 0.653,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Base Face Milk",
+   "Sun Melt",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Multitasking Eye Brush"
+  ],
+  "live_viewers_base": 17,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "198": {
+  "display_title": "Vital Pressed Skincare Powder - Caf\u00e9",
+  "category": "Powder",
+  "price": 75.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 5,
+  "revenue": 1350.0,
+  "best_seller": false,
+  "on_hand": 9,
+  "inv_tier": "low",
+  "margin": 0.675,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Complexion Brush",
+   "Glow Sculpt",
+   "Lip Shape Lip Liner - Mink",
+   "Squeaky Clean Liquid Lip Balm - Chou Chou"
+  ],
+  "live_viewers_base": 5,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 75.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 75.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 75.0
+   }
+  ]
+ },
+ "199": {
+  "display_title": "Vital Skincare Concealer - Atelier L3",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 41,
+  "units_sold_30d": 9,
+  "revenue": 1968.0,
+  "best_seller": true,
+  "on_hand": 147,
+  "inv_tier": "healthy",
+  "margin": 0.697,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Dreambeam SPF 40 Pa++++",
+   "Skin-improving Foundation SPF 25",
+   "Liquid Powder Eye Tint",
+   "Slip Tint Tinted Moisturizer"
+  ],
+  "live_viewers_base": 10,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "200": {
+  "display_title": "Squeaky Clean Liquid Lip Balm - Pipsqueak",
+  "category": "Lip Balm & Oil",
+  "price": 38.0,
+  "units_sold_total": 33,
+  "units_sold_30d": 4,
+  "revenue": 1254.0,
+  "best_seller": false,
+  "on_hand": 124,
+  "inv_tier": "healthy",
+  "margin": 0.69,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Powder II Brush",
+   "Lip Shape Lip Liner - Coucou",
+   "Lip Suede Matte Lipstick - Ma Biche",
+   "Lip Liner 101"
+  ],
+  "live_viewers_base": 13,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 38.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 38.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.5
+   }
+  ]
+ },
+ "201": {
+  "display_title": "Lip Suede Matte Lipstick - Pinch",
+  "category": "Lipstick",
+  "price": 50.0,
+  "units_sold_total": 32,
+  "units_sold_30d": 12,
+  "revenue": 1600.0,
+  "best_seller": false,
+  "on_hand": 57,
+  "inv_tier": "healthy",
+  "margin": 0.628,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Overglaze Hydrating Lip Gloss",
+   "Wet Lip Oil Gloss",
+   "Lip Liner 101",
+   "Lip Shape Lip Liner - Minou"
+  ],
+  "live_viewers_base": 8,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 50.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 50.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 50.0
+   }
+  ]
+ },
+ "202": {
+  "display_title": "Cheeks Blush Stick - Coquette",
+  "category": "Blush",
+  "price": 48.0,
+  "units_sold_total": 10,
+  "units_sold_30d": 1,
+  "revenue": 480.0,
+  "best_seller": false,
+  "on_hand": 115,
+  "inv_tier": "healthy",
+  "margin": 0.677,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Face Trace Contour Stick - Kola",
+   "Lip Liner 101",
+   "Supersuede Radiant Baked Bronzer",
+   "Vital Skincare Concealer - Atelier T3"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "203": {
+  "display_title": "Angled Cheek Brush",
+  "category": "Tool",
+  "price": 28.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 4,
+  "revenue": 308.0,
+  "best_seller": false,
+  "on_hand": 46,
+  "inv_tier": "healthy",
+  "margin": 0.49,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Vital Pressed Skincare Powder - Translucent",
+   "Powder II Brush",
+   "Blender Brush",
+   "Lip Oil Jelly"
+  ],
+  "live_viewers_base": 2,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 28.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 28.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 28.0
+   }
+  ]
+ },
+ "204": {
+  "display_title": "Eye Want You Mascara - Le Brun Clean",
+  "category": "Mascara",
+  "price": 45.0,
+  "units_sold_total": 30,
+  "units_sold_30d": 4,
+  "revenue": 1350.0,
+  "best_seller": false,
+  "on_hand": 106,
+  "inv_tier": "healthy",
+  "margin": 0.708,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "In Full Micro-tip Brow Pencil",
+   "Mini Glowy Super Gel",
+   "Soulgazer",
+   "Line Liquid Liner"
+  ],
+  "live_viewers_base": 11,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 45.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 45.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 45.0
+   }
+  ]
+ },
+ "205": {
+  "display_title": "Eye Activator Serum",
+  "category": "Serum & Treatment",
+  "price": 120.0,
+  "units_sold_total": 18,
+  "units_sold_30d": 5,
+  "revenue": 2160.0,
+  "best_seller": false,
+  "on_hand": 130,
+  "inv_tier": "healthy",
+  "margin": 0.661,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Serum Skin Tint SPF 30",
+   "SOS Rescue Spray Refill",
+   "Bronzino Cream Bronzer",
+   "True Skin Serum Foundation"
+  ],
+  "live_viewers_base": 6,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 120.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 120.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 120.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 120.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 120.0
+   }
+  ]
+ },
+ "206": {
+  "display_title": "Foundation Brush",
+  "category": "Foundation",
+  "price": 80.0,
+  "units_sold_total": 7,
+  "units_sold_30d": 1,
+  "revenue": 560.0,
+  "best_seller": false,
+  "on_hand": 9,
+  "inv_tier": "low",
+  "margin": 0.803,
+  "is_new": false,
+  "is_clearance": true,
+  "fbt": [
+   "Bonne Brow Defining Pencil - Clay",
+   "Lit Up Highlight Stick - Nectar",
+   "Air Brow - Tinted",
+   "Sun Melt"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 80.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 80.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 80.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 80.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 60.0
+   }
+  ]
+ },
+ "207": {
+  "display_title": "Powder Brush",
+  "category": "Powder",
+  "price": 34.0,
+  "units_sold_total": 16,
+  "units_sold_30d": 6,
+  "revenue": 544.0,
+  "best_seller": false,
+  "on_hand": 109,
+  "inv_tier": "healthy",
+  "margin": 0.645,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Brow Pop",
+   "Skin Rewind Complexion Stick",
+   "Sun Melt",
+   "Lip Suede Matte Lipstick - L\u00e4cker"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 34.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 34.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 34.0
+   }
+  ]
+ },
+ "208": {
+  "display_title": "Vital Skincare Concealer - Atelier T4",
+  "category": "Concealer",
+  "price": 48.0,
+  "units_sold_total": 15,
+  "units_sold_30d": 2,
+  "revenue": 720.0,
+  "best_seller": false,
+  "on_hand": 114,
+  "inv_tier": "healthy",
+  "margin": 0.579,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Supersuede Radiant Baked Bronzer",
+   "Vital Pressed Skincare Powder - Translucent",
+   "Brow Pop Nano",
+   "Lip Suede Matte Lipstick - Lou Lou"
+  ],
+  "live_viewers_base": 4,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 48.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 48.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 48.0
+   }
+  ]
+ },
+ "209": {
+  "display_title": "Makewaves Lash Curler",
+  "category": "Mascara",
+  "price": 16.0,
+  "units_sold_total": 2,
+  "units_sold_30d": 0,
+  "revenue": 32.0,
+  "best_seller": false,
+  "on_hand": 10,
+  "inv_tier": "low",
+  "margin": 0.712,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Shape Lip Liner - Mink"
+  ],
+  "live_viewers_base": 1,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 16.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 16.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 16.0
+   }
+  ]
+ },
+ "210": {
+  "display_title": "Complexion Brush",
+  "category": "Foundation",
+  "price": 35.0,
+  "units_sold_total": 52,
+  "units_sold_30d": 18,
+  "revenue": 1820.0,
+  "best_seller": true,
+  "on_hand": 102,
+  "inv_tier": "healthy",
+  "margin": 0.815,
+  "is_new": true,
+  "is_clearance": false,
+  "fbt": [
+   "Mini Glowy Super Gel",
+   "Mini Dreambeam SPF 40 Pa++++",
+   "Base Face Milk",
+   "SOS Faceguard SPF 30 Sunscreen Pa+++"
+  ],
+  "live_viewers_base": 10,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 35.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 35.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 35.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 35.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 35.0
+   }
+  ]
+ },
+ "211": {
+  "display_title": "Finishing Powder Brush",
+  "category": "Powder",
+  "price": 43.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 3,
+  "revenue": 473.0,
+  "best_seller": false,
+  "on_hand": 20,
+  "inv_tier": "low",
+  "margin": 0.642,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Lip Liner 101",
+   "Cheeks Blush Stick - Mimi",
+   "Toni Bravo Getset Matte Powder Blush",
+   "Eye Want You Mascara - Clean Black"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 43.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 43.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 43.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 43.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 43.0
+   }
+  ]
+ },
+ "212": {
+  "display_title": "Precision Powder Brush",
+  "category": "Powder",
+  "price": 37.0,
+  "units_sold_total": 11,
+  "units_sold_30d": 4,
+  "revenue": 407.0,
+  "best_seller": false,
+  "on_hand": 25,
+  "inv_tier": "healthy",
+  "margin": 0.773,
+  "is_new": false,
+  "is_clearance": false,
+  "fbt": [
+   "Face Trace Contour Stick - Whiskey",
+   "Soft Focus Finishing Powder",
+   "Air Brow - Tinted",
+   "Chemistry Deodorant"
+  ],
+  "live_viewers_base": 3,
+  "price_history": [
+   {
+    "date": "2025-12-04",
+    "price": 37.0
+   },
+   {
+    "date": "2026-01-18",
+    "price": 37.0
+   },
+   {
+    "date": "2026-03-04",
+    "price": 37.0
+   },
+   {
+    "date": "2026-04-18",
+    "price": 37.0
+   },
+   {
+    "date": "2026-06-02",
+    "price": 37.0
+   }
+  ]
+ }
+}

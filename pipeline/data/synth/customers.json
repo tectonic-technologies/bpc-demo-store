@@ -1,0 +1,9002 @@
+[
+ {
+  "ref": "C0001",
+  "first_name": "Romy",
+  "last_name": "Marsh",
+  "email": "romy.marsh817@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0002",
+  "first_name": "Aria",
+  "last_name": "Marsh",
+  "email": "aria.marsh530@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-08-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0003",
+  "first_name": "Ruby",
+  "last_name": "Cole",
+  "email": "ruby.cole777@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-04-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0004",
+  "first_name": "Eva",
+  "last_name": "Bram",
+  "email": "eva.bram18@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-01-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0005",
+  "first_name": "Zoe",
+  "last_name": "Lake",
+  "email": "zoe.lake314@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-04-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0006",
+  "first_name": "Anaya",
+  "last_name": "Sloane",
+  "email": "anaya.sloane353@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-02-02",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0007",
+  "first_name": "Tess",
+  "last_name": "Hale",
+  "email": "tess.hale465@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-06-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0008",
+  "first_name": "Aria",
+  "last_name": "Lake",
+  "email": "aria.lake198@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-10-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0009",
+  "first_name": "Cleo",
+  "last_name": "Hayes",
+  "email": "cleo.hayes757@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-11-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0010",
+  "first_name": "Juno",
+  "last_name": "Frost",
+  "email": "juno.frost103@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0011",
+  "first_name": "Lola",
+  "last_name": "Quinn",
+  "email": "lola.quinn310@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-10-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0012",
+  "first_name": "Ava",
+  "last_name": "Bram",
+  "email": "ava.bram56@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-01-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0013",
+  "first_name": "Esme",
+  "last_name": "Lake",
+  "email": "esme.lake13@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0014",
+  "first_name": "Greta",
+  "last_name": "Lake",
+  "email": "greta.lake189@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-01-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0015",
+  "first_name": "Mia",
+  "last_name": "Frost",
+  "email": "mia.frost411@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-02-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0016",
+  "first_name": "Juno",
+  "last_name": "Cole",
+  "email": "juno.cole831@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0017",
+  "first_name": "Greta",
+  "last_name": "Lake",
+  "email": "greta.lake783@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-09-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0018",
+  "first_name": "Tess",
+  "last_name": "Wren",
+  "email": "tess.wren390@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0019",
+  "first_name": "Remy",
+  "last_name": "Pierce",
+  "email": "remy.pierce636@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-03-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0020",
+  "first_name": "Mia",
+  "last_name": "Wren",
+  "email": "mia.wren271@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-11-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0021",
+  "first_name": "Anaya",
+  "last_name": "Cole",
+  "email": "anaya.cole77@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-09-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0022",
+  "first_name": "Nora",
+  "last_name": "Reed",
+  "email": "nora.reed482@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-02-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0023",
+  "first_name": "Maya",
+  "last_name": "Park",
+  "email": "maya.park720@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0024",
+  "first_name": "Romy",
+  "last_name": "Pierce",
+  "email": "romy.pierce807@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-05",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0025",
+  "first_name": "Hana",
+  "last_name": "Day",
+  "email": "hana.day558@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0026",
+  "first_name": "Eva",
+  "last_name": "Day",
+  "email": "eva.day74@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-09-02",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0027",
+  "first_name": "Mia",
+  "last_name": "Stone",
+  "email": "mia.stone480@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-08-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0028",
+  "first_name": "Leah",
+  "last_name": "Lake",
+  "email": "leah.lake506@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-08-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0029",
+  "first_name": "Remy",
+  "last_name": "Cole",
+  "email": "remy.cole753@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0030",
+  "first_name": "Cleo",
+  "last_name": "Wren",
+  "email": "cleo.wren691@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-05-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0031",
+  "first_name": "Lola",
+  "last_name": "Sloane",
+  "email": "lola.sloane689@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-11",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0032",
+  "first_name": "Lola",
+  "last_name": "Frost",
+  "email": "lola.frost180@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0033",
+  "first_name": "Juno",
+  "last_name": "Finch",
+  "email": "juno.finch600@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-08-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0034",
+  "first_name": "Tess",
+  "last_name": "Day",
+  "email": "tess.day419@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-02-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0035",
+  "first_name": "Cleo",
+  "last_name": "Marsh",
+  "email": "cleo.marsh711@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-12-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0036",
+  "first_name": "Juno",
+  "last_name": "Lake",
+  "email": "juno.lake323@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-04-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0037",
+  "first_name": "Aria",
+  "last_name": "Marsh",
+  "email": "aria.marsh845@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-04-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0038",
+  "first_name": "Ava",
+  "last_name": "Fox",
+  "email": "ava.fox193@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-02-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0039",
+  "first_name": "Wren",
+  "last_name": "Wells",
+  "email": "wren.wells779@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0040",
+  "first_name": "Mia",
+  "last_name": "Quinn",
+  "email": "mia.quinn449@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-01-18",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0041",
+  "first_name": "Edie",
+  "last_name": "Bram",
+  "email": "edie.bram646@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-01-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0042",
+  "first_name": "Noor",
+  "last_name": "Rhodes",
+  "email": "noor.rhodes566@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-07-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0043",
+  "first_name": "Tess",
+  "last_name": "Cole",
+  "email": "tess.cole121@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-02-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0044",
+  "first_name": "Priya",
+  "last_name": "Vance",
+  "email": "priya.vance280@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-08-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0045",
+  "first_name": "Tess",
+  "last_name": "Ash",
+  "email": "tess.ash149@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-09-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0046",
+  "first_name": "Faye",
+  "last_name": "Quinn",
+  "email": "faye.quinn140@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-28",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0047",
+  "first_name": "Romy",
+  "last_name": "Cole",
+  "email": "romy.cole807@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-04-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0048",
+  "first_name": "Wren",
+  "last_name": "Frost",
+  "email": "wren.frost858@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-16",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0049",
+  "first_name": "Greta",
+  "last_name": "Sloane",
+  "email": "greta.sloane496@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-12-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0050",
+  "first_name": "Iris",
+  "last_name": "Marsh",
+  "email": "iris.marsh330@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0051",
+  "first_name": "Romy",
+  "last_name": "Quinn",
+  "email": "romy.quinn795@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-05-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0052",
+  "first_name": "Tess",
+  "last_name": "Park",
+  "email": "tess.park831@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-02-02",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0053",
+  "first_name": "Faye",
+  "last_name": "Brook",
+  "email": "faye.brook130@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-10",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0054",
+  "first_name": "Wren",
+  "last_name": "Sloane",
+  "email": "wren.sloane451@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0055",
+  "first_name": "Ivy",
+  "last_name": "Finch",
+  "email": "ivy.finch420@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-05-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0056",
+  "first_name": "Romy",
+  "last_name": "Day",
+  "email": "romy.day272@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0057",
+  "first_name": "Cleo",
+  "last_name": "Wren",
+  "email": "cleo.wren873@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0058",
+  "first_name": "Anaya",
+  "last_name": "Knox",
+  "email": "anaya.knox778@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-07-12",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0059",
+  "first_name": "Juno",
+  "last_name": "Knox",
+  "email": "juno.knox701@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-03-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0060",
+  "first_name": "Nell",
+  "last_name": "Lake",
+  "email": "nell.lake101@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-03-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0061",
+  "first_name": "Dina",
+  "last_name": "Day",
+  "email": "dina.day307@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-03-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0062",
+  "first_name": "Edie",
+  "last_name": "Reed",
+  "email": "edie.reed301@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0063",
+  "first_name": "Iris",
+  "last_name": "Wells",
+  "email": "iris.wells422@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-01-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0064",
+  "first_name": "Greta",
+  "last_name": "Fox",
+  "email": "greta.fox625@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-12-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0065",
+  "first_name": "Romy",
+  "last_name": "Brook",
+  "email": "romy.brook598@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0066",
+  "first_name": "Lena",
+  "last_name": "Rhodes",
+  "email": "lena.rhodes683@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-09-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0067",
+  "first_name": "Ava",
+  "last_name": "Pierce",
+  "email": "ava.pierce354@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-12-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0068",
+  "first_name": "Greta",
+  "last_name": "Lake",
+  "email": "greta.lake310@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-09-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0069",
+  "first_name": "Ruby",
+  "last_name": "Brook",
+  "email": "ruby.brook586@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-02-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0070",
+  "first_name": "Iris",
+  "last_name": "Sloane",
+  "email": "iris.sloane850@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-08-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0071",
+  "first_name": "Anaya",
+  "last_name": "Brook",
+  "email": "anaya.brook703@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-05-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0072",
+  "first_name": "Dina",
+  "last_name": "Hale",
+  "email": "dina.hale294@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0073",
+  "first_name": "Dina",
+  "last_name": "Rhodes",
+  "email": "dina.rhodes195@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-06-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0074",
+  "first_name": "Noor",
+  "last_name": "Frost",
+  "email": "noor.frost662@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-02-22",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0075",
+  "first_name": "Mia",
+  "last_name": "Lake",
+  "email": "mia.lake750@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-28",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0076",
+  "first_name": "Lena",
+  "last_name": "Cole",
+  "email": "lena.cole180@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-02",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0077",
+  "first_name": "Ruby",
+  "last_name": "Vance",
+  "email": "ruby.vance280@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0078",
+  "first_name": "Lola",
+  "last_name": "Stone",
+  "email": "lola.stone303@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-24",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0079",
+  "first_name": "Sana",
+  "last_name": "Marsh",
+  "email": "sana.marsh145@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-02-07",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0080",
+  "first_name": "Dina",
+  "last_name": "Rhodes",
+  "email": "dina.rhodes405@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-05-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0081",
+  "first_name": "Ava",
+  "last_name": "Frost",
+  "email": "ava.frost689@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-01-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0082",
+  "first_name": "Sana",
+  "last_name": "Fox",
+  "email": "sana.fox381@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-05-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0083",
+  "first_name": "Ivy",
+  "last_name": "Fox",
+  "email": "ivy.fox575@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-02-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0084",
+  "first_name": "Cleo",
+  "last_name": "Wren",
+  "email": "cleo.wren476@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-03-29",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0085",
+  "first_name": "Nell",
+  "last_name": "Bram",
+  "email": "nell.bram47@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-04-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0086",
+  "first_name": "Mia",
+  "last_name": "Lake",
+  "email": "mia.lake551@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-02-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0087",
+  "first_name": "Lena",
+  "last_name": "Brook",
+  "email": "lena.brook761@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0088",
+  "first_name": "Leah",
+  "last_name": "Knox",
+  "email": "leah.knox671@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-12-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0089",
+  "first_name": "Ivy",
+  "last_name": "Ash",
+  "email": "ivy.ash287@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-10",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0090",
+  "first_name": "Mia",
+  "last_name": "Bram",
+  "email": "mia.bram242@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-10-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0091",
+  "first_name": "Romy",
+  "last_name": "Wells",
+  "email": "romy.wells661@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-05-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0092",
+  "first_name": "Iris",
+  "last_name": "Park",
+  "email": "iris.park126@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-08-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0093",
+  "first_name": "Romy",
+  "last_name": "Pierce",
+  "email": "romy.pierce612@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0094",
+  "first_name": "Ava",
+  "last_name": "Park",
+  "email": "ava.park806@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-09-25",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0095",
+  "first_name": "Greta",
+  "last_name": "Quinn",
+  "email": "greta.quinn833@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-11-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0096",
+  "first_name": "Romy",
+  "last_name": "Rhodes",
+  "email": "romy.rhodes611@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-01-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0097",
+  "first_name": "Ava",
+  "last_name": "Frost",
+  "email": "ava.frost818@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-01-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0098",
+  "first_name": "Nora",
+  "last_name": "Hayes",
+  "email": "nora.hayes809@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0099",
+  "first_name": "Hana",
+  "last_name": "Rhodes",
+  "email": "hana.rhodes272@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0100",
+  "first_name": "Mia",
+  "last_name": "Vance",
+  "email": "mia.vance66@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2024-12-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0101",
+  "first_name": "Juno",
+  "last_name": "Pierce",
+  "email": "juno.pierce463@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2024-12-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0102",
+  "first_name": "Wren",
+  "last_name": "Rhodes",
+  "email": "wren.rhodes888@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0103",
+  "first_name": "Anaya",
+  "last_name": "Finch",
+  "email": "anaya.finch32@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-02-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0104",
+  "first_name": "Mia",
+  "last_name": "Ash",
+  "email": "mia.ash503@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-03-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0105",
+  "first_name": "Leah",
+  "last_name": "Pierce",
+  "email": "leah.pierce152@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-03-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0106",
+  "first_name": "Zoe",
+  "last_name": "Vance",
+  "email": "zoe.vance612@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0107",
+  "first_name": "Wren",
+  "last_name": "Lake",
+  "email": "wren.lake102@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2024-12-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0108",
+  "first_name": "Hana",
+  "last_name": "Bram",
+  "email": "hana.bram234@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0109",
+  "first_name": "Tess",
+  "last_name": "Marsh",
+  "email": "tess.marsh98@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-04-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0110",
+  "first_name": "Cleo",
+  "last_name": "Vale",
+  "email": "cleo.vale157@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-09-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0111",
+  "first_name": "Anaya",
+  "last_name": "Ash",
+  "email": "anaya.ash96@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-02-28",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0112",
+  "first_name": "Tess",
+  "last_name": "Hayes",
+  "email": "tess.hayes601@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-01-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0113",
+  "first_name": "Esme",
+  "last_name": "Knox",
+  "email": "esme.knox895@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-01-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0114",
+  "first_name": "Anaya",
+  "last_name": "Crane",
+  "email": "anaya.crane615@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-04-10",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0115",
+  "first_name": "Maya",
+  "last_name": "Wells",
+  "email": "maya.wells673@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2024-12-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0116",
+  "first_name": "Juno",
+  "last_name": "Rhodes",
+  "email": "juno.rhodes377@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0117",
+  "first_name": "Ivy",
+  "last_name": "Crane",
+  "email": "ivy.crane866@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-10-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0118",
+  "first_name": "Esme",
+  "last_name": "Crane",
+  "email": "esme.crane674@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0119",
+  "first_name": "Lola",
+  "last_name": "Bram",
+  "email": "lola.bram720@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-05-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0120",
+  "first_name": "Dina",
+  "last_name": "Lake",
+  "email": "dina.lake891@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-06-07",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0121",
+  "first_name": "Lena",
+  "last_name": "Sloane",
+  "email": "lena.sloane649@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0122",
+  "first_name": "Ava",
+  "last_name": "Cole",
+  "email": "ava.cole465@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-10-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0123",
+  "first_name": "Cleo",
+  "last_name": "Stone",
+  "email": "cleo.stone796@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-07-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0124",
+  "first_name": "Greta",
+  "last_name": "Wren",
+  "email": "greta.wren773@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-04-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0125",
+  "first_name": "Noor",
+  "last_name": "Park",
+  "email": "noor.park435@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-08-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0126",
+  "first_name": "Juno",
+  "last_name": "Wren",
+  "email": "juno.wren774@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-04-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0127",
+  "first_name": "Wren",
+  "last_name": "Hayes",
+  "email": "wren.hayes695@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-03-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0128",
+  "first_name": "Anaya",
+  "last_name": "Sloane",
+  "email": "anaya.sloane47@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2024-12-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0129",
+  "first_name": "Eva",
+  "last_name": "Brook",
+  "email": "eva.brook309@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0130",
+  "first_name": "Ruby",
+  "last_name": "Crane",
+  "email": "ruby.crane123@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-09-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0131",
+  "first_name": "Ava",
+  "last_name": "Ash",
+  "email": "ava.ash546@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-12-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0132",
+  "first_name": "Leah",
+  "last_name": "Rhodes",
+  "email": "leah.rhodes883@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-06-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0133",
+  "first_name": "Sana",
+  "last_name": "Park",
+  "email": "sana.park80@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-05-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0134",
+  "first_name": "Romy",
+  "last_name": "Marsh",
+  "email": "romy.marsh727@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0135",
+  "first_name": "Priya",
+  "last_name": "Vale",
+  "email": "priya.vale333@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-02-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0136",
+  "first_name": "Nora",
+  "last_name": "Wren",
+  "email": "nora.wren865@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0137",
+  "first_name": "Ivy",
+  "last_name": "Rhodes",
+  "email": "ivy.rhodes406@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-04-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0138",
+  "first_name": "Romy",
+  "last_name": "Lake",
+  "email": "romy.lake173@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-10-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0139",
+  "first_name": "Zoe",
+  "last_name": "Finch",
+  "email": "zoe.finch795@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2024-12-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0140",
+  "first_name": "Iris",
+  "last_name": "Wells",
+  "email": "iris.wells263@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-10-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0141",
+  "first_name": "Ruby",
+  "last_name": "Stone",
+  "email": "ruby.stone672@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-12-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0142",
+  "first_name": "Zoe",
+  "last_name": "Stone",
+  "email": "zoe.stone779@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-02-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0143",
+  "first_name": "Greta",
+  "last_name": "Pierce",
+  "email": "greta.pierce643@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0144",
+  "first_name": "Cleo",
+  "last_name": "Vance",
+  "email": "cleo.vance647@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-03-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0145",
+  "first_name": "Maya",
+  "last_name": "Frost",
+  "email": "maya.frost76@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0146",
+  "first_name": "Maya",
+  "last_name": "Pierce",
+  "email": "maya.pierce852@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0147",
+  "first_name": "Maya",
+  "last_name": "Cole",
+  "email": "maya.cole595@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2024-12-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0148",
+  "first_name": "Esme",
+  "last_name": "Hale",
+  "email": "esme.hale586@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-02-26",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0149",
+  "first_name": "Priya",
+  "last_name": "Quinn",
+  "email": "priya.quinn64@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-01-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0150",
+  "first_name": "Remy",
+  "last_name": "Hayes",
+  "email": "remy.hayes177@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-03-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0151",
+  "first_name": "Mia",
+  "last_name": "Rhodes",
+  "email": "mia.rhodes625@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-03-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0152",
+  "first_name": "Nora",
+  "last_name": "Wells",
+  "email": "nora.wells794@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-16",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0153",
+  "first_name": "Cleo",
+  "last_name": "Fox",
+  "email": "cleo.fox663@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0154",
+  "first_name": "Cleo",
+  "last_name": "Cole",
+  "email": "cleo.cole396@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0155",
+  "first_name": "Maya",
+  "last_name": "Frost",
+  "email": "maya.frost597@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-12-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0156",
+  "first_name": "Anaya",
+  "last_name": "Vance",
+  "email": "anaya.vance716@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-07-19",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0157",
+  "first_name": "Anaya",
+  "last_name": "Brook",
+  "email": "anaya.brook386@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-07",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0158",
+  "first_name": "Priya",
+  "last_name": "Marsh",
+  "email": "priya.marsh687@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2024-12-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0159",
+  "first_name": "Tess",
+  "last_name": "Finch",
+  "email": "tess.finch185@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-05-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0160",
+  "first_name": "Ruby",
+  "last_name": "Marsh",
+  "email": "ruby.marsh141@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-11-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0161",
+  "first_name": "Lena",
+  "last_name": "Cole",
+  "email": "lena.cole553@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-02-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0162",
+  "first_name": "Lola",
+  "last_name": "Hale",
+  "email": "lola.hale898@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0163",
+  "first_name": "Dina",
+  "last_name": "Wren",
+  "email": "dina.wren186@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-05-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0164",
+  "first_name": "Lola",
+  "last_name": "Bram",
+  "email": "lola.bram45@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-12-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0165",
+  "first_name": "Tess",
+  "last_name": "Wells",
+  "email": "tess.wells771@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-03-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0166",
+  "first_name": "Sana",
+  "last_name": "Pierce",
+  "email": "sana.pierce829@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-09-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0167",
+  "first_name": "Hana",
+  "last_name": "Ash",
+  "email": "hana.ash585@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-05-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0168",
+  "first_name": "Remy",
+  "last_name": "Pierce",
+  "email": "remy.pierce429@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-05-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0169",
+  "first_name": "Nora",
+  "last_name": "Quinn",
+  "email": "nora.quinn54@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0170",
+  "first_name": "Priya",
+  "last_name": "Ash",
+  "email": "priya.ash529@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-16",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0171",
+  "first_name": "Romy",
+  "last_name": "Hayes",
+  "email": "romy.hayes280@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-03-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0172",
+  "first_name": "Remy",
+  "last_name": "Finch",
+  "email": "remy.finch228@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-03-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0173",
+  "first_name": "Lola",
+  "last_name": "Pierce",
+  "email": "lola.pierce406@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-05-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0174",
+  "first_name": "Wren",
+  "last_name": "Wells",
+  "email": "wren.wells384@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-05-02",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0175",
+  "first_name": "Eva",
+  "last_name": "Reed",
+  "email": "eva.reed666@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0176",
+  "first_name": "Cleo",
+  "last_name": "Vance",
+  "email": "cleo.vance850@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-04-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0177",
+  "first_name": "Juno",
+  "last_name": "Bram",
+  "email": "juno.bram6@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-02-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0178",
+  "first_name": "Edie",
+  "last_name": "Cole",
+  "email": "edie.cole154@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0179",
+  "first_name": "Esme",
+  "last_name": "Hale",
+  "email": "esme.hale296@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0180",
+  "first_name": "Eva",
+  "last_name": "Lake",
+  "email": "eva.lake655@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-04-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0181",
+  "first_name": "Hana",
+  "last_name": "Wren",
+  "email": "hana.wren512@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-03-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0182",
+  "first_name": "Noor",
+  "last_name": "Knox",
+  "email": "noor.knox736@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0183",
+  "first_name": "Lena",
+  "last_name": "Lake",
+  "email": "lena.lake247@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-05-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0184",
+  "first_name": "Greta",
+  "last_name": "Vale",
+  "email": "greta.vale370@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0185",
+  "first_name": "Zoe",
+  "last_name": "Finch",
+  "email": "zoe.finch520@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2024-12-29",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0186",
+  "first_name": "Esme",
+  "last_name": "Reed",
+  "email": "esme.reed397@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-02-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0187",
+  "first_name": "Iris",
+  "last_name": "Frost",
+  "email": "iris.frost354@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-06-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0188",
+  "first_name": "Eva",
+  "last_name": "Hale",
+  "email": "eva.hale361@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0189",
+  "first_name": "Esme",
+  "last_name": "Marsh",
+  "email": "esme.marsh491@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-02-11",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0190",
+  "first_name": "Priya",
+  "last_name": "Stone",
+  "email": "priya.stone469@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-29",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0191",
+  "first_name": "Mia",
+  "last_name": "Lake",
+  "email": "mia.lake43@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-04-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0192",
+  "first_name": "Cleo",
+  "last_name": "Lake",
+  "email": "cleo.lake557@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-04-20",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0193",
+  "first_name": "Juno",
+  "last_name": "Frost",
+  "email": "juno.frost883@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0194",
+  "first_name": "Dina",
+  "last_name": "Park",
+  "email": "dina.park377@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0195",
+  "first_name": "Tess",
+  "last_name": "Brook",
+  "email": "tess.brook192@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0196",
+  "first_name": "Juno",
+  "last_name": "Bram",
+  "email": "juno.bram532@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-21",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0197",
+  "first_name": "Aria",
+  "last_name": "Cole",
+  "email": "aria.cole843@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0198",
+  "first_name": "Nora",
+  "last_name": "Knox",
+  "email": "nora.knox336@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0199",
+  "first_name": "Anaya",
+  "last_name": "Lake",
+  "email": "anaya.lake437@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-03-02",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0200",
+  "first_name": "Nora",
+  "last_name": "Bram",
+  "email": "nora.bram745@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-06-07",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0201",
+  "first_name": "Romy",
+  "last_name": "Wells",
+  "email": "romy.wells811@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0202",
+  "first_name": "Mia",
+  "last_name": "Cole",
+  "email": "mia.cole768@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-05-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0203",
+  "first_name": "Anaya",
+  "last_name": "Stone",
+  "email": "anaya.stone695@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0204",
+  "first_name": "Hana",
+  "last_name": "Pierce",
+  "email": "hana.pierce798@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0205",
+  "first_name": "Priya",
+  "last_name": "Wells",
+  "email": "priya.wells34@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-05-05",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0206",
+  "first_name": "Noor",
+  "last_name": "Vance",
+  "email": "noor.vance782@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0207",
+  "first_name": "Zoe",
+  "last_name": "Sloane",
+  "email": "zoe.sloane666@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-05-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0208",
+  "first_name": "Aria",
+  "last_name": "Rhodes",
+  "email": "aria.rhodes512@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0209",
+  "first_name": "Wren",
+  "last_name": "Brook",
+  "email": "wren.brook267@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-02-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0210",
+  "first_name": "Leah",
+  "last_name": "Pierce",
+  "email": "leah.pierce503@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0211",
+  "first_name": "Ruby",
+  "last_name": "Hayes",
+  "email": "ruby.hayes731@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0212",
+  "first_name": "Remy",
+  "last_name": "Cole",
+  "email": "remy.cole564@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-06-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0213",
+  "first_name": "Esme",
+  "last_name": "Lake",
+  "email": "esme.lake718@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-12-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0214",
+  "first_name": "Priya",
+  "last_name": "Stone",
+  "email": "priya.stone206@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2024-12-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0215",
+  "first_name": "Hana",
+  "last_name": "Vance",
+  "email": "hana.vance568@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-01-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0216",
+  "first_name": "Greta",
+  "last_name": "Wells",
+  "email": "greta.wells89@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-01-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0217",
+  "first_name": "Zoe",
+  "last_name": "Lake",
+  "email": "zoe.lake788@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0218",
+  "first_name": "Tess",
+  "last_name": "Sloane",
+  "email": "tess.sloane658@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-01-24",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0219",
+  "first_name": "Zoe",
+  "last_name": "Pierce",
+  "email": "zoe.pierce849@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2024-12-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0220",
+  "first_name": "Dina",
+  "last_name": "Knox",
+  "email": "dina.knox133@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0221",
+  "first_name": "Tess",
+  "last_name": "Finch",
+  "email": "tess.finch312@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0222",
+  "first_name": "Nora",
+  "last_name": "Stone",
+  "email": "nora.stone532@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-10-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0223",
+  "first_name": "Edie",
+  "last_name": "Lake",
+  "email": "edie.lake565@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-09-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0224",
+  "first_name": "Aria",
+  "last_name": "Vance",
+  "email": "aria.vance173@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-02-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0225",
+  "first_name": "Greta",
+  "last_name": "Sloane",
+  "email": "greta.sloane738@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-12-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0226",
+  "first_name": "Edie",
+  "last_name": "Wren",
+  "email": "edie.wren30@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-04-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0227",
+  "first_name": "Zoe",
+  "last_name": "Park",
+  "email": "zoe.park786@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0228",
+  "first_name": "Greta",
+  "last_name": "Vale",
+  "email": "greta.vale643@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0229",
+  "first_name": "Esme",
+  "last_name": "Lake",
+  "email": "esme.lake827@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0230",
+  "first_name": "Anaya",
+  "last_name": "Brook",
+  "email": "anaya.brook62@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-02-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0231",
+  "first_name": "Nora",
+  "last_name": "Pierce",
+  "email": "nora.pierce349@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0232",
+  "first_name": "Noor",
+  "last_name": "Vance",
+  "email": "noor.vance882@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-07-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0233",
+  "first_name": "Iris",
+  "last_name": "Brook",
+  "email": "iris.brook109@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-05-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0234",
+  "first_name": "Cleo",
+  "last_name": "Rhodes",
+  "email": "cleo.rhodes254@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-01-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0235",
+  "first_name": "Lena",
+  "last_name": "Hayes",
+  "email": "lena.hayes885@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-08",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0236",
+  "first_name": "Noor",
+  "last_name": "Vale",
+  "email": "noor.vale592@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-12-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0237",
+  "first_name": "Sana",
+  "last_name": "Marsh",
+  "email": "sana.marsh528@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-12-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0238",
+  "first_name": "Remy",
+  "last_name": "Ash",
+  "email": "remy.ash403@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0239",
+  "first_name": "Wren",
+  "last_name": "Pierce",
+  "email": "wren.pierce50@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-10-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0240",
+  "first_name": "Mia",
+  "last_name": "Lake",
+  "email": "mia.lake9@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-02-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0241",
+  "first_name": "Romy",
+  "last_name": "Hayes",
+  "email": "romy.hayes745@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-01-15",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0242",
+  "first_name": "Iris",
+  "last_name": "Crane",
+  "email": "iris.crane53@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-05-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0243",
+  "first_name": "Greta",
+  "last_name": "Knox",
+  "email": "greta.knox76@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-05-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0244",
+  "first_name": "Faye",
+  "last_name": "Finch",
+  "email": "faye.finch639@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-08-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0245",
+  "first_name": "Anaya",
+  "last_name": "Wren",
+  "email": "anaya.wren404@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-01-21",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0246",
+  "first_name": "Iris",
+  "last_name": "Marsh",
+  "email": "iris.marsh204@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0247",
+  "first_name": "Noor",
+  "last_name": "Finch",
+  "email": "noor.finch40@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0248",
+  "first_name": "Lena",
+  "last_name": "Bram",
+  "email": "lena.bram153@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-02-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0249",
+  "first_name": "Noor",
+  "last_name": "Finch",
+  "email": "noor.finch327@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-07-01",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0250",
+  "first_name": "Nora",
+  "last_name": "Brook",
+  "email": "nora.brook520@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0251",
+  "first_name": "Lola",
+  "last_name": "Finch",
+  "email": "lola.finch307@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-01-16",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0252",
+  "first_name": "Juno",
+  "last_name": "Reed",
+  "email": "juno.reed427@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-06-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0253",
+  "first_name": "Greta",
+  "last_name": "Lake",
+  "email": "greta.lake672@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-02-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0254",
+  "first_name": "Hana",
+  "last_name": "Crane",
+  "email": "hana.crane598@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0255",
+  "first_name": "Juno",
+  "last_name": "Stone",
+  "email": "juno.stone698@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0256",
+  "first_name": "Eva",
+  "last_name": "Park",
+  "email": "eva.park452@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-02-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0257",
+  "first_name": "Cleo",
+  "last_name": "Vale",
+  "email": "cleo.vale421@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-04-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0258",
+  "first_name": "Wren",
+  "last_name": "Crane",
+  "email": "wren.crane754@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-02-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0259",
+  "first_name": "Sana",
+  "last_name": "Park",
+  "email": "sana.park333@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2024-12-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0260",
+  "first_name": "Anaya",
+  "last_name": "Ash",
+  "email": "anaya.ash178@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0261",
+  "first_name": "Remy",
+  "last_name": "Knox",
+  "email": "remy.knox889@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-06-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0262",
+  "first_name": "Sana",
+  "last_name": "Fox",
+  "email": "sana.fox253@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0263",
+  "first_name": "Aria",
+  "last_name": "Knox",
+  "email": "aria.knox305@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-10-14",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0264",
+  "first_name": "Dina",
+  "last_name": "Lake",
+  "email": "dina.lake358@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-01-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0265",
+  "first_name": "Esme",
+  "last_name": "Hale",
+  "email": "esme.hale693@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-08-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0266",
+  "first_name": "Esme",
+  "last_name": "Brook",
+  "email": "esme.brook824@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-06-13",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0267",
+  "first_name": "Lena",
+  "last_name": "Lake",
+  "email": "lena.lake81@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-11",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0268",
+  "first_name": "Iris",
+  "last_name": "Pierce",
+  "email": "iris.pierce848@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0269",
+  "first_name": "Esme",
+  "last_name": "Frost",
+  "email": "esme.frost631@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-08-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0270",
+  "first_name": "Sana",
+  "last_name": "Sloane",
+  "email": "sana.sloane544@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-09-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0271",
+  "first_name": "Eva",
+  "last_name": "Day",
+  "email": "eva.day339@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-04-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0272",
+  "first_name": "Leah",
+  "last_name": "Ash",
+  "email": "leah.ash564@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-01-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0273",
+  "first_name": "Nell",
+  "last_name": "Stone",
+  "email": "nell.stone205@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0274",
+  "first_name": "Dina",
+  "last_name": "Lake",
+  "email": "dina.lake788@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0275",
+  "first_name": "Zoe",
+  "last_name": "Day",
+  "email": "zoe.day741@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0276",
+  "first_name": "Romy",
+  "last_name": "Park",
+  "email": "romy.park181@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-03-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0277",
+  "first_name": "Nell",
+  "last_name": "Park",
+  "email": "nell.park767@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0278",
+  "first_name": "Romy",
+  "last_name": "Lake",
+  "email": "romy.lake618@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0279",
+  "first_name": "Ivy",
+  "last_name": "Marsh",
+  "email": "ivy.marsh557@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-02-21",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0280",
+  "first_name": "Wren",
+  "last_name": "Ash",
+  "email": "wren.ash198@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0281",
+  "first_name": "Hana",
+  "last_name": "Hayes",
+  "email": "hana.hayes664@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-12-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0282",
+  "first_name": "Aria",
+  "last_name": "Bram",
+  "email": "aria.bram810@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-05-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0283",
+  "first_name": "Maya",
+  "last_name": "Sloane",
+  "email": "maya.sloane655@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-12-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0284",
+  "first_name": "Edie",
+  "last_name": "Brook",
+  "email": "edie.brook411@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2024-12-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0285",
+  "first_name": "Anaya",
+  "last_name": "Hayes",
+  "email": "anaya.hayes255@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-01-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0286",
+  "first_name": "Ava",
+  "last_name": "Frost",
+  "email": "ava.frost274@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-10-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0287",
+  "first_name": "Cleo",
+  "last_name": "Lake",
+  "email": "cleo.lake369@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0288",
+  "first_name": "Leah",
+  "last_name": "Rhodes",
+  "email": "leah.rhodes164@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0289",
+  "first_name": "Faye",
+  "last_name": "Fox",
+  "email": "faye.fox655@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-07-18",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0290",
+  "first_name": "Nell",
+  "last_name": "Lake",
+  "email": "nell.lake137@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-10-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0291",
+  "first_name": "Juno",
+  "last_name": "Vance",
+  "email": "juno.vance563@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0292",
+  "first_name": "Nell",
+  "last_name": "Ash",
+  "email": "nell.ash697@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-10-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0293",
+  "first_name": "Dina",
+  "last_name": "Wren",
+  "email": "dina.wren721@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2024-12-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0294",
+  "first_name": "Iris",
+  "last_name": "Cole",
+  "email": "iris.cole561@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-02-07",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0295",
+  "first_name": "Edie",
+  "last_name": "Finch",
+  "email": "edie.finch875@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-12-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0296",
+  "first_name": "Wren",
+  "last_name": "Pierce",
+  "email": "wren.pierce501@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-11-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0297",
+  "first_name": "Zoe",
+  "last_name": "Finch",
+  "email": "zoe.finch526@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0298",
+  "first_name": "Tess",
+  "last_name": "Pierce",
+  "email": "tess.pierce689@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0299",
+  "first_name": "Hana",
+  "last_name": "Lake",
+  "email": "hana.lake4@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0300",
+  "first_name": "Sana",
+  "last_name": "Quinn",
+  "email": "sana.quinn353@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-03-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0301",
+  "first_name": "Leah",
+  "last_name": "Cole",
+  "email": "leah.cole71@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-01",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0302",
+  "first_name": "Nell",
+  "last_name": "Ash",
+  "email": "nell.ash788@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0303",
+  "first_name": "Lena",
+  "last_name": "Crane",
+  "email": "lena.crane392@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-05-14",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0304",
+  "first_name": "Remy",
+  "last_name": "Brook",
+  "email": "remy.brook678@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0305",
+  "first_name": "Romy",
+  "last_name": "Knox",
+  "email": "romy.knox551@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-06-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0306",
+  "first_name": "Faye",
+  "last_name": "Finch",
+  "email": "faye.finch775@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-10-16",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0307",
+  "first_name": "Ava",
+  "last_name": "Lake",
+  "email": "ava.lake844@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-03-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0308",
+  "first_name": "Eva",
+  "last_name": "Rhodes",
+  "email": "eva.rhodes194@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-06-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0309",
+  "first_name": "Nell",
+  "last_name": "Hale",
+  "email": "nell.hale430@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-04-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0310",
+  "first_name": "Noor",
+  "last_name": "Crane",
+  "email": "noor.crane104@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0311",
+  "first_name": "Noor",
+  "last_name": "Park",
+  "email": "noor.park46@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0312",
+  "first_name": "Faye",
+  "last_name": "Pierce",
+  "email": "faye.pierce795@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-10-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0313",
+  "first_name": "Mia",
+  "last_name": "Vance",
+  "email": "mia.vance750@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-08-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0314",
+  "first_name": "Greta",
+  "last_name": "Marsh",
+  "email": "greta.marsh898@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0315",
+  "first_name": "Lena",
+  "last_name": "Fox",
+  "email": "lena.fox282@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-10-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0316",
+  "first_name": "Mia",
+  "last_name": "Knox",
+  "email": "mia.knox438@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-12-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0317",
+  "first_name": "Esme",
+  "last_name": "Ash",
+  "email": "esme.ash688@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-06-14",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0318",
+  "first_name": "Faye",
+  "last_name": "Finch",
+  "email": "faye.finch308@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-04-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0319",
+  "first_name": "Faye",
+  "last_name": "Stone",
+  "email": "faye.stone231@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-02-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0320",
+  "first_name": "Maya",
+  "last_name": "Bram",
+  "email": "maya.bram576@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-02-12",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0321",
+  "first_name": "Tess",
+  "last_name": "Vale",
+  "email": "tess.vale262@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-01-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0322",
+  "first_name": "Ruby",
+  "last_name": "Marsh",
+  "email": "ruby.marsh95@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-02-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0323",
+  "first_name": "Esme",
+  "last_name": "Hale",
+  "email": "esme.hale690@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-04-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0324",
+  "first_name": "Noor",
+  "last_name": "Wren",
+  "email": "noor.wren780@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-03-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0325",
+  "first_name": "Greta",
+  "last_name": "Hale",
+  "email": "greta.hale891@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-10-22",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0326",
+  "first_name": "Nell",
+  "last_name": "Marsh",
+  "email": "nell.marsh195@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-05-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0327",
+  "first_name": "Sana",
+  "last_name": "Hayes",
+  "email": "sana.hayes721@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-09-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0328",
+  "first_name": "Ruby",
+  "last_name": "Brook",
+  "email": "ruby.brook390@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-07-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0329",
+  "first_name": "Remy",
+  "last_name": "Knox",
+  "email": "remy.knox526@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-07-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0330",
+  "first_name": "Edie",
+  "last_name": "Ash",
+  "email": "edie.ash740@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-02-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0331",
+  "first_name": "Juno",
+  "last_name": "Crane",
+  "email": "juno.crane424@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-11-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0332",
+  "first_name": "Mia",
+  "last_name": "Sloane",
+  "email": "mia.sloane567@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-01-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0333",
+  "first_name": "Nell",
+  "last_name": "Sloane",
+  "email": "nell.sloane201@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0334",
+  "first_name": "Cleo",
+  "last_name": "Rhodes",
+  "email": "cleo.rhodes671@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-09-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0335",
+  "first_name": "Anaya",
+  "last_name": "Marsh",
+  "email": "anaya.marsh658@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-17",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0336",
+  "first_name": "Sana",
+  "last_name": "Ash",
+  "email": "sana.ash361@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-12-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0337",
+  "first_name": "Nora",
+  "last_name": "Vance",
+  "email": "nora.vance556@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-01-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0338",
+  "first_name": "Priya",
+  "last_name": "Park",
+  "email": "priya.park77@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-28",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0339",
+  "first_name": "Lola",
+  "last_name": "Fox",
+  "email": "lola.fox863@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0340",
+  "first_name": "Priya",
+  "last_name": "Rhodes",
+  "email": "priya.rhodes518@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-12-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0341",
+  "first_name": "Remy",
+  "last_name": "Wells",
+  "email": "remy.wells17@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0342",
+  "first_name": "Ava",
+  "last_name": "Knox",
+  "email": "ava.knox543@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-04-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0343",
+  "first_name": "Sana",
+  "last_name": "Frost",
+  "email": "sana.frost833@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-08-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0344",
+  "first_name": "Leah",
+  "last_name": "Fox",
+  "email": "leah.fox99@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-11-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0345",
+  "first_name": "Wren",
+  "last_name": "Vance",
+  "email": "wren.vance259@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-11-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0346",
+  "first_name": "Lola",
+  "last_name": "Wells",
+  "email": "lola.wells416@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-04-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0347",
+  "first_name": "Remy",
+  "last_name": "Sloane",
+  "email": "remy.sloane848@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-10-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0348",
+  "first_name": "Romy",
+  "last_name": "Cole",
+  "email": "romy.cole387@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-02-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0349",
+  "first_name": "Esme",
+  "last_name": "Ash",
+  "email": "esme.ash85@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-05-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0350",
+  "first_name": "Juno",
+  "last_name": "Vale",
+  "email": "juno.vale44@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0351",
+  "first_name": "Eva",
+  "last_name": "Quinn",
+  "email": "eva.quinn77@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0352",
+  "first_name": "Anaya",
+  "last_name": "Frost",
+  "email": "anaya.frost871@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0353",
+  "first_name": "Cleo",
+  "last_name": "Reed",
+  "email": "cleo.reed730@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-01-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0354",
+  "first_name": "Lola",
+  "last_name": "Brook",
+  "email": "lola.brook247@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-07-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0355",
+  "first_name": "Greta",
+  "last_name": "Brook",
+  "email": "greta.brook758@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-06-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0356",
+  "first_name": "Lena",
+  "last_name": "Bram",
+  "email": "lena.bram355@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-01-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0357",
+  "first_name": "Mia",
+  "last_name": "Hayes",
+  "email": "mia.hayes349@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-10-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0358",
+  "first_name": "Noor",
+  "last_name": "Crane",
+  "email": "noor.crane335@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-21",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0359",
+  "first_name": "Ava",
+  "last_name": "Day",
+  "email": "ava.day365@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-02-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0360",
+  "first_name": "Esme",
+  "last_name": "Brook",
+  "email": "esme.brook677@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-11-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0361",
+  "first_name": "Faye",
+  "last_name": "Cole",
+  "email": "faye.cole731@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0362",
+  "first_name": "Zoe",
+  "last_name": "Cole",
+  "email": "zoe.cole803@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-12-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0363",
+  "first_name": "Priya",
+  "last_name": "Vance",
+  "email": "priya.vance94@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-07-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0364",
+  "first_name": "Ava",
+  "last_name": "Lake",
+  "email": "ava.lake105@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-29",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0365",
+  "first_name": "Lena",
+  "last_name": "Cole",
+  "email": "lena.cole569@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-03-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0366",
+  "first_name": "Wren",
+  "last_name": "Vale",
+  "email": "wren.vale568@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0367",
+  "first_name": "Zoe",
+  "last_name": "Wren",
+  "email": "zoe.wren13@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-07-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0368",
+  "first_name": "Maya",
+  "last_name": "Vale",
+  "email": "maya.vale573@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0369",
+  "first_name": "Edie",
+  "last_name": "Rhodes",
+  "email": "edie.rhodes390@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0370",
+  "first_name": "Nora",
+  "last_name": "Vance",
+  "email": "nora.vance150@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0371",
+  "first_name": "Zoe",
+  "last_name": "Stone",
+  "email": "zoe.stone496@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-08-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0372",
+  "first_name": "Hana",
+  "last_name": "Cole",
+  "email": "hana.cole739@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-09-17",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0373",
+  "first_name": "Priya",
+  "last_name": "Ash",
+  "email": "priya.ash139@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0374",
+  "first_name": "Maya",
+  "last_name": "Reed",
+  "email": "maya.reed390@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-06-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0375",
+  "first_name": "Hana",
+  "last_name": "Marsh",
+  "email": "hana.marsh844@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-06-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0376",
+  "first_name": "Romy",
+  "last_name": "Day",
+  "email": "romy.day618@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0377",
+  "first_name": "Leah",
+  "last_name": "Quinn",
+  "email": "leah.quinn408@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-07-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0378",
+  "first_name": "Cleo",
+  "last_name": "Lake",
+  "email": "cleo.lake288@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-09-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0379",
+  "first_name": "Lola",
+  "last_name": "Brook",
+  "email": "lola.brook205@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-02-05",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0380",
+  "first_name": "Greta",
+  "last_name": "Knox",
+  "email": "greta.knox473@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-05-05",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0381",
+  "first_name": "Leah",
+  "last_name": "Quinn",
+  "email": "leah.quinn71@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-08-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0382",
+  "first_name": "Lola",
+  "last_name": "Vale",
+  "email": "lola.vale248@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-01-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0383",
+  "first_name": "Aria",
+  "last_name": "Fox",
+  "email": "aria.fox76@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-03-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0384",
+  "first_name": "Remy",
+  "last_name": "Wren",
+  "email": "remy.wren891@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-04-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0385",
+  "first_name": "Leah",
+  "last_name": "Vale",
+  "email": "leah.vale369@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0386",
+  "first_name": "Leah",
+  "last_name": "Knox",
+  "email": "leah.knox255@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-03-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0387",
+  "first_name": "Anaya",
+  "last_name": "Fox",
+  "email": "anaya.fox46@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-12-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0388",
+  "first_name": "Greta",
+  "last_name": "Day",
+  "email": "greta.day441@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-06-27",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0389",
+  "first_name": "Ivy",
+  "last_name": "Reed",
+  "email": "ivy.reed765@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-09-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0390",
+  "first_name": "Wren",
+  "last_name": "Knox",
+  "email": "wren.knox401@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0391",
+  "first_name": "Remy",
+  "last_name": "Crane",
+  "email": "remy.crane26@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-05",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0392",
+  "first_name": "Juno",
+  "last_name": "Hayes",
+  "email": "juno.hayes88@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-04-02",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0393",
+  "first_name": "Ivy",
+  "last_name": "Hale",
+  "email": "ivy.hale467@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-06-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0394",
+  "first_name": "Hana",
+  "last_name": "Quinn",
+  "email": "hana.quinn100@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-01-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0395",
+  "first_name": "Remy",
+  "last_name": "Hale",
+  "email": "remy.hale46@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-07-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0396",
+  "first_name": "Hana",
+  "last_name": "Bram",
+  "email": "hana.bram664@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0397",
+  "first_name": "Ivy",
+  "last_name": "Fox",
+  "email": "ivy.fox566@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-09-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0398",
+  "first_name": "Nora",
+  "last_name": "Marsh",
+  "email": "nora.marsh238@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-03-22",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0399",
+  "first_name": "Hana",
+  "last_name": "Brook",
+  "email": "hana.brook443@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-11-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0400",
+  "first_name": "Faye",
+  "last_name": "Reed",
+  "email": "faye.reed440@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0401",
+  "first_name": "Faye",
+  "last_name": "Reed",
+  "email": "faye.reed721@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-11-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0402",
+  "first_name": "Hana",
+  "last_name": "Cole",
+  "email": "hana.cole550@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-02-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0403",
+  "first_name": "Nora",
+  "last_name": "Wells",
+  "email": "nora.wells269@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-11-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0404",
+  "first_name": "Anaya",
+  "last_name": "Ash",
+  "email": "anaya.ash626@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-07-16",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0405",
+  "first_name": "Faye",
+  "last_name": "Sloane",
+  "email": "faye.sloane469@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0406",
+  "first_name": "Noor",
+  "last_name": "Stone",
+  "email": "noor.stone321@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-03-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0407",
+  "first_name": "Ivy",
+  "last_name": "Rhodes",
+  "email": "ivy.rhodes711@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-02-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0408",
+  "first_name": "Lena",
+  "last_name": "Finch",
+  "email": "lena.finch589@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-03-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0409",
+  "first_name": "Faye",
+  "last_name": "Vale",
+  "email": "faye.vale711@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0410",
+  "first_name": "Nell",
+  "last_name": "Day",
+  "email": "nell.day144@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-12-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0411",
+  "first_name": "Nora",
+  "last_name": "Marsh",
+  "email": "nora.marsh10@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0412",
+  "first_name": "Juno",
+  "last_name": "Vance",
+  "email": "juno.vance518@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-05-04",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0413",
+  "first_name": "Priya",
+  "last_name": "Ash",
+  "email": "priya.ash861@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0414",
+  "first_name": "Remy",
+  "last_name": "Ash",
+  "email": "remy.ash815@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-09",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0415",
+  "first_name": "Dina",
+  "last_name": "Rhodes",
+  "email": "dina.rhodes551@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-04-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0416",
+  "first_name": "Maya",
+  "last_name": "Stone",
+  "email": "maya.stone116@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-01-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0417",
+  "first_name": "Greta",
+  "last_name": "Hayes",
+  "email": "greta.hayes775@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-05-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0418",
+  "first_name": "Mia",
+  "last_name": "Crane",
+  "email": "mia.crane105@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-10-21",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0419",
+  "first_name": "Sana",
+  "last_name": "Day",
+  "email": "sana.day34@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0420",
+  "first_name": "Remy",
+  "last_name": "Frost",
+  "email": "remy.frost121@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-03-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0421",
+  "first_name": "Dina",
+  "last_name": "Rhodes",
+  "email": "dina.rhodes625@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-06-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0422",
+  "first_name": "Priya",
+  "last_name": "Vale",
+  "email": "priya.vale834@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-01-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0423",
+  "first_name": "Ruby",
+  "last_name": "Park",
+  "email": "ruby.park612@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-06-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0424",
+  "first_name": "Esme",
+  "last_name": "Stone",
+  "email": "esme.stone274@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0425",
+  "first_name": "Romy",
+  "last_name": "Finch",
+  "email": "romy.finch805@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-01-14",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0426",
+  "first_name": "Tess",
+  "last_name": "Park",
+  "email": "tess.park136@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-01-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0427",
+  "first_name": "Eva",
+  "last_name": "Vance",
+  "email": "eva.vance693@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-09-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0428",
+  "first_name": "Faye",
+  "last_name": "Ash",
+  "email": "faye.ash385@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-08-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0429",
+  "first_name": "Remy",
+  "last_name": "Cole",
+  "email": "remy.cole285@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-04-15",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0430",
+  "first_name": "Leah",
+  "last_name": "Wells",
+  "email": "leah.wells3@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-01-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0431",
+  "first_name": "Romy",
+  "last_name": "Crane",
+  "email": "romy.crane715@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-02-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0432",
+  "first_name": "Iris",
+  "last_name": "Cole",
+  "email": "iris.cole440@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-04-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0433",
+  "first_name": "Lola",
+  "last_name": "Quinn",
+  "email": "lola.quinn291@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-08-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0434",
+  "first_name": "Cleo",
+  "last_name": "Knox",
+  "email": "cleo.knox497@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0435",
+  "first_name": "Hana",
+  "last_name": "Marsh",
+  "email": "hana.marsh803@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0436",
+  "first_name": "Lola",
+  "last_name": "Pierce",
+  "email": "lola.pierce162@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-25",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0437",
+  "first_name": "Remy",
+  "last_name": "Pierce",
+  "email": "remy.pierce706@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0438",
+  "first_name": "Nell",
+  "last_name": "Vance",
+  "email": "nell.vance898@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-12-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0439",
+  "first_name": "Aria",
+  "last_name": "Cole",
+  "email": "aria.cole681@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-09-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0440",
+  "first_name": "Edie",
+  "last_name": "Day",
+  "email": "edie.day313@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-04-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0441",
+  "first_name": "Sana",
+  "last_name": "Bram",
+  "email": "sana.bram721@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-03-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0442",
+  "first_name": "Ivy",
+  "last_name": "Reed",
+  "email": "ivy.reed608@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-01-29",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0443",
+  "first_name": "Eva",
+  "last_name": "Finch",
+  "email": "eva.finch352@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-05-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0444",
+  "first_name": "Lola",
+  "last_name": "Hayes",
+  "email": "lola.hayes235@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-01-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0445",
+  "first_name": "Faye",
+  "last_name": "Cole",
+  "email": "faye.cole307@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-02-16",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0446",
+  "first_name": "Lena",
+  "last_name": "Brook",
+  "email": "lena.brook577@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-01-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0447",
+  "first_name": "Ava",
+  "last_name": "Wren",
+  "email": "ava.wren219@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-03-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0448",
+  "first_name": "Priya",
+  "last_name": "Hale",
+  "email": "priya.hale454@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-04-06",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0449",
+  "first_name": "Romy",
+  "last_name": "Quinn",
+  "email": "romy.quinn127@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-02-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0450",
+  "first_name": "Greta",
+  "last_name": "Hale",
+  "email": "greta.hale323@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-06-07",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0451",
+  "first_name": "Hana",
+  "last_name": "Vance",
+  "email": "hana.vance255@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0452",
+  "first_name": "Esme",
+  "last_name": "Wren",
+  "email": "esme.wren708@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-08-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0453",
+  "first_name": "Ava",
+  "last_name": "Fox",
+  "email": "ava.fox522@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-11-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0454",
+  "first_name": "Ruby",
+  "last_name": "Hale",
+  "email": "ruby.hale803@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-08-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0455",
+  "first_name": "Edie",
+  "last_name": "Rhodes",
+  "email": "edie.rhodes512@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0456",
+  "first_name": "Priya",
+  "last_name": "Wren",
+  "email": "priya.wren325@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-20",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0457",
+  "first_name": "Lena",
+  "last_name": "Brook",
+  "email": "lena.brook700@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0458",
+  "first_name": "Nora",
+  "last_name": "Crane",
+  "email": "nora.crane70@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-03-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0459",
+  "first_name": "Ava",
+  "last_name": "Frost",
+  "email": "ava.frost809@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-04-22",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0460",
+  "first_name": "Faye",
+  "last_name": "Finch",
+  "email": "faye.finch434@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0461",
+  "first_name": "Leah",
+  "last_name": "Brook",
+  "email": "leah.brook318@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-12-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0462",
+  "first_name": "Zoe",
+  "last_name": "Finch",
+  "email": "zoe.finch401@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-12-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0463",
+  "first_name": "Greta",
+  "last_name": "Day",
+  "email": "greta.day748@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-07-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0464",
+  "first_name": "Romy",
+  "last_name": "Rhodes",
+  "email": "romy.rhodes445@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-24",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0465",
+  "first_name": "Ivy",
+  "last_name": "Pierce",
+  "email": "ivy.pierce760@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-04-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0466",
+  "first_name": "Anaya",
+  "last_name": "Hale",
+  "email": "anaya.hale141@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-01-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0467",
+  "first_name": "Leah",
+  "last_name": "Reed",
+  "email": "leah.reed536@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-01-09",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0468",
+  "first_name": "Wren",
+  "last_name": "Hale",
+  "email": "wren.hale768@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-12-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0469",
+  "first_name": "Dina",
+  "last_name": "Frost",
+  "email": "dina.frost440@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0470",
+  "first_name": "Aria",
+  "last_name": "Finch",
+  "email": "aria.finch591@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-09-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0471",
+  "first_name": "Priya",
+  "last_name": "Cole",
+  "email": "priya.cole57@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-02-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0472",
+  "first_name": "Juno",
+  "last_name": "Sloane",
+  "email": "juno.sloane792@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-05-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0473",
+  "first_name": "Ivy",
+  "last_name": "Sloane",
+  "email": "ivy.sloane3@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-11",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0474",
+  "first_name": "Mia",
+  "last_name": "Reed",
+  "email": "mia.reed393@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-04-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0475",
+  "first_name": "Nell",
+  "last_name": "Vance",
+  "email": "nell.vance732@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-04-26",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0476",
+  "first_name": "Sana",
+  "last_name": "Day",
+  "email": "sana.day427@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-10-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0477",
+  "first_name": "Nell",
+  "last_name": "Hale",
+  "email": "nell.hale586@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-28",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0478",
+  "first_name": "Iris",
+  "last_name": "Hayes",
+  "email": "iris.hayes824@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-04-09",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0479",
+  "first_name": "Wren",
+  "last_name": "Park",
+  "email": "wren.park887@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-03-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0480",
+  "first_name": "Maya",
+  "last_name": "Crane",
+  "email": "maya.crane468@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0481",
+  "first_name": "Ava",
+  "last_name": "Wells",
+  "email": "ava.wells312@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0482",
+  "first_name": "Sana",
+  "last_name": "Wren",
+  "email": "sana.wren506@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-02-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0483",
+  "first_name": "Dina",
+  "last_name": "Crane",
+  "email": "dina.crane420@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-09-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0484",
+  "first_name": "Ava",
+  "last_name": "Rhodes",
+  "email": "ava.rhodes711@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-06-12",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0485",
+  "first_name": "Edie",
+  "last_name": "Reed",
+  "email": "edie.reed386@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-05-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0486",
+  "first_name": "Romy",
+  "last_name": "Hale",
+  "email": "romy.hale244@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-02-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0487",
+  "first_name": "Tess",
+  "last_name": "Ash",
+  "email": "tess.ash96@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-01-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0488",
+  "first_name": "Mia",
+  "last_name": "Rhodes",
+  "email": "mia.rhodes382@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-04-05",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0489",
+  "first_name": "Remy",
+  "last_name": "Hale",
+  "email": "remy.hale653@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-02-24",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0490",
+  "first_name": "Lola",
+  "last_name": "Brook",
+  "email": "lola.brook134@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-03-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0491",
+  "first_name": "Eva",
+  "last_name": "Lake",
+  "email": "eva.lake403@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-14",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0492",
+  "first_name": "Leah",
+  "last_name": "Hale",
+  "email": "leah.hale240@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-07-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0493",
+  "first_name": "Zoe",
+  "last_name": "Quinn",
+  "email": "zoe.quinn169@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-02-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0494",
+  "first_name": "Remy",
+  "last_name": "Pierce",
+  "email": "remy.pierce367@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-04-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0495",
+  "first_name": "Dina",
+  "last_name": "Quinn",
+  "email": "dina.quinn873@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-07-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0496",
+  "first_name": "Ivy",
+  "last_name": "Cole",
+  "email": "ivy.cole714@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-07-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0497",
+  "first_name": "Noor",
+  "last_name": "Park",
+  "email": "noor.park729@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-07-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0498",
+  "first_name": "Eva",
+  "last_name": "Wells",
+  "email": "eva.wells307@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2024-12-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0499",
+  "first_name": "Aria",
+  "last_name": "Stone",
+  "email": "aria.stone570@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0500",
+  "first_name": "Sana",
+  "last_name": "Knox",
+  "email": "sana.knox824@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-02-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0501",
+  "first_name": "Hana",
+  "last_name": "Vance",
+  "email": "hana.vance800@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0502",
+  "first_name": "Eva",
+  "last_name": "Vance",
+  "email": "eva.vance646@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-04-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0503",
+  "first_name": "Priya",
+  "last_name": "Cole",
+  "email": "priya.cole77@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-09",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0504",
+  "first_name": "Ava",
+  "last_name": "Cole",
+  "email": "ava.cole95@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-03-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0505",
+  "first_name": "Edie",
+  "last_name": "Marsh",
+  "email": "edie.marsh52@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-04-19",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0506",
+  "first_name": "Nora",
+  "last_name": "Sloane",
+  "email": "nora.sloane392@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-04-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0507",
+  "first_name": "Anaya",
+  "last_name": "Vale",
+  "email": "anaya.vale192@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-06-04",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0508",
+  "first_name": "Aria",
+  "last_name": "Frost",
+  "email": "aria.frost635@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-12-31",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0509",
+  "first_name": "Noor",
+  "last_name": "Rhodes",
+  "email": "noor.rhodes564@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-01-07",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0510",
+  "first_name": "Juno",
+  "last_name": "Park",
+  "email": "juno.park430@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-08-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0511",
+  "first_name": "Ruby",
+  "last_name": "Day",
+  "email": "ruby.day822@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-09-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0512",
+  "first_name": "Esme",
+  "last_name": "Reed",
+  "email": "esme.reed801@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-05-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0513",
+  "first_name": "Juno",
+  "last_name": "Wells",
+  "email": "juno.wells277@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0514",
+  "first_name": "Nora",
+  "last_name": "Reed",
+  "email": "nora.reed831@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-10-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0515",
+  "first_name": "Dina",
+  "last_name": "Frost",
+  "email": "dina.frost786@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-02-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0516",
+  "first_name": "Greta",
+  "last_name": "Rhodes",
+  "email": "greta.rhodes247@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-02-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0517",
+  "first_name": "Aria",
+  "last_name": "Knox",
+  "email": "aria.knox817@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0518",
+  "first_name": "Faye",
+  "last_name": "Wells",
+  "email": "faye.wells326@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-12-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0519",
+  "first_name": "Hana",
+  "last_name": "Hale",
+  "email": "hana.hale361@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-05-04",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0520",
+  "first_name": "Greta",
+  "last_name": "Sloane",
+  "email": "greta.sloane830@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-11-21",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0521",
+  "first_name": "Edie",
+  "last_name": "Ash",
+  "email": "edie.ash39@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-07-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0522",
+  "first_name": "Zoe",
+  "last_name": "Park",
+  "email": "zoe.park490@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-10-20",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0523",
+  "first_name": "Ava",
+  "last_name": "Marsh",
+  "email": "ava.marsh349@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-11-07",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0524",
+  "first_name": "Leah",
+  "last_name": "Stone",
+  "email": "leah.stone601@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2026-04-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0525",
+  "first_name": "Leah",
+  "last_name": "Vance",
+  "email": "leah.vance75@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2024-12-10",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0526",
+  "first_name": "Iris",
+  "last_name": "Bram",
+  "email": "iris.bram331@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-02-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0527",
+  "first_name": "Lena",
+  "last_name": "Stone",
+  "email": "lena.stone179@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-01-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0528",
+  "first_name": "Leah",
+  "last_name": "Knox",
+  "email": "leah.knox604@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-06-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0529",
+  "first_name": "Lola",
+  "last_name": "Stone",
+  "email": "lola.stone302@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-07-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0530",
+  "first_name": "Lena",
+  "last_name": "Stone",
+  "email": "lena.stone790@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-27",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0531",
+  "first_name": "Greta",
+  "last_name": "Park",
+  "email": "greta.park627@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-07-11",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0532",
+  "first_name": "Eva",
+  "last_name": "Day",
+  "email": "eva.day145@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2026-02-15",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0533",
+  "first_name": "Cleo",
+  "last_name": "Hale",
+  "email": "cleo.hale328@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0534",
+  "first_name": "Nora",
+  "last_name": "Day",
+  "email": "nora.day272@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-23",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0535",
+  "first_name": "Ruby",
+  "last_name": "Rhodes",
+  "email": "ruby.rhodes111@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-08",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0536",
+  "first_name": "Sana",
+  "last_name": "Reed",
+  "email": "sana.reed430@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-05-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0537",
+  "first_name": "Nora",
+  "last_name": "Vale",
+  "email": "nora.vale385@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0538",
+  "first_name": "Ivy",
+  "last_name": "Ash",
+  "email": "ivy.ash76@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0539",
+  "first_name": "Hana",
+  "last_name": "Park",
+  "email": "hana.park108@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-05-12",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0540",
+  "first_name": "Zoe",
+  "last_name": "Marsh",
+  "email": "zoe.marsh77@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-05-13",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0541",
+  "first_name": "Esme",
+  "last_name": "Cole",
+  "email": "esme.cole442@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-01-23",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0542",
+  "first_name": "Priya",
+  "last_name": "Stone",
+  "email": "priya.stone104@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-03-14",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0543",
+  "first_name": "Cleo",
+  "last_name": "Quinn",
+  "email": "cleo.quinn740@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-04-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0544",
+  "first_name": "Nell",
+  "last_name": "Hale",
+  "email": "nell.hale305@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-09-03",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0545",
+  "first_name": "Eva",
+  "last_name": "Hayes",
+  "email": "eva.hayes861@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0546",
+  "first_name": "Juno",
+  "last_name": "Vance",
+  "email": "juno.vance90@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-05-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0547",
+  "first_name": "Maya",
+  "last_name": "Fox",
+  "email": "maya.fox27@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0548",
+  "first_name": "Ruby",
+  "last_name": "Stone",
+  "email": "ruby.stone119@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-03-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0549",
+  "first_name": "Maya",
+  "last_name": "Brook",
+  "email": "maya.brook272@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-01-17",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0550",
+  "first_name": "Zoe",
+  "last_name": "Day",
+  "email": "zoe.day391@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-05-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0551",
+  "first_name": "Iris",
+  "last_name": "Stone",
+  "email": "iris.stone477@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0552",
+  "first_name": "Aria",
+  "last_name": "Rhodes",
+  "email": "aria.rhodes714@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-03-30",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0553",
+  "first_name": "Anaya",
+  "last_name": "Hayes",
+  "email": "anaya.hayes424@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-06-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0554",
+  "first_name": "Dina",
+  "last_name": "Sloane",
+  "email": "dina.sloane839@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2026-03-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0555",
+  "first_name": "Wren",
+  "last_name": "Vale",
+  "email": "wren.vale242@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-01-31",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0556",
+  "first_name": "Juno",
+  "last_name": "Lake",
+  "email": "juno.lake732@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-04-23",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0557",
+  "first_name": "Mia",
+  "last_name": "Finch",
+  "email": "mia.finch694@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-19",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0558",
+  "first_name": "Noor",
+  "last_name": "Vance",
+  "email": "noor.vance172@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-02-27",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0559",
+  "first_name": "Ruby",
+  "last_name": "Quinn",
+  "email": "ruby.quinn700@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-04-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0560",
+  "first_name": "Tess",
+  "last_name": "Quinn",
+  "email": "tess.quinn745@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-09-10",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0561",
+  "first_name": "Nell",
+  "last_name": "Cole",
+  "email": "nell.cole566@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-04-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0562",
+  "first_name": "Cleo",
+  "last_name": "Frost",
+  "email": "cleo.frost13@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-02-17",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0563",
+  "first_name": "Hana",
+  "last_name": "Bram",
+  "email": "hana.bram116@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2024-12-13",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0564",
+  "first_name": "Tess",
+  "last_name": "Vance",
+  "email": "tess.vance577@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-02-19",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0565",
+  "first_name": "Dina",
+  "last_name": "Hayes",
+  "email": "dina.hayes271@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-06-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0566",
+  "first_name": "Faye",
+  "last_name": "Day",
+  "email": "faye.day283@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-02-02",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0567",
+  "first_name": "Faye",
+  "last_name": "Vance",
+  "email": "faye.vance340@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-16",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0568",
+  "first_name": "Leah",
+  "last_name": "Rhodes",
+  "email": "leah.rhodes382@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-31",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0569",
+  "first_name": "Ava",
+  "last_name": "Marsh",
+  "email": "ava.marsh504@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-07-18",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0570",
+  "first_name": "Romy",
+  "last_name": "Bram",
+  "email": "romy.bram762@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2025-10-11",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0571",
+  "first_name": "Remy",
+  "last_name": "Crane",
+  "email": "remy.crane620@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0572",
+  "first_name": "Priya",
+  "last_name": "Cole",
+  "email": "priya.cole844@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-03-06",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0573",
+  "first_name": "Tess",
+  "last_name": "Hale",
+  "email": "tess.hale841@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2024-12-20",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0574",
+  "first_name": "Mia",
+  "last_name": "Finch",
+  "email": "mia.finch519@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2026-03-26",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0575",
+  "first_name": "Faye",
+  "last_name": "Vance",
+  "email": "faye.vance897@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2026-05-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0576",
+  "first_name": "Lola",
+  "last_name": "Quinn",
+  "email": "lola.quinn52@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-09-19",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0577",
+  "first_name": "Nell",
+  "last_name": "Wells",
+  "email": "nell.wells476@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-25",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0578",
+  "first_name": "Wren",
+  "last_name": "Brook",
+  "email": "wren.brook501@example.com",
+  "city": "Los Angeles",
+  "province": "CA",
+  "country_code": "US",
+  "created_at": "2026-05-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0579",
+  "first_name": "Noor",
+  "last_name": "Pierce",
+  "email": "noor.pierce359@example.com",
+  "city": "Austin",
+  "province": "TX",
+  "country_code": "US",
+  "created_at": "2025-02-01",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0580",
+  "first_name": "Iris",
+  "last_name": "Stone",
+  "email": "iris.stone396@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2026-03-01",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0581",
+  "first_name": "Mia",
+  "last_name": "Stone",
+  "email": "mia.stone663@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0582",
+  "first_name": "Eva",
+  "last_name": "Fox",
+  "email": "eva.fox526@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-08-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0583",
+  "first_name": "Ava",
+  "last_name": "Crane",
+  "email": "ava.crane663@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-02-01",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0584",
+  "first_name": "Nora",
+  "last_name": "Wren",
+  "email": "nora.wren825@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-10-15",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0585",
+  "first_name": "Maya",
+  "last_name": "Bram",
+  "email": "maya.bram873@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-03-25",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0586",
+  "first_name": "Iris",
+  "last_name": "Pierce",
+  "email": "iris.pierce694@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-10-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0587",
+  "first_name": "Wren",
+  "last_name": "Wren",
+  "email": "wren.wren679@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2026-02-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0588",
+  "first_name": "Lola",
+  "last_name": "Wells",
+  "email": "lola.wells111@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-08-16",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0589",
+  "first_name": "Juno",
+  "last_name": "Cole",
+  "email": "juno.cole883@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-08-22",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0590",
+  "first_name": "Aria",
+  "last_name": "Frost",
+  "email": "aria.frost784@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-11-21",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0591",
+  "first_name": "Eva",
+  "last_name": "Park",
+  "email": "eva.park698@example.com",
+  "city": "Brooklyn",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-04-14",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0592",
+  "first_name": "Lena",
+  "last_name": "Hale",
+  "email": "lena.hale266@example.com",
+  "city": "New York",
+  "province": "NY",
+  "country_code": "US",
+  "created_at": "2025-01-08",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0593",
+  "first_name": "Nell",
+  "last_name": "Vale",
+  "email": "nell.vale598@example.com",
+  "city": "Denver",
+  "province": "CO",
+  "country_code": "US",
+  "created_at": "2025-04-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0594",
+  "first_name": "Leah",
+  "last_name": "Sloane",
+  "email": "leah.sloane228@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-06-15",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0595",
+  "first_name": "Anaya",
+  "last_name": "Knox",
+  "email": "anaya.knox866@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2025-05-30",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ },
+ {
+  "ref": "C0596",
+  "first_name": "Nora",
+  "last_name": "Fox",
+  "email": "nora.fox483@example.com",
+  "city": "Boston",
+  "province": "MA",
+  "country_code": "US",
+  "created_at": "2025-11-28",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0597",
+  "first_name": "Lena",
+  "last_name": "Hale",
+  "email": "lena.hale344@example.com",
+  "city": "Seattle",
+  "province": "WA",
+  "country_code": "US",
+  "created_at": "2025-11-26",
+  "tags": [
+   "vip",
+   "demo"
+  ],
+  "_seg": "vip"
+ },
+ {
+  "ref": "C0598",
+  "first_name": "Priya",
+  "last_name": "Cole",
+  "email": "priya.cole893@example.com",
+  "city": "Chicago",
+  "province": "IL",
+  "country_code": "US",
+  "created_at": "2025-06-03",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0599",
+  "first_name": "Maya",
+  "last_name": "Vale",
+  "email": "maya.vale302@example.com",
+  "city": "Miami",
+  "province": "FL",
+  "country_code": "US",
+  "created_at": "2025-05-17",
+  "tags": [
+   "new",
+   "demo"
+  ],
+  "_seg": "new"
+ },
+ {
+  "ref": "C0600",
+  "first_name": "Remy",
+  "last_name": "Hayes",
+  "email": "remy.hayes598@example.com",
+  "city": "Portland",
+  "province": "OR",
+  "country_code": "US",
+  "created_at": "2026-04-08",
+  "tags": [
+   "returning",
+   "demo"
+  ],
+  "_seg": "returning"
+ }
+]
