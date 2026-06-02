@@ -18,7 +18,7 @@ pipeline/           The data build (not part of the theme; Shopify ignores it)
 
 ## Shopify connection
 - Install the **Ritual** theme on the dev store.
-- Connect that theme to this repo on the **`main`** branch (Shopify GitHub integration).
+- Connect that theme to this repo (`anupam-tectonic/bpc-demo-store`) on the **`main`** branch (Shopify GitHub integration).
 - Shopify commits the theme files to the repo root; edits sync both ways.
 - The `pipeline/` folder is plain tooling and does not interfere with the theme.
 
