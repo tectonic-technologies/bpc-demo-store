@@ -6,7 +6,8 @@
  * or related systems. Please exercise caution as any changes
  * made to this file may be overwritten.
  * ------------------------------------------------------------
- */{
+ */
+{
   "sections": {
     "section_Fh7TFQ": {
       "type": "section",
@@ -15,7 +16,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Fashion for the wild at heart. Build your capsule collection and adorn it with iconic pieces to create a style that’s uniquely yours. </p>",
+            "text": "<p>Skin first. Considered essentials for a quiet, luminous everyday. Clean formulas, real shades, nothing loud.</p>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -176,7 +177,13 @@
         "gap": 12,
         "color_scheme": "",
         "padding-block-start": 40,
-        "padding-block-end": 50
+        "padding-block-end": 50,
+        "collection_list": [
+          "best-sellers",
+          "new",
+          "cat-foundation",
+          "cat-lipstick"
+        ]
       }
     },
     "featured_product_pW7dEU": {
@@ -271,7 +278,8 @@
         "layout": "media-left",
         "color_scheme": "scheme-4",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 0,
+        "product": "skin-rewind-complexion-stick"
       }
     },
     "product_list_8kR3Hb": {
@@ -547,10 +555,10 @@
       },
       "name": "Featured collection",
       "settings": {
-        "collection": "all",
+        "collection": "best-sellers",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "max_products": 4,
+        "max_products": 12,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
@@ -651,7 +659,13 @@
         "gap": 12,
         "color_scheme": "scheme-1",
         "padding-block-start": 24,
-        "padding-block-end": 0
+        "padding-block-end": 0,
+        "collection_list": [
+          "cat-serum-treatment",
+          "cat-blush",
+          "cat-mascara",
+          "sensitive-skin"
+        ]
       }
     },
     "marquee_9AMajF": {
@@ -660,7 +674,7 @@
         "text_RGxHtE": {
           "type": "text",
           "settings": {
-            "text": "<h1><a href=\"/collections/all\" title=\"All products\">SHOP NOW </a></h1>",
+            "text": "<h1><a href=\"/collections/best-sellers\" title=\"Best sellers\">MAREN &middot; SKIN-FIRST BEAUTY</a></h1>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
