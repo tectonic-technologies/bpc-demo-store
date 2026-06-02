@@ -1,0 +1,286 @@
+[
+ {
+  "handle": "cat-blush",
+  "title": "Blush",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Blush"
+  }
+ },
+ {
+  "handle": "cat-bronzer",
+  "title": "Bronzer",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Bronzer"
+  }
+ },
+ {
+  "handle": "cat-brow",
+  "title": "Brow",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Brow"
+  }
+ },
+ {
+  "handle": "cat-concealer",
+  "title": "Concealer",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Concealer"
+  }
+ },
+ {
+  "handle": "cat-contour",
+  "title": "Contour",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Contour"
+  }
+ },
+ {
+  "handle": "cat-eyeliner",
+  "title": "Eyeliner",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Eyeliner"
+  }
+ },
+ {
+  "handle": "cat-eyeshadow",
+  "title": "Eyeshadow",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Eyeshadow"
+  }
+ },
+ {
+  "handle": "cat-foundation",
+  "title": "Foundation",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Foundation"
+  }
+ },
+ {
+  "handle": "cat-highlighter",
+  "title": "Highlighter",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Highlighter"
+  }
+ },
+ {
+  "handle": "cat-lip-balm-oil",
+  "title": "Lip Balm & Oil",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Lip Balm & Oil"
+  }
+ },
+ {
+  "handle": "cat-lip-liner",
+  "title": "Lip Liner",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Lip Liner"
+  }
+ },
+ {
+  "handle": "cat-lipstick",
+  "title": "Lipstick",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Lipstick"
+  }
+ },
+ {
+  "handle": "cat-mascara",
+  "title": "Mascara",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Mascara"
+  }
+ },
+ {
+  "handle": "cat-mist-spray",
+  "title": "Mist & Spray",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Mist & Spray"
+  }
+ },
+ {
+  "handle": "cat-other",
+  "title": "Other",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Other"
+  }
+ },
+ {
+  "handle": "cat-powder",
+  "title": "Powder",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Powder"
+  }
+ },
+ {
+  "handle": "cat-primer",
+  "title": "Primer",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Primer"
+  }
+ },
+ {
+  "handle": "cat-spf-sun",
+  "title": "SPF & Sun",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "SPF & Sun"
+  }
+ },
+ {
+  "handle": "cat-serum-treatment",
+  "title": "Serum & Treatment",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Serum & Treatment"
+  }
+ },
+ {
+  "handle": "cat-tool",
+  "title": "Tool",
+  "type": "smart",
+  "rule": {
+   "field": "category",
+   "value": "Tool"
+  }
+ },
+ {
+  "handle": "concern-dark-circles",
+  "title": "Dark Circles",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "dark-circles"
+  }
+ },
+ {
+  "handle": "concern-redness",
+  "title": "Redness",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "redness"
+  }
+ },
+ {
+  "handle": "concern-dullness",
+  "title": "Dullness",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "dullness"
+  }
+ },
+ {
+  "handle": "concern-dryness",
+  "title": "Dryness",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "dryness"
+  }
+ },
+ {
+  "handle": "concern-texture",
+  "title": "Texture",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "texture"
+  }
+ },
+ {
+  "handle": "concern-fine-lines",
+  "title": "Fine Lines",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "fine-lines"
+  }
+ },
+ {
+  "handle": "concern-uneven-tone",
+  "title": "Uneven Tone",
+  "type": "smart",
+  "rule": {
+   "field": "concern",
+   "value": "uneven-tone"
+  }
+ },
+ {
+  "handle": "best-sellers",
+  "title": "Best Sellers",
+  "type": "manual",
+  "rule": {
+   "field": "best_seller"
+  }
+ },
+ {
+  "handle": "new",
+  "title": "New",
+  "type": "manual",
+  "rule": {
+   "field": "is_new"
+  }
+ },
+ {
+  "handle": "clearance",
+  "title": "Last Chance",
+  "type": "manual",
+  "rule": {
+   "field": "is_clearance"
+  }
+ },
+ {
+  "handle": "sensitive-skin",
+  "title": "For Sensitive Skin",
+  "type": "smart",
+  "rule": {
+   "field": "skin_type",
+   "value": "sensitive"
+  }
+ },
+ {
+  "handle": "the-edit",
+  "title": "The Edit",
+  "type": "manual",
+  "rule": {
+   "field": "editorial"
+  }
+ }
+]
