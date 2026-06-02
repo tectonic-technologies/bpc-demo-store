@@ -1,0 +1,73 @@
+{%- comment -%}
+  MAREN · FAQ accordion (PDP Kit)
+  Reads product.metafields.content.faqs (json list of {question, answer, category}).
+  Renders each as a native <details>/<summary> row. Renders nothing if absent/empty.
+  Note: schema.md lists content.faqs as a metaobject_reference list; this block
+  follows the task spec (json list). It reads .question/.answer/.category, which
+  resolve for both a json object and a metaobject reference, so it is robust to both.
+{%- endcomment -%}
+
+{%- assign s = block.settings -%}
+{%- assign faqs = product.metafields.content.faqs.value -%}
+
+{%- if faqs != blank and faqs.size > 0 -%}
+  <section class="maren-faq" {{ block.shopify_attributes }}>
+    {%- if s.heading != blank -%}
+      <h2 class="maren-faq__heading">{{ s.heading }}</h2>
+    {%- endif -%}
+
+    <div class="maren-faq__list">
+      {%- for faq in faqs -%}
+        {%- if faq.question != blank and faq.answer != blank -%}
+          <details class="maren-faq__row"{% if forloop.first and s.open_first %} open{% endif %}>
+            <summary class="maren-faq__q">
+              <span class="maren-faq__q-text">
+                {{ faq.question }}
+                {%- if s.show_categories and faq.category != blank -%}
+                  <span class="maren-faq__tag">{{ faq.category }}</span>
+                {%- endif -%}
+              </span>
+              <span class="maren-faq__icon" aria-hidden="true"></span>
+            </summary>
+            <div class="maren-faq__a">{{ faq.answer }}</div>
+          </details>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+  </section>
+{%- endif -%}
+
+{% stylesheet %}
+  .maren-faq { margin-block: var(--margin-lg, 32px); color: var(--color-foreground, #2b2622); }
+  .maren-faq__heading { font-size: 1.4rem; font-weight: 500; letter-spacing: 0.01em; margin: 0 0 var(--margin-sm, 14px); }
+  .maren-faq__list { display: flex; flex-direction: column; }
+  .maren-faq__row { border-block-end: 1px solid color-mix(in srgb, currentColor 14%, transparent); }
+  .maren-faq__row:first-child { border-block-start: 1px solid color-mix(in srgb, currentColor 14%, transparent); }
+  .maren-faq__q { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: var(--margin-sm, 14px); cursor: pointer; list-style: none; font-size: 0.98rem; font-weight: 500; }
+  .maren-faq__q::-webkit-details-marker { display: none; }
+  .maren-faq__q-text { display: inline-flex; align-items: baseline; gap: 10px; flex-wrap: wrap; }
+  .maren-faq__tag { font-size: 0.7rem; font-weight: 400; text-transform: lowercase; letter-spacing: 0.04em; padding: 2px 8px; border-radius: 999px; background: color-mix(in srgb, currentColor 8%, transparent); opacity: 0.75; }
+  .maren-faq__icon { position: relative; flex: none; width: 12px; height: 12px; }
+  .maren-faq__icon::before, .maren-faq__icon::after { content: ""; position: absolute; inset-inline-start: 0; inset-block-start: 50%; width: 12px; height: 1.5px; background: currentColor; transition: transform 0.2s ease; }
+  .maren-faq__icon::after { transform: rotate(90deg); }
+  .maren-faq__row[open] .maren-faq__icon::after { transform: rotate(0); }
+  .maren-faq__a { padding-block: 0 var(--margin-md, 18px); font-size: 0.9rem; line-height: 1.65; opacity: 0.85; max-width: 60ch; }
+  .maren-faq__a > :first-child { margin-block-start: 0; }
+  .maren-faq__a > :last-child { margin-block-end: 0; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "MAREN · FAQ",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Product FAQ accordion. Reads the content.faqs metafield from the MAREN data pipeline. Renders nothing when no FAQs are present." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Questions" },
+    { "type": "checkbox", "id": "open_first", "label": "Open first question by default", "default": false },
+    { "type": "checkbox", "id": "show_categories", "label": "Show category tags", "default": false }
+  ],
+  "presets": [
+    { "name": "MAREN · FAQ" }
+  ]
+}
+{% endschema %}

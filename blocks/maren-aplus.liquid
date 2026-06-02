@@ -1,0 +1,58 @@
+{%- comment -%}
+  MAREN · A+ editorial content (PDP Kit)
+  Reads product.metafields.content.aplus (json list of {type, heading, body}).
+  Renders stacked editorial sections. Renders nothing if absent/empty.
+  Note: schema.md lists content.aplus as a metaobject_reference list (aplus_block
+  with fields type/heading/body/image/table_json). This block follows the task spec
+  (json list) and reads .type/.heading/.body, which resolve for both a json object
+  and an aplus_block metaobject, so it is robust to either source.
+{%- endcomment -%}
+
+{%- assign s = block.settings -%}
+{%- assign blocks = product.metafields.content.aplus.value -%}
+
+{%- if blocks != blank and blocks.size > 0 -%}
+  <section class="maren-aplus" {{ block.shopify_attributes }}>
+    {%- if s.heading != blank -%}
+      <h2 class="maren-aplus__title">{{ s.heading }}</h2>
+    {%- endif -%}
+    {%- for b in blocks -%}
+      {%- if b.heading != blank or b.body != blank -%}
+        <article class="maren-aplus__section{% if b.type != blank %} is-{{ b.type }}{% endif %}">
+          {%- if b.heading != blank -%}
+            <h3 class="maren-aplus__heading">{{ b.heading }}</h3>
+          {%- endif -%}
+          {%- if b.body != blank -%}
+            <div class="maren-aplus__body">{{ b.body }}</div>
+          {%- endif -%}
+        </article>
+      {%- endif -%}
+    {%- endfor -%}
+  </section>
+{%- endif -%}
+
+{% stylesheet %}
+  .maren-aplus { margin-block: var(--margin-lg, 32px); color: var(--color-foreground, #2b2622); display: flex; flex-direction: column; gap: var(--margin-lg, 32px); }
+  .maren-aplus__title { font-size: 1.4rem; font-weight: 500; letter-spacing: 0.01em; margin: 0; }
+  .maren-aplus__section { display: flex; flex-direction: column; gap: 10px; max-width: 68ch; }
+  .maren-aplus__heading { font-size: 1.05rem; font-weight: 600; letter-spacing: 0.01em; margin: 0; }
+  .maren-aplus__body { font-size: 0.95rem; line-height: 1.7; opacity: 0.9; }
+  .maren-aplus__body > :first-child { margin-block-start: 0; }
+  .maren-aplus__body > :last-child { margin-block-end: 0; }
+  .maren-aplus__section.is-hero { gap: 14px; }
+  .maren-aplus__section.is-hero .maren-aplus__heading { font-size: 1.5rem; font-weight: 500; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "MAREN · A+ content",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Editorial A+ content sections. Reads the content.aplus metafield from the MAREN data pipeline. Renders nothing when no content is present." },
+    { "type": "text", "id": "heading", "label": "Section heading (optional)", "default": "" }
+  ],
+  "presets": [
+    { "name": "MAREN · A+ content" }
+  ]
+}
+{% endschema %}

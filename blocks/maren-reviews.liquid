@@ -1,0 +1,187 @@
+{%- comment -%}
+  MAREN · Reviews module (PDP Kit)
+  Data-driven only. Reads (synthetic-but-consistent) product metafields:
+    reviews.rating (decimal), reviews.count (int),
+    reviews.distribution (json {"5":n,...,"1":n}),
+    reviews.sentiment_themes (json {top_likes:[], top_dislikes:[], quotes:[]}),
+    reviews.items (json list of {rating,title,body,author,verified,date,sentiment}).
+  Renders nothing if there is no rating and no review list.
+  Star rendering reuses the --rating CSS technique from maren-social-proof.
+{%- endcomment -%}
+
+{%- assign s = block.settings -%}
+{%- assign rating = product.metafields.reviews.rating.value -%}
+{%- assign review_count = product.metafields.reviews.count.value -%}
+{%- assign distribution = product.metafields.reviews.distribution.value -%}
+{%- assign themes = product.metafields.reviews.sentiment_themes.value -%}
+{%- assign items = product.metafields.reviews.items.value -%}
+
+{%- comment -%} Only render when we actually have something to show. {%- endcomment -%}
+{%- assign has_items = false -%}
+{%- if items != blank and items.size > 0 -%}{%- assign has_items = true -%}{%- endif -%}
+
+{%- if rating != blank or has_items -%}
+  <section class="maren-reviews" {{ block.shopify_attributes }}>
+    {%- if s.heading != blank -%}
+      <h2 class="maren-rv__heading">{{ s.heading }}</h2>
+    {%- endif -%}
+
+    {%- comment -%} ---- Summary header ---- {%- endcomment -%}
+    {%- if rating != blank -%}
+      <div class="maren-rv__summary">
+        <span class="maren-rv__stars" style="--rating: {{ rating }};" aria-hidden="true">★★★★★</span>
+        <span class="maren-rv__rating-num">{{ rating }}</span>
+        <span class="maren-rv__rating-of">out of 5</span>
+        {%- if review_count != blank -%}
+          <span class="maren-rv__count">{{ review_count }} reviews</span>
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+
+    {%- comment -%} ---- Distribution bar chart (5 -> 1) ---- {%- endcomment -%}
+    {%- if s.show_distribution and distribution != blank -%}
+      {%- comment -%} Compute the largest bucket so bars scale to it. {%- endcomment -%}
+      {%- assign dist_max = 0 -%}
+      {%- assign dist_total = 0 -%}
+      {%- for star in (1..5) -%}
+        {%- assign key = star | append: '' -%}
+        {%- assign n = distribution[key] | default: 0 -%}
+        {%- assign dist_total = dist_total | plus: n -%}
+        {%- if n > dist_max -%}{%- assign dist_max = n -%}{%- endif -%}
+      {%- endfor -%}
+      {%- if dist_total > 0 -%}
+        <ul class="maren-rv__dist" role="list">
+          {%- for star in (1..5) -%}
+            {%- assign rev = 6 | minus: star -%}{%- comment -%} 5,4,3,2,1 {%- endcomment -%}
+            {%- assign key = rev | append: '' -%}
+            {%- assign n = distribution[key] | default: 0 -%}
+            {%- assign pct = 0 -%}
+            {%- if dist_max > 0 -%}
+              {%- assign pct = n | times: 100 | divided_by: dist_max -%}
+            {%- endif -%}
+            <li class="maren-rv__dist-row">
+              <span class="maren-rv__dist-label">{{ rev }} star</span>
+              <span class="maren-rv__dist-track" aria-hidden="true">
+                <span class="maren-rv__dist-fill" style="width: {{ pct }}%;"></span>
+              </span>
+              <span class="maren-rv__dist-n">{{ n }}</span>
+            </li>
+          {%- endfor -%}
+        </ul>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- comment -%} ---- Sentiment themes: what people love / wish ---- {%- endcomment -%}
+    {%- if s.show_themes and themes != blank -%}
+      {%- assign likes = themes.top_likes -%}
+      {%- assign dislikes = themes.top_dislikes -%}
+      {%- if likes != blank and likes.size > 0 or dislikes != blank and dislikes.size > 0 -%}
+        <div class="maren-rv__themes">
+          {%- if likes != blank and likes.size > 0 -%}
+            <div class="maren-rv__theme-col">
+              <p class="maren-rv__theme-title">What people love</p>
+              <ul class="maren-rv__chips" role="list">
+                {%- for like in likes -%}
+                  <li class="maren-rv__chip is-like">{{ like }}</li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+          {%- if dislikes != blank and dislikes.size > 0 -%}
+            <div class="maren-rv__theme-col">
+              <p class="maren-rv__theme-title">What people wish</p>
+              <ul class="maren-rv__chips" role="list">
+                {%- for dis in dislikes -%}
+                  <li class="maren-rv__chip is-wish">{{ dis }}</li>
+                {%- endfor -%}
+              </ul>
+            </div>
+          {%- endif -%}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- comment -%} ---- Individual reviews ---- {%- endcomment -%}
+    {%- if has_items -%}
+      <ul class="maren-rv__list" role="list">
+        {%- assign shown = 0 -%}
+        {%- for r in items -%}
+          {%- if shown >= s.max_reviews -%}{%- break -%}{%- endif -%}
+          {%- assign shown = shown | plus: 1 -%}
+          <li class="maren-rv__item">
+            <div class="maren-rv__item-head">
+              {%- if r.rating != blank -%}
+                <span class="maren-rv__stars maren-rv__stars--sm" style="--rating: {{ r.rating }};" aria-label="Rated {{ r.rating }} out of 5">★★★★★</span>
+              {%- endif -%}
+              {%- if r.title != blank -%}
+                <span class="maren-rv__item-title">{{ r.title }}</span>
+              {%- endif -%}
+            </div>
+            {%- if r.body != blank -%}
+              <p class="maren-rv__item-body">{{ r.body }}</p>
+            {%- endif -%}
+            <p class="maren-rv__item-meta">
+              {%- if r.author != blank -%}<span class="maren-rv__author">{{ r.author }}</span>{%- endif -%}
+              {%- if r.verified -%}<span class="maren-rv__verified">Verified purchase</span>{%- endif -%}
+              {%- if r.date != blank -%}<span class="maren-rv__date">{{ r.date }}</span>{%- endif -%}
+            </p>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </section>
+{%- endif -%}
+
+{% stylesheet %}
+  .maren-reviews { margin-block: var(--margin-lg, 32px); color: var(--color-foreground, #2b2622); display: flex; flex-direction: column; gap: var(--margin-md, 20px); }
+  .maren-rv__heading { font-size: 1.4rem; font-weight: 500; letter-spacing: 0.01em; margin: 0; }
+  .maren-rv__summary { display: flex; align-items: baseline; gap: 8px; flex-wrap: wrap; }
+  .maren-rv__stars { position: relative; display: inline-block; letter-spacing: 1px; line-height: 1; color: color-mix(in srgb, currentColor 22%, transparent); }
+  .maren-rv__stars::before { content: "★★★★★"; position: absolute; inset-block: 0; inset-inline-start: 0; overflow: hidden; white-space: nowrap; width: calc(var(--rating, 0) / 5 * 100%); color: currentColor; }
+  .maren-rv__stars--sm { font-size: 0.85rem; }
+  .maren-rv__rating-num { font-size: 1.5rem; font-weight: 600; }
+  .maren-rv__rating-of { font-size: 0.8rem; opacity: 0.55; }
+  .maren-rv__count { font-size: 0.85rem; opacity: 0.7; margin-inline-start: 4px; }
+
+  .maren-rv__dist { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; max-width: 420px; }
+  .maren-rv__dist-row { display: grid; grid-template-columns: 3.5rem 1fr 2.5rem; align-items: center; gap: 10px; font-size: 0.8rem; }
+  .maren-rv__dist-label { opacity: 0.7; }
+  .maren-rv__dist-track { position: relative; height: 6px; border-radius: 999px; background: color-mix(in srgb, currentColor 10%, transparent); overflow: hidden; }
+  .maren-rv__dist-fill { position: absolute; inset-block: 0; inset-inline-start: 0; border-radius: 999px; background: color-mix(in srgb, currentColor 60%, transparent); }
+  .maren-rv__dist-n { text-align: end; opacity: 0.6; font-variant-numeric: tabular-nums; }
+
+  .maren-rv__themes { display: flex; flex-wrap: wrap; gap: var(--margin-lg, 32px); }
+  .maren-rv__theme-col { flex: 1 1 220px; }
+  .maren-rv__theme-title { margin: 0 0 8px; font-size: 0.8rem; text-transform: lowercase; letter-spacing: 0.04em; opacity: 0.7; }
+  .maren-rv__chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 6px; }
+  .maren-rv__chip { font-size: 0.8rem; padding: 4px 10px; border-radius: 999px; background: color-mix(in srgb, currentColor 6%, transparent); }
+  .maren-rv__chip.is-wish { opacity: 0.7; }
+
+  .maren-rv__list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: var(--margin-md, 20px); }
+  .maren-rv__item { padding-block-start: var(--margin-md, 20px); border-block-start: 1px solid color-mix(in srgb, currentColor 12%, transparent); }
+  .maren-rv__item:first-child { padding-block-start: 0; border-block-start: none; }
+  .maren-rv__item-head { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-block-end: 6px; }
+  .maren-rv__item-title { font-weight: 600; font-size: 0.95rem; }
+  .maren-rv__item-body { margin: 0 0 8px; font-size: 0.9rem; line-height: 1.6; opacity: 0.9; }
+  .maren-rv__item-meta { margin: 0; display: flex; gap: 10px; flex-wrap: wrap; font-size: 0.78rem; opacity: 0.55; }
+  .maren-rv__verified::before { content: "· "; }
+  .maren-rv__date::before { content: "· "; }
+  .maren-rv__item-meta > span:first-child::before { content: none; }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "MAREN · Reviews",
+  "tag": null,
+  "settings": [
+    { "type": "paragraph", "content": "Reviews summary, rating distribution, sentiment themes, and individual reviews. Reads product reviews.* metafields from the MAREN data pipeline. Renders nothing when no review data is present." },
+    { "type": "text", "id": "heading", "label": "Heading", "default": "Reviews" },
+    { "type": "checkbox", "id": "show_distribution", "label": "Show rating distribution chart", "default": true },
+    { "type": "checkbox", "id": "show_themes", "label": "Show sentiment themes (love / wish)", "default": true },
+    { "type": "range", "id": "max_reviews", "label": "Number of reviews to display", "min": 1, "max": 20, "step": 1, "default": 6 }
+  ],
+  "presets": [
+    { "name": "MAREN · Reviews" }
+  ]
+}
+{% endschema %}
