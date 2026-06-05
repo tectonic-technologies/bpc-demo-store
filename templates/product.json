@@ -317,14 +317,6 @@
             "maren_aplus": {
               "type": "maren-aplus",
               "settings": {}
-            },
-            "maren_faq": {
-              "type": "maren-faq",
-              "settings": {}
-            },
-            "maren_reviews": {
-              "type": "maren-reviews",
-              "settings": {}
             }
           },
           "block_order": [
@@ -336,9 +328,7 @@
             "maren_social_proof",
             "maren_product_groups",
             "maren_fbt",
-            "maren_aplus",
-            "maren_faq",
-            "maren_reviews"
+            "maren_aplus"
           ]
         }
       },

@@ -314,4 +314,52 @@
   body:has(#header-group #header-component[data-sticky-state='active']) .product-details.sticky-content--desktop {
     --sticky-header-offset: var(--header-height);
   }
+
+  /* Spectrum gallery: balance the media/details split so the gallery does not
+     dominate the description column. Scoped to grids that contain the Spectrum
+     product_gallery wrapper, so native Horizon product layouts are unaffected.
+     Overrides both the base (1fr min(...)) and the >=1200px (2fr 1fr) rules. */
+  @media screen and (min-width: 750px) {
+    .product-information__grid:not(.product-information--media-none):has([data-spectrum-feature-slug='product_gallery']) {
+      &.product-information--media-left {
+        grid-template-columns: minmax(0, 3fr) minmax(0, 2fr);
+      }
+      &.product-information--media-right {
+        grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+      }
+    }
+  }
+
+  /* Spectrum reviews: let the section blend into the PDP background instead of
+     painting a white card. The snippet's root paints var(--sai-color-bg) (white);
+     overriding from the theme (not the auto-generated snippet) avoids Studio drift.
+     The descendant selector outranks the snippet's own (0,1,0) rule. */
+  [data-spectrum-snippet-id='okclm1q7'],
+  [data-spectrum-snippet-id='okclm1q7'] .sai-okclm1q7 {
+    background: transparent;
+  }
+
+  /* Spectrum FBT: square block corners (product cards + add-to-cart bar). */
+  [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9__card,
+  [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9__cta {
+    border-radius: 0;
+  }
+
+  /* Spectrum FBT: brand-plum add-to-cart button (theme foreground #3e2433). */
+  [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9__cta {
+    background: #3e2433;
+    color: #fbf6f2;
+    border-color: #3e2433;
+  }
+
+  /* Spectrum FAQ: adopt the theme's heading/body fonts to match the native FAQ. */
+  [data-spectrum-snippet-id='f4qpdp01'] .sai-f4qpdp01 {
+    --sai-font-heading: var(--font-heading--family);
+    --sai-font-heading-style: var(--font-heading--style);
+    --sai-font-heading-weight: var(--font-heading--weight);
+    --sai-font-body: var(--font-body--family);
+    --sai-font-body-style: var(--font-body--style);
+    --sai-font-body-weight: var(--font-body--weight);
+    --sai-font-body-weight-bold: var(--font-body--weight);
+  }
 {% endstylesheet %}
