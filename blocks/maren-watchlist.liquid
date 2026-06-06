@@ -1,0 +1,145 @@
+{%- comment -%}
+  Spectrum Watchlist — PDP secondary action (ported from around-the-cycle).
+
+  Renders a full-width secondary button below the buy buttons:
+    - In stock      → "Add to Watchlist" (heart)  → opens drawer in watchlist mode
+    - Out of stock  → "Notify Me"        (bell)   → opens drawer in notify mode
+
+  The button only carries the `.js-spectrum-watchlist-open` / `.js-spectrum-notify-open`
+  hook + data attributes; the drawer (rendered once here) owns the behaviour. Pure UI:
+  submitting an email shows a success state, no network call.
+
+  Styled as a lightweight ghost text-link (no .button class — that paints an inset
+  box-shadow outline). Colors come from theme tokens (--color-foreground) so it
+  tracks the merchant's color scheme.
+{%- endcomment -%}
+
+{%- liquid
+  assign product = closest.product
+  if request.visual_preview_mode and product == blank
+    assign product = collections.all.products.first
+  endif
+
+  assign is_oos = false
+  if product != blank and product.available == false
+    assign is_oos = true
+  endif
+-%}
+
+{%- if product != blank -%}
+  <div class="maren-watchlist" {{ block.shopify_attributes }}>
+    {%- if is_oos -%}
+      <button
+        type="button"
+        class="maren-watchlist__btn js-spectrum-notify-open"
+        data-product-id="{{ product.id }}"
+        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+        data-product-title="{{ product.title | escape }}"
+        aria-label="{{ 'products.product.notify_me' | t: default: 'Notify Me' }}"
+      >
+        <svg class="maren-watchlist__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true" focusable="false">
+          <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+          <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+        </svg>
+        <span>{{ 'products.product.notify_me' | t: default: 'Notify Me' }}</span>
+      </button>
+    {%- else -%}
+      <button
+        type="button"
+        class="maren-watchlist__btn js-spectrum-watchlist-open"
+        data-product-id="{{ product.id }}"
+        data-variant-id="{{ product.selected_or_first_available_variant.id }}"
+        data-product-title="{{ product.title | escape }}"
+        aria-label="{{ block.settings.label | default: 'Add to Watchlist' }}"
+      >
+        <svg class="maren-watchlist__icon" width="18" height="18" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"
+          aria-hidden="true" focusable="false">
+          <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+        </svg>
+        <span>{{ block.settings.label | default: 'Add to Watchlist' }}</span>
+      </button>
+    {%- endif -%}
+  </div>
+
+  {%- render 'spectrum-pdp-drawer' -%}
+{%- endif -%}
+
+{% stylesheet %}
+  /* Tertiary affordance — deliberately lighter than the buy buttons so it
+     reads as "save for later", not a third competing CTA. */
+  .maren-watchlist {
+    display: flex;
+    justify-content: center;
+    margin-block-start: calc(-1 * var(--margin-xs, 8px));
+  }
+
+  .maren-watchlist__btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    padding: 8px 6px;
+    color: var(--color-foreground);
+    font-family: var(--font-paragraph--family);
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+  }
+
+  .maren-watchlist__btn span {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    text-decoration-thickness: 1px;
+    text-decoration-color: rgba(var(--color-foreground-rgb), 0.3);
+    transition: text-decoration-color 150ms ease;
+  }
+
+  .maren-watchlist__btn:hover span,
+  .maren-watchlist__btn:focus-visible span {
+    text-decoration-color: var(--color-foreground);
+  }
+
+  /* The theme's global *:focus-visible draws a solid box outline; on this
+     text-link it reads as an unwanted border. Replace it with the same
+     underline + filled-heart emphasis used on hover so keyboard focus stays
+     visible without the box. */
+  .maren-watchlist__btn:focus,
+  .maren-watchlist__btn:focus-visible {
+    outline: none;
+  }
+
+  .maren-watchlist__btn:focus-visible .maren-watchlist__icon {
+    fill: currentColor;
+  }
+
+  .maren-watchlist__icon {
+    flex: 0 0 auto;
+    fill: none;
+    transition: fill 150ms ease, transform 150ms ease;
+  }
+
+  /* Heart fills on hover — the wishlist micro-interaction. */
+  .maren-watchlist__btn:hover .maren-watchlist__icon {
+    fill: currentColor;
+    transform: scale(1.08);
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Watchlist",
+  "settings": [
+    { "type": "paragraph", "content": "Adds a 'Add to Watchlist' button (or 'Notify Me' when out of stock) below the buy buttons. Opens an email-capture drawer." },
+    { "type": "text", "id": "label", "label": "Watchlist button label", "default": "Add to Watchlist" }
+  ],
+  "presets": [
+    { "name": "Watchlist" }
+  ]
+}
+{% endschema %}

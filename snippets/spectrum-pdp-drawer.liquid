@@ -1,0 +1,462 @@
+{%- comment -%}
+  Spectrum PDP Drawer — slide-up drawer reused for two flows:
+
+    1. Watchlist  → triggered by `.js-spectrum-watchlist-open`
+    2. Notify Me  → triggered by `.js-spectrum-notify-open`
+
+  Trigger buttons must carry: data-product-id, data-variant-id, data-product-title.
+  Render this snippet once per PDP. It binds a single delegated click listener on
+  document, so the triggers can live anywhere in the page (block, sticky bar, etc).
+
+  Styling tracks the Horizon color scheme + style tokens (--color-*, --style-border-radius-*),
+  so it inherits the merchant's theme settings rather than hardcoded black/white.
+
+  On submit: shows the success state. NO API call is made (demo flow).
+{%- endcomment -%}
+
+<div
+  id="spectrum-pdp-drawer"
+  class="spectrum-pdp-drawer"
+  role="dialog"
+  aria-modal="true"
+  aria-labelledby="spectrum-pdp-drawer-title"
+  aria-hidden="true"
+  hidden
+>
+  <div class="spectrum-pdp-drawer__overlay" data-drawer-close></div>
+  <div class="spectrum-pdp-drawer__panel" role="document">
+    <button
+      type="button"
+      class="spectrum-pdp-drawer__close"
+      aria-label="{{ 'accessibility.close' | t }}"
+      data-drawer-close
+    >
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true" focusable="false">
+        <path d="M15 5L5 15M5 5l10 10" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <div class="spectrum-pdp-drawer__body" data-drawer-form-state>
+      <h2 id="spectrum-pdp-drawer-title" class="spectrum-pdp-drawer__title" data-drawer-title>
+        Add to Watchlist
+      </h2>
+      <p class="spectrum-pdp-drawer__product" data-drawer-product></p>
+      <p class="spectrum-pdp-drawer__lede" data-drawer-lede>
+        Enter your email and we&rsquo;ll keep you posted.
+      </p>
+
+      <form class="spectrum-pdp-drawer__form" novalidate>
+        <label class="spectrum-pdp-drawer__label" for="spectrum-pdp-drawer-email">
+          Email address
+        </label>
+        <input
+          type="email"
+          id="spectrum-pdp-drawer-email"
+          name="email"
+          class="spectrum-pdp-drawer__input"
+          required
+          autocomplete="email"
+          placeholder="you@example.com"
+        >
+        <button
+          type="submit"
+          class="spectrum-pdp-drawer__submit"
+          data-drawer-submit
+        >
+          <span data-drawer-submit-label>Notify me</span>
+        </button>
+      </form>
+    </div>
+
+    <div class="spectrum-pdp-drawer__success" data-drawer-success-state hidden>
+      <div class="spectrum-pdp-drawer__success-icon" aria-hidden="true">
+        <svg width="56" height="56" viewBox="0 0 56 56" fill="none">
+          <circle cx="28" cy="28" r="27" stroke="currentColor" stroke-width="2"/>
+          <path d="M17 28.5L24.5 36L39 21" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+      <h3 class="spectrum-pdp-drawer__success-title" data-drawer-success-title>You&rsquo;re on the list</h3>
+      <p class="spectrum-pdp-drawer__success-text" data-drawer-success-text>
+        We&rsquo;ll email you the moment there&rsquo;s news on this item.
+      </p>
+      <button type="button" class="spectrum-pdp-drawer__success-close" data-drawer-close>
+        Done
+      </button>
+    </div>
+  </div>
+</div>
+
+{% stylesheet %}
+  .spectrum-pdp-drawer {
+    position: fixed;
+    inset: 0;
+    z-index: 1000000;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .spectrum-pdp-drawer[hidden] {
+    display: none;
+  }
+
+  .spectrum-pdp-drawer__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 250ms ease;
+    pointer-events: auto;
+  }
+
+  .spectrum-pdp-drawer__panel {
+    position: relative;
+    width: 100%;
+    max-width: 520px;
+    background: var(--color-background);
+    color: var(--color-foreground);
+    border-radius: var(--style-border-radius-lg, 18px) var(--style-border-radius-lg, 18px) 0 0;
+    padding: 32px 24px 28px;
+    transform: translateY(100%);
+    transition: transform 300ms cubic-bezier(0.32, 0.72, 0, 1);
+    pointer-events: auto;
+    box-shadow: var(--shadow-drawer, 0 -8px 24px rgba(0, 0, 0, 0.18));
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .spectrum-pdp-drawer.is-open {
+    pointer-events: auto;
+  }
+
+  .spectrum-pdp-drawer.is-open .spectrum-pdp-drawer__overlay {
+    opacity: 1;
+  }
+
+  .spectrum-pdp-drawer.is-open .spectrum-pdp-drawer__panel {
+    transform: translateY(0);
+  }
+
+  .spectrum-pdp-drawer__close {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    background: transparent;
+    color: var(--color-foreground);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .spectrum-pdp-drawer__close:hover {
+    background: rgba(var(--color-foreground-rgb), 0.06);
+  }
+
+  .spectrum-pdp-drawer__title {
+    margin: 0 0 8px;
+    font-family: var(--font-heading--family);
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+    color: var(--color-foreground-heading, var(--color-foreground));
+  }
+
+  .spectrum-pdp-drawer__product {
+    margin: 0 0 12px;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--color-foreground);
+  }
+
+  .spectrum-pdp-drawer__product:empty {
+    display: none;
+  }
+
+  .spectrum-pdp-drawer__lede {
+    margin: 0 0 20px;
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--color-foreground-secondary, var(--color-foreground-muted));
+  }
+
+  .spectrum-pdp-drawer__form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .spectrum-pdp-drawer__label {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-foreground-secondary, var(--color-foreground-muted));
+  }
+
+  .spectrum-pdp-drawer__input {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 14px 16px;
+    font-size: 16px;
+    line-height: 1.2;
+    border: 1px solid var(--color-input-border, var(--color-border));
+    border-radius: var(--style-border-radius-inputs, 8px);
+    background: var(--color-input-background, var(--color-background));
+    color: var(--color-input-text, var(--color-foreground));
+    box-sizing: border-box;
+    transition: border-color 150ms ease, box-shadow 150ms ease;
+  }
+
+  .spectrum-pdp-drawer__input:focus {
+    outline: none;
+    border-color: var(--color-foreground);
+    box-shadow: 0 0 0 3px rgba(var(--color-foreground-rgb), 0.12);
+  }
+
+  .spectrum-pdp-drawer__input.has-error {
+    border-color: #d12626;
+  }
+
+  .spectrum-pdp-drawer__submit {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    padding: 14px 18px;
+    margin-top: 4px;
+    background: var(--color-primary-button-background);
+    color: var(--color-primary-button-text);
+    border: var(--style-border-width-primary, 1px) solid var(--color-primary-button-border);
+    border-radius: var(--style-border-radius-buttons-primary, 8px);
+    font-family: var(--button-font-family-primary, inherit);
+    text-transform: var(--button-text-case-primary, none);
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    transition: color 150ms ease, background-color 150ms ease;
+  }
+
+  .spectrum-pdp-drawer__submit:hover {
+    background: var(--color-primary-button-hover-background);
+    color: var(--color-primary-button-hover-text);
+    border-color: var(--color-primary-button-hover-border);
+  }
+
+  .spectrum-pdp-drawer__submit:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  /* Success state */
+  .spectrum-pdp-drawer__success {
+    text-align: center;
+    padding: 8px 0;
+  }
+
+  .spectrum-pdp-drawer__success-icon {
+    color: var(--color-foreground);
+    margin: 4px auto 16px;
+    width: 56px;
+    height: 56px;
+  }
+
+  .spectrum-pdp-drawer__success-title {
+    margin: 0 0 8px;
+    font-family: var(--font-heading--family);
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-foreground-heading, var(--color-foreground));
+  }
+
+  .spectrum-pdp-drawer__success-text {
+    margin: 0 0 20px;
+    font-size: 14px;
+    color: var(--color-foreground-secondary, var(--color-foreground-muted));
+    line-height: 1.45;
+  }
+
+  .spectrum-pdp-drawer__success-close {
+    appearance: none;
+    -webkit-appearance: none;
+    padding: 12px 24px;
+    background: transparent;
+    color: var(--color-foreground);
+    border: 1px solid var(--color-border);
+    border-radius: var(--style-border-radius-buttons-secondary, 8px);
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 150ms ease, background-color 150ms ease;
+  }
+
+  .spectrum-pdp-drawer__success-close:hover {
+    background: var(--color-foreground);
+    color: var(--color-background);
+  }
+
+  /* Desktop — center modal-style */
+  @media screen and (min-width: 750px) {
+    .spectrum-pdp-drawer {
+      align-items: center;
+    }
+
+    .spectrum-pdp-drawer__panel {
+      border-radius: var(--style-border-radius-popover, 16px);
+      transform: translateY(20px) scale(0.96);
+      opacity: 0;
+      transition: transform 250ms ease, opacity 200ms ease;
+    }
+
+    .spectrum-pdp-drawer.is-open .spectrum-pdp-drawer__panel {
+      transform: translateY(0) scale(1);
+      opacity: 1;
+    }
+  }
+
+  body.spectrum-pdp-drawer-open {
+    overflow: hidden;
+  }
+{% endstylesheet %}
+
+<script>
+  (function () {
+    var drawer = document.getElementById('spectrum-pdp-drawer');
+    if (!drawer || drawer.dataset.bound === 'true') return;
+    drawer.dataset.bound = 'true';
+
+    var titleEl = drawer.querySelector('[data-drawer-title]');
+    var productEl = drawer.querySelector('[data-drawer-product]');
+    var ledeEl = drawer.querySelector('[data-drawer-lede]');
+    var submitLabelEl = drawer.querySelector('[data-drawer-submit-label]');
+    var formState = drawer.querySelector('[data-drawer-form-state]');
+    var successState = drawer.querySelector('[data-drawer-success-state]');
+    var successTitleEl = drawer.querySelector('[data-drawer-success-title]');
+    var successTextEl = drawer.querySelector('[data-drawer-success-text]');
+    var form = drawer.querySelector('form');
+    var emailInput = drawer.querySelector('#spectrum-pdp-drawer-email');
+    var submitBtn = drawer.querySelector('[data-drawer-submit]');
+
+    var COPY = {
+      watchlist: {
+        title: 'Add to Watchlist',
+        lede: 'Enter your email and we’ll keep you posted on price drops, restocks, and updates for this item.',
+        submit: 'Add to Watchlist',
+        successTitle: 'Added to your watchlist',
+        successText: 'We’ll email you the moment something changes for this item.'
+      },
+      notify: {
+        title: 'Notify me when back in stock',
+        lede: 'Drop your email and we’ll let you know the second this is back in stock.',
+        submit: 'Notify me',
+        successTitle: 'You’re on the list',
+        successText: 'We’ll email you the moment this item is back in stock.'
+      }
+    };
+
+    var lastTrigger = null;
+
+    function resetForm() {
+      if (form) form.reset();
+      if (emailInput) emailInput.classList.remove('has-error');
+      if (formState) formState.hidden = false;
+      if (successState) successState.hidden = true;
+      if (submitBtn) submitBtn.disabled = false;
+    }
+
+    function applyMode(mode, productTitle) {
+      var copy = COPY[mode] || COPY.watchlist;
+      if (titleEl) titleEl.textContent = copy.title;
+      if (ledeEl) ledeEl.textContent = copy.lede;
+      if (submitLabelEl) submitLabelEl.textContent = copy.submit;
+      if (successTitleEl) successTitleEl.textContent = copy.successTitle;
+      if (successTextEl) successTextEl.textContent = copy.successText;
+      if (productEl) productEl.textContent = productTitle || '';
+    }
+
+    function open(mode, productTitle, trigger) {
+      resetForm();
+      applyMode(mode, productTitle);
+      drawer.hidden = false;
+      // Force reflow so the transition runs
+      void drawer.offsetWidth;
+      drawer.classList.add('is-open');
+      drawer.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('spectrum-pdp-drawer-open');
+      lastTrigger = trigger || null;
+      setTimeout(function () {
+        if (emailInput) emailInput.focus();
+      }, 250);
+    }
+
+    function close() {
+      drawer.classList.remove('is-open');
+      drawer.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('spectrum-pdp-drawer-open');
+      setTimeout(function () {
+        drawer.hidden = true;
+        if (lastTrigger && typeof lastTrigger.focus === 'function') lastTrigger.focus();
+        lastTrigger = null;
+      }, 300);
+    }
+
+    // Trigger handlers
+    document.addEventListener('click', function (e) {
+      var watchlistTrigger = e.target.closest('.js-spectrum-watchlist-open');
+      var notifyTrigger = e.target.closest('.js-spectrum-notify-open');
+      if (watchlistTrigger) {
+        e.preventDefault();
+        open('watchlist', watchlistTrigger.getAttribute('data-product-title') || '', watchlistTrigger);
+        return;
+      }
+      if (notifyTrigger) {
+        e.preventDefault();
+        open('notify', notifyTrigger.getAttribute('data-product-title') || '', notifyTrigger);
+        return;
+      }
+      // Close handlers
+      if (e.target.closest('[data-drawer-close]')) {
+        e.preventDefault();
+        close();
+      }
+    });
+
+    // Escape to close
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape' && drawer.classList.contains('is-open')) {
+        close();
+      }
+    });
+
+    // Form submit — pure UI, no network
+    if (form) {
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        if (!emailInput) return;
+        var value = (emailInput.value || '').trim();
+        var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+        if (!valid) {
+          emailInput.classList.add('has-error');
+          emailInput.focus();
+          return;
+        }
+        emailInput.classList.remove('has-error');
+        if (submitBtn) submitBtn.disabled = true;
+        // Show success state immediately — no API call
+        if (formState) formState.hidden = true;
+        if (successState) successState.hidden = false;
+      });
+
+      emailInput && emailInput.addEventListener('input', function () {
+        emailInput.classList.remove('has-error');
+      });
+    }
+  })();
+</script>
