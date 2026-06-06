@@ -48,11 +48,53 @@
 {% endcapture %}
 
 {% capture product_details %}
-  {% content_for 'block',
-    type: '_product-details',
-    id: 'product-details',
-    closest.product: closest.product
-  %}
+  {%- comment -%}
+    Flattened details column. Rendered as a SINGLE .product-details grid item
+    (so the two-column subgrid is preserved), but each row is literal markup in
+    THIS section file — which is what lets Studio's element-mode matcher anchor a
+    slot between any two rows (title, price, variant, buy, etc.). The functional
+    blocks (variant picker, buy buttons) still render through content_for, so the
+    add-to-cart form + variant JS are unchanged.
+  {%- endcomment -%}
+  <div
+    id="ProductInformation-{{ section.id }}"
+    class="product-details sticky-content--desktop"
+    style="--details-position: flex-start;"
+    data-testid="product-information-details"
+  >
+    <div class="sai-pdp-stack">
+      <div class="sai-pdp-row sai-pdp-row--title">
+        <h1 class="sai-pdp-title">{{ closest.product.title }}</h1>
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--price">
+        {% content_for 'block', type: 'group', id: 'price_rating', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--variant">
+        {% content_for 'block', type: 'variant-picker', id: 'variant_picker', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--buy">
+        {% content_for 'block', type: 'buy-buttons', id: 'buy_buttons', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--watchlist">
+        {% content_for 'block', type: 'maren-watchlist', id: 'maren_watchlist', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--divider">
+        {% content_for 'block', type: '_divider', id: 'divider', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--description">
+        {% content_for 'block', type: 'maren-description', id: 'maren_description', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--product-groups">
+        {% content_for 'block', type: 'maren-product-groups', id: 'maren_product_groups', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--aplus">
+        {% content_for 'block', type: 'maren-aplus', id: 'maren_aplus', closest.product: closest.product %}
+      </div>
+      <div class="sai-pdp-row sai-pdp-row--fbt">
+        {% content_for 'block', type: 'maren-fbt', id: 'maren_fbt', closest.product: closest.product %}
+      </div>
+    </div>
+  </div>
 {% endcapture %}
 
 {% capture additional_blocks %}
@@ -212,6 +254,25 @@
 %}
 
 {% stylesheet %}
+  /* Flattened details column — replicates the group layout (flex column + gap)
+     so spacing matches the original block-rendered column. */
+  .sai-pdp-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-sm, 12px);
+    width: 100%;
+  }
+  .sai-pdp-row:empty {
+    display: none;
+  }
+  .sai-pdp-title {
+    margin: 0;
+    font-family: var(--font-body--family);
+    font-size: 1rem;
+    line-height: normal;
+    color: var(--color-foreground);
+  }
+
   .sticky-add-to-cart__bar {
     position: fixed;
     bottom: 20px;
