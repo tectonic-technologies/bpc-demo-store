@@ -339,6 +339,12 @@
     background: transparent;
   }
 
+  /* Spectrum FBT: drop the snippet's outer margin + inline padding. */
+  [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9 {
+    margin: 0;
+    padding: 0;
+  }
+
   /* Spectrum FBT: square block corners (product cards + add-to-cart bar). */
   [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9__card,
   [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9__cta {
@@ -350,6 +356,19 @@
     background: #3e2433;
     color: #fbf6f2;
     border-color: #3e2433;
+  }
+
+  /* Spectrum similar-products: promote the snippet title to the section heading
+     (the native "Goes well with..." header is no longer rendered). Match the
+     native heading look — theme display font, larger, uppercase, brand plum. */
+  [data-spectrum-snippet-id='frpxf1zz'] .sai-frpxf1zz__heading {
+    font-family: var(--font-heading--family);
+    font-style: var(--font-heading--style);
+    font-weight: var(--font-heading--weight);
+    font-size: 2.25rem;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    color: #3e2433;
   }
 
   /* Spectrum FAQ: adopt the theme's heading/body fonts to match the native FAQ. */
