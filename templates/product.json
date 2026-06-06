@@ -248,31 +248,9 @@
               },
               "blocks": {}
             },
-            "text": {
-              "type": "product-description",
-              "name": "Product description",
-              "settings": {
-                "text": "{{ closest.product.description }}",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-primary--family)",
-                "font_size": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
+            "maren_description": {
+              "type": "maren-description",
+              "settings": {}
             },
             "maren_product_groups": {
               "type": "maren-product-groups",
@@ -297,7 +275,7 @@
             "buy_buttons",
             "maren_watchlist",
             "divider",
-            "text",
+            "maren_description",
             "maren_product_groups",
             "maren_aplus",
             "maren_fbt"
