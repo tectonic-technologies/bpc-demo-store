@@ -692,6 +692,8 @@
 {%- unless request.design_mode -%}
 {%- if _sai_preview and _sai_url contains '_spectrum_ai_preview=pg1' or _sai_url contains '|pg1|' -%}
   {% render '_sai-wqtyqscyzmwae2afrq2jbtnb', sai_state: 'draft' %}
+{%- else -%}
+  {% render '_sai-wqtyqscyzmwae2afrq2jbtnb', sai_state: 'live' %}
 {%- endif -%}
 {%- endunless -%}
 {%- comment -%}
@@ -709,6 +711,8 @@
 {%- unless request.design_mode -%}
 {%- if _sai_preview and _sai_url contains '_spectrum_ai_preview=pg1' or _sai_url contains '|pg1|' -%}
   {% render '_sai-hn9svhcg00sn32ck72auo41h', sai_state: 'draft' %}
+{%- else -%}
+  {% render '_sai-hn9svhcg00sn32ck72auo41h', sai_state: 'live' %}
 {%- endif -%}
 {%- endunless -%}
 {%- comment -%}
