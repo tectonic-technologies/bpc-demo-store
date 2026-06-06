@@ -159,11 +159,6 @@
           "blocks": {},
           "static": true
         },
-        "maren_description": {
-          "type": "maren-description",
-          "settings": {},
-          "static": true
-        },
         "maren_product_groups": {
           "type": "maren-product-groups",
           "settings": {},
@@ -171,11 +166,6 @@
         },
         "maren_aplus": {
           "type": "maren-aplus",
-          "settings": {},
-          "static": true
-        },
-        "maren_fbt": {
-          "type": "maren-fbt",
           "settings": {},
           "static": true
         }
