@@ -204,7 +204,7 @@
             "buy_buttons": {
               "type": "buy-buttons",
               "settings": {
-                "stacking": false,
+                "stacking": true,
                 "show_pickup_availability": false,
                 "gift_card_form": true,
                 "padding-block-start": 0,
@@ -286,26 +286,6 @@
               "type": "maren-aplus",
               "settings": {}
             },
-            "spectrum_best_price": {
-              "type": "spectrum-best_price",
-              "settings": {}
-            },
-            "spectrum_fomo": {
-              "type": "spectrum-fomo",
-              "settings": {}
-            },
-            "spectrum_promotions": {
-              "type": "spectrum-promotions",
-              "settings": {}
-            },
-            "spectrum_quantity_bundles": {
-              "type": "spectrum-quantity_bundles",
-              "settings": {}
-            },
-            "spectrum_virtual_try_on": {
-              "type": "spectrum-virtual_try_on",
-              "settings": {}
-            },
             "maren_fbt": {
               "type": "maren-fbt",
               "settings": {}
@@ -315,11 +295,6 @@
             "group",
             "variant_picker",
             "buy_buttons",
-            "spectrum_best_price",
-            "spectrum_promotions",
-            "spectrum_virtual_try_on",
-            "spectrum_fomo",
-            "spectrum_quantity_bundles",
             "divider",
             "text",
             "maren_social_proof",
