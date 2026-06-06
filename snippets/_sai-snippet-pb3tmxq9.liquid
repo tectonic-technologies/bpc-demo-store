@@ -357,6 +357,13 @@
   display: none !important;
 }
 
+/* Hide the whole main-product card while keeping it in the DOM. Used when the
+   main product is locked but its card is suppressed: the card's checkbox stays
+   present (checked + disabled) so JS still counts it and adds it to cart. */
+.sai-pb3tmxq9__card--hidden {
+  display: none !important;
+}
+
 .sai-pb3tmxq9__rating {
   display: inline-flex;
   align-items: center;
@@ -922,6 +929,17 @@
 {%- assign lock_main = content.lock_main_product -%}
 {%- if lock_main == nil -%}{%- assign lock_main = false -%}{%- endif -%}
 
+{%- comment -%}
+  show_main only takes effect while lock_main is on (the config is gated on it
+  in the editor). A hidden main card stays in the DOM (display:none) so the
+  locked main product is still counted and added to cart — only its card is
+  suppressed. When lock_main is off we force show_main back on, so a stored
+  "hidden" value can never orphan an unlocked (i.e. not-added) main product.
+{%- endcomment -%}
+{%- assign show_main = content.show_main_product -%}
+{%- if show_main == nil -%}{%- assign show_main = true -%}{%- endif -%}
+{%- unless lock_main -%}{%- assign show_main = true -%}{%- endunless -%}
+
 {%- assign show_total_price = content.show_total_price -%}
 {%- if show_total_price == nil -%}{%- assign show_total_price = true -%}{%- endif -%}
 
@@ -1038,7 +1056,7 @@
     <div class="sai-pb3tmxq9__layout">
       <div class="sai-pb3tmxq9__cards">
 
-        <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main" data-product-id="{{ product.id }}">
+        <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main{% unless show_main %} sai-pb3tmxq9__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
           <label class="sai-pb3tmxq9__checkbox{% if lock_main %} sai-pb3tmxq9__checkbox--locked{% endif %}">
             <input type="checkbox" data-fbt-checkbox
               {% if lock_main or default_checked %}checked{% endif %}
@@ -1161,7 +1179,7 @@
     {%- else -%}
 
     {%- comment -%} ── Vertical layout: stacked cards + full-width CTA below ── {%- endcomment -%}
-    <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main" data-product-id="{{ product.id }}">
+    <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main{% unless show_main %} sai-pb3tmxq9__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
       <div class="sai-pb3tmxq9__sub-header">Product on this page</div>
       <div class="sai-pb3tmxq9__row">
         <a class="sai-pb3tmxq9__media" href="{{ product.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
