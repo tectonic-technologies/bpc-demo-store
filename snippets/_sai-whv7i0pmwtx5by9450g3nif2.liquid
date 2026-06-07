@@ -20,10 +20,10 @@
 {%- endunless -%}
 
 {%- if sai_state == 'draft' -%}
-  {%- assign sai_handle = 'spectrum_snippet_pb3tmxq9_whv7i0pmwtx5by9450g3nif2_draft' -%}
+  {%- assign sai_handle = 'spectrum_snippet_q0zon0xy_whv7i0pmwtx5by9450g3nif2_draft' -%}
   {%- assign sai_slot_list = sai_resource.metafields.spectrum.recommendations_fbt_draft.value -%}
 {%- else -%}
-  {%- assign sai_handle = 'spectrum_snippet_pb3tmxq9_whv7i0pmwtx5by9450g3nif2_live' -%}
+  {%- assign sai_handle = 'spectrum_snippet_q0zon0xy_whv7i0pmwtx5by9450g3nif2_live' -%}
   {%- assign sai_slot_list = sai_resource.metafields.spectrum.recommendations_fbt_live.value -%}
 {%- endif -%}
 
@@ -39,7 +39,7 @@
   {%- endpaginate -%}
 {%- endunless -%}
 {%- unless sai_mo -%}
-  <!-- SAI:WRAPPER:NO_INSTANCE snippetId=pb3tmxq9 instanceId=whv7i0pmwtx5by9450g3nif2 -->
+  <!-- SAI:WRAPPER:NO_INSTANCE snippetId=q0zon0xy instanceId=whv7i0pmwtx5by9450g3nif2 -->
 {%- endunless -%}
 
 
@@ -52,7 +52,7 @@
     {%- endif -%}
   {%- endfor -%}
   {%- unless sai_default -%}
-    <!-- SAI:WRAPPER:NO_DEFAULT_VARIANT snippetId=pb3tmxq9 instanceId=whv7i0pmwtx5by9450g3nif2 -->
+    <!-- SAI:WRAPPER:NO_DEFAULT_VARIANT snippetId=q0zon0xy instanceId=whv7i0pmwtx5by9450g3nif2 -->
   {%- endunless -%}
 
   {%- assign sai_seen_slot_keys = "|" -%}
@@ -123,7 +123,7 @@
     {
     "v":1,
     "instanceId":"whv7i0pmwtx5by9450g3nif2",
-    "snippetId":"pb3tmxq9",
+    "snippetId":"q0zon0xy",
     "experienceId":"019e9789-21e3-73c6-9696-9794758cdd5b",
      "resourceType":"{{ sai_resource.object_type | escape }}",
      "resourceId":"{{ sai_resource.id }}",
@@ -138,9 +138,9 @@
       {%- if sai_v.css != blank -%}{{ sai_v.css }}{%- endif -%}
     {%- endfor -%}
     </style>
-    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="pb3tmxq9" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-resource-id="{{ sai_resource.id }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
+    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="q0zon0xy" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-resource-id="{{ sai_resource.id }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
       <script type="application/json" data-spectrum-envelope>{{ sai_envelope | replace: '</script>', '<\/script>' }}</script>
-      {% render '_sai-snippet-pb3tmxq9', variant: sai_default, slot: sai_default_slot, slot_payload: sai_default_payload, entry: sai_default_entry, mo: sai_mo, mutation_handle: 'mut-whv7i0pmwtx5by9450g3nif2', experience_handle: '_system-155719762098' %}
+      {% render '_sai-snippet-q0zon0xy', variant: sai_default, slot: sai_default_slot, slot_payload: sai_default_payload, entry: sai_default_entry, mo: sai_mo, mutation_handle: 'mut-whv7i0pmwtx5by9450g3nif2', experience_handle: '_system-155719762098' %}
     </div>
   {%- elsif sai_default and sai_default_slot == nil -%}
     <!-- SAI:WRAPPER:NO_SLOT_KEY slotkey={{ sai_default_slotkey | default: 'NIL' }} feature=recommendations_fbt -->
