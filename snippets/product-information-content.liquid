@@ -339,6 +339,14 @@
     background: transparent;
   }
 
+  /* Spectrum reviews — pg1 list variant (d1odzamh): same blend-into-PDP
+     treatment as okclm1q7. Override from the theme (not the snippet) to avoid
+     Studio drift; descendant selector outranks the snippet's (0,1,0) rule. */
+  [data-spectrum-snippet-id='d1odzamh'],
+  [data-spectrum-snippet-id='d1odzamh'] .sai-d1odzamh {
+    background: transparent;
+  }
+
   /* Spectrum FBT: drop the snippet's outer margin + inline padding. */
   [data-spectrum-snippet-id='pb3tmxq9'] .sai-pb3tmxq9 {
     margin: 0;
