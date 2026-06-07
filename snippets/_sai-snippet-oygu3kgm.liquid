@@ -1,0 +1,1697 @@
+{%- comment -%}
+  Sticky Video Overlay (PDP) — PDP-only floating video bubble that opens
+  the shoppable-videos lightbox. Videos auto-resolved from the product's
+  shoppable-videos slot metafield (same data source as svmk8tqx grid).
+
+  Wrapper contract (per docs/tech/studio-liquid-snippets.md "Library Snippets"
+  + packages/liquid-parser/src/snippet-instance-wrapper.ts
+  buildResourceSlotWrapper):
+    - variant            : default variant from mo.variants.value.variants
+    - slot               : resolved spectrum_shoppable_videos_slot drop
+    - slot_payload       : slot.payload.value
+    - entry              : matched content entry (default isDefault entry)
+    - videos_union       : union of `videos` references across all variants'
+                           slot matches — array of spectrum_shoppable_video
+                           drops; used to project the wrapper's `pools.videos`
+                           envelope. Snippet template iterates
+                           `entry.content.videoHandles` and looks each up
+                           against the global `metaobjects` table instead.
+    - mo                 : spectrum_snippet_instance metaobject drop
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div)
+    - experience_handle  : (consumed by wrapper outer div)
+
+  variant.content fields (read here):
+    - position             'bottom-right' | 'bottom-left'
+    - size                 'small' | 'medium' | 'large'
+    - show_play_icon       boolean (default true)  — centered play badge on bubble
+    - mute_on_launch       boolean (default true)  — passed to lightbox JS
+    - autoplay             boolean (default true)  — bubble preview only; when on the bubble loops the preview silently, when off the bubble shows the poster image
+    - cta_text             string  (default 'Shop now')
+    - cta_action           'redirect' | 'mini_pdp'
+
+  Data flow (auto-resolved):
+    - `entry.content.videoHandles` is a string array of metaobject handles
+      produced by the data-ingestion pipeline (same shape svmk8tqx consumes).
+    - Per handle we resolve `metaobjects.spectrum_shoppable_video[handle]`
+      to get title, video_source, preview_video, poster_image, product_tags.
+    - The first handle's drop drives the bubble preview; every handle is
+      emitted into the bespoke pool JSON for the lightbox JS to render
+      slides + product cards on demand.
+
+  Render strategy (mirrors catf0d8y + svmk8tqx):
+    - SSR emits the bubble + dialog scaffold (close/mute/nav buttons + empty
+      __dialog-slides container) + the quickshop bottom-sheet scaffold.
+    - The bespoke pool block is the JS's source of truth — full per-video
+      data (resolved video URL, poster URL, money-formatted product_tags
+      with variants + options for the mini-PDP).
+    - Bubble click opens the dialog. Dialog carousels through every video
+      in the pool; the lightbox UI is a port from svmk8tqx.
+
+  NOTE: do not write literal comment or doc tag syntax in documentation
+  text — Shopify Liquid nests those tags and will reject the file on
+  theme write.
+{%- endcomment -%}
+
+{% stylesheet %}
+/* Sticky Video Overlay (PDP) (oygu3kgm) */
+
+/* Sticky Video Overlay — aggregated into spectrum-snippet.css at install.
+
+   Two layers:
+     1. Bubble — the floating sticky tile pinned to a viewport corner.
+     2. Lightbox — ported from svmk8tqx with selectors renamed.
+
+   Bubble styles are first; everything below the
+   `PORTED-FROM-SVMK8TQX:LIGHTBOX:START` marker is a near-verbatim port from
+   svmk8tqx so the upcoming lightbox-redesign PR can be replayed
+   deterministically. */
+
+/* ───── 1. Bubble shell ───── */
+
+.sai-oygu3kgm {
+  --sai-oygu3kgm-edge: 16px;
+  --sai-oygu3kgm-z: 9990;
+
+  /* Tile dimensions per `data-size` */
+  --sai-oygu3kgm-w: 96px;
+  --sai-oygu3kgm-h: 144px;
+
+  position: fixed;
+  bottom: var(--sai-oygu3kgm-edge);
+  z-index: var(--sai-oygu3kgm-z);
+  pointer-events: none;
+}
+
+.sai-oygu3kgm[data-position="bottom-right"] {
+  right: var(--sai-oygu3kgm-edge);
+}
+
+.sai-oygu3kgm[data-position="bottom-left"] {
+  left: var(--sai-oygu3kgm-edge);
+}
+
+.sai-oygu3kgm[data-size="small"] {
+  --sai-oygu3kgm-w: 80px;
+  --sai-oygu3kgm-h: 120px;
+}
+
+.sai-oygu3kgm[data-size="medium"] {
+  --sai-oygu3kgm-w: 110px;
+  --sai-oygu3kgm-h: 168px;
+}
+
+.sai-oygu3kgm[data-size="large"] {
+  --sai-oygu3kgm-w: 140px;
+  --sai-oygu3kgm-h: 220px;
+}
+
+.sai-oygu3kgm[data-state="dismissed"] {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .sai-oygu3kgm[data-size="medium"] {
+    --sai-oygu3kgm-w: 130px;
+    --sai-oygu3kgm-h: 200px;
+  }
+  .sai-oygu3kgm[data-size="large"] {
+    --sai-oygu3kgm-w: 168px;
+    --sai-oygu3kgm-h: 264px;
+  }
+}
+
+.sai-oygu3kgm__bubble {
+  position: relative;
+  width: var(--sai-oygu3kgm-w);
+  height: var(--sai-oygu3kgm-h);
+  border-radius: 14px;
+  overflow: hidden;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18), 0 2px 6px rgba(0, 0, 0, 0.1);
+  pointer-events: auto;
+  display: block;
+  transition: transform var(--sai-duration-2) var(--sai-ease-out-1), box-shadow
+    var(--sai-duration-2) var(--sai-ease-out-1);
+}
+
+.sai-oygu3kgm__bubble:hover,
+.sai-oygu3kgm__bubble:focus-visible {
+  transform: translateY(-1px) scale(1.02);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.22), 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+.sai-oygu3kgm__bubble:focus-visible {
+  outline: 2px solid var(--sai-color-fg);
+  outline-offset: 3px;
+}
+
+.sai-oygu3kgm__bubble-media {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+/* When the bubble is a <spectrum-video> (autoplay path), the custom
+   element renders an inner <video> after it binds — and carries an
+   <img> poster fallback before binding. Both need to cover the bubble.
+   The container's object-fit above doesn't reach those descendants, so
+   re-apply width/height/object-fit explicitly. Same pattern svmk8tqx
+   uses for its card-video. */
+.sai-oygu3kgm__bubble-media > video,
+.sai-oygu3kgm__bubble-media > img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sai-oygu3kgm__bubble-media--placeholder {
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.16));
+}
+
+.sai-oygu3kgm__play {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+  background: rgba(0, 0, 0, 0.08);
+  transition: background var(--sai-duration-2) var(--sai-ease-out-1);
+}
+
+/* Author `display: flex` above overrides the UA `[hidden] { display: none }`
+   rule — without this, the `show_play_icon` toggle (SSR `hidden` attr +
+   runtime applyVariant flip) has no visual effect. */
+.sai-oygu3kgm__play[hidden] {
+  display: none;
+}
+
+.sai-oygu3kgm__bubble:hover .sai-oygu3kgm__play,
+.sai-oygu3kgm__bubble:focus-visible .sai-oygu3kgm__play {
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.sai-oygu3kgm__play > svg {
+  width: 38%;
+  height: 38%;
+  max-width: 28px;
+  max-height: 28px;
+  background: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  padding: 6px;
+  box-sizing: content-box;
+  color: #111;
+  flex-shrink: 0;
+  transition: transform var(--sai-duration-1) var(--sai-ease-out-1), background
+    var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-oygu3kgm__bubble:hover .sai-oygu3kgm__play > svg,
+.sai-oygu3kgm__bubble:focus-visible .sai-oygu3kgm__play > svg {
+  transform: scale(1.1);
+  background: #fff;
+}
+
+.sai-oygu3kgm__close {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  z-index: 1;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: #111;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: auto;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: background var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-oygu3kgm[data-position="bottom-left"] .sai-oygu3kgm__close {
+  right: auto;
+  left: -8px;
+}
+
+.sai-oygu3kgm__close:hover {
+  background: #333;
+}
+
+.sai-oygu3kgm__close:focus-visible {
+  outline: 2px solid var(--sai-color-fg);
+  outline-offset: 2px;
+}
+
+/* PORTED-FROM-SVMK8TQX:LIGHTBOX:START
+   Below: dialog, dialog-close, dialog-mute, dialog-nav, dialog-slides,
+   dialog-slide, dialog-video, dialog-products, product-card, product-img,
+   product-info, product-title, product-price, product-action, product-btn.
+   Selectors renamed from `.sai-svmk8tqx__*` to `.sai-oygu3kgm__*` (single-
+   class specificity preserved). Animation keyframes renamed accordingly.
+   When the upcoming lightbox-redesign PR lands, port the diff against
+   svmk8tqx into this region.
+*/
+
+.sai-oygu3kgm__dialog {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  width: 100vw;
+  max-width: 100vw;
+  height: 100dvh;
+  max-height: 100dvh;
+  overflow: hidden;
+  background: #000;
+  margin: 0;
+  /* The outer <sai-oygu3kgm> sets `pointer-events: none` so the bubble's
+     pinned wrapper doesn't catch clicks across the page. Top-layer dialogs
+     STILL inherit CSS from their DOM ancestors, so without this opt-in the
+     dialog's close / mute / nav buttons inherit `pointer-events: none` and
+     become unreachable to clicks. Reset here so all dialog descendants
+     receive pointer events normally. */
+  pointer-events: auto;
+}
+
+.sai-oygu3kgm__dialog[open] {
+  display: flex;
+  flex-direction: column;
+  animation: sai-oygu3kgm-dialog-fadein var(--sai-duration-2) var(--sai-ease-out-1);
+}
+
+@keyframes sai-oygu3kgm-dialog-fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.sai-oygu3kgm__dialog::backdrop {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.sai-oygu3kgm__dialog-close {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  z-index: 20;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0;
+  transition: background var(--sai-duration-1) var(--sai-ease-out-1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.sai-oygu3kgm__dialog-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sai-oygu3kgm__dialog-close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sai-oygu3kgm__dialog-mute {
+  position: absolute;
+  bottom: 140px;
+  right: 12px;
+  z-index: 20;
+  width: 36px;
+  height: 36px;
+  background: rgba(255, 255, 255, 0.15);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  padding: 0;
+  transition: background var(--sai-duration-1) var(--sai-ease-out-1);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+}
+
+.sai-oygu3kgm__dialog-mute:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.sai-oygu3kgm__dialog-mute:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sai-oygu3kgm__dialog-nav {
+  display: none;
+}
+
+.sai-oygu3kgm__dialog-nav[hidden] {
+  display: none;
+}
+
+.sai-oygu3kgm__dialog-slides {
+  display: block;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  scrollbar-width: none;
+  height: 100dvh;
+  position: relative;
+  flex: 1;
+}
+
+.sai-oygu3kgm__dialog-slides::-webkit-scrollbar {
+  display: none;
+}
+
+.sai-oygu3kgm__dialog-slide {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  min-height: 100dvh;
+  height: 100dvh;
+  max-height: 100dvh;
+  scroll-snap-align: start;
+  background: #000;
+  overflow: hidden;
+}
+
+.sai-oygu3kgm__dialog-video {
+  aspect-ratio: 9 / 16;
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.sai-oygu3kgm__dialog-video > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.sai-oygu3kgm__dialog-products {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding: 12px 12px 16px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    transparent 100%
+  );
+  pointer-events: auto;
+}
+
+.sai-oygu3kgm__dialog-products-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.sai-oygu3kgm__dialog-products-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+/* Product card — ported from PR #1750 (qsh181xu). New layout uses
+   __product-image-wrap / __product-image / __product-meta / __cta. The
+   action element (anchor or button) is now a direct child of the card
+   instead of being wrapped in __product-action. */
+
+.sai-oygu3kgm__product-card {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a1a1a;
+  border-radius: 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+}
+
+.sai-oygu3kgm__dialog-products-scroll > .sai-oygu3kgm__product-card:only-child {
+  flex: 0 0 100%;
+}
+
+.sai-oygu3kgm__product-image-wrap {
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-oygu3kgm__product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sai-oygu3kgm__product-meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.sai-oygu3kgm__product-title {
+  margin: 0;
+  font-family: var(--font-body-family, var(--sai-font-body, inherit));
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.sai-oygu3kgm__product-price {
+  margin: 0;
+  font-family: var(--font-body-family, var(--sai-font-body, inherit));
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.sai-oygu3kgm__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  font-family: var(--font-body-family, var(--sai-font-body, inherit));
+  font-size: 13px;
+  font-weight: 700;
+  background: #121212;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.sai-oygu3kgm__cta:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.sai-oygu3kgm__cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sai-oygu3kgm__cta:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Mini-PDP bottom sheet (quickshop) — ported from PR #1750 ───────────
+   Layout adapted from the Lotto theme's `sv-quickshop` pattern: backdrop
+   covers the dialog, panel slides up from the bottom on mobile and is
+   centered/constrained on tablet+. Theme color + font variables only.
+   ────────────────────────────────────────────────────────────────────── */
+
+.sai-oygu3kgm__quickshop {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sai-oygu3kgm__quickshop[hidden] {
+  display: none;
+}
+
+.sai-oygu3kgm__quickshop-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.25s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.sai-oygu3kgm__quickshop--open .sai-oygu3kgm__quickshop-backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.sai-oygu3kgm__quickshop-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 88%;
+  background: rgb(var(--color-background, 255 255 255));
+  color: rgb(var(--color-foreground, 18 18 18));
+  border-radius: 16px 16px 0 0;
+  padding: 20px 20px 22px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: var(--font-body-family, var(--sai-font-body, inherit));
+}
+
+.sai-oygu3kgm__quickshop--open .sai-oygu3kgm__quickshop-panel {
+  transform: translateY(0);
+}
+
+.sai-oygu3kgm__quickshop-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: rgb(var(--color-foreground, 18 18 18));
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sai-oygu3kgm__quickshop-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-oygu3kgm__quickshop-close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.sai-oygu3kgm__quickshop-header {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  padding-right: 36px;
+}
+
+.sai-oygu3kgm__quickshop-media {
+  width: 130px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-oygu3kgm__quickshop-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sai-oygu3kgm__quickshop-meta {
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.sai-oygu3kgm__quickshop-title {
+  display: block;
+  font-family: var(--font-heading-family, var(--font-body-family, var(--sai-font-body, inherit)));
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: rgb(var(--color-foreground, 18 18 18));
+  text-decoration: none;
+  margin: 0 0 8px;
+}
+
+.sai-oygu3kgm__quickshop-title:hover {
+  text-decoration: underline;
+}
+
+.sai-oygu3kgm__quickshop-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.sai-oygu3kgm__quickshop-price-compare {
+  font-weight: 400;
+  text-decoration: line-through;
+  opacity: 0.55;
+  font-size: 13px;
+}
+
+.sai-oygu3kgm__quickshop-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(var(--color-foreground, 18 18 18));
+  opacity: 0.55;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.sai-oygu3kgm__quickshop-view:hover,
+.sai-oygu3kgm__quickshop-view:focus-visible {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.sai-oygu3kgm__quickshop-view-icon {
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.sai-oygu3kgm__quickshop-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sai-oygu3kgm__quickshop-group {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sai-oygu3kgm__quickshop-group-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.sai-oygu3kgm__quickshop-group-name {
+  color: rgb(var(--color-foreground, 18 18 18));
+  opacity: 0.55;
+}
+
+.sai-oygu3kgm__quickshop-group-selected {
+  color: rgb(var(--color-foreground, 18 18 18));
+  font-weight: 600;
+}
+
+.sai-oygu3kgm__quickshop-group-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sai-oygu3kgm__quickshop-pill {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 64px;
+  padding: 10px 14px;
+  background: rgb(var(--color-background, 255 255 255));
+  color: rgb(var(--color-foreground, 18 18 18));
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  border-radius: 999px;
+  font-family: var(--font-body-family, var(--sai-font-body, inherit));
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  line-height: 1.2;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sai-oygu3kgm__quickshop-pill:hover {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.sai-oygu3kgm__quickshop-pill:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.sai-oygu3kgm__quickshop-pill--selected,
+.sai-oygu3kgm__quickshop-pill--selected:hover {
+  border-color: rgb(var(--color-foreground, 18 18 18));
+  border-width: 2px;
+  /* Compensate for the +1px border so the pill doesn't shift on select. */
+  padding: 9px 13px;
+}
+
+.sai-oygu3kgm__quickshop-pill--oos {
+  opacity: 0.45;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+.sai-oygu3kgm__quickshop-pill-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.sai-oygu3kgm__quickshop-pill--swatch-color .sai-oygu3kgm__quickshop-pill-swatch,
+.sai-oygu3kgm__quickshop-pill--swatch-image .sai-oygu3kgm__quickshop-pill-swatch {
+  box-shadow: 0 0 0 1px rgb(var(--color-background, 255 255 255));
+}
+
+.sai-oygu3kgm__quickshop-pill-label {
+  display: inline-block;
+}
+
+.sai-oygu3kgm__quickshop-atc {
+  width: 100%;
+  margin-top: 4px;
+  padding: 18px 20px;
+  background: rgb(var(--color-foreground, 18 18 18));
+  color: rgb(var(--color-background, 255 255 255));
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-heading-family, var(--font-body-family, var(--sai-font-body, inherit)));
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.sai-oygu3kgm__quickshop-atc:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.sai-oygu3kgm__quickshop-atc:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.sai-oygu3kgm__quickshop-atc:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@media (min-width: 768px) {
+  .sai-oygu3kgm__dialog-close {
+    top: 16px;
+    right: 16px;
+    left: auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sai-oygu3kgm__dialog-mute {
+    top: 64px;
+    right: 16px;
+    bottom: auto;
+    width: 40px;
+    height: 40px;
+  }
+
+  .sai-oygu3kgm__dialog-nav {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 48px;
+    height: 48px;
+    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    padding: 0;
+    transition: background var(--sai-duration-1) var(--sai-ease-out-1);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+
+  .sai-oygu3kgm__dialog-nav:hover {
+    background: rgba(255, 255, 255, 0.25);
+  }
+
+  .sai-oygu3kgm__dialog-nav:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+  }
+
+  .sai-oygu3kgm__dialog-nav:disabled {
+    opacity: 0.4;
+    cursor: default;
+    pointer-events: none;
+  }
+
+  .sai-oygu3kgm__dialog-nav--prev {
+    left: 24px;
+  }
+  .sai-oygu3kgm__dialog-nav--next {
+    right: 24px;
+  }
+
+  .sai-oygu3kgm__dialog-slides {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    overflow-y: hidden;
+    scroll-snap-type: none;
+    min-height: 0;
+    height: auto;
+  }
+
+  .sai-oygu3kgm__dialog-slide {
+    position: absolute;
+    width: min(380px, calc(100vw - 180px));
+    aspect-ratio: 9 / 16;
+    max-height: 82dvh;
+    min-height: 0;
+    height: auto;
+    max-width: none;
+    border-radius: 14px;
+    overflow: hidden;
+    background: #000;
+    transition: transform 0.4s var(--sai-ease-out-1), opacity 0.4s var(--sai-ease-out-1);
+  }
+
+  .sai-oygu3kgm__dialog-slides--snap .sai-oygu3kgm__dialog-slide {
+    transition: none;
+  }
+
+  .sai-oygu3kgm__dialog-slide[data-position="center"] {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+    z-index: 3;
+  }
+
+  .sai-oygu3kgm__dialog-slide[data-position="left"] {
+    transform: translateX(calc(-100% - 48px)) scale(0.85);
+    opacity: 0.35;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .sai-oygu3kgm__dialog-slide[data-position="right"] {
+    transform: translateX(calc(100% + 48px)) scale(0.85);
+    opacity: 0.35;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .sai-oygu3kgm__dialog-slide[data-position="hidden"] {
+    transform: translateX(200%) scale(0.7);
+    opacity: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  .sai-oygu3kgm__dialog-products {
+    pointer-events: none;
+  }
+
+  .sai-oygu3kgm__dialog-slide[data-position="center"] .sai-oygu3kgm__dialog-products {
+    pointer-events: auto;
+  }
+}
+
+/* ───── Story progress bar + tap zones (ported from svmk8tqx PR #1857) ──
+   Each dialog slide may hold N assets — the progress bar surfaces one
+   segment per asset, the active one animates to fill at the asset's
+   playback duration (video) or IMAGE_DISPLAY_MS (image), and the tap
+   zones give mobile users left/right asset nav inside the slide. */
+
+.sai-oygu3kgm__story-bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  display: flex;
+  gap: 3px;
+  padding: 8px 6px 0;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+
+.sai-oygu3kgm__story-seg {
+  flex: 1;
+  height: 3px;
+  border-radius: 1.5px;
+  background: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+}
+
+.sai-oygu3kgm__story-seg-fill {
+  display: block !important;
+  width: 0%;
+  height: 100%;
+  border-radius: 1.5px;
+  background: #fff;
+  will-change: width;
+}
+
+.sai-oygu3kgm__story-seg-fill[data-done] {
+  width: 100%;
+  animation: none;
+}
+
+.sai-oygu3kgm__story-seg-fill[data-active] {
+  animation: sai-oygu3kgm-story-fill linear forwards;
+}
+
+.sai-oygu3kgm__story-seg-fill[data-paused] {
+  animation-play-state: paused;
+}
+
+@keyframes sai-oygu3kgm-story-fill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.sai-oygu3kgm__story-media {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.sai-oygu3kgm__story-asset {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sai-oygu3kgm__story-asset[hidden] {
+  display: none;
+}
+
+.sai-oygu3kgm__story-asset .sai-oygu3kgm__dialog-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sai-oygu3kgm__story-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sai-oygu3kgm__story-tap {
+  display: block !important;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 5;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.sai-oygu3kgm__story-tap--prev {
+  left: 0;
+  width: 30%;
+}
+
+.sai-oygu3kgm__story-tap--next {
+  right: 0;
+  width: 70%;
+}
+
+/* Tap zones are touch-only — desktop uses the chevron nav buttons. */
+@media (min-width: 768px) {
+  .sai-oygu3kgm__story-tap {
+    display: none !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-oygu3kgm__bubble {
+    transition: none;
+  }
+  .sai-oygu3kgm__dialog {
+    animation: none;
+  }
+  .sai-oygu3kgm__dialog-slide {
+    transition: none;
+  }
+  .sai-oygu3kgm__story-seg-fill {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* PORTED-FROM-SVMK8TQX:LIGHTBOX:END */
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-oygu3kgm.js' | asset_url }}" async></script>
+
+{%- liquid
+  assign content = variant.content
+  assign position = content.position | default: 'bottom-right'
+  assign size = content.size | default: 'medium'
+
+  if content.show_play_icon == nil
+    assign show_play_icon = true
+  else
+    assign show_play_icon = content.show_play_icon
+  endif
+
+  if content.mute_on_launch == nil
+    assign mute_on_launch = true
+  else
+    assign mute_on_launch = content.mute_on_launch
+  endif
+
+  if content.autoplay == nil
+    assign autoplay_preview = true
+  else
+    assign autoplay_preview = content.autoplay
+  endif
+
+  comment
+    Lightbox CTA settings (ported from PR #1750 via catf0d8y):
+      cta_text   — label rendered on every product card's CTA + on the
+                   mini-PDP add-to-cart button. Defaults to 'Shop now'.
+      cta_action — 'redirect' (default) makes the CTA an anchor to the
+                   product page; 'mini_pdp' opens a variant-picker bottom
+                   sheet for multi-variant products and direct-ATCs
+                   single-variant products.
+  endcomment
+  assign cta_text_setting = content.cta_text | default: 'Shop now'
+  assign cta_action_setting = content.cta_action | default: 'redirect'
+
+  assign slot_content = entry.content
+  assign video_handles = slot_content.videoHandles
+
+  comment
+    Filter video_handles to videos whose product_tags list contains at
+    least one tagged product whose referenced Product resolves on the
+    storefront. Storefront Liquid returns nil for draft / archived /
+    deleted products, so this naturally hides videos whose tagged
+    products are all unpublished. If zero videos remain, the outer
+    `if video_handles.size > 0` guard suppresses the floating bubble
+    entirely — no clickable element, no DOM, no JS bind.
+  endcomment
+  assign _renderable_handles_csv = ''
+  for handle in video_handles
+    assign _vid = metaobjects.spectrum_shoppable_video[handle]
+    assign _has_renderable_tag = false
+    if _vid != blank and _vid.product_tags != blank
+      for _t in _vid.product_tags.value
+        if _t.product.value != blank
+          assign _has_renderable_tag = true
+          break
+        endif
+      endfor
+    endif
+    if _has_renderable_tag
+      if _renderable_handles_csv == ''
+        assign _renderable_handles_csv = handle
+      else
+        assign _renderable_handles_csv = _renderable_handles_csv | append: ',' | append: handle
+      endif
+    endif
+  endfor
+  if _renderable_handles_csv == ''
+    assign video_handles = '' | split: ','
+  else
+    assign video_handles = _renderable_handles_csv | split: ','
+  endif
+-%}
+
+{%- if video_handles.size > 0 -%}
+
+  {%- comment -%}── Resolve first video for the bubble preview ──{%- endcomment -%}
+  {%- assign first_handle = video_handles.first -%}
+  {%- assign first_video = metaobjects.spectrum_shoppable_video[first_handle] -%}
+
+  {%- if first_video -%}
+
+    {%- comment -%}
+      New schema (per PR #1857): spectrum_shoppable_video no longer has
+      video_source / poster_image / preview_video directly. Each video has
+      a list of `assets` (spectrum_shoppable_video_asset), and each asset
+      carries its own `media` (image or video), `poster_image`, and
+      `preview_video`. The bubble shows the FIRST asset only — cycling
+      multiple assets in a 130×200 tile would be unreadable; the lightbox
+      handles the full assets[] story experience.
+    {%- endcomment -%}
+    {%- assign first_poster_url = '' -%}
+    {%- assign first_preview_url = '' -%}
+    {%- if first_video.assets != blank -%}
+      {%- assign first_asset = nil -%}
+      {%- for fa in first_video.assets.value offset: 0 limit: 1 -%}
+        {%- assign first_asset = fa -%}
+      {%- endfor -%}
+      {%- if first_asset -%}
+        {%- if first_asset.poster_image.value != blank -%}
+          {%- assign first_poster_url = first_asset.poster_image.value | image_url: width: 360 -%}
+        {%- endif -%}
+        {%- comment -%}
+          When the first asset itself is an image, fall back to using it
+          as the bubble poster (since there's no preview video to play).
+          Otherwise pull the preview_video URL the standard way.
+        {%- endcomment -%}
+        {%- assign first_asset_type = first_asset.asset_type.value | default: 'video' -%}
+        {%- if first_asset_type == 'image' and first_poster_url == '' -%}
+          {%- if first_asset.media.value != blank -%}
+            {%- assign first_poster_url = first_asset.media.value | image_url: width: 360 -%}
+          {%- endif -%}
+        {%- else -%}
+          {%- assign first_preview_file = first_asset.preview_video.value -%}
+          {%- if first_preview_file != blank -%}
+            {%- if first_preview_file.sources != blank -%}
+              {%- for source in first_preview_file.sources -%}
+                {%- if source.format == 'mp4' and first_preview_url == '' -%}
+                  {%- assign first_preview_url = source.url -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if first_preview_url == '' -%}
+                {%- assign first_preview_url = first_preview_file.sources.first.url -%}
+              {%- endif -%}
+            {%- elsif first_preview_file.url != blank -%}
+              {%- assign first_preview_url = first_preview_file.url -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endif -%}
+    {%- assign first_title = first_video.title | default: 'Video' -%}
+
+<sai-oygu3kgm class="sai-oygu3kgm" data-position="{{ position }}" data-size="{{ size }}">
+
+  <button
+    class="sai-oygu3kgm__bubble"
+    type="button"
+    data-action="open"
+    aria-label="Play {{ first_title | escape }}"
+    aria-haspopup="dialog"
+  >
+    {%- if first_preview_url != blank and autoplay_preview -%}
+      {%- comment -%}
+        Autoplay'd bubble preview ALWAYS loops — a one-shot preview that
+        freezes after playback is bad UX. The separate `loop` toggle was
+        confusing (didn't work without autoplay; HTML video loop attribute
+        is meaningless on a paused video), so it was dropped in favour of
+        making loop intrinsic to autoplay.
+
+        Use <spectrum-video> (storefront SDK custom element) instead of a
+        native <video> — same as the lightbox + svmk8tqx grid cards. It
+        provides lazy loading, autoplay coordination across instances on
+        the page, unmute exclusivity, and a poster fallback before the
+        media binds. `data-load="viewport"` matches the bubble's intent:
+        the tile is fixed-position and always near the viewport edge, so
+        load eagerly once the page surfaces it.
+      {%- endcomment -%}
+      <spectrum-video
+        class="sai-oygu3kgm__bubble-media"
+        data-src="{{ first_preview_url }}"
+        {% if first_poster_url != blank %}data-poster="{{ first_poster_url }}"{% endif %}
+        data-autoplay="muted"
+        data-loop
+        data-load="viewport"
+        aria-hidden="true"
+      >
+        {%- if first_poster_url != blank -%}
+          <img src="{{ first_poster_url }}" alt="" loading="lazy" decoding="async">
+        {%- endif -%}
+      </spectrum-video>
+    {%- elsif first_poster_url != blank -%}
+      <img
+        class="sai-oygu3kgm__bubble-media"
+        src="{{ first_poster_url }}"
+        alt=""
+        loading="lazy"
+        decoding="async"
+      >
+    {%- else -%}
+      <div class="sai-oygu3kgm__bubble-media sai-oygu3kgm__bubble-media--placeholder" aria-hidden="true"></div>
+    {%- endif -%}
+
+    {%- comment -%}
+      Play overlay rendered unconditionally so applyVariant() can flip
+      visibility via the `hidden` attribute without DOM injection when the
+      `show_play_icon` setting changes between experience variants.
+    {%- endcomment -%}
+    <span class="sai-oygu3kgm__play" aria-hidden="true"{% unless show_play_icon %} hidden{% endunless %}>
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false">
+        <path d="M5.5 3.5L14.5 9L5.5 14.5V3.5Z" fill="currentColor"/>
+      </svg>
+    </span>
+  </button>
+
+  <button
+    class="sai-oygu3kgm__close"
+    type="button"
+    data-action="dismiss"
+    aria-label="Dismiss video overlay"
+  >
+    <svg width="12" height="12" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+      <path d="M1.5 1.5L12.5 12.5M12.5 1.5L1.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  </button>
+
+  {%- comment -%}
+    Dialog scaffold — lightbox JS injects slides into __dialog-slides on
+    open. Nav buttons emitted hidden; JS unhides when more than one video
+    is resolved. Mute button starts in muted state when mute_on_launch is
+    true; the JS toggles iconography.
+
+    PORTED-FROM-SVMK8TQX:LIGHTBOX:START
+  {%- endcomment -%}
+  <dialog class="sai-oygu3kgm__dialog" aria-modal="true" aria-label="{{ first_title | escape }}">
+    <button class="sai-oygu3kgm__dialog-close" type="button" data-action="close" aria-label="Close video">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+        <path d="M1.5 1.5L12.5 12.5M12.5 1.5L1.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      </svg>
+    </button>
+
+    <button class="sai-oygu3kgm__dialog-mute" type="button" data-action="mute" aria-label="Unmute video">
+      <svg class="sai-oygu3kgm__mute-icon--muted" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor"/>
+        <path d="M23 9l-6 6M17 9l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <svg class="sai-oygu3kgm__mute-icon--sound" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display:none">
+        <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor"/>
+        <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+    </button>
+
+    <button class="sai-oygu3kgm__dialog-nav sai-oygu3kgm__dialog-nav--prev" type="button" data-action="prev" aria-label="Previous video" hidden>
+      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+        <path d="M9 1L1 8L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+    <button class="sai-oygu3kgm__dialog-nav sai-oygu3kgm__dialog-nav--next" type="button" data-action="next" aria-label="Next video" hidden>
+      <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+        <path d="M1 1L9 8L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <div class="sai-oygu3kgm__dialog-slides"></div>
+
+    {%- comment -%}
+      Mini-PDP bottom sheet (ported from PR #1750 — qsh181xu via catf0d8y).
+      Single instance, populated on demand from pool data when the user clicks
+      a multi-variant product's CTA with cta_action == 'mini_pdp'. Sibling of
+      __dialog-slides so swipe/transform on slides does not affect it. Hidden
+      by default; JS toggles `--open` and the `hidden` attribute.
+    {%- endcomment -%}
+    <aside
+      class="sai-oygu3kgm__quickshop"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="sai-oygu3kgm-qs-title"
+      hidden
+      aria-hidden="true"
+    >
+      <div class="sai-oygu3kgm__quickshop-backdrop" data-action="qs-close"></div>
+      <div class="sai-oygu3kgm__quickshop-panel" role="document">
+        <button
+          type="button"
+          class="sai-oygu3kgm__quickshop-close"
+          data-action="qs-close"
+          aria-label="Close"
+          title="Close"
+        >
+          <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+            <path d="M1.5 1.5L12.5 12.5M12.5 1.5L1.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          </svg>
+        </button>
+
+        <div class="sai-oygu3kgm__quickshop-header">
+          <div class="sai-oygu3kgm__quickshop-media">
+            <img class="sai-oygu3kgm__quickshop-image" data-qs-image alt="" width="600" height="600" loading="lazy" />
+          </div>
+          <div class="sai-oygu3kgm__quickshop-meta">
+            <a class="sai-oygu3kgm__quickshop-title" data-qs-title id="sai-oygu3kgm-qs-title" href="#"></a>
+            <p class="sai-oygu3kgm__quickshop-price">
+              <span class="sai-oygu3kgm__quickshop-price-current" data-qs-price></span>
+              <span class="sai-oygu3kgm__quickshop-price-compare" data-qs-compare hidden></span>
+            </p>
+            <a class="sai-oygu3kgm__quickshop-view" data-qs-view data-action="product-click" href="#">
+              View product
+              <svg class="sai-oygu3kgm__quickshop-view-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
+                <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="sai-oygu3kgm__quickshop-options" data-qs-options></div>
+
+        <button
+          type="button"
+          class="sai-oygu3kgm__quickshop-atc"
+          data-action="qs-atc"
+          disabled
+        >Add to cart</button>
+      </div>
+    </aside>
+  </dialog>
+  {%- comment -%}PORTED-FROM-SVMK8TQX:LIGHTBOX:END{%- endcomment -%}
+
+</sai-oygu3kgm>
+
+{%- comment -%}
+  Bespoke pool — sibling of <sai-oygu3kgm>, NOT inside it (the JS reads
+  it via direct-children iteration on the outer instance container).
+  Carries every video's resolved data: video URL, poster URL, preview URL,
+  and the full product_tags array with money-formatted prices + variants
+  + options for the mini-PDP.
+
+  Iteration walks `video_handles` (the slot's resolved handle list) and
+  looks each up against the global `metaobjects.spectrum_shoppable_video`
+  table — same pattern svmk8tqx uses. Pool keying is by metaobject handle;
+  the JS resolves the full ordered list from the sibling `order` array
+  preserving slot order.
+
+  PORTED-FROM-SVMK8TQX:POOL:START — kept structurally identical to the
+  svmk8tqx + catf0d8y pool so the lightbox JS consumes the same shape.
+{%- endcomment -%}
+<script type="application/json" data-spectrum-snippet-pool>
+{
+  "shoppable_videos":{
+  {%- assign first_pool = true -%}
+  {%- for handle in video_handles -%}
+    {%- assign entry = metaobjects.spectrum_shoppable_video[handle] -%}
+    {%- if entry -%}
+
+      {%- comment -%}
+        New schema (per PR #1857): the parent shoppable_video no longer
+        carries video_source / poster_image / preview_video. Each video has
+        a list of child `assets` metaobjects (spectrum_shoppable_video_asset)
+        each with `media` (image or video), `asset_type`, `poster_image`,
+        and `preview_video`.
+
+        Resolve first-asset URLs for back-compat (bubble preview / first
+        slide), AND emit a full `assets[]` array for the lightbox story
+        player. Same shape svmk8tqx emits — keeps the lightbox JS port
+        directly applicable.
+      {%- endcomment -%}
+      {%- assign video_url = '' -%}
+      {%- assign poster_url = '' -%}
+      {%- assign preview_url = '' -%}
+      {%- if entry.assets != blank -%}
+        {%- assign total_assets = entry.assets.value.size -%}
+        {%- assign first_asset = nil -%}
+        {%- for fa in entry.assets.value offset: 0 limit: 1 -%}
+          {%- assign first_asset = fa -%}
+        {%- endfor -%}
+        {%- if first_asset -%}
+          {%- assign media_file = first_asset.media.value -%}
+          {%- assign asset_type_val = first_asset.asset_type.value | default: 'video' -%}
+          {%- if media_file != blank -%}
+            {%- if asset_type_val == 'image' -%}
+              {%- assign poster_url = media_file | image_url: width: 600 -%}
+            {%- else -%}
+              {%- if media_file.sources != blank -%}
+                {%- for source in media_file.sources -%}
+                  {%- if source.format == 'mp4' and video_url == '' -%}
+                    {%- assign video_url = source.url -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                {%- if video_url == '' -%}
+                  {%- assign video_url = media_file.sources.first.url -%}
+                {%- endif -%}
+              {%- elsif media_file.url != blank -%}
+                {%- assign video_url = media_file.url -%}
+              {%- endif -%}
+            {%- endif -%}
+          {%- endif -%}
+          {%- if first_asset.poster_image.value != blank -%}
+            {%- assign poster_url = first_asset.poster_image.value | image_url: width: 600 -%}
+          {%- endif -%}
+          {%- assign preview_file = first_asset.preview_video.value -%}
+          {%- if preview_file != blank -%}
+            {%- if preview_file.sources != blank -%}
+              {%- for source in preview_file.sources -%}
+                {%- if source.format == 'mp4' and preview_url == '' -%}
+                  {%- assign preview_url = source.url -%}
+                {%- endif -%}
+              {%- endfor -%}
+              {%- if preview_url == '' -%}
+                {%- assign preview_url = preview_file.sources.first.url -%}
+              {%- endif -%}
+            {%- elsif preview_file.url != blank -%}
+              {%- assign preview_url = preview_file.url -%}
+            {%- endif -%}
+          {%- endif -%}
+        {%- endif -%}
+      {%- endif -%}
+
+      {%- unless first_pool -%},{%- endunless -%}
+      {%- assign first_pool = false -%}
+      {{ handle | json }}:{
+        "title":{{ entry.title | default: 'Video' | json }},
+        "assets":[
+          {%- if entry.assets != blank -%}
+          {%- assign first_asset_json = true -%}
+          {%- for ai in (0..total_assets) -%}
+            {%- if ai >= total_assets -%}{%- break -%}{%- endif -%}
+            {%- assign a_ref = nil -%}
+            {%- for ref in entry.assets.value offset: ai limit: 1 -%}
+              {%- assign a_ref = ref -%}
+            {%- endfor -%}
+            {%- if a_ref -%}
+              {%- assign a_type = a_ref.asset_type.value | default: 'video' -%}
+              {%- assign a_url = '' -%}
+              {%- assign a_poster = '' -%}
+              {%- assign a_media = a_ref.media.value -%}
+              {%- if a_media != blank -%}
+                {%- if a_type == 'image' -%}
+                  {%- assign a_url = a_media | image_url: width: 1200 -%}
+                {%- else -%}
+                  {%- if a_media.sources != blank -%}
+                    {%- for source in a_media.sources -%}
+                      {%- if source.format == 'mp4' and a_url == '' -%}
+                        {%- assign a_url = source.url -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- if a_url == '' -%}
+                      {%- assign a_url = a_media.sources.first.url -%}
+                    {%- endif -%}
+                  {%- elsif a_media.url != blank -%}
+                    {%- assign a_url = a_media.url -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+              {%- if a_ref.poster_image.value != blank -%}
+                {%- assign a_poster = a_ref.poster_image.value | image_url: width: 600 -%}
+              {%- endif -%}
+              {%- unless first_asset_json -%},{%- endunless -%}
+              {%- assign first_asset_json = false -%}
+              {"type":{{ a_type | json }},"url":{{ a_url | json }},"poster_url":{{ a_poster | json }}}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- endif -%}
+        ],
+        "video_url":{{ video_url | json }},
+        "poster_url":{{ poster_url | json }},
+        "preview_url":{{ preview_url | json }},
+        "product_tags":[
+          {%- if entry.product_tags != blank -%}
+          {%- assign total_tags = entry.product_tags.value.size -%}
+          {%- assign first_tag = true -%}
+          {%- for i in (0..total_tags) -%}
+            {%- if i >= total_tags -%}{%- break -%}{%- endif -%}
+            {%- assign tagged = nil -%}
+            {%- for t in entry.product_tags.value offset: i limit: 1 -%}
+              {%- assign tagged = t -%}
+            {%- endfor -%}
+            {%- if tagged -%}
+              {%- assign tag_product = tagged.product.value -%}
+              {%- if tag_product -%}
+                {%- unless first_tag -%},{%- endunless -%}
+                {%- assign first_tag = false -%}
+                {%- assign target_variant = tagged.pre_selected_variant.value | default: tag_product.selected_or_first_available_variant -%}
+                {%- assign single_variant = false -%}
+                {%- if tag_product.variants.size == 1 -%}{%- assign single_variant = true -%}{%- endif -%}
+                {%- assign display_name = tagged.display_name_override.value | default: tag_product.title -%}
+                {%- assign cta_text = tagged.cta_text_override.value | default: 'Add to cart' -%}
+                {%- assign thumb_img = tagged.thumbnail_override.value | default: tag_product.featured_image -%}
+                {%- assign thumb_url = '' -%}
+                {%- if thumb_img != blank -%}
+                  {%- assign thumb_url = thumb_img | image_url: width: 160 -%}
+                {%- endif -%}
+                {%- assign show_compare = false -%}
+                {%- if target_variant.compare_at_price > target_variant.price -%}
+                  {%- assign show_compare = true -%}
+                {%- endif -%}
+                {%- assign price_str = tagged.price_override.value -%}
+                {%- if price_str == blank -%}
+                  {%- assign price_str = target_variant.price | money -%}
+                {%- endif -%}
+                {%- assign url_str = tagged.cta_url_override.value | default: tag_product.url -%}
+                {
+                  "id":{{ tag_product.id | json }},
+                  "handle":{{ tag_product.handle | json }},
+                  "title":{{ display_name | json }},
+                  "url":{{ url_str | json }},
+                  "available":{{ tag_product.available | json }},
+                  "price":{{ price_str | json }},
+                  "compare_at_price":{%- if show_compare -%}{{ target_variant.compare_at_price | money | json }}{%- else -%}null{%- endif -%},
+                  "image_url":{{ thumb_url | json }},
+                  "first_variant_id":{{ target_variant.id | json }},
+                  "tag_id":{{ tagged.system.id | json }},
+                  "cta_text_override":{{ tagged.cta_text_override.value | json }},
+                  "variants":[
+                    {%- assign first_v = true -%}
+                    {%- for v in tag_product.variants -%}
+                      {%- unless first_v -%},{%- endunless -%}
+                      {%- assign first_v = false -%}
+                      {%- assign v_img = '' -%}
+                      {%- if v.featured_image != blank -%}{%- assign v_img = v.featured_image | image_url: width: 600 -%}{%- endif -%}
+                      {
+                        "id":{{ v.id | json }},
+                        "title":{{ v.title | json }},
+                        "available":{{ v.available | json }},
+                        "price":{{ v.price | money | json }},
+                        "options":[
+                          {%- if v.option1 != blank -%}{{ v.option1 | json }}{%- endif -%}
+                          {%- if v.option2 != blank -%},{{ v.option2 | json }}{%- endif -%}
+                          {%- if v.option3 != blank -%},{{ v.option3 | json }}{%- endif -%}
+                        ],
+                        "featured_image":{{ v_img | json }}
+                      }
+                    {%- endfor -%}
+                  ],
+                  "options":[
+                    {%- assign first_o = true -%}
+                    {%- for opt in tag_product.options_with_values -%}
+                      {%- unless first_o -%},{%- endunless -%}
+                      {%- assign first_o = false -%}
+                      {
+                        "name":{{ opt.name | json }},
+                        "position":{{ opt.position | json }},
+                        "values":[
+                          {%- assign first_ov = true -%}
+                          {%- for ov in opt.values -%}
+                            {%- unless first_ov -%},{%- endunless -%}
+                            {%- assign first_ov = false -%}
+                            {%- assign sw_color = '' -%}
+                            {%- assign sw_image = '' -%}
+                            {%- if ov.swatch != blank -%}
+                              {%- if ov.swatch.color != blank -%}{%- assign sw_color = ov.swatch.color -%}{%- endif -%}
+                              {%- if ov.swatch.image != blank -%}{%- assign sw_image = ov.swatch.image | image_url: width: 80 -%}{%- endif -%}
+                            {%- endif -%}
+                            {
+                              "name":{{ ov.name | json }},
+                              "swatch_color":{%- if sw_color != '' -%}{{ sw_color | json }}{%- else -%}null{%- endif -%},
+                              "swatch_image":{%- if sw_image != '' -%}{{ sw_image | json }}{%- else -%}null{%- endif -%}
+                            }
+                          {%- endfor -%}
+                        ]
+                      }
+                    {%- endfor -%}
+                  ]
+                }
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- endif -%}
+        ]
+      }
+    {%- endif -%}
+  {%- endfor -%}
+  },
+  "order":[
+    {%- assign first_handle_emit = true -%}
+    {%- for handle in video_handles -%}
+      {%- unless first_handle_emit -%},{%- endunless -%}
+      {%- assign first_handle_emit = false -%}
+      {{ handle | json }}
+    {%- endfor -%}
+  ],
+  "config":{
+    "mute_on_launch":{{ mute_on_launch | json }},
+    "cta_text":{{ cta_text_setting | json }},
+    "cta_action":{{ cta_action_setting | json }},
+    "cart_url":{{ routes.cart_url | default: '/cart' | json }}
+  }
+}
+</script>
+{%- comment -%}PORTED-FROM-SVMK8TQX:POOL:END{%- endcomment -%}
+
+  {%- endif -%}
+{%- endif -%}
