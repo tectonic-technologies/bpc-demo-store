@@ -1,0 +1,136 @@
+{%- comment -%}
+  Live Visitors — pulsing "N people are viewing this right now" social-proof
+  signal for product pages.
+
+  Wrapper contract (per docs/tech/studio-liquid-snippets.md "Library Snippets"):
+    - variant            : default variant from mo.variants.value.variants
+    - mo                 : spectrum_snippet_instance metaobject drop
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div)
+    - experience_handle  : (consumed by wrapper outer div)
+
+  variant.content fields:
+    - message_template  string  template containing the {count} placeholder
+    - display_format    string  'exact' | 'rounded' | 'abbreviated'
+    - min_count         number  hide threshold (visitorsCount below this hides)
+    - icon_emoji        string  optional emoji rendered before the message
+    - icon_image        object  optional reference marker { url } that overrides
+                                icon_emoji when present
+
+  Data: product.metafields.spectrum.visitors_callout (json) — an array of
+  `{ targetingTree, visitorsCount }`. The writer task (out of scope here)
+  controls real-vs-derived counts; this snippet renders whatever arrives.
+  A null `targetingTree` is the catch-all match (handled in the JS picker).
+
+  Placement: PDP-only. Enforced upstream by the Studio drop allowlist; the
+  snippet assumes the `product` global is present.
+
+  Sizing units: em throughout — Dawn-family themes set
+  `html { font-size: 62.5% }`, which would skew rem-based sizes.
+
+  SSR strategy: emit DOM with `data-spectrum-vis="off"` so the callout
+  stays hidden until the JS validates rows and toggles `"on"`. Spans are
+  pre-filled from the first row to keep the swap quiet when JS runs.
+{%- endcomment -%}
+
+{% stylesheet %}
+.sai-hj6805dr {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6em;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: 1.4;
+  color: inherit;
+}
+
+.sai-hj6805dr[data-spectrum-vis="off"] {
+  display: none;
+}
+
+.sai-hj6805dr__dot {
+  display: inline-block;
+  inline-size: 0.8em;
+  block-size: 0.8em;
+  border-radius: 999px;
+  background: var(--color-success, #2e7d32);
+  flex-shrink: 0;
+}
+
+.sai-hj6805dr__icon {
+  display: inline-flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.sai-hj6805dr__icon:empty {
+  display: none;
+}
+
+.sai-hj6805dr__icon img,
+.sai-hj6805dr__icon svg {
+  inline-size: 1.2em;
+  block-size: 1.2em;
+  display: block;
+}
+
+.sai-hj6805dr__message {
+  display: inline;
+}
+
+.sai-hj6805dr__count {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sai-hj6805dr__dot {
+    animation: sai-hj6805dr-pulse 1s ease-in-out infinite;
+  }
+
+  @keyframes sai-hj6805dr-pulse {
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0.5; }
+  }
+}
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-hj6805dr.js' | asset_url }}" defer></script>
+
+{%- liquid
+  assign _icon_image = variant.content.icon_image
+  assign _icon_image_url = _icon_image.url
+-%}
+
+<script type="application/json" data-spectrum-hj6805dr-settings>
+{
+  "message_template": {{ variant.content.message_template | json }},
+  "display_format": {{ variant.content.display_format | json }},
+  "min_count": {{ variant.content.min_count | json }},
+  "icon_emoji": {{ variant.content.icon_emoji | json }},
+  "icon_image_url": {{ _icon_image_url | json }}
+}
+</script>
+
+<script type="application/json" data-spectrum-hj6805dr-rows>
+{{ product.metafields.spectrum.visitors_callout.value | json }}
+</script>
+
+{%- liquid
+  assign _tpl = variant.content.message_template
+  if _tpl == nil or _tpl == blank
+    assign _tpl = '{count} people are viewing this right now'
+  endif
+  assign _parts = _tpl | split: '{count}'
+  assign _before = _parts[0]
+  assign _after = _parts[1]
+  assign _rows = product.metafields.spectrum.visitors_callout.value
+  assign _first = _rows | first
+  assign _ssr_count = _first.visitorsCount
+  assign _icon_emoji = variant.content.icon_emoji
+-%}
+
+<div class="sai-hj6805dr" data-spectrum-vis="off" aria-live="polite" aria-label="Live visitor count">
+  <span class="sai-hj6805dr__dot" aria-hidden="true"></span>
+  <span class="sai-hj6805dr__icon">{%- if _icon_image_url != blank -%}<img src="{{ _icon_image_url | escape }}" alt="" aria-hidden="true">{%- elsif _icon_emoji != blank -%}{{ _icon_emoji }}{%- endif -%}</span>
+  <span class="sai-hj6805dr__message">{{ _before }}<span class="sai-hj6805dr__count">{{ _ssr_count }}</span><span class="sai-hj6805dr__rest">{{ _after }}</span></span>
+</div>
