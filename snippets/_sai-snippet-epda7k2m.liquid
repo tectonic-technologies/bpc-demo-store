@@ -1,0 +1,330 @@
+{%- comment -%}
+  Enriched Product Description Accordion (epda7k2m) — single accordion item
+  rendering PCE's product long-description on the PDP.
+
+  Wrapper contract (resource-scope simple slot):
+    - variant            : default variant from mo.variants.value.variants
+    - slot               : matched long_description simple slot
+                            { slotKey, payload } from
+                            product.metafields.spectrum.long_description_live
+    - slot_payload       : slot.payload (already parsed JSON)
+    - entry              : resolved default entry from slot_payload.entries
+    - mo                 : spectrum_snippet_instance metaobject drop
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div)
+    - experience_handle  : (consumed by wrapper outer div)
+
+  variant.content fields (presentation):
+    - heading                  string   accordion item title
+    - default_state            'open' | 'closed' | 'partially_open'
+                                        merchant-controlled initial state;
+                                        unknown values fall back to 'open'
+    - partial_open_cta_label   string   CTA label shown inside the body when
+                                        default_state == 'partially_open'
+
+  entry.content fields (slot-derived from PCE):
+    - html   string   long-description HTML; emitted raw (see Trust boundary)
+
+  Trust boundary:
+    Backend-supplied content is trusted by contract. {{ entry.content.html }}
+    is emitted raw — no sanitisation, no transform, no escape. PCE / the
+    persist-pending-long-description tool owns sanitisation. Do NOT add
+    `| escape`, `| strip_html`, or any defensive filter here.
+
+  Empty-state:
+    If `entry` is nil or `entry.content.html` is blank, render nothing —
+    not even the accordion header. The wrapper still emits the outer
+    `<div>`, but the inner contents collapse to empty whitespace.
+{%- endcomment -%}
+
+{% stylesheet %}
+/* Enriched Product Description Accordion (epda7k2m) */
+
+.sai-epda7k2m {
+  --sai-epda7k2m-max-width: 64rem;
+  --sai-epda7k2m-divider: rgba(0, 0, 0, 0.12);
+  --sai-epda7k2m-clamp-height: 12rem;
+  --sai-epda7k2m-fade-height: 4rem;
+
+  display: block;
+  box-sizing: border-box;
+  inline-size: 100%;
+  max-inline-size: var(--sai-epda7k2m-max-width);
+  margin-inline: auto;
+  margin-block: var(--sai-size-5);
+  padding-inline: var(--sai-size-4);
+  font-family: var(--sai-font-body);
+  font-style: var(--sai-font-body-style);
+  font-weight: var(--sai-font-body-weight);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--sai-color-fg);
+}
+
+.sai-epda7k2m__container {
+  display: block;
+}
+
+/* ── Accordion item ───────────────────────────────────────────────────────── */
+
+.sai-epda7k2m__item {
+  border-block-start: 1px solid var(--sai-epda7k2m-divider);
+  border-block-end: 1px solid var(--sai-epda7k2m-divider);
+}
+
+.sai-epda7k2m__summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sai-size-3);
+  padding-block: var(--sai-size-4);
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+.sai-epda7k2m__summary::-webkit-details-marker {
+  display: none;
+}
+
+.sai-epda7k2m__heading {
+  margin: 0;
+  font-family: var(--sai-font-heading);
+  font-style: var(--sai-font-heading-style);
+  font-weight: var(--sai-font-heading-weight);
+  font-size: 1.5rem;
+  line-height: 1.3;
+  color: var(--sai-color-fg);
+}
+
+.sai-epda7k2m__chevron {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 1.5rem;
+  block-size: 1.5rem;
+  color: var(--sai-color-fg);
+  transition: transform 160ms ease;
+}
+
+.sai-epda7k2m__chevron-bar {
+  display: block;
+}
+
+.sai-epda7k2m__chevron-bar--vertical {
+  display: block;
+}
+
+.sai-epda7k2m__item:not([open]) .sai-epda7k2m__chevron-bar--vertical {
+  display: block;
+}
+
+.sai-epda7k2m__item[open] .sai-epda7k2m__chevron-bar--vertical {
+  display: none;
+}
+
+/* ── Body ─────────────────────────────────────────────────────────────────── */
+
+.sai-epda7k2m__body {
+  position: relative;
+  padding-block-end: var(--sai-size-5);
+  color: var(--sai-color-fg);
+}
+
+/* Prose styles — opinionated but minimal; PCE rarely emits tables but we
+   style them defensively so the rare case looks acceptable across themes. */
+
+.sai-epda7k2m__body > :first-child {
+  margin-block-start: 0;
+}
+
+.sai-epda7k2m__body > :last-child {
+  margin-block-end: 0;
+}
+
+.sai-epda7k2m__body p {
+  margin-block: var(--sai-size-3);
+}
+
+.sai-epda7k2m__body h2,
+.sai-epda7k2m__body h3,
+.sai-epda7k2m__body h4 {
+  margin-block: var(--sai-size-4) var(--sai-size-2);
+  font-family: var(--sai-font-heading);
+  font-weight: var(--sai-font-heading-weight);
+  line-height: 1.3;
+}
+
+.sai-epda7k2m__body h2 { font-size: 1.25rem; }
+.sai-epda7k2m__body h3 { font-size: 1.125rem; }
+.sai-epda7k2m__body h4 { font-size: 1rem; }
+
+.sai-epda7k2m__body ul,
+.sai-epda7k2m__body ol {
+  margin-block: var(--sai-size-3);
+  padding-inline-start: 1.5rem;
+}
+
+.sai-epda7k2m__body li {
+  margin-block: var(--sai-size-1);
+}
+
+.sai-epda7k2m__body a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.sai-epda7k2m__body strong {
+  font-weight: 600;
+}
+
+.sai-epda7k2m__body table {
+  width: 100%;
+  margin-block: var(--sai-size-3);
+  border-collapse: collapse;
+  border: 1px solid var(--sai-epda7k2m-divider);
+}
+
+.sai-epda7k2m__body th,
+.sai-epda7k2m__body td {
+  padding: var(--sai-size-2) var(--sai-size-3);
+  border: 1px solid var(--sai-epda7k2m-divider);
+  text-align: start;
+  vertical-align: top;
+}
+
+.sai-epda7k2m__body th {
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.03);
+}
+
+.sai-epda7k2m__body img {
+  max-inline-size: 100%;
+  block-size: auto;
+}
+
+/* ── Partially-open state ─────────────────────────────────────────────────── */
+
+/* Body is clamped + faded; the inline CTA expands to full content. The
+   `--partial` modifier is removed in JS once the merchant clicks the CTA,
+   which reverts the body to its open height.
+
+   Specificity discipline: the partial state is expressed as a SINGLE-CLASS
+   modifier on the body element (`.sai-epda7k2m__body--partial`) rather than a
+   descendant chain off `.sai-epda7k2m__item[data-state="partially_open"]`.
+   That keeps the rule at (0,1,0) so per-instance baked CSS for the `body`
+   style node — anchored on `[data-spectrum-instance-id][data-spectrum-variant-id] .sai-epda7k2m__body`
+   (0,3,0) — wins the cascade. The descendant-chain shape (0,3,0) would have
+   tied with the baked rule and clobbered merchant-applied body padding /
+   typography. */
+
+.sai-epda7k2m__body--partial {
+  max-block-size: var(--sai-epda7k2m-clamp-height);
+  overflow: hidden;
+  padding-block-end: calc(var(--sai-size-5) + var(--sai-epda7k2m-fade-height));
+}
+
+.sai-epda7k2m__body--partial::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: 0;
+  block-size: var(--sai-epda7k2m-fade-height);
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    var(--sai-color-bg, #fff)
+  );
+  pointer-events: none;
+}
+
+.sai-epda7k2m__expand-cta {
+  position: absolute;
+  inset-inline: 0;
+  inset-block-end: var(--sai-size-2);
+  margin-inline: auto;
+  display: inline-block;
+  padding: var(--sai-size-2) var(--sai-size-4);
+  background: transparent;
+  border: 1px solid var(--sai-epda7k2m-divider);
+  border-radius: 9999px;
+  font-family: var(--sai-font-body);
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--sai-color-fg);
+  cursor: pointer;
+  z-index: 1;
+  inline-size: max-content;
+}
+
+.sai-epda7k2m__expand-cta:hover,
+.sai-epda7k2m__expand-cta:focus-visible {
+  background: rgba(0, 0, 0, 0.04);
+}
+
+.sai-epda7k2m__expand-cta:focus-visible {
+  outline: 2px solid var(--sai-color-fg);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-epda7k2m__chevron {
+    transition: none;
+  }
+}
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-epda7k2m.js' | asset_url }}" async></script>
+
+{%- assign content = variant.content -%}
+{%- assign heading = content.heading | default: 'Enriched Product Description Accordion' -%}
+{%- assign cta_label = content.partial_open_cta_label | default: 'Click here to view more info' -%}
+
+{%- comment -%}
+  Normalize default_state to the allowlist. `| default:` would replace nil
+  and blank with 'open'; the explicit allowlist below rejects unexpected
+  values too (e.g. a manually-edited variant content row). Per
+  `.claude/rules/generated-liquid.md` rule 2 (default-to-safe) and rule 4
+  (type-strict comparisons).
+{%- endcomment -%}
+{%- assign sai_state = content.default_state | default: 'open' -%}
+{%- if sai_state != 'open' and sai_state != 'closed' and sai_state != 'partially_open' -%}
+  {%- assign sai_state = 'open' -%}
+{%- endif -%}
+
+{%- assign body_html = entry.content.html -%}
+
+{%- if entry and body_html != blank -%}
+  <sai-epda7k2m class="sai-epda7k2m">
+    <div class="sai-epda7k2m__container">
+      {%- if sai_state == 'closed' -%}
+        <details class="sai-epda7k2m__item" data-state="{{ sai_state }}">
+      {%- else -%}
+        <details class="sai-epda7k2m__item" data-state="{{ sai_state }}" open>
+      {%- endif -%}
+        <summary class="sai-epda7k2m__summary">
+          <h2 class="sai-epda7k2m__heading">{{ heading }}</h2>
+          <span class="sai-epda7k2m__chevron" aria-hidden="true">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" focusable="false">
+              <path class="sai-epda7k2m__chevron-bar" d="M3 8h10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+              <path class="sai-epda7k2m__chevron-bar sai-epda7k2m__chevron-bar--vertical" d="M8 3v10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </span>
+        </summary>
+        {%- if sai_state == 'partially_open' -%}
+          <div class="sai-epda7k2m__body sai-epda7k2m__body--partial" data-slot="body">
+        {%- else -%}
+          <div class="sai-epda7k2m__body" data-slot="body">
+        {%- endif -%}
+          {{ body_html }}
+          {%- if sai_state == 'partially_open' -%}
+            <button
+              type="button"
+              class="sai-epda7k2m__expand-cta"
+              data-action="expand"
+            >{{ cta_label }}</button>
+          {%- endif -%}
+        </div>
+      </details>
+    </div>
+  </sai-epda7k2m>
+{%- endif -%}
