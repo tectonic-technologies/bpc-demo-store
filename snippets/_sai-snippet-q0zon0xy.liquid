@@ -44,54 +44,54 @@
 
 {% stylesheet %}
 /* =============================================================================
- * Frequently Bought Together (pb3tmxq9) — combined vertical + horizontal CSS.
+ * Frequently Bought Together (q0zon0xy) — combined vertical + horizontal CSS.
  *
- * Shared rules live at the .sai-pb3tmxq9 root; layout-specific rules are
- * nested under .sai-pb3tmxq9--vertical / .sai-pb3tmxq9--horizontal. Single
+ * Shared rules live at the .sai-q0zon0xy root; layout-specific rules are
+ * nested under .sai-q0zon0xy--vertical / .sai-q0zon0xy--horizontal. Single
  * author selectors stay at specificity (0,1,0) so per-instance baked rules
  * (anchored on [data-spectrum-instance-id][data-spectrum-variant-id]) always
  * win the cascade.
  *
- * Color tokens use --sai-pb3tmxq9-* custom properties so the Studio
+ * Color tokens use --sai-q0zon0xy-* custom properties so the Studio
  * per-instance style panel can override them. Fonts/spacing/radius come from
  * the theme's --sai-* design tokens — never hardcoded.
  * ============================================================================= */
 
-.sai-pb3tmxq9,
-.sai-pb3tmxq9__modal-overlay {
-  --sai-pb3tmxq9-card-bg: #ffffff;
-  --sai-pb3tmxq9-card-border: rgba(0, 0, 0, 0.1);
-  --sai-pb3tmxq9-card-radius: 12px;
-  --sai-pb3tmxq9-sub-header-bg: #f4f4f4;
-  --sai-pb3tmxq9-checkbox-size: 1.5rem;
-  --sai-pb3tmxq9-image-size: 5.5rem;
-  --sai-pb3tmxq9-card-w: 11.5rem;
-  --sai-pb3tmxq9-image-h: 12rem;
-  --sai-pb3tmxq9-plus-size: 1.75rem;
-  --sai-pb3tmxq9-off-bg: #0e6f54;
-  --sai-pb3tmxq9-off-fg: #ffffff;
-  --sai-pb3tmxq9-rating-fg: #f5b013;
-  --sai-pb3tmxq9-low-stock-fg: #d24207;
-  --sai-pb3tmxq9-fg: var(--sai-color-fg, #121212);
-  --sai-pb3tmxq9-muted-fg: rgba(0, 0, 0, 0.55);
-  --sai-pb3tmxq9-cta-bg: #ffffff;
-  --sai-pb3tmxq9-cta-fg: #121212;
-  --sai-pb3tmxq9-cta-border: #121212;
-  --sai-pb3tmxq9-cta-hover-bg: #121212;
-  --sai-pb3tmxq9-cta-hover-fg: #ffffff;
-  --sai-pb3tmxq9-modal-overlay-bg: rgba(0, 0, 0, 0.55);
-  --sai-pb3tmxq9-modal-card-bg: #ffffff;
-  --sai-pb3tmxq9-pill-bg: #ededed;
-  --sai-pb3tmxq9-pill-fg: #121212;
-  --sai-pb3tmxq9-pill-selected-bg: #121212;
-  --sai-pb3tmxq9-pill-selected-fg: #ffffff;
-  --sai-pb3tmxq9-pill-disabled-fg: rgba(0, 0, 0, 0.45);
-  --sai-pb3tmxq9-done-bg: #121212;
-  --sai-pb3tmxq9-done-fg: #ffffff;
-  --sai-pb3tmxq9-loader-size: 1.125rem;
+.sai-q0zon0xy,
+.sai-q0zon0xy__modal-overlay {
+  --sai-q0zon0xy-card-bg: #ffffff;
+  --sai-q0zon0xy-card-border: rgba(0, 0, 0, 0.1);
+  --sai-q0zon0xy-card-radius: 12px;
+  --sai-q0zon0xy-sub-header-bg: #f4f4f4;
+  --sai-q0zon0xy-checkbox-size: 1.5rem;
+  --sai-q0zon0xy-image-size: 5.5rem;
+  --sai-q0zon0xy-card-w: 11.5rem;
+  --sai-q0zon0xy-image-h: 12rem;
+  --sai-q0zon0xy-plus-size: 1.75rem;
+  --sai-q0zon0xy-off-bg: #0e6f54;
+  --sai-q0zon0xy-off-fg: #ffffff;
+  --sai-q0zon0xy-rating-fg: #f5b013;
+  --sai-q0zon0xy-low-stock-fg: #d24207;
+  --sai-q0zon0xy-fg: var(--sai-color-fg, #121212);
+  --sai-q0zon0xy-muted-fg: rgba(0, 0, 0, 0.55);
+  --sai-q0zon0xy-cta-bg: #ffffff;
+  --sai-q0zon0xy-cta-fg: #121212;
+  --sai-q0zon0xy-cta-border: #121212;
+  --sai-q0zon0xy-cta-hover-bg: #121212;
+  --sai-q0zon0xy-cta-hover-fg: #ffffff;
+  --sai-q0zon0xy-modal-overlay-bg: rgba(0, 0, 0, 0.55);
+  --sai-q0zon0xy-modal-card-bg: #ffffff;
+  --sai-q0zon0xy-pill-bg: #ededed;
+  --sai-q0zon0xy-pill-fg: #121212;
+  --sai-q0zon0xy-pill-selected-bg: #121212;
+  --sai-q0zon0xy-pill-selected-fg: #ffffff;
+  --sai-q0zon0xy-pill-disabled-fg: rgba(0, 0, 0, 0.45);
+  --sai-q0zon0xy-done-bg: #121212;
+  --sai-q0zon0xy-done-fg: #ffffff;
+  --sai-q0zon0xy-loader-size: 1.125rem;
 }
 
-.sai-pb3tmxq9 {
+.sai-q0zon0xy {
   display: block;
   box-sizing: border-box;
   inline-size: 100%;
@@ -100,42 +100,42 @@
      Viewport media queries below would otherwise apply the wide two-column
      layout inside a narrow column and overflow. */
   container-type: inline-size;
-  container-name: sai-pb3tmxq9;
+  container-name: sai-q0zon0xy;
   margin-inline: auto;
   margin-block: var(--sai-size-6);
   font-family: var(--sai-font-body);
   font-size: 1rem;
   line-height: 1.4;
-  color: var(--sai-pb3tmxq9-fg);
+  color: var(--sai-q0zon0xy-fg);
 }
 
-.sai-pb3tmxq9--vertical {
+.sai-q0zon0xy--vertical {
   max-inline-size: 56rem;
   padding-inline: var(--sai-size-4);
   font-size: 1.0625rem;
   line-height: 1.45;
 }
 
-.sai-pb3tmxq9--horizontal {
+.sai-q0zon0xy--horizontal {
   max-inline-size: 75rem;
 }
 
-.sai-pb3tmxq9 *,
-.sai-pb3tmxq9 *::before,
-.sai-pb3tmxq9 *::after {
+.sai-q0zon0xy *,
+.sai-q0zon0xy *::before,
+.sai-q0zon0xy *::after {
   box-sizing: border-box;
 }
 
-.sai-pb3tmxq9__inner {
+.sai-q0zon0xy__inner {
   inline-size: 100%;
   box-sizing: border-box;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__inner {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__inner {
   padding-inline: var(--sai-size-4);
 }
 
-.sai-pb3tmxq9__heading {
+.sai-q0zon0xy__heading {
   font-family: var(--sai-font-heading, var(--sai-font-body));
   font-size: 1.625rem;
   font-weight: var(--sai-font-body-weight-bold, 700);
@@ -144,27 +144,27 @@
   line-height: 1.2;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__heading {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__heading {
   margin-block: 0 var(--sai-size-4);
 }
 
-.sai-pb3tmxq9__description {
+.sai-q0zon0xy__description {
   margin: 0 0 var(--sai-size-4) 0;
   font-size: 0.875rem;
-  color: var(--sai-pb3tmxq9-muted-fg);
+  color: var(--sai-q0zon0xy-muted-fg);
   line-height: 1.4;
 }
 
 /* ── Cards (shared base) ─────────────────────────────────────────────────── */
 
-.sai-pb3tmxq9__card {
-  background: var(--sai-pb3tmxq9-card-bg);
-  border: 1px solid var(--sai-pb3tmxq9-card-border);
-  border-radius: var(--sai-pb3tmxq9-card-radius);
+.sai-q0zon0xy__card {
+  background: var(--sai-q0zon0xy-card-bg);
+  border: 1px solid var(--sai-q0zon0xy-card-border);
+  border-radius: var(--sai-q0zon0xy-card-radius);
   overflow: hidden;
 }
 
-.sai-pb3tmxq9__title {
+.sai-q0zon0xy__title {
   color: inherit;
   text-decoration: none;
   font-weight: var(--sai-font-body-weight-bold, 600);
@@ -175,28 +175,28 @@
   overflow: hidden;
 }
 
-.sai-pb3tmxq9__title:hover {
+.sai-q0zon0xy__title:hover {
   text-decoration: underline;
 }
 
-.sai-pb3tmxq9__price-row {
+.sai-q0zon0xy__price-row {
   display: flex;
   gap: var(--sai-size-2);
   flex-wrap: wrap;
 }
 
-.sai-pb3tmxq9__price {
+.sai-q0zon0xy__price {
   font-weight: var(--sai-font-body-weight-bold, 600);
 }
 
-.sai-pb3tmxq9__compare {
+.sai-q0zon0xy__compare {
   text-decoration: line-through;
-  color: var(--sai-pb3tmxq9-muted-fg);
+  color: var(--sai-q0zon0xy-muted-fg);
 }
 
-.sai-pb3tmxq9__off-badge {
-  background: var(--sai-pb3tmxq9-off-bg);
-  color: var(--sai-pb3tmxq9-off-fg);
+.sai-q0zon0xy__off-badge {
+  background: var(--sai-q0zon0xy-off-bg);
+  color: var(--sai-q0zon0xy-off-fg);
   border-radius: var(--sai-radius-round);
   padding: 0.1875rem var(--sai-size-2);
   font-size: 0.8125rem;
@@ -204,10 +204,10 @@
   letter-spacing: 0.02em;
 }
 
-.sai-pb3tmxq9__variant-trigger {
+.sai-q0zon0xy__variant-trigger {
   appearance: none;
   background: transparent;
-  border: 1px solid var(--sai-pb3tmxq9-card-border);
+  border: 1px solid var(--sai-q0zon0xy-card-border);
   color: inherit;
   cursor: pointer;
   display: inline-flex;
@@ -218,39 +218,39 @@
   text-align: start;
 }
 
-.sai-pb3tmxq9__variant-trigger:hover {
+.sai-q0zon0xy__variant-trigger:hover {
   background: rgba(0, 0, 0, 0.03);
 }
 
-.sai-pb3tmxq9__variant-label {
+.sai-q0zon0xy__variant-label {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.sai-pb3tmxq9__chevron {
+.sai-q0zon0xy__chevron {
   flex-shrink: 0;
-  color: var(--sai-pb3tmxq9-muted-fg);
+  color: var(--sai-q0zon0xy-muted-fg);
 }
 
 /* ── Vertical layout ─────────────────────────────────────────────────────── */
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__card {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__card {
   margin-block-end: var(--sai-size-3);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__card--main {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__card--main {
   border-color: rgba(0, 0, 0, 0.16);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__sub-header {
-  background: var(--sai-pb3tmxq9-sub-header-bg);
+.sai-q0zon0xy--vertical .sai-q0zon0xy__sub-header {
+  background: var(--sai-q0zon0xy-sub-header-bg);
   font-size: 1rem;
   font-weight: var(--sai-font-body-weight-bold, 600);
   padding: var(--sai-size-3) var(--sai-size-4);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__row {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__row {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
@@ -258,9 +258,9 @@
   padding: var(--sai-size-4);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__media {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__media {
   display: block;
-  inline-size: var(--sai-pb3tmxq9-image-size);
+  inline-size: var(--sai-q0zon0xy-image-size);
   /* block-size driven by the inline `aspect-ratio` style on this element
      (set from the merchant's image_aspect_ratio prop). Fixed block-size
      here would override the prop. */
@@ -271,30 +271,30 @@
   flex-shrink: 0;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__image {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__image {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   display: block;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__info {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__info {
   min-inline-size: 0;
   display: flex;
   flex-direction: column;
   gap: var(--sai-size-2);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__title {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__title {
   font-size: 1.0625rem;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__price-row {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__price-row {
   align-items: center;
   font-size: 1rem;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__variant-trigger {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__variant-trigger {
   border-radius: var(--sai-radius-round);
   padding: 0.5rem var(--sai-size-3);
   font-size: 0.9375rem;
@@ -303,7 +303,7 @@
   min-inline-size: 9rem;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__select {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__select {
   display: flex;
   flex-direction: column;
   align-items: end;
@@ -312,12 +312,12 @@
   justify-content: space-between;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__checkbox {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__checkbox {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  inline-size: var(--sai-pb3tmxq9-checkbox-size);
-  block-size: var(--sai-pb3tmxq9-checkbox-size);
+  inline-size: var(--sai-q0zon0xy-checkbox-size);
+  block-size: var(--sai-q0zon0xy-checkbox-size);
   border-radius: var(--sai-radius-2);
   cursor: pointer;
   position: relative;
@@ -327,21 +327,21 @@
     var(--sai-duration-1) var(--sai-ease-out-1);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__checkbox:has(input:checked) {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__checkbox:has(input:checked) {
   background: var(--sai-color-primary);
   border-color: var(--sai-color-primary);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__checkbox:has(input:checked) .sai-pb3tmxq9__checkbox-mark {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__checkbox:has(input:checked) .sai-q0zon0xy__checkbox-mark {
   color: var(--sai-color-primary-fg);
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__checkbox:has(input:focus-visible) {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__checkbox:has(input:focus-visible) {
   outline: 2px solid var(--sai-color-primary);
   outline-offset: 2px;
 }
 
-.sai-pb3tmxq9__checkbox input {
+.sai-q0zon0xy__checkbox input {
   position: absolute;
   opacity: 0;
   inset: 0;
@@ -349,7 +349,7 @@
   cursor: pointer;
 }
 
-.sai-pb3tmxq9__checkbox-mark {
+.sai-q0zon0xy__checkbox-mark {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -359,18 +359,18 @@
 /* Hide the entire checkbox cell when the main product is locked. The hidden
    <input> stays in the DOM (still checked by SSR + locked) so JS row-init
    counts the main as selected — but the user sees no checkbox at all. */
-.sai-pb3tmxq9__checkbox--locked {
+.sai-q0zon0xy__checkbox--locked {
   display: none !important;
 }
 
 /* Hide the whole main-product card while keeping it in the DOM. Used when the
    main product is locked but its card is suppressed: the card's checkbox stays
    present (checked + disabled) so JS still counts it and adds it to cart. */
-.sai-pb3tmxq9__card--hidden {
+.sai-q0zon0xy__card--hidden {
   display: none !important;
 }
 
-.sai-pb3tmxq9__rating {
+.sai-q0zon0xy__rating {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
@@ -378,29 +378,29 @@
   font-weight: var(--sai-font-body-weight-bold, 600);
 }
 
-.sai-pb3tmxq9__rating svg {
+.sai-q0zon0xy__rating svg {
   inline-size: 1rem;
   block-size: 1rem;
-  color: var(--sai-pb3tmxq9-rating-fg);
+  color: var(--sai-q0zon0xy-rating-fg);
 }
 
 /* ── Horizontal layout ───────────────────────────────────────────────────── */
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__layout {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__layout {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: var(--sai-size-4);
   align-items: stretch;
 }
 
-@container sai-pb3tmxq9 (min-width: 768px) {
-  .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__layout {
+@container sai-q0zon0xy (min-width: 768px) {
+  .sai-q0zon0xy--horizontal .sai-q0zon0xy__layout {
     grid-template-columns: minmax(0, 1fr) 26rem;
     gap: var(--sai-size-5);
   }
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cards {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cards {
   display: flex;
   align-items: stretch;
   gap: 1rem;
@@ -411,36 +411,36 @@
   -webkit-overflow-scrolling: touch;
 }
 
-@container sai-pb3tmxq9 (max-width: 767.98px) {
-  .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cards {
+@container sai-q0zon0xy (max-width: 767.98px) {
+  .sai-q0zon0xy--horizontal .sai-q0zon0xy__cards {
     overflow-x: auto;
   }
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cards::-webkit-scrollbar {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cards::-webkit-scrollbar {
   block-size: 6px;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cards::-webkit-scrollbar-thumb {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cards::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 999px;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__plus {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__plus {
   display: flex;
   align-items: center;
   justify-content: center;
-  inline-size: var(--sai-pb3tmxq9-plus-size);
-  block-size: var(--sai-pb3tmxq9-plus-size);
+  inline-size: var(--sai-q0zon0xy-plus-size);
+  block-size: var(--sai-q0zon0xy-plus-size);
   border-radius: 999px;
-  border: 1px solid var(--sai-pb3tmxq9-card-border);
-  background: var(--sai-pb3tmxq9-card-bg);
-  color: var(--sai-pb3tmxq9-fg);
+  border: 1px solid var(--sai-q0zon0xy-card-border);
+  background: var(--sai-q0zon0xy-card-bg);
+  color: var(--sai-q0zon0xy-fg);
   align-self: center;
   flex-shrink: 0;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__card {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__card {
   position: relative;
   flex: 1 1 0;
   min-inline-size: 9.5rem;
@@ -450,14 +450,14 @@
   padding: var(--sai-size-3);
 }
 
-@container sai-pb3tmxq9 (max-width: 767.98px) {
-  .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__card {
+@container sai-q0zon0xy (max-width: 767.98px) {
+  .sai-q0zon0xy--horizontal .sai-q0zon0xy__card {
     flex: 0 0 11rem;
   }
 }
 
 /* Horizontal checkbox overlays the top-left of the card image. */
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__checkbox {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__checkbox {
   position: absolute;
   inset-block-start: 0.625rem;
   inset-inline-start: 0.625rem;
@@ -474,21 +474,21 @@
   transition: background 120ms ease, border-color 120ms ease;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__checkbox:has(input:checked) {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__checkbox:has(input:checked) {
   background: var(--sai-color-primary, #121212);
   border-color: var(--sai-color-primary, #121212);
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__checkbox:has(input:checked) .sai-pb3tmxq9__checkbox-mark {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__checkbox:has(input:checked) .sai-q0zon0xy__checkbox-mark {
   color: var(--sai-color-primary-fg, #ffffff);
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__checkbox:has(input:focus-visible) {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__checkbox:has(input:focus-visible) {
   outline: 2px solid var(--sai-color-primary, #121212);
   outline-offset: 2px;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__media {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__media {
   display: block;
   inline-size: 100%;
   /* aspect-ratio set inline from the merchant's image_aspect_ratio prop.
@@ -501,27 +501,27 @@
   background: rgba(0, 0, 0, 0.04);
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__image {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__image {
   inline-size: 100%;
   block-size: 100%;
   object-fit: cover;
   display: block;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__title {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__title {
   font-size: 0.875rem;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__price-row {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__price-row {
   align-items: baseline;
   font-size: 0.9375rem;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__compare {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__compare {
   font-size: 0.8125rem;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__variant-trigger {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__variant-trigger {
   border-radius: 8px;
   padding: 0.4375rem var(--sai-size-2);
   font-size: 0.8125rem;
@@ -531,13 +531,13 @@
 
 /* ── Total panel + CTA (shared visual + layout overrides) ────────────────── */
 
-.sai-pb3tmxq9__cta {
+.sai-q0zon0xy__cta {
   appearance: none;
   inline-size: 100%;
-  background: var(--sai-pb3tmxq9-cta-bg);
-  color: var(--sai-pb3tmxq9-cta-fg);
-  border: 1.5px solid var(--sai-pb3tmxq9-cta-border);
-  border-radius: var(--sai-pb3tmxq9-card-radius);
+  background: var(--sai-q0zon0xy-cta-bg);
+  color: var(--sai-q0zon0xy-cta-fg);
+  border: 1.5px solid var(--sai-q0zon0xy-cta-border);
+  border-radius: var(--sai-q0zon0xy-card-radius);
   padding: 1rem 1.25rem;
   font: inherit;
   font-size: 1.0625rem;
@@ -547,17 +547,17 @@
   transition: background 120ms ease, color 120ms ease, opacity 120ms ease;
 }
 
-.sai-pb3tmxq9__cta:hover:not(:disabled) {
-  background: var(--sai-pb3tmxq9-cta-hover-bg);
-  color: var(--sai-pb3tmxq9-cta-hover-fg);
+.sai-q0zon0xy__cta:hover:not(:disabled) {
+  background: var(--sai-q0zon0xy-cta-hover-bg);
+  color: var(--sai-q0zon0xy-cta-hover-fg);
 }
 
-.sai-pb3tmxq9__cta:disabled {
+.sai-q0zon0xy__cta:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
 
-.sai-pb3tmxq9__error {
+.sai-q0zon0xy__error {
   margin-block-start: var(--sai-size-2);
   padding: var(--sai-size-2) var(--sai-size-3);
   background: rgba(197, 48, 48, 0.08);
@@ -567,7 +567,7 @@
 }
 
 /* Vertical: CTA stacks label + inline total vertically. */
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__cta {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__cta {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -579,34 +579,34 @@
 
 /* The loader is positioned absolute and must keep its own flex display so the
    spinner stays centered. Excluding it from this rule preserves both. */
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__cta > span:not(.sai-pb3tmxq9__loader) {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__cta > span:not(.sai-q0zon0xy__loader) {
   display: block;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__total--inline {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__total--inline {
   font-size: 0.8125rem;
   font-weight: 600;
   letter-spacing: 0.02em;
   opacity: 0.92;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__total-inline-label {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__total-inline-label {
   text-transform: uppercase;
   letter-spacing: 0.04em;
   font-weight: 600;
 }
 
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__total-separator {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__total-separator {
   opacity: 0.6;
 }
 
 /* Hide the inline total line entirely when no amount is rendered yet. */
-.sai-pb3tmxq9--vertical .sai-pb3tmxq9__total--inline:has(.sai-pb3tmxq9__total-amount:empty) {
+.sai-q0zon0xy--vertical .sai-q0zon0xy__total--inline:has(.sai-q0zon0xy__total-amount:empty) {
   display: none;
 }
 
 /* Horizontal: right-side total panel layout. */
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total--panel {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__total--panel {
   display: flex;
   flex-direction: column;
   gap: var(--sai-size-3);
@@ -615,41 +615,41 @@
   justify-content: flex-start;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cta {
-  background: var(--sai-pb3tmxq9-cta-hover-bg);
-  color: var(--sai-pb3tmxq9-cta-hover-fg);
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cta {
+  background: var(--sai-q0zon0xy-cta-hover-bg);
+  color: var(--sai-q0zon0xy-cta-hover-fg);
   border: none;
   margin-block-start: auto;
   padding: 1.125rem var(--sai-size-4);
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cta:hover:not(:disabled) {
-  background: var(--sai-pb3tmxq9-cta-bg);
-  color: var(--sai-pb3tmxq9-cta-fg);
-  border: 1.5px solid var(--sai-pb3tmxq9-cta-border);
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cta:hover:not(:disabled) {
+  background: var(--sai-q0zon0xy-cta-bg);
+  color: var(--sai-q0zon0xy-cta-fg);
+  border: 1.5px solid var(--sai-q0zon0xy-cta-border);
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cta:disabled {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__cta:disabled {
   opacity: 0.45;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-heading {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__total-heading {
   font-size: 1.5rem;
   font-weight: var(--sai-font-body-weight-bold, 700);
   letter-spacing: -0.01em;
   line-height: 1.2;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-subtext {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__total-subtext {
   font-size: 0.875rem;
-  color: var(--sai-pb3tmxq9-muted-fg);
+  color: var(--sai-q0zon0xy-muted-fg);
   line-height: 1.4;
   text-align: start;
   flex: 0 1 auto;
   min-inline-size: 0;
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-row {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__total-row {
   display: flex;
   flex-direction: row;
   align-items: baseline;
@@ -658,13 +658,13 @@
   flex-wrap: nowrap;
 }
 
-@container sai-pb3tmxq9 (max-width: 540px) {
-  .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-row {
+@container sai-q0zon0xy (max-width: 540px) {
+  .sai-q0zon0xy--horizontal .sai-q0zon0xy__total-row {
     flex-wrap: wrap;
   }
 }
 
-.sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-amount {
+.sai-q0zon0xy--horizontal .sai-q0zon0xy__total-amount {
   margin-inline-start: auto;
   font-family: var(--sai-font-heading, var(--sai-font-body));
   font-size: 2rem;
@@ -675,33 +675,33 @@
 
 /* ── Modal ───────────────────────────────────────────────────────────────── */
 
-.sai-pb3tmxq9__modal-overlay {
+.sai-q0zon0xy__modal-overlay {
   position: fixed;
   inset: 0;
-  background: var(--sai-pb3tmxq9-modal-overlay-bg);
+  background: var(--sai-q0zon0xy-modal-overlay-bg);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 2147483000;
   padding: 1rem;
   font-family: var(--sai-font-body, inherit);
-  color: var(--sai-pb3tmxq9-fg);
+  color: var(--sai-q0zon0xy-fg);
   box-sizing: border-box;
-  animation: sai-pb3tmxq9-overlay-in 220ms ease forwards;
+  animation: sai-q0zon0xy-overlay-in 220ms ease forwards;
 }
 
-.sai-pb3tmxq9__modal-overlay[data-closing="true"] {
-  animation: sai-pb3tmxq9-overlay-out 220ms ease forwards;
+.sai-q0zon0xy__modal-overlay[data-closing="true"] {
+  animation: sai-q0zon0xy-overlay-out 220ms ease forwards;
   pointer-events: none;
 }
 
-.sai-pb3tmxq9__modal-overlay *,
-.sai-pb3tmxq9__modal-overlay *::before,
-.sai-pb3tmxq9__modal-overlay *::after {
+.sai-q0zon0xy__modal-overlay *,
+.sai-q0zon0xy__modal-overlay *::before,
+.sai-q0zon0xy__modal-overlay *::after {
   box-sizing: border-box;
 }
 
-@keyframes sai-pb3tmxq9-overlay-in {
+@keyframes sai-q0zon0xy-overlay-in {
   from {
     opacity: 0;
   }
@@ -710,7 +710,7 @@
   }
 }
 
-@keyframes sai-pb3tmxq9-overlay-out {
+@keyframes sai-q0zon0xy-overlay-out {
   from {
     opacity: 1;
   }
@@ -719,7 +719,7 @@
   }
 }
 
-@keyframes sai-pb3tmxq9-card-in {
+@keyframes sai-q0zon0xy-card-in {
   from {
     transform: translateY(100vh);
   }
@@ -728,7 +728,7 @@
   }
 }
 
-@keyframes sai-pb3tmxq9-card-out {
+@keyframes sai-q0zon0xy-card-out {
   from {
     transform: translateY(0);
   }
@@ -738,16 +738,16 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sai-pb3tmxq9__modal-overlay,
-  .sai-pb3tmxq9__modal-overlay[data-closing="true"],
-  .sai-pb3tmxq9__modal-card,
-  .sai-pb3tmxq9__modal-overlay[data-closing="true"] .sai-pb3tmxq9__modal-card {
+  .sai-q0zon0xy__modal-overlay,
+  .sai-q0zon0xy__modal-overlay[data-closing="true"],
+  .sai-q0zon0xy__modal-card,
+  .sai-q0zon0xy__modal-overlay[data-closing="true"] .sai-q0zon0xy__modal-card {
     animation-duration: 1ms !important;
   }
 }
 
-.sai-pb3tmxq9__modal-card {
-  background: var(--sai-pb3tmxq9-modal-card-bg);
+.sai-q0zon0xy__modal-card {
+  background: var(--sai-q0zon0xy-modal-card-bg);
   border-radius: 16px;
   inline-size: 100%;
   max-inline-size: 34rem;
@@ -758,22 +758,22 @@
   gap: 1.25rem;
   padding: 1.5rem;
   box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.3);
-  animation: sai-pb3tmxq9-card-in 320ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
+  animation: sai-q0zon0xy-card-in 320ms cubic-bezier(0.2, 0.7, 0.2, 1) forwards;
   will-change: transform;
 }
 
-.sai-pb3tmxq9__modal-overlay[data-closing="true"] .sai-pb3tmxq9__modal-card {
-  animation: sai-pb3tmxq9-card-out 260ms cubic-bezier(0.4, 0, 0.6, 1) forwards;
+.sai-q0zon0xy__modal-overlay[data-closing="true"] .sai-q0zon0xy__modal-card {
+  animation: sai-q0zon0xy-card-out 260ms cubic-bezier(0.4, 0, 0.6, 1) forwards;
 }
 
-.sai-pb3tmxq9__modal-header {
+.sai-q0zon0xy__modal-header {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   gap: var(--sai-size-3);
 }
 
-.sai-pb3tmxq9__modal-close {
+.sai-q0zon0xy__modal-close {
   appearance: none;
   background: transparent;
   border: none;
@@ -785,39 +785,39 @@
   justify-content: center;
 }
 
-.sai-pb3tmxq9__modal-groups {
+.sai-q0zon0xy__modal-groups {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
 
-.sai-pb3tmxq9__modal-group {
+.sai-q0zon0xy__modal-group {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
 }
 
-.sai-pb3tmxq9__modal-group-label {
+.sai-q0zon0xy__modal-group-label {
   font-size: 0.9375rem;
   font-weight: 600;
 }
 
-.sai-pb3tmxq9__modal-group-label [data-group-current] {
+.sai-q0zon0xy__modal-group-label [data-group-current] {
   font-weight: 500;
   color: rgba(0, 0, 0, 0.65);
 }
 
-.sai-pb3tmxq9__modal-pills {
+.sai-q0zon0xy__modal-pills {
   display: flex;
   flex-wrap: wrap;
   gap: 0.625rem;
 }
 
-.sai-pb3tmxq9__pill {
+.sai-q0zon0xy__pill {
   appearance: none;
-  border: 1px solid var(--sai-pb3tmxq9-card-border);
-  background: var(--sai-pb3tmxq9-pill-bg);
-  color: var(--sai-pb3tmxq9-pill-fg);
+  border: 1px solid var(--sai-q0zon0xy-card-border);
+  background: var(--sai-q0zon0xy-pill-bg);
+  color: var(--sai-q0zon0xy-pill-fg);
   border-radius: 999px;
   padding: 0.625rem 1.125rem;
   cursor: pointer;
@@ -834,41 +834,41 @@
   transition: background 120ms ease, color 120ms ease, border-color 120ms ease;
 }
 
-.sai-pb3tmxq9__pill[data-selected="true"] {
-  background: var(--sai-pb3tmxq9-pill-selected-bg);
-  color: var(--sai-pb3tmxq9-pill-selected-fg);
-  border-color: var(--sai-pb3tmxq9-pill-selected-bg);
+.sai-q0zon0xy__pill[data-selected="true"] {
+  background: var(--sai-q0zon0xy-pill-selected-bg);
+  color: var(--sai-q0zon0xy-pill-selected-fg);
+  border-color: var(--sai-q0zon0xy-pill-selected-bg);
 }
 
-.sai-pb3tmxq9__pill[data-unavailable="true"] {
+.sai-q0zon0xy__pill[data-unavailable="true"] {
   cursor: not-allowed;
-  color: var(--sai-pb3tmxq9-pill-disabled-fg);
+  color: var(--sai-q0zon0xy-pill-disabled-fg);
 }
 
-.sai-pb3tmxq9__pill[data-unavailable="true"] .sai-pb3tmxq9__pill-value {
+.sai-q0zon0xy__pill[data-unavailable="true"] .sai-q0zon0xy__pill-value {
   text-decoration: line-through;
 }
 
-.sai-pb3tmxq9__pill-value {
+.sai-q0zon0xy__pill-value {
   font-weight: var(--sai-font-body-weight-bold, 600);
 }
 
-.sai-pb3tmxq9__modal-stock {
+.sai-q0zon0xy__modal-stock {
   font-size: 0.9375rem;
   font-weight: 600;
-  color: var(--sai-pb3tmxq9-low-stock-fg);
+  color: var(--sai-q0zon0xy-low-stock-fg);
   padding-block-start: 0.5rem;
-  border-block-start: 1px solid var(--sai-pb3tmxq9-card-border);
+  border-block-start: 1px solid var(--sai-q0zon0xy-card-border);
 }
 
-.sai-pb3tmxq9__modal-stock[hidden] {
+.sai-q0zon0xy__modal-stock[hidden] {
   display: none;
 }
 
-.sai-pb3tmxq9__modal-done {
+.sai-q0zon0xy__modal-done {
   appearance: none;
-  background: var(--sai-pb3tmxq9-done-bg);
-  color: var(--sai-pb3tmxq9-done-fg);
+  background: var(--sai-q0zon0xy-done-bg);
+  color: var(--sai-q0zon0xy-done-fg);
   border: none;
   border-radius: 12px;
   padding: 1rem 1.25rem;
@@ -884,11 +884,11 @@
 /* The button is the positioning context. While loading, the loader overlays
    the button content (label + inline total). Label is kept in the DOM but
    visibility:hidden so the button preserves its width. */
-.sai-pb3tmxq9__cta {
+.sai-q0zon0xy__cta {
   position: relative;
 }
 
-.sai-pb3tmxq9__loader {
+.sai-q0zon0xy__loader {
   position: absolute;
   inset: 0;
   display: inline-flex;
@@ -898,28 +898,28 @@
   pointer-events: none;
 }
 
-.sai-pb3tmxq9__loader[hidden] {
+.sai-q0zon0xy__loader[hidden] {
   display: none;
 }
 
-.sai-pb3tmxq9__cta[data-loading="true"] > :not(.sai-pb3tmxq9__loader) {
+.sai-q0zon0xy__cta[data-loading="true"] > :not(.sai-q0zon0xy__loader) {
   visibility: hidden;
 }
 
-.sai-pb3tmxq9__spinner {
-  inline-size: var(--sai-pb3tmxq9-loader-size);
-  block-size: var(--sai-pb3tmxq9-loader-size);
-  animation: sai-pb3tmxq9-spin 0.8s linear infinite;
+.sai-q0zon0xy__spinner {
+  inline-size: var(--sai-q0zon0xy-loader-size);
+  block-size: var(--sai-q0zon0xy-loader-size);
+  animation: sai-q0zon0xy-spin 0.8s linear infinite;
 }
 
-@keyframes sai-pb3tmxq9-spin {
+@keyframes sai-q0zon0xy-spin {
   to {
     transform: rotate(360deg);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .sai-pb3tmxq9__spinner {
+  .sai-q0zon0xy__spinner {
     animation-duration: 2s;
   }
 }
@@ -1030,7 +1030,7 @@
   {%- comment -%} no recos — collapse widget; do not emit the script tag {%- endcomment -%}
 {%- else -%}
 
-<script src="{{ 'sai-snippet-pb3tmxq9.js' | asset_url }}" async></script>
+<script src="{{ 'sai-snippet-q0zon0xy.js' | asset_url }}" async></script>
 
 {%- comment -%}
   SSR CTA count must match what the JS computes on hydration, or the
@@ -1049,35 +1049,35 @@
   {%- assign total_count = 0 -%}
 {%- endif -%}
 
-<sai-pb3tmxq9 class="sai-pb3tmxq9 sai-pb3tmxq9--{{ layout_class }}">
-  <div class="sai-pb3tmxq9__inner">
-    <h2 class="sai-pb3tmxq9__heading">{{ heading }}</h2>
+<sai-q0zon0xy class="sai-q0zon0xy sai-q0zon0xy--{{ layout_class }}">
+  <div class="sai-q0zon0xy__inner">
+    <h2 class="sai-q0zon0xy__heading">{{ heading }}</h2>
     {%- if section_description != '' -%}
-      <p class="sai-pb3tmxq9__description">{{ section_description }}</p>
+      <p class="sai-q0zon0xy__description">{{ section_description }}</p>
     {%- endif -%}
 
     {%- if layout == 'horizontal' -%}
 
     {%- comment -%} ── Horizontal layout: cards row + side total panel ─────── {%- endcomment -%}
-    <div class="sai-pb3tmxq9__layout">
-      <div class="sai-pb3tmxq9__cards">
+    <div class="sai-q0zon0xy__layout">
+      <div class="sai-q0zon0xy__cards">
 
-        <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main{% unless show_main %} sai-pb3tmxq9__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
-          <label class="sai-pb3tmxq9__checkbox{% if lock_main %} sai-pb3tmxq9__checkbox--locked{% endif %}">
+        <div class="sai-q0zon0xy__card sai-q0zon0xy__card--main{% unless show_main %} sai-q0zon0xy__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
+          <label class="sai-q0zon0xy__checkbox{% if lock_main %} sai-q0zon0xy__checkbox--locked{% endif %}">
             <input type="checkbox" data-fbt-checkbox
               {% if lock_main or default_checked %}checked{% endif %}
               aria-label="Include {{ product.title | escape }}"
               {% if lock_main %}disabled{% endif %}>
-            <span class="sai-pb3tmxq9__checkbox-mark" aria-hidden="true">
+            <span class="sai-q0zon0xy__checkbox-mark" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                 <path d="M3 7L6 10L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
           </label>
-          <a class="sai-pb3tmxq9__media" href="{{ product.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
+          <a class="sai-q0zon0xy__media" href="{{ product.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
             {%- if product.featured_image -%}
               <img
-                class="sai-pb3tmxq9__image"
+                class="sai-q0zon0xy__image"
                 src="{{ product.featured_image | image_url: width: 400 }}"
                 alt="{{ product.featured_image.alt | default: product.title | escape }}"
                 style="{{ image_style }}"
@@ -1085,22 +1085,22 @@
               >
             {%- endif -%}
           </a>
-          <a class="sai-pb3tmxq9__title" href="{{ product.url }}">{{ product.title }}</a>
-          <div class="sai-pb3tmxq9__price-row">
-            <span class="sai-pb3tmxq9__price">{{ product.price | money }}</span>
+          <a class="sai-q0zon0xy__title" href="{{ product.url }}">{{ product.title }}</a>
+          <div class="sai-q0zon0xy__price-row">
+            <span class="sai-q0zon0xy__price">{{ product.price | money }}</span>
             {%- if product.compare_at_price and product.compare_at_price > product.price -%}
-              <span class="sai-pb3tmxq9__compare">{{ product.compare_at_price | money }}</span>
+              <span class="sai-q0zon0xy__compare">{{ product.compare_at_price | money }}</span>
               {%- if show_discount_badge -%}
                 {%- assign p_off_amount = product.compare_at_price | minus: product.price -%}
                 {%- assign p_off_pct = p_off_amount | times: 100 | divided_by: product.compare_at_price -%}
-                <span class="sai-pb3tmxq9__off-badge">{{ p_off_pct }}% OFF</span>
+                <span class="sai-q0zon0xy__off-badge">{{ p_off_pct }}% OFF</span>
               {%- endif -%}
             {%- endif -%}
           </div>
           {%- if product.variants.size > 1 -%}
-            <button type="button" class="sai-pb3tmxq9__variant-trigger" data-variant-trigger aria-haspopup="dialog">
-              <span class="sai-pb3tmxq9__variant-label">{{ product.variants.first.title }}</span>
-              <svg class="sai-pb3tmxq9__chevron" width="12" height="12" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
+            <button type="button" class="sai-q0zon0xy__variant-trigger" data-variant-trigger aria-haspopup="dialog">
+              <span class="sai-q0zon0xy__variant-label">{{ product.variants.first.title }}</span>
+              <svg class="sai-q0zon0xy__chevron" width="12" height="12" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
                 <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
@@ -1111,25 +1111,25 @@
           {%- assign r = all_products[handle] -%}
           {%- if r == empty -%}{%- continue -%}{%- endif -%}
           {%- if forloop.first -%}
-            <div class="sai-pb3tmxq9__plus" aria-hidden="true">
+            <div class="sai-q0zon0xy__plus" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                 <path d="M7 2V12M2 7H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
               </svg>
             </div>
           {%- endif -%}
-          <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--reco" data-product-id="{{ r.id }}">
-            <label class="sai-pb3tmxq9__checkbox">
+          <div class="sai-q0zon0xy__card sai-q0zon0xy__card--reco" data-product-id="{{ r.id }}">
+            <label class="sai-q0zon0xy__checkbox">
               <input type="checkbox" data-fbt-checkbox {% if default_checked %}checked{% endif %} aria-label="Include {{ r.title | escape }}">
-              <span class="sai-pb3tmxq9__checkbox-mark" aria-hidden="true">
+              <span class="sai-q0zon0xy__checkbox-mark" aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                   <path d="M3 7L6 10L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
             </label>
-            <a class="sai-pb3tmxq9__media" href="{{ r.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
+            <a class="sai-q0zon0xy__media" href="{{ r.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
               {%- if r.featured_image -%}
                 <img
-                  class="sai-pb3tmxq9__image"
+                  class="sai-q0zon0xy__image"
                   src="{{ r.featured_image | image_url: width: 400 }}"
                   alt="{{ r.featured_image.alt | default: r.title | escape }}"
                   style="{{ image_style }}"
@@ -1137,22 +1137,22 @@
                 >
               {%- endif -%}
             </a>
-            <a class="sai-pb3tmxq9__title" href="{{ r.url }}">{{ r.title }}</a>
-            <div class="sai-pb3tmxq9__price-row">
-              <span class="sai-pb3tmxq9__price">{{ r.price | money }}</span>
+            <a class="sai-q0zon0xy__title" href="{{ r.url }}">{{ r.title }}</a>
+            <div class="sai-q0zon0xy__price-row">
+              <span class="sai-q0zon0xy__price">{{ r.price | money }}</span>
               {%- if r.compare_at_price and r.compare_at_price > r.price -%}
-                <span class="sai-pb3tmxq9__compare">{{ r.compare_at_price | money }}</span>
+                <span class="sai-q0zon0xy__compare">{{ r.compare_at_price | money }}</span>
                 {%- if show_discount_badge -%}
                   {%- assign r_off_amount = r.compare_at_price | minus: r.price -%}
                   {%- assign r_off_pct = r_off_amount | times: 100 | divided_by: r.compare_at_price -%}
-                  <span class="sai-pb3tmxq9__off-badge">{{ r_off_pct }}% OFF</span>
+                  <span class="sai-q0zon0xy__off-badge">{{ r_off_pct }}% OFF</span>
                 {%- endif -%}
               {%- endif -%}
             </div>
             {%- if r.variants.size > 1 -%}
-              <button type="button" class="sai-pb3tmxq9__variant-trigger" data-variant-trigger aria-haspopup="dialog">
-                <span class="sai-pb3tmxq9__variant-label">{{ r.variants.first.title }}</span>
-                <svg class="sai-pb3tmxq9__chevron" width="12" height="12" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
+              <button type="button" class="sai-q0zon0xy__variant-trigger" data-variant-trigger aria-haspopup="dialog">
+                <span class="sai-q0zon0xy__variant-label">{{ r.variants.first.title }}</span>
+                <svg class="sai-q0zon0xy__chevron" width="12" height="12" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
                   <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
@@ -1161,37 +1161,37 @@
         {%- endfor -%}
       </div>
 
-      <aside class="sai-pb3tmxq9__total sai-pb3tmxq9__total--panel">
+      <aside class="sai-q0zon0xy__total sai-q0zon0xy__total--panel">
         {%- if show_total_price -%}
-          <div class="sai-pb3tmxq9__total-heading">{{ total_label }}</div>
-          <div class="sai-pb3tmxq9__total-row">
-            <div class="sai-pb3tmxq9__total-subtext">{{ total_subtext }}</div>
-            <div class="sai-pb3tmxq9__total-amount" data-fbt-total></div>
+          <div class="sai-q0zon0xy__total-heading">{{ total_label }}</div>
+          <div class="sai-q0zon0xy__total-row">
+            <div class="sai-q0zon0xy__total-subtext">{{ total_subtext }}</div>
+            <div class="sai-q0zon0xy__total-amount" data-fbt-total></div>
           </div>
         {%- endif -%}
-        <button type="button" class="sai-pb3tmxq9__cta" data-fbt-cta>
+        <button type="button" class="sai-q0zon0xy__cta" data-fbt-cta>
           <span data-fbt-cta-label>{{ cta_label }} ({{ total_count }})</span>
-          <span class="sai-pb3tmxq9__loader" data-fbt-loader hidden aria-hidden="true">
-            <svg class="sai-pb3tmxq9__spinner" viewBox="0 0 24 24" fill="none" focusable="false">
+          <span class="sai-q0zon0xy__loader" data-fbt-loader hidden aria-hidden="true">
+            <svg class="sai-q0zon0xy__spinner" viewBox="0 0 24 24" fill="none" focusable="false">
               <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25" stroke-width="3"/>
               <path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
             </svg>
           </span>
         </button>
-        <div class="sai-pb3tmxq9__error" data-fbt-error role="alert" hidden></div>
+        <div class="sai-q0zon0xy__error" data-fbt-error role="alert" hidden></div>
       </aside>
     </div>
 
     {%- else -%}
 
     {%- comment -%} ── Vertical layout: stacked cards + full-width CTA below ── {%- endcomment -%}
-    <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--main{% unless show_main %} sai-pb3tmxq9__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
-      <div class="sai-pb3tmxq9__sub-header">Product on this page</div>
-      <div class="sai-pb3tmxq9__row">
-        <a class="sai-pb3tmxq9__media" href="{{ product.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
+    <div class="sai-q0zon0xy__card sai-q0zon0xy__card--main{% unless show_main %} sai-q0zon0xy__card--hidden{% endunless %}" data-product-id="{{ product.id }}">
+      <div class="sai-q0zon0xy__sub-header">Product on this page</div>
+      <div class="sai-q0zon0xy__row">
+        <a class="sai-q0zon0xy__media" href="{{ product.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
           {%- if product.featured_image -%}
             <img
-              class="sai-pb3tmxq9__image"
+              class="sai-q0zon0xy__image"
               src="{{ product.featured_image | image_url: width: 200 }}"
               alt="{{ product.featured_image.alt | default: product.title | escape }}"
               style="{{ image_style }}"
@@ -1199,42 +1199,42 @@
             >
           {%- endif -%}
         </a>
-        <div class="sai-pb3tmxq9__info">
-          <a class="sai-pb3tmxq9__title" href="{{ product.url }}">{{ product.title }}</a>
-          <div class="sai-pb3tmxq9__price-row">
-            <span class="sai-pb3tmxq9__price">{{ product.price | money }}</span>
+        <div class="sai-q0zon0xy__info">
+          <a class="sai-q0zon0xy__title" href="{{ product.url }}">{{ product.title }}</a>
+          <div class="sai-q0zon0xy__price-row">
+            <span class="sai-q0zon0xy__price">{{ product.price | money }}</span>
             {%- if product.compare_at_price and product.compare_at_price > product.price -%}
               {%- assign p_off_amount = product.compare_at_price | minus: product.price -%}
               {%- assign p_off_pct = p_off_amount | times: 100 | divided_by: product.compare_at_price -%}
-              <span class="sai-pb3tmxq9__compare">{{ product.compare_at_price | money }}</span>
+              <span class="sai-q0zon0xy__compare">{{ product.compare_at_price | money }}</span>
               {%- if show_discount_badge -%}
-                <span class="sai-pb3tmxq9__off-badge">{{ p_off_pct }}% OFF</span>
+                <span class="sai-q0zon0xy__off-badge">{{ p_off_pct }}% OFF</span>
               {%- endif -%}
             {%- endif -%}
           </div>
           {%- if product.variants.size > 1 -%}
-            <button type="button" class="sai-pb3tmxq9__variant-trigger" data-variant-trigger aria-haspopup="dialog">
-              <span class="sai-pb3tmxq9__variant-label">{{ product.variants.first.title }}</span>
-              <svg class="sai-pb3tmxq9__chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
+            <button type="button" class="sai-q0zon0xy__variant-trigger" data-variant-trigger aria-haspopup="dialog">
+              <span class="sai-q0zon0xy__variant-label">{{ product.variants.first.title }}</span>
+              <svg class="sai-q0zon0xy__chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
                 <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </button>
           {%- endif -%}
         </div>
-        <div class="sai-pb3tmxq9__select">
-          <label class="sai-pb3tmxq9__checkbox{% if lock_main %} sai-pb3tmxq9__checkbox--locked{% endif %}">
+        <div class="sai-q0zon0xy__select">
+          <label class="sai-q0zon0xy__checkbox{% if lock_main %} sai-q0zon0xy__checkbox--locked{% endif %}">
             <input type="checkbox" data-fbt-checkbox
               {% if lock_main or default_checked %}checked{% endif %}
               aria-label="Include {{ product.title | escape }}"
               {% if lock_main %}disabled{% endif %}>
-            <span class="sai-pb3tmxq9__checkbox-mark" aria-hidden="true">
+            <span class="sai-q0zon0xy__checkbox-mark" aria-hidden="true">
               <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                 <path d="M3 7L6 10L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </span>
           </label>
           {%- if show_ratings and product.metafields.reviews.rating.value.rating -%}
-            <span class="sai-pb3tmxq9__rating" aria-label="Rating">
+            <span class="sai-q0zon0xy__rating" aria-label="Rating">
               <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" aria-hidden="true">
                 <path d="M7 1L8.8 4.8L13 5.4L10 8.3L10.7 12.5L7 10.5L3.3 12.5L4 8.3L1 5.4L5.2 4.8L7 1Z" fill="currentColor"/>
               </svg>
@@ -1248,12 +1248,12 @@
     {%- for handle in fbt_handles -%}
       {%- assign r = all_products[handle] -%}
       {%- if r == empty -%}{%- continue -%}{%- endif -%}
-      <div class="sai-pb3tmxq9__card sai-pb3tmxq9__card--reco" data-product-id="{{ r.id }}">
-        <div class="sai-pb3tmxq9__row">
-          <a class="sai-pb3tmxq9__media" href="{{ r.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
+      <div class="sai-q0zon0xy__card sai-q0zon0xy__card--reco" data-product-id="{{ r.id }}">
+        <div class="sai-q0zon0xy__row">
+          <a class="sai-q0zon0xy__media" href="{{ r.url }}" style="{{ media_style }}" tabindex="-1" aria-hidden="true">
             {%- if r.featured_image -%}
               <img
-                class="sai-pb3tmxq9__image"
+                class="sai-q0zon0xy__image"
                 src="{{ r.featured_image | image_url: width: 200 }}"
                 alt="{{ r.featured_image.alt | default: r.title | escape }}"
                 style="{{ image_style }}"
@@ -1261,39 +1261,39 @@
               >
             {%- endif -%}
           </a>
-          <div class="sai-pb3tmxq9__info">
-            <a class="sai-pb3tmxq9__title" href="{{ r.url }}">{{ r.title }}</a>
-            <div class="sai-pb3tmxq9__price-row">
-              <span class="sai-pb3tmxq9__price">{{ r.price | money }}</span>
+          <div class="sai-q0zon0xy__info">
+            <a class="sai-q0zon0xy__title" href="{{ r.url }}">{{ r.title }}</a>
+            <div class="sai-q0zon0xy__price-row">
+              <span class="sai-q0zon0xy__price">{{ r.price | money }}</span>
               {%- if r.compare_at_price and r.compare_at_price > r.price -%}
                 {%- assign r_off_amount = r.compare_at_price | minus: r.price -%}
                 {%- assign r_off_pct = r_off_amount | times: 100 | divided_by: r.compare_at_price -%}
-                <span class="sai-pb3tmxq9__compare">{{ r.compare_at_price | money }}</span>
+                <span class="sai-q0zon0xy__compare">{{ r.compare_at_price | money }}</span>
                 {%- if show_discount_badge -%}
-                  <span class="sai-pb3tmxq9__off-badge">{{ r_off_pct }}% OFF</span>
+                  <span class="sai-q0zon0xy__off-badge">{{ r_off_pct }}% OFF</span>
                 {%- endif -%}
               {%- endif -%}
             </div>
             {%- if r.variants.size > 1 -%}
-              <button type="button" class="sai-pb3tmxq9__variant-trigger" data-variant-trigger aria-haspopup="dialog">
-                <span class="sai-pb3tmxq9__variant-label">{{ r.variants.first.title }}</span>
-                <svg class="sai-pb3tmxq9__chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
+              <button type="button" class="sai-q0zon0xy__variant-trigger" data-variant-trigger aria-haspopup="dialog">
+                <span class="sai-q0zon0xy__variant-label">{{ r.variants.first.title }}</span>
+                <svg class="sai-q0zon0xy__chevron" width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false" aria-hidden="true">
                   <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </button>
             {%- endif -%}
           </div>
-          <div class="sai-pb3tmxq9__select">
-            <label class="sai-pb3tmxq9__checkbox">
+          <div class="sai-q0zon0xy__select">
+            <label class="sai-q0zon0xy__checkbox">
               <input type="checkbox" data-fbt-checkbox {% if default_checked %}checked{% endif %} aria-label="Include {{ r.title | escape }}">
-              <span class="sai-pb3tmxq9__checkbox-mark" aria-hidden="true">
+              <span class="sai-q0zon0xy__checkbox-mark" aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                   <path d="M3 7L6 10L11 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
               </span>
             </label>
             {%- if show_ratings and r.metafields.reviews.rating.value.rating -%}
-              <span class="sai-pb3tmxq9__rating" aria-label="Rating">
+              <span class="sai-q0zon0xy__rating" aria-label="Rating">
                 <svg width="14" height="14" viewBox="0 0 14 14" focusable="false" aria-hidden="true">
                   <path d="M7 1L8.8 4.8L13 5.4L10 8.3L10.7 12.5L7 10.5L3.3 12.5L4 8.3L1 5.4L5.2 4.8L7 1Z" fill="currentColor"/>
                 </svg>
@@ -1305,24 +1305,24 @@
       </div>
     {%- endfor -%}
 
-    <button type="button" class="sai-pb3tmxq9__cta sai-pb3tmxq9__cta--vertical" data-fbt-cta>
+    <button type="button" class="sai-q0zon0xy__cta sai-q0zon0xy__cta--vertical" data-fbt-cta>
       <span data-fbt-cta-label>{{ cta_label }} ({{ total_count }})</span>
       {%- if show_total_price -%}
-        <span class="sai-pb3tmxq9__total sai-pb3tmxq9__total--inline">
-          <span class="sai-pb3tmxq9__total-inline-label">{{ total_label }}</span>
-          <span class="sai-pb3tmxq9__total-separator" aria-hidden="true">—</span>
-          <span class="sai-pb3tmxq9__total-amount" data-fbt-total></span>
+        <span class="sai-q0zon0xy__total sai-q0zon0xy__total--inline">
+          <span class="sai-q0zon0xy__total-inline-label">{{ total_label }}</span>
+          <span class="sai-q0zon0xy__total-separator" aria-hidden="true">—</span>
+          <span class="sai-q0zon0xy__total-amount" data-fbt-total></span>
         </span>
       {%- endif -%}
-      <span class="sai-pb3tmxq9__loader" data-fbt-loader hidden aria-hidden="true">
-        <svg class="sai-pb3tmxq9__spinner" viewBox="0 0 24 24" fill="none" focusable="false">
+      <span class="sai-q0zon0xy__loader" data-fbt-loader hidden aria-hidden="true">
+        <svg class="sai-q0zon0xy__spinner" viewBox="0 0 24 24" fill="none" focusable="false">
           <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-opacity="0.25" stroke-width="3"/>
           <path d="M22 12a10 10 0 0 0-10-10" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
         </svg>
       </span>
     </button>
 
-    <div class="sai-pb3tmxq9__error" data-fbt-error role="alert" hidden></div>
+    <div class="sai-q0zon0xy__error" data-fbt-error role="alert" hidden></div>
 
     {%- endif -%}
 
@@ -1399,6 +1399,6 @@
 }
     </script>
   </div>
-</sai-pb3tmxq9>
+</sai-q0zon0xy>
 
 {%- endif -%}
