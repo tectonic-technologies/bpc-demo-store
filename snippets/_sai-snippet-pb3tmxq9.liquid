@@ -95,6 +95,12 @@
   display: block;
   box-sizing: border-box;
   inline-size: 100%;
+  /* Query container: the horizontal layout must respond to the width it is
+     actually placed in (e.g. a narrow PDP details column), not the viewport.
+     Viewport media queries below would otherwise apply the wide two-column
+     layout inside a narrow column and overflow. */
+  container-type: inline-size;
+  container-name: sai-pb3tmxq9;
   margin-inline: auto;
   margin-block: var(--sai-size-6);
   font-family: var(--sai-font-body);
@@ -387,7 +393,7 @@
   align-items: stretch;
 }
 
-@media (min-width: 768px) {
+@container sai-pb3tmxq9 (min-width: 768px) {
   .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__layout {
     grid-template-columns: minmax(0, 1fr) 26rem;
     gap: var(--sai-size-5);
@@ -405,7 +411,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-@media (max-width: 560px) {
+@container sai-pb3tmxq9 (max-width: 767.98px) {
   .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__cards {
     overflow-x: auto;
   }
@@ -444,7 +450,7 @@
   padding: var(--sai-size-3);
 }
 
-@media (max-width: 560px) {
+@container sai-pb3tmxq9 (max-width: 767.98px) {
   .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__card {
     flex: 0 0 11rem;
   }
@@ -652,7 +658,7 @@
   flex-wrap: nowrap;
 }
 
-@media (max-width: 540px) {
+@container sai-pb3tmxq9 (max-width: 540px) {
   .sai-pb3tmxq9--horizontal .sai-pb3tmxq9__total-row {
     flex-wrap: wrap;
   }
