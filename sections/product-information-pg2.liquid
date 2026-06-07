@@ -21,6 +21,8 @@
 {%- unless request.design_mode -%}
 {%- if _sai_preview and _sai_url contains '_spectrum_ai_preview=pg2' or _sai_url contains '|pg2|' -%}
   {% render '_sai-ilwuhumcldjq6na7u0a4p5i6', sai_state: 'draft' %}
+{%- else -%}
+  {% render '_sai-ilwuhumcldjq6na7u0a4p5i6', sai_state: 'live' %}
 {%- endif -%}
 {%- endunless -%}
 {%- comment -%}
