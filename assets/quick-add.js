@@ -1,4 +1,4 @@
-// quick-add open-reliability fix v2 (deploy 2026-06-17)
+// quick-add lean-chooser + open-reliability fix v3 (deploy 2026-06-17)
 import { morph } from '@theme/morph';
 import { Component } from '@theme/component';
 import { CartUpdateEvent, ThemeEvents, VariantSelectedEvent } from '@theme/events';
@@ -223,37 +223,39 @@ export class QuickAddComponent extends Component {
 
     if (!productGrid || !modalContent) return;
 
-    if (isMobileBreakpoint()) {
-      const productDetails = productGrid.querySelector('.product-details');
-      const productFormComponent = productGrid.querySelector('product-form-component');
-      const variantPicker = productGrid.querySelector('variant-picker');
-      const productPrice = productGrid.querySelector('product-price');
-      const productTitle = document.createElement('a');
-      productTitle.textContent = this.dataset.productTitle || '';
+    // MAREN fix: the quick-add modal originally cloned the entire product page grid
+    // ([data-product-grid-content]) on desktop. On this store that grid is a full PDP
+    // (media gallery + every custom content module: reviews, A+, FAQ, product groups,
+    // plus their own dialogs). Morphing all of it into the modal froze the renderer, so
+    // the dialog never opened and the popup appeared blank. Build a lean chooser for all
+    // breakpoints instead: product header (title + price), variant picker, add-to-cart.
+    const productFormComponent = productGrid.querySelector('product-form-component');
+    const variantPicker = productGrid.querySelector('variant-picker');
+    const productPrice = productGrid.querySelector('product-price');
 
-      // Make product title as a link to the product page
-      productTitle.href = this.productPageUrl;
+    const productTitle = document.createElement('a');
+    productTitle.textContent = this.dataset.productTitle || '';
+    // Make product title a link to the product page
+    productTitle.href = this.productPageUrl;
 
-      const productHeader = document.createElement('div');
-      productHeader.classList.add('product-header');
-
-      productHeader.appendChild(productTitle);
-      if (productPrice) {
-        productHeader.appendChild(productPrice);
-      }
-      productGrid.appendChild(productHeader);
-
-      if (variantPicker) {
-        productGrid.appendChild(variantPicker);
-      }
-      if (productFormComponent) {
-        productGrid.appendChild(productFormComponent);
-      }
-
-      productDetails?.remove();
+    const productHeader = document.createElement('div');
+    productHeader.classList.add('product-header');
+    productHeader.appendChild(productTitle);
+    if (productPrice) {
+      productHeader.appendChild(productPrice);
     }
 
-    morph(modalContent, productGrid);
+    const lean = document.createElement('div');
+    lean.classList.add('product-details', 'quick-add-lean', 'sticky-content');
+    lean.appendChild(productHeader);
+    if (variantPicker) {
+      lean.appendChild(variantPicker);
+    }
+    if (productFormComponent) {
+      lean.appendChild(productFormComponent);
+    }
+
+    morph(modalContent, lean);
 
     this.#syncVariantSelection(modalContent);
   }
