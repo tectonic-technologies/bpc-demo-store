@@ -593,4 +593,18 @@
       transform: translateY(0);
     }
   }
+
+  /* MAREN: hide PDP module blocks inside the quick-add chooser. They live in
+     product-details (cloned via [data-product-grid-content]); the popup should
+     only show the gallery, variant picker and add-to-cart. */
+  #quick-add-modal-content :is(
+    .maren-social-proof,
+    .maren-reviews,
+    .maren-faq,
+    .maren-fbt,
+    .maren-aplus,
+    .maren-product-groups
+  ) {
+    display: none !important;
+  }
 {% endstylesheet %}
