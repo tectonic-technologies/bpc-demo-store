@@ -1,4 +1,4 @@
-// quick-add lean-chooser + open-reliability fix v3 (deploy 2026-06-17)
+// quick-add: route variant 'Choose' to PDP (modal disabled) v4 (deploy 2026-06-17)
 import { morph } from '@theme/morph';
 import { Component } from '@theme/component';
 import { CartUpdateEvent, ThemeEvents, VariantSelectedEvent } from '@theme/events';
@@ -91,32 +91,16 @@ export class QuickAddComponent extends Component {
   handleClick = async (event) => {
     event.preventDefault();
 
-    const currentUrl = this.productPageUrl;
-
-    // Check if we have cached content for this URL
-    let productGrid = this.#cachedContent.get(currentUrl);
-
-    if (!productGrid) {
-      // Fetch and cache the content
-      const html = await this.fetchProductPage(currentUrl);
-      if (html) {
-        const gridElement = html.querySelector('[data-product-grid-content]');
-        if (gridElement) {
-          // Cache the cloned element to avoid modifying the original
-          productGrid = /** @type {Element} */ (gridElement.cloneNode(true));
-          this.#cachedContent.set(currentUrl, productGrid);
-        }
-      }
+    // MAREN: the theme's quick-add modal is unreliable on this store. The dialog-open
+    // step intermittently fails to open (and force-opening it freezes the renderer),
+    // so the "Choose" popup appeared blank for variant products. Until that theme bug is
+    // fixed, route shoppers to the product page, where the variant picker and add-to-cart
+    // work correctly. The single-variant "Add" button is unaffected (it submits via
+    // product-form-component, not this handler).
+    const url = this.productPageUrl;
+    if (url) {
+      window.location.assign(url);
     }
-
-    if (productGrid) {
-      // Use a fresh clone from the cache
-      const freshContent = /** @type {Element} */ (productGrid.cloneNode(true));
-      await this.updateQuickAddModal(freshContent);
-      this.#updateVariantPicker(productGrid);
-    }
-
-    this.#openQuickAddModal();
   };
 
   #resetScroll() {
