@@ -119,9 +119,7 @@
   SPECTRUM_AI_SLOT:END handle=mut-xew12s8jdfnccqy4tq205dla
 {%- endcomment -%}
       </div>
-      <div class="sai-pdp-row sai-pdp-row--product-groups">
-        {% content_for 'block', type: 'maren-product-groups', id: 'maren_product_groups', closest.product: closest.product %}
-      </div>
+      {%- comment -%} maren-product-groups removed: it rendered the product's own shades as a second swatch row, duplicating the variant picker above {%- endcomment -%}
       <div class="sai-pdp-row sai-pdp-row--aplus">
         {% content_for 'block', type: 'maren-aplus', id: 'maren_aplus', closest.product: closest.product %}
       </div>
