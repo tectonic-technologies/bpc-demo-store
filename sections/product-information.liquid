@@ -332,16 +332,25 @@
      stick the media BELOW the header instead of underneath it, and collapse the
      portrait container ratio so a square image isn't letterboxed. */
   @media screen and (min-width: 750px) {
+    /* Stick the media below the header (with a 16px gap) so it never slides under
+       the navbar on scroll. */
     .product-information--media-left .product-information__media,
     .product-information--media-right .product-information__media {
       top: calc(var(--sticky-header-offset, 66px) + 16px);
     }
+    /* The theme pulls the gallery up under the transparent header with a negative
+       margin (full-bleed), which makes the product image collide with the navbar.
+       Override it so the image sits below the header with a clear gap. */
+    .product-information__media media-gallery {
+      margin-block-start: 24px !important;
+    }
     /* Square container (product shots are square) capped to the height that
-       remains under the 66px header, centred in the column. This makes the image
-       as large as possible while its bottom stays above the fold. */
+       remains under the 66px header plus top/bottom breathing room, centred in the
+       column. Largest image that keeps its top clear of the navbar and its bottom
+       above the fold. */
     .product-information__media .product-media-container {
       aspect-ratio: 1 / 1;
-      max-height: calc(100vh - var(--sticky-header-offset, 66px) - 56px);
+      max-height: calc(100vh - var(--sticky-header-offset, 66px) - 96px);
       margin-inline: auto;
     }
     .product-information__media .product-media-container img,
