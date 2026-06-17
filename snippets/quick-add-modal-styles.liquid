@@ -594,17 +594,15 @@
     }
   }
 
-  /* MAREN: hide PDP module blocks inside the quick-add chooser. They live in
-     product-details (cloned via [data-product-grid-content]); the popup should
-     only show the gallery, variant picker and add-to-cart. */
-  #quick-add-modal-content :is(
-    .maren-social-proof,
-    .maren-reviews,
-    .maren-faq,
-    .maren-fbt,
-    .maren-aplus,
-    .maren-product-groups
-  ) {
+  /* MAREN/Spectrum: hide PDP adornment blocks inside the quick-add chooser.
+     They live in product-details and get cloned via [data-product-grid-content];
+     the popup should only show the gallery, variant picker and add-to-cart.
+     Covers maren-* blocks (e.g. maren-pg, maren-watchlist) and the
+     spectrum-pdp-drawer (overlay/panel that otherwise breaks the popup). */
+  #quick-add-modal-content [class^="maren-"],
+  #quick-add-modal-content [class*=" maren-"],
+  #quick-add-modal-content [class^="spectrum-pdp-drawer"],
+  #quick-add-modal-content [class*=" spectrum-pdp-drawer"] {
     display: none !important;
   }
 {% endstylesheet %}
