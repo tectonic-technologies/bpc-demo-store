@@ -1,0 +1,399 @@
+{%- comment -%}
+  Low Inventory — PDP scarcity signal.
+
+  Wrapper contract (per docs/tech/studio-liquid-snippets.md "Library Snippets"):
+    - variant            : default variant from mo.variants.value.variants
+                           variant.content carries the snippet settings.
+    - mo                 : spectrum_snippet_instance metaobject drop (unused v1).
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div).
+    - experience_handle  : (consumed by wrapper outer div).
+
+  Inventory data source: per-Shopify-variant metafield
+  spectrum.inventory_callout (json). Shape per row:
+    { targetingTree, availableQuantity, totalQuantity? }
+  Multiple rows may exist; client-side targeting picks the winning row and
+  the snippet hides if no row matches the visitor.
+
+  SSR renders the first-row-derived tier in the matched tier's effective
+  display mode (tier.display_type || settings.display_type) so the layout
+  is in place before JS runs. The inner container starts at
+  data-spectrum-vis="off"; JS flips to "on" only after targeting + tier
+  selection succeed.
+{%- endcomment -%}
+
+{% stylesheet %}
+/*
+ * Low Inventory — author static rules.
+ *
+ * Two display modes share one DOM. The resolved mode lives on the root via
+ * `data-spectrum-mode="inline" | "meter"`. Inline mode is the lightweight
+ * single-line treatment (icon + message). Meter mode is the card treatment
+ * (icon badge + heading + optional sub-message + horizontal depletion bar).
+ *
+ * Author selectors stay at single-class specificity (0,1,0) so per-instance
+ * baked rules anchored on [data-spectrum-instance-id][data-spectrum-variant-id]
+ * always win the cascade.
+ *
+ * Font: inherit everywhere so the theme drives typography. Sizes are em so
+ * they scale with the theme's body font even on themes that use
+ * `html { font-size: 62.5% }` (Dawn family).
+ */
+
+.sai-ur0h3zgp {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625em;
+  max-width: 100%;
+  font-family: inherit;
+  color: inherit;
+  line-height: 1.35;
+}
+
+.sai-ur0h3zgp[data-spectrum-vis="off"] {
+  display: none;
+}
+
+/* Grid + place-items centers emoji glyphs reliably; flex+align-items aligns
+ * line boxes, not glyph cap-heights, which leaves emoji visually low/high. */
+.sai-ur0h3zgp__icon-badge {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  line-height: 1;
+  text-align: center;
+}
+
+.sai-ur0h3zgp__icon {
+  display: block;
+  line-height: 1;
+  text-align: center;
+}
+
+.sai-ur0h3zgp__icon--emoji {
+  font-size: 1.05em;
+}
+
+.sai-ur0h3zgp__icon--image {
+  width: 1.25em;
+  height: 1.25em;
+  object-fit: contain;
+}
+
+.sai-ur0h3zgp__content {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.125em;
+  min-width: 0;
+}
+
+.sai-ur0h3zgp__message {
+  font-family: inherit;
+  font-size: 0.95em;
+  font-weight: 600;
+}
+
+.sai-ur0h3zgp__sub-message {
+  font-family: inherit;
+  font-size: 0.825em;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.sai-ur0h3zgp--urgent .sai-ur0h3zgp__message {
+  color: var(--sai-ur0h3zgp-urgent-color, #c0392b);
+}
+
+/* ── Meter ── */
+
+.sai-ur0h3zgp__meter {
+  width: 100%;
+  margin-top: 0.5em;
+}
+
+/* Theme defense: themes commonly ship `div:empty { display: none }` (Dawn etc.)
+ * which would hide our intentionally-empty meter chrome divs. The `:empty`
+ * pseudo on a class selector wins specificity over the element-selector rule.
+ * Keep this rule narrow (display only) so it doesn't trample the visual
+ * rules below — pairing `:empty` with `background` previously pinned the fill
+ * to currentColor and overrode the bucket colours. */
+.sai-ur0h3zgp__meter-track:empty,
+.sai-ur0h3zgp__meter-fill:empty {
+  display: block;
+}
+
+.sai-ur0h3zgp__meter-track {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 10px;
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.sai-ur0h3zgp__meter-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  /* Floor — keep a visible sliver even when availableQuantity/total < ~1%. */
+  min-width: 10px;
+  border-radius: inherit;
+  background: currentColor;
+  transition: width 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.sai-ur0h3zgp__meter-fill--high {
+  background: var(--sai-ur0h3zgp-meter-high, #2e7d32);
+}
+
+.sai-ur0h3zgp__meter-fill--medium {
+  background: var(--sai-ur0h3zgp-meter-medium, #ed8936);
+}
+
+.sai-ur0h3zgp__meter-fill--low {
+  background: var(--sai-ur0h3zgp-meter-low, #c0392b);
+}
+
+/* ── Mode: inline ── icon + message, no chrome ── */
+
+.sai-ur0h3zgp[data-spectrum-mode="inline"] .sai-ur0h3zgp__icon-badge {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* ── Mode: meter ── card chrome, icon badge, stacked text + bar ── */
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"] {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.875em;
+  padding: 0.875em 1em;
+  background: var(--sai-ur0h3zgp-card-bg, rgba(0, 0, 0, 0.04));
+  border-radius: 12px;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"] .sai-ur0h3zgp__icon-badge {
+  width: 2.25em;
+  height: 2.25em;
+  border-radius: 999px;
+  background: var(--sai-ur0h3zgp-badge-bg, rgba(0, 0, 0, 0.12));
+  color: var(--sai-ur0h3zgp-badge-fg, currentColor);
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"] .sai-ur0h3zgp__icon--emoji {
+  font-size: 1em;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"] .sai-ur0h3zgp__content {
+  flex: 1 1 auto;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"] .sai-ur0h3zgp__message {
+  font-size: 0.95em;
+  font-weight: 700;
+}
+
+/* ── Urgent: card tint + accent fill ── */
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent {
+  --sai-ur0h3zgp-card-bg: rgba(234, 88, 12, 0.08);
+  --sai-ur0h3zgp-badge-bg: rgba(234, 88, 12, 0.18);
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__meter-track {
+  background: rgba(234, 88, 12, 0.18);
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__meter-fill,
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__meter-fill--low,
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__meter-fill--medium,
+.sai-ur0h3zgp[data-spectrum-mode="meter"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__meter-fill--high {
+  background: var(--sai-ur0h3zgp-urgent-fill, #ea580c);
+}
+
+/* ── Pulse ── */
+
+@media (prefers-reduced-motion: no-preference) {
+  .sai-ur0h3zgp--urgent.sai-ur0h3zgp--pulse .sai-ur0h3zgp__icon {
+    animation: sai-ur0h3zgp-pulse var(--sai-ur0h3zgp-pulse-duration, 3000ms) ease-in-out infinite;
+    transform-origin: center;
+    will-change: transform;
+  }
+
+  @keyframes sai-ur0h3zgp-pulse {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.18);
+    }
+  }
+}
+{% endstylesheet %}
+
+{%- liquid
+  assign settings = variant.content
+  assign default_mode = settings.display_type | default: 'inline'
+  assign default_icon_emoji = settings.icon_emoji | default: '🔥'
+  assign default_icon_image_url = ''
+  if settings.icon_image != blank
+    assign default_icon_image_url = settings.icon_image.url | default: ''
+  endif
+  assign stock_templates = settings.stock_templates
+
+  comment
+    SSR initial-row resolution. The full per-variant rows array is emitted in
+    a JSON island below so the JS can re-pick on Shopify-variant change.
+  endcomment
+  assign initial_variant = product.selected_or_first_available_variant
+  assign initial_rows = initial_variant.metafields.spectrum.inventory_callout.value
+  assign initial_row = nil
+  assign initial_qty = nil
+  assign initial_total = nil
+-%}
+{%- if initial_rows != blank -%}
+  {%- for row in initial_rows limit: 1 -%}
+    {%- assign initial_row = row -%}
+  {%- endfor -%}
+{%- endif -%}
+{%- if initial_row != nil -%}
+  {%- assign initial_qty = initial_row.availableQuantity -%}
+  {%- assign initial_total = initial_row.totalQuantity -%}
+{%- endif -%}
+
+{%- comment -%}
+  Tier match for SSR. When no tier matches, the snippet renders empty and
+  stays vis=off; JS will keep it hidden.
+{%- endcomment -%}
+{%- assign matched_tier = nil -%}
+{%- if initial_qty != nil and stock_templates != blank -%}
+  {%- for t in stock_templates -%}
+    {%- if matched_tier == nil and initial_qty >= t.min_stock and initial_qty <= t.max_stock -%}
+      {%- assign matched_tier = t -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- assign effective_mode = default_mode -%}
+{%- assign message_text = '' -%}
+{%- assign sub_message_text = '' -%}
+{%- assign tier_icon_emoji = '' -%}
+{%- assign tier_icon_image_url = '' -%}
+{%- assign is_urgent_initial = false -%}
+{%- if matched_tier != nil -%}
+  {%- if matched_tier.display_type == 'inline' or matched_tier.display_type == 'meter' -%}
+    {%- assign effective_mode = matched_tier.display_type -%}
+  {%- endif -%}
+  {%- assign message_text = matched_tier.message | default: '' | replace: '{count}', initial_qty -%}
+  {%- assign sub_message_text = matched_tier.sub_message | default: '' | replace: '{count}', initial_qty -%}
+  {%- assign tier_icon_emoji = matched_tier.icon_emoji | default: '' -%}
+  {%- assign tier_icon_image_url = matched_tier.icon_image_url | default: '' -%}
+  {%- if settings.urgency_escalation_enabled and matched_tier.urgency -%}
+    {%- assign is_urgent_initial = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}── Effective icon — tier overrides win, then top-level image, then emoji. ──{%- endcomment -%}
+{%- assign effective_icon_image_url = '' -%}
+{%- assign effective_icon_emoji = default_icon_emoji -%}
+{%- if tier_icon_image_url != '' -%}
+  {%- assign effective_icon_image_url = tier_icon_image_url -%}
+{%- elsif tier_icon_emoji != '' -%}
+  {%- assign effective_icon_emoji = tier_icon_emoji -%}
+  {%- assign effective_icon_image_url = '' -%}
+{%- elsif default_icon_image_url != '' -%}
+  {%- assign effective_icon_image_url = default_icon_image_url -%}
+{%- endif -%}
+
+{%- comment -%}── Meter SSR — fill width + bucket class derived from first row. ──{%- endcomment -%}
+{%- assign meter_pct = 0 -%}
+{%- assign meter_bucket = 'low' -%}
+{%- if initial_qty != nil -%}
+  {%- assign meter_total = initial_total -%}
+  {%- if meter_total == nil or meter_total == blank or meter_total == 0 -%}
+    {%- assign meter_total = settings.meter_initial_quantity_fallback | default: 100 -%}
+  {%- endif -%}
+  {%- assign meter_pct = initial_qty | times: 100.0 | divided_by: meter_total -%}
+  {%- if meter_pct > 100 -%}{%- assign meter_pct = 100 -%}{%- endif -%}
+  {%- if meter_pct < 0 -%}{%- assign meter_pct = 0 -%}{%- endif -%}
+  {%- assign high_t = settings.meter_high_threshold_pct | default: 50 -%}
+  {%- assign low_t = settings.meter_low_threshold_pct | default: 20 -%}
+  {%- if meter_pct >= high_t -%}
+    {%- assign meter_bucket = 'high' -%}
+  {%- elsif meter_pct >= low_t -%}
+    {%- assign meter_bucket = 'medium' -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+  Per-variant inventory rows. Key is a string (JSON object keys MUST be
+  strings) — coerce v.id with `| append: ''` per generated-liquid rule #4.
+  Value is the raw metafield JSON (rows array or nil). Rule #5: every
+  interpolation in <script type="application/json"> pipes through | json.
+{%- endcomment -%}
+<script type="application/json" data-spectrum-ur0h3zgp-inv-callouts>
+{
+{%- for v in product.variants -%}
+  {{ v.id | append: '' | json }}: {{ v.metafields.spectrum.inventory_callout.value | json }}{%- unless forloop.last -%},{%- endunless -%}
+{%- endfor -%}
+}
+</script>
+
+<script type="application/json" data-spectrum-ur0h3zgp-initial-variant>
+{{ product.selected_or_first_available_variant.id | append: '' | json }}
+</script>
+
+<script type="application/json" data-spectrum-ur0h3zgp-settings>
+{
+  "display_type": {{ default_mode | json }},
+  "stock_templates": {{ settings.stock_templates | json }},
+  "icon_emoji": {{ default_icon_emoji | json }},
+  "icon_image_url": {{ default_icon_image_url | json }},
+  "urgency_escalation_enabled": {{ settings.urgency_escalation_enabled | json }},
+  "meter_high_threshold_pct": {{ settings.meter_high_threshold_pct | json }},
+  "meter_low_threshold_pct": {{ settings.meter_low_threshold_pct | json }},
+  "meter_initial_quantity_fallback": {{ settings.meter_initial_quantity_fallback | json }},
+  "pulse_animation": {{ settings.pulse_animation | json }},
+  "pulse_interval_ms": {{ settings.pulse_interval_ms | json }}
+}
+</script>
+
+<div
+  class="sai-ur0h3zgp{% if is_urgent_initial %} sai-ur0h3zgp--urgent{% endif %}"
+  data-spectrum-vis="off"
+  data-spectrum-mode="{{ effective_mode }}"
+  aria-live="polite"
+  aria-label="Product availability"
+>
+  <span class="sai-ur0h3zgp__icon-badge" aria-hidden="true">
+    {%- if effective_icon_image_url != '' -%}
+      <img class="sai-ur0h3zgp__icon sai-ur0h3zgp__icon--image" src="{{ effective_icon_image_url | escape }}" alt="" loading="lazy" decoding="async">
+    {%- else -%}
+      <span class="sai-ur0h3zgp__icon sai-ur0h3zgp__icon--emoji">{{ effective_icon_emoji | escape }}</span>
+    {%- endif -%}
+  </span>
+  <div class="sai-ur0h3zgp__content">
+    <span class="sai-ur0h3zgp__message">{{ message_text | escape }}</span>
+    <span class="sai-ur0h3zgp__sub-message"{% if sub_message_text == '' %} hidden{% endif %}>{{ sub_message_text | escape }}</span>
+    <div
+      class="sai-ur0h3zgp__meter"
+      {% if effective_mode != 'meter' %}hidden{% endif %}
+      role="progressbar"
+      aria-valuemin="0"
+      aria-valuemax="100"
+      aria-valuenow="{{ meter_pct | round: 0 }}"
+    >
+      <div class="sai-ur0h3zgp__meter-track">
+        <div
+          class="sai-ur0h3zgp__meter-fill sai-ur0h3zgp__meter-fill--{{ meter_bucket }}"
+          style="width: {{ meter_pct }}%;"
+        ></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'sai-snippet-ur0h3zgp.js' | asset_url }}" defer></script>

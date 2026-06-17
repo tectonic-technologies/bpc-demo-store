@@ -1,0 +1,998 @@
+{%- comment -%}
+  Quantity Bundles — JS-rendered PDP quantity tier selector.
+
+  entry.content is the normalized quantity bundle slot content. Product variant
+  data is intentionally read from the Liquid product at render time so bundle
+  metafields do not duplicate Shopify's variant matrix.
+{%- endcomment -%}
+
+{% stylesheet %}
+/*
+  Quantity Bundles — author styles. Shopify auto-bundles per-page (one block
+  per .liquid is the platform hard limit; enforced at catalog build).
+  Per-instance baked CSS (background / spacing / typography / …) is emitted
+  by the wrapper as <style data-spectrum-style>; author selectors stay at
+  (0,1,0) so per-instance rules always win the cascade.
+
+  Theme variables only (no hardcoded colors / fonts / spacing) so the snippet
+  inherits each merchant theme's tokens.
+*/
+
+.sai-qbpdp001 {
+  /* Palette inherits from platform `--sai-*` tokens (defined in
+     _sai-artifacts.liquid) when the merchant theme provides them, falling
+     back to opinionated defaults that match the original baked-in palette.
+     This lets a Dawn dark-mode theme (or any merchant that exposes
+     --color-background / --color-foreground / --color-error) flow into the
+     bundle without per-snippet config. The four snippet-local tokens
+     (muted / border / border-hover / surface-*) have no SAI equivalent
+     today — keep them inline. */
+  --qb-fg: var(--sai-color-fg, #111111);
+  --qb-bg: var(--sai-color-bg, #ffffff);
+  --qb-fg-on-primary: var(--sai-color-primary-fg, #ffffff);
+  --qb-border-strong: var(--sai-color-fg, #111111);
+  --qb-error: var(--sai-color-error, #dc2626);
+  --qb-muted: #6b7280;
+  --qb-border: #e5e7eb;
+  --qb-border-hover: #cbd5e1;
+  --qb-surface-soft: #f9fafb;
+  --qb-surface-tint: #f3f4f6;
+  --qb-success: #16a34a;
+  --qb-radius: 12px;
+  --qb-radius-sm: 8px;
+
+  display: block;
+  width: 100%;
+  max-width: 520px;
+  margin: 24px auto;
+  color: var(--qb-fg);
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* Specificity tie-break: .sai-qbpdp001 { display: block } above (0,1,0)
+   overrides the UA stylesheet's [hidden] { display: none } (0,1,0) by source
+   order, so setting `this.hidden = true` in JS does nothing without this
+   class-anchored override. Used by _hideExpired() to collapse the snippet
+   when the countdown reaches zero. */
+.sai-qbpdp001[hidden] {
+  display: none;
+}
+
+.sai-qbpdp001__container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.sai-qbpdp001__root {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sai-qbpdp001__heading {
+  margin: 0 0 4px;
+  color: var(--qb-fg);
+  font-family: inherit;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.sai-qbpdp001__tiers {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sai-qbpdp001__tier {
+  display: grid;
+  grid-template-columns: 22px auto 1fr auto;
+  column-gap: 14px;
+  row-gap: 8px;
+  align-items: center;
+  width: 100%;
+  padding: 18px 20px;
+  border: 1.5px solid var(--qb-border);
+  border-radius: var(--qb-radius);
+  background: var(--qb-bg);
+  color: var(--qb-fg);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+  position: relative;
+  font: inherit;
+}
+
+.sai-qbpdp001__tier::before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--qb-border-hover);
+  border-radius: 50%;
+  background: var(--qb-bg);
+  box-sizing: border-box;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.sai-qbpdp001__tier:hover {
+  border-color: var(--qb-border-hover);
+}
+
+.sai-qbpdp001__tier--selected {
+  border-color: var(--qb-border-strong);
+  box-shadow: inset 0 0 0 1px var(--qb-border-strong);
+  background: var(--qb-surface-soft);
+}
+
+.sai-qbpdp001__tier--selected::before {
+  border-color: var(--qb-border-strong);
+  background: radial-gradient(circle, var(--qb-border-strong) 45%, transparent 47%);
+}
+
+/* Countdown banner attached to the bottom edge of a tier card.
+   Spans every grid column and uses negative side+bottom margins matched to the
+   card's padding so it sits flush against the card's inner border. Border-radius
+   is the card radius minus the 1.5px border so the banner's bottom corners
+   align with the card's inner edge. */
+.sai-qbpdp001__timer {
+  grid-column: 1 / -1;
+  margin: 14px -20px -18px -20px;
+  padding: 10px 16px;
+  background: var(--qb-surface-tint);
+  border-top: 1px solid var(--qb-border);
+  border-radius: 0 0 calc(var(--qb-radius) - 1.5px) calc(var(--qb-radius) - 1.5px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  font-size: 0.875rem;
+  line-height: 1.2;
+  color: var(--qb-fg);
+}
+
+.sai-qbpdp001__timer-prefix {
+  font-weight: 600;
+}
+
+.sai-qbpdp001__timer-countdown {
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* Inline placement — banner sits above the bundle heading, full-width inside
+   the snippet container. No card-bleed negative margins, full rounded radius
+   on all four corners, and own border (since there's no parent card edge to
+   join). Otherwise visually identical to the bottom-of-card variant. */
+.sai-qbpdp001__timer--inline {
+  grid-column: auto;
+  margin: 0 0 4px 0;
+  padding: 10px 16px;
+  border: 1px solid var(--qb-border);
+  border-radius: var(--qb-radius-sm);
+}
+
+/* The card's selected-state ring stacks the outer 1.5px border on top of an
+   inset 1px box-shadow. The timer band sits inside the card's border but its
+   background covers the inset ring on the L/R/B edges — without these overrides
+   the bottom half of the card looks 1px thinner than the top.
+   Mirror the inset ring on the timer itself and switch the internal divider
+   to track the parent's current border colour. */
+.sai-qbpdp001__tier:hover .sai-qbpdp001__timer {
+  border-top-color: var(--qb-border-hover);
+}
+
+.sai-qbpdp001__tier--selected .sai-qbpdp001__timer {
+  border-top-color: var(--qb-border-strong);
+  box-shadow: inset 1px 0 0 0 var(--qb-border-strong), inset -1px 0 0 0 var(--qb-border-strong),
+    inset 0 -1px 0 0 var(--qb-border-strong);
+}
+
+.sai-qbpdp001__thumbs {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sai-qbpdp001__thumb {
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  overflow: hidden;
+  border: 1.5px solid var(--qb-bg);
+  border-radius: 8px;
+  background: var(--qb-surface-soft);
+  box-shadow: 0 0 0 1px var(--qb-border);
+}
+
+.sai-qbpdp001__thumb--overlap {
+  margin-left: -14px;
+}
+
+.sai-qbpdp001__thumb-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sai-qbpdp001__thumb--empty {
+  display: grid;
+  place-items: center;
+  color: var(--qb-muted);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.sai-qbpdp001__tier-main {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sai-qbpdp001__tier-title {
+  /* inline-flex so per-tier inline-asset images sit on the same baseline as
+     the title text. flex-wrap keeps long titles from breaking the row. */
+  display: inline-flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+  overflow-wrap: anywhere;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--qb-fg);
+}
+
+/* Per-tier inline asset — a tier-specific image (e.g. coupon graphic) that
+   renders on the same line as the tier title. Sourced from
+   `tier.inlineAsset.url` on the bundle metaobject; absent => no render. */
+.sai-qbpdp001__tier-inline-asset {
+  height: 28px;
+  width: auto;
+  flex-shrink: 0;
+  object-fit: contain;
+  vertical-align: middle;
+}
+
+.sai-qbpdp001__tier-description {
+  display: block;
+  margin: 0;
+  color: var(--qb-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.sai-qbpdp001__price {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: flex-end;
+  text-align: right;
+  font-weight: 700;
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.sai-qbpdp001__price-current {
+  font-size: 1.1rem;
+  font-weight: 700;
+  /* Inherits color from .sai-qbpdp001__price so the per-instance `price`
+     style node configures both the wrapper and the current-price digits.
+     `__price-compare` and `__price-note` keep explicit colors because
+     muted-strikethrough and emphatic-savings are intentional exceptions. */
+}
+
+.sai-qbpdp001__price-compare {
+  color: var(--qb-muted);
+  font-size: 0.85rem;
+  font-weight: 400;
+}
+
+.sai-qbpdp001__price-compare-label {
+  /* "MRP " label — never struck out, regardless of show_mrp_strikethrough. */
+}
+
+.sai-qbpdp001__price-compare-value--strike {
+  text-decoration: line-through;
+}
+
+.sai-qbpdp001__price-note {
+  color: var(--qb-success);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.sai-qbpdp001__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  grid-column: 2 / 3;
+  margin-top: 2px;
+}
+
+.sai-qbpdp001__badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 4px 10px;
+  border-radius: 9999px;
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+}
+
+.sai-qbpdp001__badge-image {
+  width: 14px;
+  height: 14px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+
+.sai-qbpdp001__selection {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.sai-qbpdp001__variant-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sai-qbpdp001__variant-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--qb-fg);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sai-qbpdp001__variant-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sai-qbpdp001__variant-option {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 36px;
+  max-width: 100%;
+  padding: 8px 14px;
+  border: 1.5px solid var(--qb-border);
+  border-radius: var(--qb-radius-sm);
+  background: var(--qb-bg);
+  color: var(--qb-fg);
+  font: inherit;
+  font-size: 0.85rem;
+  line-height: 1.1;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.sai-qbpdp001__variant-option:hover {
+  border-color: var(--qb-border-hover);
+}
+
+.sai-qbpdp001__variant-option--selected {
+  border-color: var(--qb-border-strong);
+  background: var(--qb-surface-soft);
+  font-weight: 700;
+}
+
+.sai-qbpdp001__variant-option--disabled {
+  color: var(--qb-muted);
+  text-decoration: line-through;
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.025);
+}
+
+.sai-qbpdp001__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 50px;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 8px;
+  border: 0;
+  border-radius: var(--qb-radius-sm);
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+  font: inherit;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+
+.sai-qbpdp001__button:hover {
+  /* Slight darken on hover, expressed as a mix against pure black so it
+     still reads as "deeper" in a light-on-dark / dark-mode theme. */
+  background: color-mix(in srgb, var(--qb-fg) 85%, #000);
+}
+
+.sai-qbpdp001__button--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.sai-qbpdp001__message {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.sai-qbpdp001__message--error {
+  color: var(--qb-error);
+}
+
+.sai-qbpdp001__message--success {
+  color: var(--qb-success);
+}
+
+@media (max-width: 520px) {
+  .sai-qbpdp001 {
+    max-width: 100%;
+    /* Default mobile side spacing so the card stack never hugs the viewport edge. */
+    padding-left: 16px;
+    padding-right: 16px;
+    box-sizing: border-box;
+  }
+
+  .sai-qbpdp001__tier {
+    grid-template-columns: 22px auto 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    padding: 14px 16px;
+  }
+
+  .sai-qbpdp001__thumb {
+    width: 36px;
+    height: 36px;
+    flex: 0 0 36px;
+  }
+
+  .sai-qbpdp001__thumb--overlap {
+    margin-left: -12px;
+  }
+
+  .sai-qbpdp001__tier-main {
+    grid-column: 3 / 4;
+  }
+
+  .sai-qbpdp001__price {
+    grid-column: 2 / 3;
+    align-items: flex-start;
+    text-align: left;
+    margin-top: 4px;
+  }
+
+  .sai-qbpdp001__timer {
+    margin: 10px -16px -14px -16px;
+    padding: 8px 14px;
+    gap: 10px;
+    font-size: 0.8125rem;
+  }
+
+  .sai-qbpdp001__timer--inline {
+    margin: 0 0 4px 0;
+    padding: 8px 12px;
+  }
+
+  .sai-qbpdp001__badges {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Modal (bottom sheet on mobile, centered dialog on desktop) ───── */
+
+.sai-qbpdp001__modal {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483000;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 0;
+  animation: sai-qbpdp001-fade-in 0.18s ease;
+  font-family: inherit;
+}
+
+@keyframes sai-qbpdp001-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sai-qbpdp001-slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sai-qbpdp001-zoom-in {
+  from {
+    transform: scale(0.96);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.sai-qbpdp001__sheet {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 100%;
+  max-height: 92vh;
+  padding: 20px 20px 24px;
+  background: var(--qb-bg);
+  border-radius: 20px 20px 0 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  animation: sai-qbpdp001-slide-up 0.22s ease;
+  color: var(--qb-fg);
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.sai-qbpdp001__modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.sai-qbpdp001__modal-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  color: var(--qb-fg);
+}
+
+.sai-qbpdp001__modal-close {
+  width: 32px;
+  height: 32px;
+  border-radius: 9999px;
+  border: 0;
+  background: var(--qb-surface-soft);
+  color: var(--qb-muted);
+  font: inherit;
+  font-size: 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sai-qbpdp001__modal-close:hover {
+  background: var(--qb-border);
+  color: var(--qb-fg);
+}
+
+/* Stepper */
+
+.sai-qbpdp001__stepper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.sai-qbpdp001__step-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  /* Tight on the 30px circle plus a small label gutter — keeps the
+     connector visually meeting each step circle instead of floating in
+     a 20-odd-px no-man's-land. Stepper has flex-wrap so longer Item N
+     labels still grow the node naturally. */
+  min-width: 40px;
+}
+
+.sai-qbpdp001__step-circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 600;
+  box-sizing: border-box;
+}
+
+.sai-qbpdp001__step-circle--done {
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+}
+
+.sai-qbpdp001__step-circle--current {
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+  box-shadow: 0 0 0 3px var(--qb-bg), 0 0 0 5px var(--qb-fg);
+}
+
+.sai-qbpdp001__step-circle--later {
+  background: var(--qb-surface-soft);
+  color: var(--qb-muted);
+  border: 1.5px solid var(--qb-border);
+}
+
+.sai-qbpdp001__step-label {
+  font-size: 11px;
+  color: var(--qb-muted);
+  white-space: nowrap;
+}
+
+.sai-qbpdp001__step-label--active {
+  color: var(--qb-fg);
+  font-weight: 600;
+}
+
+.sai-qbpdp001__step-conn {
+  /* Connector line between consecutive step circles in the variant-picker
+     modal. Authored as a <span> in JS — themes commonly hide `div:empty`
+     globally, which would collapse a content-less <div> connector to
+     display:none. Default colour is the muted slate hover-border so the
+     line stays visible on white; `--filled` switches to foreground when
+     the preceding step is complete. Small horizontal margin keeps a real
+     breathing-room gap between the line and the adjacent circle in BOTH
+     states — without it the dark `--filled` line blends into the circle
+     borders and looks glued on. Top margin centres the line on the 30px
+     circle. */
+  width: 48px;
+  height: 3px;
+  background: var(--qb-border-hover);
+  border-radius: 2px;
+  margin: 13px 6px 0 6px;
+  flex-shrink: 0;
+}
+
+.sai-qbpdp001__step-conn--filled {
+  background: var(--qb-fg);
+}
+
+/* Option groups */
+
+.sai-qbpdp001__opt-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.sai-qbpdp001__opt-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sai-qbpdp001__opt-label {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--qb-muted);
+}
+
+.sai-qbpdp001__opt-label-value {
+  color: var(--qb-fg);
+  font-weight: 600;
+}
+
+.sai-qbpdp001__pill-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.sai-qbpdp001__pill {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--qb-border);
+  background: var(--qb-bg);
+  color: var(--qb-fg);
+  font: inherit;
+  font-size: 13px;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.sai-qbpdp001__pill:hover {
+  border-color: var(--qb-border-hover);
+}
+
+.sai-qbpdp001__pill--selected,
+.sai-qbpdp001__pill--selected:hover {
+  border-color: var(--qb-fg);
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+}
+
+.sai-qbpdp001__pill--sold-out {
+  color: var(--qb-muted);
+  text-decoration: line-through;
+  background: rgba(0, 0, 0, 0.025);
+  cursor: not-allowed;
+}
+
+/* Footer */
+
+.sai-qbpdp001__modal-footer {
+  position: sticky;
+  bottom: 0;
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  padding: 14px 0 4px;
+  background: var(--qb-bg);
+  border-top: 1px solid var(--qb-border);
+}
+
+.sai-qbpdp001__btn-back {
+  flex: 0 0 auto;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 9999px;
+  border: 1.5px solid var(--qb-border);
+  background: var(--qb-bg);
+  color: var(--qb-fg);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.sai-qbpdp001__btn-back:hover {
+  background: var(--qb-surface-soft);
+  border-color: var(--qb-border-hover);
+}
+
+.sai-qbpdp001__btn-next {
+  flex: 1;
+  min-height: 48px;
+  padding: 12px 18px;
+  border-radius: 9999px;
+  border: 0;
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+  font: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, opacity 0.15s ease;
+}
+
+.sai-qbpdp001__btn-next:hover {
+  background: color-mix(in srgb, var(--qb-fg) 85%, #000);
+}
+
+.sai-qbpdp001__btn-next:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+/* Desktop: centered dialog instead of bottom sheet */
+
+@media (min-width: 521px) {
+  .sai-qbpdp001__modal {
+    align-items: center;
+    padding: 24px;
+  }
+
+  .sai-qbpdp001__sheet {
+    border-radius: 18px;
+    max-width: 480px;
+    max-height: 80vh;
+    animation: sai-qbpdp001-zoom-in 0.18s ease;
+  }
+}
+
+/* ── Selected card style: outline_border (no fill) ───────────────── */
+.sai-qbpdp001__tier--style-outline.sai-qbpdp001__tier--selected {
+  background: var(--qb-bg);
+}
+
+/* ── Overlay callout — repositions the tier badges into the corner ── */
+.sai-qbpdp001__tier--callout-overlay .sai-qbpdp001__badges {
+  position: absolute;
+  top: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  margin: 0;
+  grid-column: auto;
+  pointer-events: none;
+}
+
+.sai-qbpdp001__tier--callout-top-left .sai-qbpdp001__badges {
+  left: 10px;
+}
+
+.sai-qbpdp001__tier--callout-top-right .sai-qbpdp001__badges {
+  right: 10px;
+}
+
+.sai-qbpdp001__tier--callout-overlay .sai-qbpdp001__badge {
+  background: var(--qb-fg);
+  color: var(--qb-fg-on-primary);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-qbpdp001.js' | asset_url }}" async></script>
+
+{%- assign bundle_content = entry.content -%}
+
+{%- if bundle_content.status == 'active' and bundle_content.implementation == 'volume_discount' and product -%}
+  {%- assign selected_variant = product.selected_or_first_available_variant -%}
+  {%- assign currency_code = cart.currency.iso_code | default: shop.currency -%}
+  {%- capture quantity_bundle_json -%}{{ bundle_content | json }}{%- endcapture -%}
+
+  <sai-qbpdp001 class="sai-qbpdp001" data-selected-variant-id="{{ selected_variant.id }}">
+    <div class="sai-qbpdp001__container">
+      <div class="sai-qbpdp001__root" data-role="root"></div>
+      <p class="sai-qbpdp001__message" data-role="message" hidden></p>
+    </div>
+  </sai-qbpdp001>
+
+  {%- comment -%}
+    Snippet-instance props (Studio-configurable). Defaults mirror meta.json
+    so an unconfigured drop renders the canonical baseline.
+  {%- endcomment -%}
+  {%- assign sai_props = variant.content -%}
+  {%- comment -%}
+    Boolean values are emitted raw (no `| default:` filter — that would coerce
+    an explicit `false` back to its default). The JS layer applies defaults via
+    nullish coalescing.
+  {%- endcomment -%}
+  {%- capture qbpdp_config_json -%}
+    {
+      "allow_variant_selection": {{ sai_props.allow_variant_selection | json }},
+      "selected_card_style": {{ sai_props.selected_card_style | json }},
+      "show_overlay_callout": {{ sai_props.show_overlay_callout | json }},
+      "overlay_callout_position": {{ sai_props.overlay_callout_position | json }},
+      "show_description": {{ sai_props.show_description | json }},
+      "show_savings_callout": {{ sai_props.show_savings_callout | json }},
+      "savings_format": {{ sai_props.savings_format | json }},
+      "show_bundle_price": {{ sai_props.show_bundle_price | json }},
+      "show_mrp": {{ sai_props.show_mrp | json }},
+      "show_mrp_strikethrough": {{ sai_props.show_mrp_strikethrough | json }},
+      "show_per_unit_price": {{ sai_props.show_per_unit_price | json }},
+      "sale_ends_at": {{ sai_props.sale_ends_at | json }},
+      "show_timer": {{ sai_props.show_timer | json }},
+      "timer_type": {{ sai_props.timer_type | json }},
+      "timer_duration_minutes": {{ sai_props.timer_duration_minutes | json }},
+      "timer_fixed_minutes_behavior": {{ sai_props.timer_fixed_minutes_behavior | json }},
+      "timer_recurrence_start_at": {{ sai_props.timer_recurrence_start_at | json }},
+      "timer_recurrence_interval_hours": {{ sai_props.timer_recurrence_interval_hours | json }},
+      "timer_recurrence_cadence": {{ sai_props.timer_recurrence_cadence | json }},
+      "timer_position": {{ sai_props.timer_position | json }},
+      "timer_prefix_text": {{ sai_props.timer_prefix_text | json }},
+      "timer_tier_indexes": {{ sai_props.timer_tier_indexes | json }}
+    }
+  {%- endcapture -%}
+
+  <script type="application/json" data-spectrum-qbpdp-config>
+    {{ qbpdp_config_json | strip }}
+  </script>
+
+  <script type="application/json" data-spectrum-quantity-bundle>
+    {{ quantity_bundle_json | replace: '<', '\u003c' }}
+  </script>
+
+  {%- capture product_variants_json -%}
+    {
+      "product_id": {{ product.id | json }},
+      "product_handle": {{ product.handle | json }},
+      "selected_variant_id": {{ selected_variant.id | json }},
+      "currency_code": {{ currency_code | json }},
+      "option_names": {{ product.options | json }},
+      "variants": [
+        {%- for product_variant in product.variants -%}
+          {%- assign variant_image = product_variant.featured_image | default: product.featured_image -%}
+          {%- assign variant_image_url = '' -%}
+          {%- if variant_image != blank -%}
+            {%- assign variant_image_url = variant_image | image_url: width: 160 -%}
+          {%- endif -%}
+          {%- unless forloop.first -%},{%- endunless -%}
+          {
+            "id": {{ product_variant.id | json }},
+            "title": {{ product_variant.title | json }},
+            "available": {{ product_variant.available | json }},
+            "price": {{ product_variant.price | json }},
+            "compare_at_price": {{ product_variant.compare_at_price | json }},
+            "image_url": {{ variant_image_url | json }},
+            "image_alt": {{ variant_image.alt | default: product_variant.title | json }},
+            "options": {{ product_variant.options | json }}
+          }
+        {%- endfor -%}
+      ]
+    }
+  {%- endcapture -%}
+  <script type="application/json" data-spectrum-product-variants>
+    {{ product_variants_json | replace: '<', '\u003c' }}
+  </script>
+
+  {%- capture badge_pool_json -%}
+    {
+      "badge_images": {
+        {%- assign first_badge_image = true -%}
+        {%- for badge_image in badge_images_union -%}
+          {%- if badge_image.id != blank -%}
+            {%- assign badge_image_admin_gid = badge_image.admin_graphql_api_id -%}
+            {%- assign badge_image_id_text = badge_image.id | append: '' -%}
+            {%- capture badge_image_media_gid -%}gid://shopify/MediaImage/{{ badge_image.id }}{%- endcapture -%}
+            {%- capture badge_image_value -%}
+              {
+                "id": {{ badge_image_admin_gid | default: badge_image.id | json }},
+                "url": {{ badge_image | image_url: width: 96 | json }},
+                "alt": {{ badge_image.alt | json }}
+              }
+            {%- endcapture -%}
+            {%- if badge_image_admin_gid != blank -%}
+              {%- unless first_badge_image -%},{%- endunless -%}
+              {%- assign first_badge_image = false -%}
+              {{ badge_image_admin_gid | json }}: {{ badge_image_value | strip }}
+            {%- endif -%}
+            {%- unless badge_image_id_text == badge_image_admin_gid -%}
+              {%- unless first_badge_image -%},{%- endunless -%}
+              {%- assign first_badge_image = false -%}
+              {{ badge_image_id_text | json }}: {{ badge_image_value | strip }}
+            {%- endunless -%}
+            {%- unless badge_image_id_text contains 'gid://' -%}
+              {%- unless first_badge_image -%},{%- endunless -%}
+              {%- assign first_badge_image = false -%}
+              {{ badge_image_media_gid | json }}: {{ badge_image_value | strip }}
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endfor -%}
+      }
+    }
+  {%- endcapture -%}
+  <script type="application/json" data-spectrum-snippet-pool>
+    {{ badge_pool_json | replace: '<', '\u003c' }}
+  </script>
+{%- else -%}
+  <!-- SAI:QBPDP001:NO_VALID_CONTENT feature=quantity_bundles -->
+{%- endif -%}

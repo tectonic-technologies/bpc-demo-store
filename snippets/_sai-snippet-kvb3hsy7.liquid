@@ -1,0 +1,1492 @@
+{% doc %}
+  Shoppable Video Stories — Curated. Instagram-style stories layout that
+  renders the merchant's hand-picked list of spectrum_shoppable_video
+  metaobjects. No source/slot — works on any page (home, custom landing,
+  article, etc.). Sibling of qsh181xu (PDP) and n3rzwxe1 (PLP); shares
+  runtime + analytics + mini-PDP.
+
+  Wrapper contract (per docs/tech/studio-liquid-snippets.md "Library Snippets"):
+    - variant            : default variant from mo.variants.value.variants
+    - mo                 : spectrum_snippet_instance metaobject drop
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div)
+    - experience_handle  : (consumed by wrapper outer div)
+
+  variant.content fields:
+    - videos                {array}             list of spectrum_shoppable_video metaobject drops (the merchant's pick)
+    - section_title         {string}            heading above the preview tray
+    - section_description   {string}            supporting copy
+    - preview_shape         {string}            'circle' | 'square' | 'rounded'
+    - auto_advance_seconds  {number}            seconds per slide before advance (1–30)
+    - mute_on_launch          {boolean}           whether to start muted
+    - show_progress_bar       {boolean}           per-slide progress indicator
+    - stories_close_on_last   {boolean}           close lightbox after last story; if false the last loops
+    - show_preview_play_button {boolean}          overlay a centered play icon on each preview thumbnail
+    - cta_text                {string}            label on the per-slide CTA button
+    - cta_action              {string}            'redirect' | 'mini_pdp'
+
+  Render strategy:
+    - SSR emits the section header + a horizontal preview tray with one button
+      per video handle (skeleton placeholder + poster image + label) and the
+      fullscreen <dialog> scaffold (close, mute, progress strip, slide track).
+    - JS reads the sibling <script type="application/json"
+      data-spectrum-snippet-pool> for resolved per-video data (URL, poster,
+      product_tags) and replaces previews + builds slides at bind time.
+    - Pool keying is by metaobject handle (derived from content.videos).
+    - Renders nothing when content.videos is empty.
+
+  @example
+  {% render '_sai-snippet-kvb3hsy7',
+    variant: variant,
+    mo: mo,
+    mutation_handle: 'mut-q8x3m2pkabcd1234',
+    experience_handle: 'home-experience'
+  %}
+{% enddoc %}
+
+{% comment %}
+  Institutional knowledge:
+  - Per-video data resolution lives in the pool block at the bottom of this
+    file, not at the preview-render site. JS is the single owner of the
+    rendered DOM after bind, mirroring the svmk8tqx pattern.
+  - `auto_advance_seconds` defaults via | default: (number; safe to use the
+    filter — only `false` and `nil` get replaced, and 0 is not a valid value
+    here per `min: 1`).
+  - Boolean props (`mute_on_launch`, `show_progress_bar`,
+    `stories_close_on_last`, `show_preview_play_button`) use the explicit
+    nil-check pattern; Liquid's `| default:` would replace `false` with
+    the default.
+  - The pool block is a sibling of the <sai-kvb3hsy7> custom element, NOT
+    a child — JS reads it via direct-children iteration on the outer
+    instance container.
+{% endcomment %}
+
+{% stylesheet %}
+/* Shoppable Video Stories — Curated (kvb3hsy7) */
+
+/* ==========================================================================
+   Shoppable Video Stories — base layout
+   --------------------------------------------------------------------------
+   Author-static CSS. Per-instance values (background, typography, spacing,
+   shadows) come from variant.content.style and bake into a sibling
+   <style data-spectrum-style> element. Selectors stay at single-class
+   specificity so the per-instance rules win the cascade.
+   ========================================================================== */
+
+.sai-kvb3hsy7 {
+  display: block;
+  width: 100%;
+}
+
+.sai-kvb3hsy7__container {
+  max-width: var(--page-width, 1200px);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  padding-block: 1.5rem;
+}
+
+/* ── Header ─────────────────────────────────────────────────────────────── */
+
+.sai-kvb3hsy7__header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-block-end: 1rem;
+  align-items: center;
+  text-align: center;
+}
+
+.sai-kvb3hsy7__title {
+  margin: 0;
+  font-family: var(--font-heading-family, inherit);
+  font-weight: var(--font-heading-weight, 600);
+  font-size: 1.25rem;
+  line-height: 1.25;
+  color: rgb(var(--color-foreground, 18 18 18));
+}
+
+.sai-kvb3hsy7__description {
+  margin: 0;
+  font-family: var(--font-body-family, inherit);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: rgb(var(--color-foreground, 18 18 18));
+  opacity: 0.7;
+}
+
+/* ── Preview tray ───────────────────────────────────────────────────────── */
+
+.sai-kvb3hsy7__tray {
+  display: flex;
+  gap: 0.75rem;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding-block-end: 0.5rem;
+  /* Center horizontally when content fits; with `safe`, alignment falls back
+     to flex-start when content overflows so the first preview is never
+     clipped at the leading edge. */
+  justify-content: safe center;
+}
+
+.sai-kvb3hsy7__tray::-webkit-scrollbar {
+  display: none;
+}
+.sai-kvb3hsy7__tray {
+  scrollbar-width: none;
+}
+
+.sai-kvb3hsy7__preview {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  scroll-snap-align: start;
+}
+
+/* Suppress the UA focus ring on pointer/touch + when focus returns
+   programmatically after the lightbox closes — only show a visible ring for
+   keyboard navigation. */
+.sai-kvb3hsy7__preview:focus {
+  outline: none;
+}
+
+.sai-kvb3hsy7__preview:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Frame is the outer ring — Instagram-style pink/orange/yellow gradient
+   with a 3px white inset between ring and poster. The two-layer
+   `padding-box` + `border-box` background trick: padding-box receives
+   the white inset, the transparent border sees the gradient through
+   border-box. The poster image (set by JS on the inner __preview-poster)
+   sits inside the white inset. Same ring on all 3 preview_shape values
+   — only the corner radius changes per shape. */
+.sai-kvb3hsy7__preview-frame {
+  display: block;
+  position: relative;
+  width: 5.5rem;
+  height: 5.5rem;
+  padding: 3px;
+  border: 3px solid transparent;
+  background: linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%)
+    border-box;
+  box-sizing: border-box;
+}
+
+.sai-kvb3hsy7__preview-poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.06);
+  background-size: cover;
+  background-position: center;
+}
+
+/* Per-shape — apply matching radius to BOTH outer frame and inner poster. */
+.sai-kvb3hsy7--shape-circle .sai-kvb3hsy7__preview-frame,
+.sai-kvb3hsy7--shape-circle .sai-kvb3hsy7__preview-poster {
+  border-radius: 50%;
+}
+
+.sai-kvb3hsy7--shape-square .sai-kvb3hsy7__preview-frame,
+.sai-kvb3hsy7--shape-square .sai-kvb3hsy7__preview-poster {
+  border-radius: 0;
+}
+
+.sai-kvb3hsy7--shape-rounded .sai-kvb3hsy7__preview-frame {
+  border-radius: 14px;
+}
+.sai-kvb3hsy7--shape-rounded .sai-kvb3hsy7__preview-poster {
+  /* Inner radius is slightly smaller than outer for a clean concentric look. */
+  border-radius: 8px;
+}
+
+/* Optional centered play badge — gated by the show_preview_play_button prop.
+   Sits above the poster so it appears on every preview shape. The triangle
+   icon is built with `currentColor` so the disc + glyph share the same
+   white/dark contrast pair. */
+.sai-kvb3hsy7__preview-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+  height: 28px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Author `display: inline-flex` above wins over the UA stylesheet's
+   `[hidden] { display: none }` rule, so the toggle requires an explicit
+   override at the same specificity. */
+.sai-kvb3hsy7__preview-play[hidden] {
+  display: none;
+}
+
+.sai-kvb3hsy7__preview-play svg {
+  /* Optical centering — the triangle's center of mass sits left of the
+     bounding-box center; nudge a hair right so it reads centered in the disc. */
+  margin-left: 2px;
+}
+
+.sai-kvb3hsy7__preview-label {
+  display: block;
+  max-width: 5.5rem;
+  font-family: var(--font-body-family, inherit);
+  font-size: 0.75rem;
+  line-height: 1.2;
+  color: rgb(var(--color-foreground, 18 18 18));
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Skeleton state — shimmer on the inner poster while JS upgrades the card.
+   Targets __preview-poster (not __preview-frame) so the gradient ring on
+   the frame stays untouched while the poster animates. */
+.sai-kvb3hsy7__preview--placeholder .sai-kvb3hsy7__preview-poster {
+  background-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.04) 0%,
+    rgba(0, 0, 0, 0.08) 50%,
+    rgba(0, 0, 0, 0.04) 100%
+  );
+  background-size: 200% 100%;
+  animation: sai-kvb3hsy7-shimmer 1.4s ease-in-out infinite;
+}
+
+@keyframes sai-kvb3hsy7-shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-kvb3hsy7__preview--placeholder .sai-kvb3hsy7__preview-poster {
+    animation: none;
+  }
+}
+
+/* ── Fullscreen dialog ──────────────────────────────────────────────────── */
+
+.sai-kvb3hsy7__dialog[open] {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100dvh;
+  max-width: 100vw;
+  max-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background: #000;
+  color: #fff;
+  border: none;
+  overflow: hidden;
+}
+
+.sai-kvb3hsy7__dialog::backdrop {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+/* Close, mute, nav buttons — explicit width/height keeps the circles
+   identical regardless of inner icon dimensions. */
+.sai-kvb3hsy7__dialog-close,
+.sai-kvb3hsy7__dialog-mute,
+.sai-kvb3hsy7__dialog-nav {
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  z-index: 3;
+  border-radius: 50%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Stacked vertically on the right edge — close on top, mute below.
+   Same button sizing as before (14/20 px icons, 0.625rem padding). */
+.sai-kvb3hsy7__dialog-close {
+  top: 1rem;
+  right: 1rem;
+}
+.sai-kvb3hsy7__dialog-mute {
+  /* close at top: 1rem (16px) + 36px height = 52px bottom; +36px gap = 88px (5.5rem) */
+  top: 5.5rem;
+  right: 1rem;
+}
+
+/* Defensive — SVG icons inside the mute toggle ignore the [hidden] attribute
+   in some user agents (display defaults compete with [hidden]). Force the
+   inactive state to display:none. JS toggles `.hidden` between the two SVGs. */
+.sai-kvb3hsy7__dialog-mute svg[hidden],
+.sai-kvb3hsy7__dialog-mute svg.sai-kvb3hsy7__mute-icon--muted[hidden],
+.sai-kvb3hsy7__dialog-mute svg.sai-kvb3hsy7__mute-icon--sound[hidden] {
+  display: none !important;
+}
+
+.sai-kvb3hsy7__dialog-close:focus-visible,
+.sai-kvb3hsy7__dialog-mute:focus-visible,
+.sai-kvb3hsy7__dialog-nav:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sai-kvb3hsy7__dialog-nav {
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .sai-kvb3hsy7__dialog-nav:not([hidden]) {
+    display: inline-flex;
+  }
+}
+
+.sai-kvb3hsy7__dialog-nav--prev {
+  left: 1rem;
+}
+.sai-kvb3hsy7__dialog-nav--next {
+  right: 1rem;
+}
+
+/* Progress strip — one segment per slide. On mobile it spans the
+   full-bleed slide-frame; on tablet+ it's constrained to match the 9:16
+   frame width so it visually belongs to the video, not the dialog. */
+.sai-kvb3hsy7__progress {
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  right: 1rem;
+  display: flex;
+  gap: 4px;
+  z-index: 4;
+}
+
+/* Author `display: flex` above wins over the UA stylesheet's
+   `[hidden] { display: none }` rule, so the toggle requires an explicit
+   override at the same specificity. */
+.sai-kvb3hsy7__progress[hidden] {
+  display: none;
+}
+
+@media (min-width: 750px) {
+  .sai-kvb3hsy7__progress {
+    left: 50%;
+    right: auto;
+    transform: translateX(-50%);
+    width: min(calc(100% - 2rem), calc(100dvh * 9 / 16 - 2rem));
+  }
+}
+
+.sai-kvb3hsy7__progress-segment {
+  flex: 1;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  border-radius: 1px;
+}
+
+.sai-kvb3hsy7__progress-fill {
+  display: block;
+  height: 100%;
+  width: 0%;
+  background: #fff;
+  transition: width 100ms linear;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-kvb3hsy7__progress-fill {
+    transition: none;
+  }
+}
+
+/* Slide track */
+.sai-kvb3hsy7__slides {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.sai-kvb3hsy7__slide {
+  flex: 0 0 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  overflow: hidden;
+}
+
+/* On mobile, the frame is full-bleed (fills viewport edge-to-edge). On
+   tablet+ it's constrained to 9:16 and centered with a dark backdrop on
+   either side — matches the grid lightbox pattern on larger screens. */
+.sai-kvb3hsy7__slide-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  overflow: hidden;
+}
+
+@media (min-width: 750px) {
+  .sai-kvb3hsy7__slide-frame {
+    width: auto;
+    height: 100%;
+    aspect-ratio: 9 / 16;
+    max-width: 100%;
+  }
+}
+
+.sai-kvb3hsy7__slide-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
+/* Asset slots — every slide carries one wrapper per asset (video or image).
+   Only one is visible at a time; the rest sit positioned but `hidden`. */
+.sai-kvb3hsy7__asset {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+}
+
+/* Author `display: flex` above wins over the UA stylesheet's
+   `[hidden] { display: none }` rule, so the toggle requires an explicit
+   override at the same specificity. */
+.sai-kvb3hsy7__asset[hidden] {
+  display: none;
+}
+
+.sai-kvb3hsy7__asset-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  background: #000;
+}
+
+/* ── Product card overlay (matches grid lightbox layout) ───────────────
+   Sits inside the 9:16 frame, anchored to the bottom with a gradient mask
+   for legibility. 3-column grid: image | title+price | ATC button. */
+
+.sai-kvb3hsy7__product-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+  padding: 12px 12px 16px;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.72) 0%,
+    rgba(0, 0, 0, 0.4) 60%,
+    transparent 100%
+  );
+  pointer-events: auto;
+}
+
+/* Horizontal strip — one card per tagged product. Grid sibling pattern:
+   flex row + scroll-snap so swipes settle one card at a time on mobile,
+   trackpad / drag scrolls feel native on desktop. Scrollbar hidden. */
+.sai-kvb3hsy7__product-overlay-scroll {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  padding-bottom: 4px;
+}
+
+.sai-kvb3hsy7__product-overlay-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.sai-kvb3hsy7__product-card {
+  display: grid;
+  grid-template-columns: 60px 1fr auto;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: rgba(255, 255, 255, 0.95);
+  color: #1a1a1a;
+  border-radius: 12px;
+  text-decoration: none;
+  box-sizing: border-box;
+  /* Default (2+ cards): card takes 80% of the strip — leaves a 20% peek
+     of the next card so the user knows there's more to swipe to. The
+     :only-child rule below takes over for single-card slides. Width
+     scales with the strip on every viewport (no cap). */
+  flex: 0 0 80%;
+  scroll-snap-align: start;
+}
+
+.sai-kvb3hsy7__product-overlay-scroll > .sai-kvb3hsy7__product-card:only-child {
+  flex: 0 0 100%;
+}
+
+.sai-kvb3hsy7__product-image-wrap {
+  display: block;
+  width: 60px;
+  height: 60px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-kvb3hsy7__product-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sai-kvb3hsy7__product-meta {
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  text-align: left;
+}
+
+.sai-kvb3hsy7__product-title {
+  margin: 0;
+  font-family: var(--font-body-family, inherit);
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #1a1a1a;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.sai-kvb3hsy7__product-price {
+  margin: 0;
+  font-family: var(--font-body-family, inherit);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #1a1a1a;
+  opacity: 0.8;
+}
+
+.sai-kvb3hsy7__cta {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  font-family: var(--font-body-family, inherit);
+  font-size: 13px;
+  font-weight: 700;
+  background: #121212;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-decoration: none;
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.sai-kvb3hsy7__cta:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.sai-kvb3hsy7__cta:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.sai-kvb3hsy7__cta:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+/* ── Mini-PDP bottom sheet (quickshop) ─────────────────────────────────
+   Layout adapted from the Lotto theme's `sv-quickshop` pattern: backdrop
+   covers the dialog, panel slides up from the bottom on mobile and is
+   centered/constrained on tablet+. Theme color + font variables only.
+   ────────────────────────────────────────────────────────────────────── */
+
+.sai-kvb3hsy7__quickshop {
+  position: absolute;
+  inset: 0;
+  z-index: 12;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.sai-kvb3hsy7__quickshop[hidden] {
+  display: none;
+}
+
+.sai-kvb3hsy7__quickshop-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0);
+  transition: background 0.25s ease;
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.sai-kvb3hsy7__quickshop--open .sai-kvb3hsy7__quickshop-backdrop {
+  background: rgba(0, 0, 0, 0.45);
+}
+
+.sai-kvb3hsy7__quickshop-panel {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-height: 88%;
+  background: rgb(var(--color-background, 255 255 255));
+  color: rgb(var(--color-foreground, 18 18 18));
+  border-radius: 16px 16px 0 0;
+  padding: 20px 20px 22px;
+  box-sizing: border-box;
+  transform: translateY(100%);
+  transition: transform 0.28s cubic-bezier(0.32, 0.72, 0, 1);
+  pointer-events: auto;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  font-family: var(--font-body-family, inherit);
+}
+
+.sai-kvb3hsy7__quickshop--open .sai-kvb3hsy7__quickshop-panel {
+  transform: translateY(0);
+}
+
+.sai-kvb3hsy7__quickshop-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  color: rgb(var(--color-foreground, 18 18 18));
+  cursor: pointer;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sai-kvb3hsy7__quickshop-close:hover {
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-kvb3hsy7__quickshop-close:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.sai-kvb3hsy7__quickshop-header {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 16px;
+  align-items: flex-start;
+  padding-right: 36px;
+}
+
+.sai-kvb3hsy7__quickshop-media {
+  width: 130px;
+  aspect-ratio: 1 / 1;
+  border-radius: 8px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.06);
+}
+
+.sai-kvb3hsy7__quickshop-image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sai-kvb3hsy7__quickshop-meta {
+  min-width: 0;
+  padding-top: 4px;
+}
+
+.sai-kvb3hsy7__quickshop-title {
+  display: block;
+  font-family: var(--font-heading-family, var(--font-body-family, inherit));
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: rgb(var(--color-foreground, 18 18 18));
+  text-decoration: none;
+  margin: 0 0 8px;
+}
+
+.sai-kvb3hsy7__quickshop-title:hover {
+  text-decoration: underline;
+}
+
+.sai-kvb3hsy7__quickshop-price {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.sai-kvb3hsy7__quickshop-price-compare {
+  font-weight: 400;
+  text-decoration: line-through;
+  opacity: 0.55;
+  font-size: 13px;
+}
+
+.sai-kvb3hsy7__quickshop-view {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgb(var(--color-foreground, 18 18 18));
+  opacity: 0.55;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.sai-kvb3hsy7__quickshop-view:hover,
+.sai-kvb3hsy7__quickshop-view:focus-visible {
+  opacity: 0.85;
+  text-decoration: underline;
+}
+
+.sai-kvb3hsy7__quickshop-view-icon {
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+/* Options container — N stacked group cards. The card pattern keeps each
+   attribute visually scoped + makes the selected-value label legible at a
+   glance. */
+.sai-kvb3hsy7__quickshop-options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sai-kvb3hsy7__quickshop-group {
+  border: 1px solid rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sai-kvb3hsy7__quickshop-group-head {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+.sai-kvb3hsy7__quickshop-group-name {
+  color: rgb(var(--color-foreground, 18 18 18));
+  opacity: 0.55;
+}
+
+.sai-kvb3hsy7__quickshop-group-selected {
+  color: rgb(var(--color-foreground, 18 18 18));
+  font-weight: 600;
+}
+
+.sai-kvb3hsy7__quickshop-group-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+/* Pill — three flavors. Text-only is the default; swatch-color and
+   swatch-image add a leading visual marker but share the same chrome. */
+.sai-kvb3hsy7__quickshop-pill {
+  flex: 0 0 auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 64px;
+  padding: 10px 14px;
+  background: rgb(var(--color-background, 255 255 255));
+  color: rgb(var(--color-foreground, 18 18 18));
+  border: 1px solid rgba(0, 0, 0, 0.22);
+  border-radius: 999px;
+  font-family: var(--font-body-family, inherit);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+  line-height: 1.2;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.sai-kvb3hsy7__quickshop-pill:hover {
+  border-color: rgba(0, 0, 0, 0.6);
+}
+
+.sai-kvb3hsy7__quickshop-pill:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.sai-kvb3hsy7__quickshop-pill--selected,
+.sai-kvb3hsy7__quickshop-pill--selected:hover {
+  border-color: rgb(var(--color-foreground, 18 18 18));
+  border-width: 2px;
+  /* Compensate for the +1px border so the pill doesn't shift on select. */
+  padding: 9px 13px;
+}
+
+.sai-kvb3hsy7__quickshop-pill--oos {
+  opacity: 0.45;
+  text-decoration: line-through;
+  cursor: not-allowed;
+}
+
+/* Swatch leading element — sits before the label. Color swatches use the
+   inline `background-color` set by JS; image swatches use `background-image`.
+   Border keeps light swatches legible against a white pill background. */
+.sai-kvb3hsy7__quickshop-pill-swatch {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  flex-shrink: 0;
+}
+
+.sai-kvb3hsy7__quickshop-pill--swatch-color .sai-kvb3hsy7__quickshop-pill-swatch,
+.sai-kvb3hsy7__quickshop-pill--swatch-image .sai-kvb3hsy7__quickshop-pill-swatch {
+  /* Selected variants get a thicker outer ring around the swatch to mirror
+     the pill's selected state at the swatch level too. */
+  box-shadow: 0 0 0 1px rgb(var(--color-background, 255 255 255));
+}
+
+.sai-kvb3hsy7__quickshop-pill-label {
+  display: inline-block;
+}
+
+.sai-kvb3hsy7__quickshop-atc {
+  width: 100%;
+  margin-top: 4px;
+  padding: 18px 20px;
+  background: rgb(var(--color-foreground, 18 18 18));
+  color: rgb(var(--color-background, 255 255 255));
+  border: none;
+  border-radius: 4px;
+  font-family: var(--font-heading-family, var(--font-body-family, inherit));
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.sai-kvb3hsy7__quickshop-atc:hover:not(:disabled) {
+  opacity: 0.88;
+}
+
+.sai-kvb3hsy7__quickshop-atc:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.sai-kvb3hsy7__quickshop-atc:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+@media screen and (min-width: 750px) {
+  /* Mirror the 9:16 slide-frame width so the bottom sheet visually belongs
+     to the video, not the dialog. Same math used by the progress strip. */
+  .sai-kvb3hsy7__quickshop-panel {
+    max-width: min(100%, calc(100dvh * 9 / 16));
+    border-radius: 16px;
+    margin-bottom: 16px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-kvb3hsy7__quickshop-panel,
+  .sai-kvb3hsy7__quickshop-backdrop {
+    transition: none;
+  }
+}
+
+/* ── Tablet+ layout tweaks ────────────────────────────────────────────── */
+
+@media (min-width: 750px) {
+  .sai-kvb3hsy7__preview-frame {
+    width: 6.5rem;
+    height: 6.5rem;
+  }
+  .sai-kvb3hsy7__title {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 990px) {
+  .sai-kvb3hsy7__container {
+    padding-inline: 2rem;
+    padding-block: 2rem;
+  }
+}
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-kvb3hsy7.js' | asset_url }}" async></script>
+
+{%- liquid
+  assign content = variant.content
+  assign section_title = content.section_title | default: 'Stories'
+  assign section_description = content.section_description
+  assign preview_shape = content.preview_shape | default: 'circle'
+  assign auto_advance_seconds = content.auto_advance_seconds | default: 5
+  assign cta_text = content.cta_text | default: 'Shop now'
+  assign cta_action = content.cta_action | default: 'redirect'
+  comment
+    Resolve the merchant's curated picks into a string[] of metaobject
+    handles. The variant content for a metaobject-list prop is a typed
+    reference marker — { kind, refIds: string[] } — so we read .refIds
+    directly. That gives us the same shape the PDP/PLP siblings get from
+    their slot payload, and the pool block + JS contract are identical
+    downstream.
+  endcomment
+  assign video_handles = content.videos.refIds
+
+  if content.mute_on_launch == nil
+    assign mute_on_launch = true
+  else
+    assign mute_on_launch = content.mute_on_launch
+  endif
+
+  if content.show_progress_bar == nil
+    assign show_progress_bar = true
+  else
+    assign show_progress_bar = content.show_progress_bar
+  endif
+
+  if content.stories_close_on_last == nil
+    assign stories_close_on_last = true
+  else
+    assign stories_close_on_last = content.stories_close_on_last
+  endif
+
+  if content.show_preview_play_button == nil
+    assign show_preview_play_button = false
+  else
+    assign show_preview_play_button = content.show_preview_play_button
+  endif
+
+  comment
+    Filter video_handles to videos whose product_tags list contains at
+    least one tagged product whose referenced Product resolves on the
+    storefront. Storefront Liquid returns nil for draft / archived /
+    deleted products, so this naturally hides videos whose tagged
+    products are all unpublished. If zero videos remain, the outer
+    `if video_handles.size > 0` guard below suppresses the entire
+    output — tray, dialog, pool — no DOM, no JS bind, no CLS reserved.
+  endcomment
+  assign _renderable_handles_csv = ''
+  for handle in video_handles
+    assign _vid = metaobjects.spectrum_shoppable_video[handle]
+    assign _has_renderable_tag = false
+    if _vid != blank and _vid.product_tags != blank
+      for _t in _vid.product_tags.value
+        if _t.product.value != blank
+          assign _has_renderable_tag = true
+          break
+        endif
+      endfor
+    endif
+    if _has_renderable_tag
+      if _renderable_handles_csv == ''
+        assign _renderable_handles_csv = handle
+      else
+        assign _renderable_handles_csv = _renderable_handles_csv | append: ',' | append: handle
+      endif
+    endif
+  endfor
+  if _renderable_handles_csv == ''
+    assign video_handles = '' | split: ','
+  else
+    assign video_handles = _renderable_handles_csv | split: ','
+  endif
+-%}
+
+{%- if video_handles.size > 0 -%}
+<sai-kvb3hsy7
+  class="sai-kvb3hsy7 sai-kvb3hsy7--shape-{{ preview_shape }}"
+  data-auto-advance-seconds="{{ auto_advance_seconds }}"
+  data-mute-on-launch="{{ mute_on_launch }}"
+  data-show-progress-bar="{{ show_progress_bar }}"
+  data-close-on-last="{{ stories_close_on_last }}"
+  data-cta-text="{{ cta_text | escape }}"
+  data-cta-action="{{ cta_action }}"
+>
+  <div class="sai-kvb3hsy7__container">
+    {%- comment -%}
+      Header wrapper + title + description always rendered so applyVariant()
+      can flip text without DOM injection when a variant changes either field
+      between blank and non-blank. `hidden` attribute drives visibility.
+    {%- endcomment -%}
+    <div class="sai-kvb3hsy7__header"{% if section_title == blank and section_description == blank %} hidden{% endif %}>
+      <h2 class="sai-kvb3hsy7__title"{% if section_title == blank %} hidden{% endif %}>{{ section_title }}</h2>
+      <p class="sai-kvb3hsy7__description"{% if section_description == blank %} hidden{% endif %}>{{ section_description }}</p>
+    </div>
+
+    {%- comment -%}
+      Preview tray — one skeleton button per video handle. JS reads
+      data-handle, looks up pool[handle], then upgrades the placeholder
+      with the resolved poster + label, or removes it if the video is
+      missing from the pool (defensive — visible-degraded over silent skip).
+    {%- endcomment -%}
+    <div class="sai-kvb3hsy7__tray" role="list">
+      {%- for handle in video_handles -%}
+        <button
+          class="sai-kvb3hsy7__preview sai-kvb3hsy7__preview--placeholder"
+          type="button"
+          role="listitem"
+          data-handle="{{ handle }}"
+          aria-label="Open story"
+        >
+          <span class="sai-kvb3hsy7__preview-frame">
+            <span class="sai-kvb3hsy7__preview-poster"></span>
+            {%- comment -%}
+              Always rendered so applyVariant() can toggle `hidden` without
+              injecting DOM when a variant flips show_preview_play_button.
+            {%- endcomment -%}
+            <span class="sai-kvb3hsy7__preview-play" aria-hidden="true"{% unless show_preview_play_button %} hidden{% endunless %}>
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
+                <path d="M3.5 2L11 7L3.5 12V2Z" fill="currentColor" />
+              </svg>
+            </span>
+          </span>
+          <span class="sai-kvb3hsy7__preview-label" hidden></span>
+        </button>
+      {%- endfor -%}
+    </div>
+
+    <dialog
+      class="sai-kvb3hsy7__dialog"
+      aria-modal="true"
+      aria-label="{{ section_title | default: 'Stories' | escape }}"
+    >
+      {%- comment -%}
+        Always rendered so applyVariant() can toggle `hidden` without
+        injecting DOM when a variant flips show_progress_bar.
+      {%- endcomment -%}
+      <div class="sai-kvb3hsy7__progress" aria-hidden="true"{% unless show_progress_bar %} hidden{% endunless %}></div>
+
+      <button
+        class="sai-kvb3hsy7__dialog-close"
+        type="button"
+        data-action="close"
+        aria-label="Close stories"
+      >
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+          <path d="M1.5 1.5L12.5 12.5M12.5 1.5L1.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <button
+        class="sai-kvb3hsy7__dialog-mute"
+        type="button"
+        data-action="mute"
+        aria-label="Unmute video"
+      >
+        <svg class="sai-kvb3hsy7__mute-icon--muted" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor"/>
+          <path d="M23 9l-6 6M17 9l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <svg class="sai-kvb3hsy7__mute-icon--sound" width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true" style="display: none">
+          <path d="M11 5L6 9H2v6h4l5 4V5z" fill="currentColor"/>
+          <path d="M15.54 8.46a5 5 0 0 1 0 7.07M19.07 4.93a10 10 0 0 1 0 14.14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </button>
+
+      <button
+        class="sai-kvb3hsy7__dialog-nav sai-kvb3hsy7__dialog-nav--prev"
+        type="button"
+        data-action="prev"
+        aria-label="Previous story"
+        hidden
+      >
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+          <path d="M9 1L1 8L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+      <button
+        class="sai-kvb3hsy7__dialog-nav sai-kvb3hsy7__dialog-nav--next"
+        type="button"
+        data-action="next"
+        aria-label="Next story"
+        hidden
+      >
+        <svg width="10" height="16" viewBox="0 0 10 16" fill="none" aria-hidden="true">
+          <path d="M1 1L9 8L1 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div class="sai-kvb3hsy7__slides"></div>
+
+      {%- comment -%}
+        Mini-PDP bottom sheet — single instance, populated on demand from
+        pool data. Sibling of __slides so swipe/transform on slides doesn't
+        affect it. Hidden by default; JS toggles `--open` and `hidden`.
+      {%- endcomment -%}
+      <aside
+        class="sai-kvb3hsy7__quickshop"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="sai-kvb3hsy7-qs-title"
+        hidden
+        aria-hidden="true"
+      >
+        <div class="sai-kvb3hsy7__quickshop-backdrop" data-action="qs-close"></div>
+        <div class="sai-kvb3hsy7__quickshop-panel" role="document">
+          <button
+            type="button"
+            class="sai-kvb3hsy7__quickshop-close"
+            data-action="qs-close"
+            aria-label="Close"
+            title="Close"
+          >
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true" focusable="false">
+              <path d="M1.5 1.5L12.5 12.5M12.5 1.5L1.5 12.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+            </svg>
+          </button>
+
+          <div class="sai-kvb3hsy7__quickshop-header">
+            <div class="sai-kvb3hsy7__quickshop-media">
+              <img class="sai-kvb3hsy7__quickshop-image" data-qs-image alt="" width="600" height="600" loading="lazy" />
+            </div>
+            <div class="sai-kvb3hsy7__quickshop-meta">
+              <a class="sai-kvb3hsy7__quickshop-title" data-qs-title id="sai-kvb3hsy7-qs-title" href="#"></a>
+              <p class="sai-kvb3hsy7__quickshop-price">
+                <span class="sai-kvb3hsy7__quickshop-price-current" data-qs-price></span>
+                <span class="sai-kvb3hsy7__quickshop-price-compare" data-qs-compare hidden></span>
+              </p>
+              <a class="sai-kvb3hsy7__quickshop-view" data-qs-view data-action="product-click" href="#">
+                View product
+                <svg class="sai-kvb3hsy7__quickshop-view-icon" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M4 2L8 6L4 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <div class="sai-kvb3hsy7__quickshop-options" data-qs-options></div>
+
+          <button
+            type="button"
+            class="sai-kvb3hsy7__quickshop-atc"
+            data-action="qs-atc"
+            disabled
+          >Add to cart</button>
+        </div>
+      </aside>
+    </dialog>
+  </div>
+</sai-kvb3hsy7>
+
+{%- comment -%}
+  Pool block — sibling of <sai-kvb3hsy7>. Carries every video's resolved
+  data: video URL (mp4 picked server-side), poster URL (image_url filter
+  applied), and the full product_tags array with prices and image URLs
+  pre-resolved. JS reads this directly; no client-side Liquid lookups.
+{%- endcomment -%}
+<script type="application/json" data-spectrum-snippet-pool>
+{
+  "shoppable_video_stories":{
+    {%- for handle in video_handles -%}
+      {%- assign video_entry = metaobjects.spectrum_shoppable_video[handle] -%}
+      {%- if video_entry -%}
+      {%- unless forloop.first -%},{%- endunless -%}
+
+      {%- comment -%}
+        Walk the new entry.assets[] reference list (spectrum_shoppable_video_asset
+        metaobjects). The parent-level video_source / poster_image fields are
+        gone — every playable media now lives on a child asset. Each asset can
+        be a video (asset_type: 'video') or an image (asset_type: 'image').
+        We collect a flat assets array for the dialog, and also expose the
+        first asset's URLs as top-level video_url / poster_url so the tray
+        preview upgrade path (upgradePreview) stays a one-shot read.
+      {%- endcomment -%}
+      {%- assign first_video_url = '' -%}
+      {%- assign first_poster_url = '' -%}
+      {%- assign first_asset_done = false -%}
+      {%- assign total_assets = 0 -%}
+      {%- if video_entry.assets != blank -%}
+        {%- assign total_assets = video_entry.assets.value.size -%}
+        {%- for i in (0..total_assets) -%}
+          {%- if i >= total_assets -%}{%- break -%}{%- endif -%}
+          {%- assign asset = nil -%}
+          {%- for a in video_entry.assets.value offset: i limit: 1 -%}
+            {%- assign asset = a -%}
+          {%- endfor -%}
+          {%- if asset -%}
+            {%- assign asset_type_val = asset.asset_type.value | default: 'video' -%}
+            {%- assign asset_url = '' -%}
+            {%- assign asset_poster_url = '' -%}
+            {%- assign media_file = asset.media.value -%}
+            {%- if media_file != blank -%}
+              {%- if asset_type_val == 'image' -%}
+                {%- assign asset_url = media_file | image_url: width: 1200 -%}
+              {%- else -%}
+                {%- if media_file.sources != blank -%}
+                  {%- for source in media_file.sources -%}
+                    {%- if source.format == 'mp4' and asset_url == '' -%}
+                      {%- assign asset_url = source.url -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                  {%- if asset_url == '' -%}
+                    {%- assign asset_url = media_file.sources.first.url -%}
+                  {%- endif -%}
+                {%- elsif media_file.url != blank -%}
+                  {%- assign asset_url = media_file.url -%}
+                {%- endif -%}
+              {%- endif -%}
+            {%- endif -%}
+            {%- if asset.poster_image.value != blank -%}
+              {%- assign asset_poster_url = asset.poster_image.value | image_url: width: 800 -%}
+            {%- endif -%}
+            {%- unless first_asset_done -%}
+              {%- if asset_type_val == 'image' -%}
+                {%- assign first_video_url = '' -%}
+                {%- assign first_poster_url = asset_url -%}
+              {%- else -%}
+                {%- assign first_video_url = asset_url -%}
+                {%- assign first_poster_url = asset_poster_url -%}
+              {%- endif -%}
+              {%- assign first_asset_done = true -%}
+            {%- endunless -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endif -%}
+
+      {{ handle | json }}:{
+        "title":{{ video_entry.title | default: '' | json }},
+        "video_url":{{ first_video_url | json }},
+        "poster_url":{{ first_poster_url | json }},
+        "assets":[
+          {%- if video_entry.assets != blank -%}
+          {%- assign first_asset_json = true -%}
+          {%- for i in (0..total_assets) -%}
+            {%- if i >= total_assets -%}{%- break -%}{%- endif -%}
+            {%- assign a_ref = nil -%}
+            {%- for ref in video_entry.assets.value offset: i limit: 1 -%}
+              {%- assign a_ref = ref -%}
+            {%- endfor -%}
+            {%- if a_ref -%}
+              {%- assign a_type = a_ref.asset_type.value | default: 'video' -%}
+              {%- assign a_url = '' -%}
+              {%- assign a_poster = '' -%}
+              {%- assign a_media = a_ref.media.value -%}
+              {%- if a_media != blank -%}
+                {%- if a_type == 'image' -%}
+                  {%- assign a_url = a_media | image_url: width: 1200 -%}
+                {%- else -%}
+                  {%- if a_media.sources != blank -%}
+                    {%- for source in a_media.sources -%}
+                      {%- if source.format == 'mp4' and a_url == '' -%}
+                        {%- assign a_url = source.url -%}
+                      {%- endif -%}
+                    {%- endfor -%}
+                    {%- if a_url == '' -%}
+                      {%- assign a_url = a_media.sources.first.url -%}
+                    {%- endif -%}
+                  {%- elsif a_media.url != blank -%}
+                    {%- assign a_url = a_media.url -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endif -%}
+              {%- if a_ref.poster_image.value != blank -%}
+                {%- assign a_poster = a_ref.poster_image.value | image_url: width: 800 -%}
+              {%- endif -%}
+              {%- unless first_asset_json -%},{%- endunless -%}
+              {%- assign first_asset_json = false -%}
+              {"type":{{ a_type | json }},"url":{{ a_url | json }},"poster_url":{{ a_poster | json }}}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- endif -%}
+        ],
+        "product_tags":[
+          {%- comment -%}
+            video_entry.product_tags is a list.metaobject_reference of
+            spectrum_tagged_product metaobjects (NOT Product drops). We
+            iterate via the for+offset+limit:1 idiom (per
+            .claude/rules/shopify.md — bracket access + .first are broken
+            on reference lists). For each tagged metaobject we resolve the
+            actual Product via tagged.product.value and merge with override
+            fields (display_name, price, cta_url, thumbnail).
+          {%- endcomment -%}
+          {%- if video_entry.product_tags != blank -%}
+          {%- assign tags_total = video_entry.product_tags.value.size -%}
+          {%- assign first_tag = true -%}
+          {%- for ti in (0..tags_total) -%}
+            {%- if ti >= tags_total -%}{%- break -%}{%- endif -%}
+            {%- assign tagged = nil -%}
+            {%- for t in video_entry.product_tags.value offset: ti limit: 1 -%}
+              {%- assign tagged = t -%}
+            {%- endfor -%}
+            {%- if tagged -%}
+              {%- assign tagged_product = tagged.product.value -%}
+              {%- if tagged_product -%}
+                {%- assign target_variant = tagged.pre_selected_variant.value | default: tagged_product.selected_or_first_available_variant -%}
+                {%- assign display_name = tagged.display_name_override.value | default: tagged_product.title -%}
+                {%- assign thumb_img = tagged.thumbnail_override.value | default: tagged_product.featured_image -%}
+                {%- assign thumb_url = '' -%}
+                {%- if thumb_img != blank -%}
+                  {%- assign thumb_url = thumb_img | image_url: width: 600 -%}
+                {%- endif -%}
+                {%- assign price_str = tagged.price_override.value | default: '' -%}
+                {%- if price_str == '' -%}
+                  {%- assign price_str = target_variant.price | money -%}
+                {%- endif -%}
+                {%- assign show_compare = false -%}
+                {%- if target_variant.compare_at_price > target_variant.price -%}
+                  {%- assign show_compare = true -%}
+                {%- endif -%}
+                {%- assign url_str = tagged.cta_url_override.value | default: tagged_product.url -%}
+                {%- unless first_tag -%},{%- endunless -%}
+                {%- assign first_tag = false -%}
+                {
+                  "id":{{ tagged_product.id | json }},
+                  "handle":{{ tagged_product.handle | json }},
+                  "title":{{ display_name | json }},
+                  "url":{{ url_str | json }},
+                  "available":{{ tagged_product.available | json }},
+                  "price":{{ price_str | json }},
+                  "compare_at_price":{%- if show_compare -%}{{ target_variant.compare_at_price | money | json }}{%- else -%}null{%- endif -%},
+                  "image_url":{{ thumb_url | json }},
+                  "first_variant_id":{{ target_variant.id | json }},
+                  "tag_id":{{ tagged.system.id | json }},
+                  "cta_text_override":{{ tagged.cta_text_override.value | json }},
+                  "variants":[
+                    {%- assign first_v = true -%}
+                    {%- for v in tagged_product.variants -%}
+                      {%- unless first_v -%},{%- endunless -%}
+                      {%- assign first_v = false -%}
+                      {%- assign v_img = '' -%}
+                      {%- if v.featured_image != blank -%}{%- assign v_img = v.featured_image | image_url: width: 600 -%}{%- endif -%}
+                      {
+                        "id":{{ v.id | json }},
+                        "title":{{ v.title | json }},
+                        "available":{{ v.available | json }},
+                        "price":{{ v.price | money | json }},
+                        "options":[
+                          {%- if v.option1 != blank -%}{{ v.option1 | json }}{%- endif -%}
+                          {%- if v.option2 != blank -%},{{ v.option2 | json }}{%- endif -%}
+                          {%- if v.option3 != blank -%},{{ v.option3 | json }}{%- endif -%}
+                        ],
+                        "featured_image":{{ v_img | json }}
+                      }
+                    {%- endfor -%}
+                  ],
+                  {%- comment -%}
+                    Per-product option groupings. We surface name + position + values
+                    with optional swatch hints (color hex or image URL) when the
+                    merchant has configured them via Shopify's metaobject-based
+                    option values. Falls back to plain text pills otherwise.
+                  {%- endcomment -%}
+                  "options":[
+                    {%- assign first_o = true -%}
+                    {%- for opt in tagged_product.options_with_values -%}
+                      {%- unless first_o -%},{%- endunless -%}
+                      {%- assign first_o = false -%}
+                      {
+                        "name":{{ opt.name | json }},
+                        "position":{{ opt.position | json }},
+                        "values":[
+                          {%- assign first_ov = true -%}
+                          {%- for ov in opt.values -%}
+                            {%- unless first_ov -%},{%- endunless -%}
+                            {%- assign first_ov = false -%}
+                            {%- assign sw_color = '' -%}
+                            {%- assign sw_image = '' -%}
+                            {%- if ov.swatch != blank -%}
+                              {%- if ov.swatch.color != blank -%}{%- assign sw_color = ov.swatch.color -%}{%- endif -%}
+                              {%- if ov.swatch.image != blank -%}{%- assign sw_image = ov.swatch.image | image_url: width: 80 -%}{%- endif -%}
+                            {%- endif -%}
+                            {
+                              "name":{{ ov.name | json }},
+                              "swatch_color":{%- if sw_color != '' -%}{{ sw_color | json }}{%- else -%}null{%- endif -%},
+                              "swatch_image":{%- if sw_image != '' -%}{{ sw_image | json }}{%- else -%}null{%- endif -%}
+                            }
+                          {%- endfor -%}
+                        ]
+                      }
+                    {%- endfor -%}
+                  ]
+                }
+              {%- endif -%}
+            {%- endif -%}
+          {%- endfor -%}
+          {%- endif -%}
+        ]
+      }
+      {%- endif -%}
+    {%- endfor -%}
+  }
+}
+</script>
+{%- endif -%}

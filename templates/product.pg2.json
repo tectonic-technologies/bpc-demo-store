@@ -10,7 +10,7 @@
 {
   "sections": {
     "main": {
-      "type": "product-information",
+      "type": "product-information-pg2",
       "blocks": {
         "price_rating": {
           "type": "group",

@@ -280,6 +280,21 @@
   font-size: 1.0625rem;
 }
 
+/* ── Minimal empty state (no reviews): centered prompt + CTA ── */
+
+.sai-okclm1q7__empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sai-size-4);
+  padding-block: var(--sai-size-7);
+  text-align: center;
+}
+
+.sai-okclm1q7__empty-state .sai-okclm1q7__empty {
+  padding: 0;
+}
+
 .sai-okclm1q7__review {
   display: flex;
   flex-direction: column;
@@ -1044,6 +1059,16 @@
   {%- assign total_count   = 0 -%}
 {%- endif -%}
 
+{%- comment -%}
+  Empty-state display mode (only matters when total_count == 0):
+    minimal — just the empty text + Write A Review button (default)
+    full    — heading + rating summary + zeroed histogram + Write A Review
+              + empty text. No count/sort bar (nothing to sort).
+{%- endcomment -%}
+{%- if _c.empty_state_display == nil or _c.empty_state_display == blank -%}{%- assign empty_mode = 'minimal' -%}{%- else -%}{%- assign empty_mode = _c.empty_state_display -%}{%- endif -%}
+{%- assign is_minimal_empty = false -%}
+{%- if total_count == 0 and empty_mode == 'minimal' -%}{%- assign is_minimal_empty = true -%}{%- endif -%}
+
 <sai-okclm1q7
   class="sai-okclm1q7{% if thumb_size == 'medium' %} sai-okclm1q7--thumb-md{% endif %}"
   data-product-handle="{{ product.handle }}"
@@ -1063,6 +1088,14 @@
   style="{%- if star_filled != '#f5a623' -%}--sai-okclm1q7-star-color: {{ star_filled }};{%- endif -%}{%- if star_empty != '#e8e8e8' -%}--sai-okclm1q7-star-empty: {{ star_empty }};{%- endif -%}{%- if bar_color != '#f5a623' -%}--sai-okclm1q7-bar-fill: {{ bar_color }};{%- endif -%}{%- if bar_bg != '#e8e8e8' -%}--sai-okclm1q7-bar-bg: {{ bar_bg }};{%- endif -%}"
 >
   <div class="sai-okclm1q7__container">
+
+    {%- if is_minimal_empty -%}
+    {%- comment -%} ── Minimal empty state: prompt + CTA only ── {%- endcomment -%}
+    <div class="sai-okclm1q7__empty-state">
+      <p class="sai-okclm1q7__empty">{{ empty_text }}</p>
+      <a class="sai-okclm1q7__write-btn" href="{{ write_url }}" data-action="write-review">{{ write_label }}</a>
+    </div>
+    {%- else -%}
 
     {%- comment -%} ── Heading ── {%- endcomment -%}
     <h2 class="sai-okclm1q7__heading">{{ heading }}</h2>
@@ -1089,7 +1122,19 @@
         {%- endif -%}
       </div>
 
-      {%- if histogram and show_hist -%}
+      {%- comment -%}
+        Histogram shows when reviews exist, or in 'full' empty mode (zeroed).
+        Not gated on `histogram` being present — an empty review_stats has no
+        ratingHistogram, but the loop defaults each row to 0, so 'full' still
+        paints the five empty bars.
+      {%- endcomment -%}
+      {%- assign render_histogram = false -%}
+      {%- if show_hist -%}
+        {%- if total_count > 0 or empty_mode == 'full' -%}
+          {%- assign render_histogram = true -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if render_histogram -%}
         <div class="sai-okclm1q7__histogram">
           {%- for star in (1..5) -%}
             {%- assign star_key = 5 | minus: star | plus: 1 | append: '' -%}
@@ -1191,8 +1236,9 @@
       {%- endif -%}
     {%- endif -%}
 
-    {%- comment -%} ── Controls bar ── {%- endcomment -%}
-    <div class="sai-okclm1q7__controls"{%- if total_count == 0 %} hidden{%- endif -%}>
+    {%- comment -%} ── Controls bar (count + sort). Only shown when reviews exist. ── {%- endcomment -%}
+    {%- if total_count > 0 -%}
+    <div class="sai-okclm1q7__controls">
       <span class="sai-okclm1q7__review-count">Reviews ({{ total_count }})</span>
       <div class="sai-okclm1q7__sort">
         <span class="sai-okclm1q7__sort-label">Sort By</span>
@@ -1204,6 +1250,7 @@
         </select>
       </div>
     </div>
+    {%- endif -%}
 
     {%- comment -%} ── Review List (SSR from metaobject references) ── {%- endcomment -%}
     <div class="sai-okclm1q7__list" data-slot="reviews">
@@ -1362,6 +1409,7 @@
       <button class="sai-okclm1q7__load-more-btn" type="button" data-action="load-more">Load More Reviews</button>
     </div>
 
+    {%- endif -%}
   </div>
 </sai-okclm1q7>
 

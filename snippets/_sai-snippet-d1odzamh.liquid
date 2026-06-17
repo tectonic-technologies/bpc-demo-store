@@ -1,0 +1,1482 @@
+{%- comment -%}
+  Review Cards Masonry — same summary/histogram as the list snippet,
+  but renders reviews in a CSS-columns masonry grid with card styling.
+
+  Reads the same four metafields:
+    - product.metafields.spectrum.review_stats     (json)
+    - product.metafields.spectrum.product_reviews   (list.metaobject_reference)
+    - product.metafields.spectrum.rating_aspects    (json)
+    - shop.metafields.spectrum.reviews_config       (json)
+
+  Trust boundary:
+    Metaobject data is backend-managed. Field values are emitted through
+    Liquid's built-in escaping. No additional sanitisation needed.
+{%- endcomment -%}
+
+{% stylesheet %}
+/* Product Reviews (d1odzamh) — aggregated into spectrum-snippet.css at install. */
+
+.sai-d1odzamh {
+  --sai-d1odzamh-star-color: #f5a623;
+  --sai-d1odzamh-star-empty: color-mix(in srgb, currentColor 25%, transparent);
+  --sai-d1odzamh-cols-mobile: 1;
+  --sai-d1odzamh-cols-tablet: 2;
+  --sai-d1odzamh-cols-desktop: 3;
+  --sai-d1odzamh-bar-fill: #f5a623;
+  --sai-d1odzamh-bar-bg: color-mix(in srgb, currentColor 15%, transparent);
+  --sai-d1odzamh-divider: color-mix(in srgb, currentColor 12%, transparent);
+  --sai-d1odzamh-surface: color-mix(in srgb, currentColor 4%, transparent);
+  --sai-d1odzamh-badge-bg: var(--sai-color-primary);
+  --sai-d1odzamh-badge-fg: var(--sai-color-primary-fg);
+
+  display: block;
+  box-sizing: border-box;
+  inline-size: 100%;
+  max-inline-size: 72rem;
+  margin-inline: auto;
+  margin-block: var(--sai-size-7);
+  padding-inline: var(--sai-size-5);
+  font-family: var(--sai-font-body);
+  font-style: var(--sai-font-body-style);
+  font-weight: var(--sai-font-body-weight);
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--sai-color-fg);
+  background: var(--sai-color-bg);
+}
+
+/* ── Theme resets — neutralize theme button, input, select styles ──────────── */
+
+.sai-d1odzamh button,
+.sai-d1odzamh input,
+.sai-d1odzamh textarea,
+.sai-d1odzamh select {
+  min-width: 0;
+  min-height: 0;
+  margin: 0;
+  box-shadow: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.sai-d1odzamh button::before,
+.sai-d1odzamh button::after {
+  content: none;
+}
+
+.sai-d1odzamh__container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-5);
+}
+
+/* ── Heading ──────────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__heading {
+  margin: 0;
+  font-family: var(--sai-font-heading);
+  font-style: var(--sai-font-heading-style);
+  font-weight: var(--sai-font-heading-weight);
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: var(--sai-color-fg);
+}
+
+/* ── Summary Section ──────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__summary-section {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--sai-size-6);
+  flex-wrap: wrap;
+}
+
+.sai-d1odzamh__summary-left {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-2);
+  min-inline-size: 10rem;
+}
+
+.sai-d1odzamh__avg-text {
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 1.75rem;
+  line-height: 1.2;
+}
+
+.sai-d1odzamh__avg-stars {
+  display: flex;
+  gap: 2px;
+  color: var(--sai-d1odzamh-star-color);
+}
+
+.sai-d1odzamh__star--empty {
+  color: var(--sai-d1odzamh-star-empty);
+}
+
+.sai-d1odzamh__star--half {
+  color: var(--sai-d1odzamh-star-color);
+}
+
+.sai-d1odzamh__based-on {
+  margin: 0;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* ── Histogram ────────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__histogram {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-2);
+  flex: 1;
+  min-inline-size: 12rem;
+  max-inline-size: 24rem;
+}
+
+.sai-d1odzamh__histogram-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-3);
+  padding: 2px 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.875rem;
+  color: var(--sai-color-fg);
+  transition: opacity var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__histogram-row:hover {
+  opacity: 0.75;
+}
+
+.sai-d1odzamh__histogram-row:focus-visible {
+  outline: 2px solid var(--sai-color-fg);
+  outline-offset: 2px;
+  border-radius: var(--sai-radius-sm);
+}
+
+.sai-d1odzamh__histogram-stars {
+  display: flex;
+  gap: 1px;
+  flex-shrink: 0;
+  color: var(--sai-d1odzamh-star-color);
+}
+
+.sai-d1odzamh__star-sm--empty {
+  color: var(--sai-d1odzamh-star-empty);
+}
+
+.sai-d1odzamh__histogram-bar {
+  flex: 1;
+  block-size: 0.625rem;
+  border-radius: var(--sai-radius-round);
+  background: var(--sai-d1odzamh-bar-bg);
+  overflow: hidden;
+}
+
+.sai-d1odzamh__histogram-fill {
+  display: block;
+  block-size: 100%;
+  border-radius: inherit;
+  background: var(--sai-d1odzamh-bar-fill);
+  transition: width var(--sai-duration-2) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__histogram-count {
+  flex-shrink: 0;
+  min-inline-size: 2.5rem;
+  text-align: end;
+  opacity: 0.6;
+}
+
+/* ── Summary Actions ──────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__summary-actions {
+  display: flex;
+  align-items: flex-start;
+}
+
+.sai-d1odzamh__write-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--sai-size-3) var(--sai-size-6);
+  border: 0;
+  border-radius: var(--sai-radius-md);
+  background: var(--sai-color-primary);
+  background-color: var(--sai-color-primary);
+  color: var(--sai-color-primary-fg);
+  font-family: var(--sai-font-body);
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 0.9375rem;
+  line-height: 1.4;
+  cursor: pointer;
+  white-space: nowrap;
+  text-decoration: none;
+  transition: opacity var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__write-btn:hover {
+  opacity: 0.88;
+}
+
+/* ── Controls Bar ─────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block: var(--sai-size-4);
+  border-block-start: 1px solid var(--sai-d1odzamh-divider);
+}
+
+.sai-d1odzamh__card-count {
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 1.0625rem;
+}
+
+.sai-d1odzamh__sort {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-2);
+}
+
+.sai-d1odzamh__sort-label {
+  font-size: 0.875rem;
+  opacity: 0.7;
+  white-space: nowrap;
+}
+
+.sai-d1odzamh .sai-d1odzamh__sort-select {
+  padding: var(--sai-size-2) var(--sai-size-3);
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  background: var(--sai-color-bg);
+  background-color: var(--sai-color-bg);
+  font-family: var(--sai-font-body);
+  font-size: 0.875rem;
+  color: var(--sai-color-fg);
+  cursor: pointer;
+}
+
+/* ── Media Gallery (aggregate carousel) ───────────────────────────────────── */
+
+.sai-d1odzamh__gallery {
+  position: relative;
+  display: flex;
+  gap: var(--sai-size-2);
+  overflow-x: auto;
+  padding-block: var(--sai-size-3);
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 2rem,
+    black calc(100% - 3rem),
+    transparent
+  );
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 2rem,
+    black calc(100% - 3rem),
+    transparent
+  );
+}
+
+.sai-d1odzamh__gallery::-webkit-scrollbar {
+  display: none;
+}
+
+.sai-d1odzamh .sai-d1odzamh__gallery-thumb {
+  display: inline-flex;
+  flex-shrink: 0;
+  inline-size: 4.5rem;
+  block-size: 4.5rem;
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  overflow: hidden;
+  padding: 0;
+  cursor: pointer;
+  background: transparent;
+}
+
+.sai-d1odzamh__gallery-thumb img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+/* ── Masonry Grid ─────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__grid {
+  display: flex;
+  gap: var(--sai-size-4);
+  align-items: flex-start;
+}
+
+.sai-d1odzamh__grid-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-4);
+  min-inline-size: 0;
+}
+
+/* SSR fallback before JS runs — single column stacked */
+.sai-d1odzamh__grid--ssr {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-4);
+}
+
+.sai-d1odzamh__empty {
+  inline-size: 100%;
+  padding: var(--sai-size-7) 0;
+  text-align: center;
+  opacity: 0.6;
+  font-size: 1.0625rem;
+}
+
+/* ── Minimal empty state (no reviews): centered prompt + CTA ── */
+
+.sai-d1odzamh__empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--sai-size-4);
+  padding-block: var(--sai-size-7);
+  text-align: center;
+}
+
+.sai-d1odzamh__empty-state .sai-d1odzamh__empty {
+  padding: 0;
+}
+
+.sai-d1odzamh__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-3);
+  padding: var(--sai-size-5);
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-lg);
+  background: var(--sai-d1odzamh-surface);
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.sai-d1odzamh__card:hover {
+  border-color: color-mix(in srgb, var(--sai-color-fg, #000) 25%, transparent);
+}
+
+/* ── Card Media (hero image at top of card) ───────────────────────────────── */
+
+.sai-d1odzamh__card-media {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--sai-radius-md) var(--sai-radius-md) 0 0;
+  margin: calc(-1 * var(--sai-size-4)) calc(-1 * var(--sai-size-4)) 0;
+}
+
+.sai-d1odzamh .sai-d1odzamh__card-media-hero {
+  display: block;
+  width: 100%;
+  border: 0;
+  padding: 0;
+  background: var(--sai-d1odzamh-surface);
+  cursor: pointer;
+}
+
+.sai-d1odzamh__card-media-hero img,
+.sai-d1odzamh__card-media-hero video {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.sai-d1odzamh__card-media-hero--video {
+  position: relative;
+  background: color-mix(in srgb, var(--sai-color-fg, #000) 90%, transparent);
+}
+
+.sai-d1odzamh__play-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--sai-color-bg, #fff);
+  filter: drop-shadow(0 1px 4px color-mix(in srgb, var(--sai-color-fg, #000) 50%, transparent));
+  pointer-events: none;
+}
+
+.sai-d1odzamh__play-overlay--sm {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.sai-d1odzamh__gallery-thumb--video {
+  position: relative;
+}
+
+.sai-d1odzamh__gallery-thumb--video video {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.sai-d1odzamh__card-media-count {
+  position: absolute;
+  top: var(--sai-size-2);
+  right: var(--sai-size-2);
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  block-size: 1.75rem;
+  padding-inline: var(--sai-size-2);
+  border-radius: var(--sai-radius-sm);
+  background: color-mix(in srgb, var(--sai-color-fg, #000) 60%, transparent);
+  color: var(--sai-color-bg, #fff);
+  font-size: 0.75rem;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+  line-height: 1;
+  pointer-events: none;
+}
+
+.sai-d1odzamh__card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-2);
+  font-size: 0.875rem;
+}
+
+.sai-d1odzamh__card-date {
+  font-size: 0.8125rem;
+  opacity: 0.5;
+}
+
+.sai-d1odzamh__card-stars {
+  display: flex;
+  gap: 1px;
+  color: var(--sai-d1odzamh-star-color);
+}
+
+.sai-d1odzamh__avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2rem;
+  block-size: 2rem;
+  border-radius: var(--sai-radius-round);
+  background: var(--sai-d1odzamh-divider);
+  font-family: var(--sai-font-body);
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 0.8125rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.sai-d1odzamh__card-footer {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-2);
+  margin-block-start: auto;
+}
+
+.sai-d1odzamh__card-author-block {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  min-inline-size: 0;
+}
+
+.sai-d1odzamh__card-author {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-1);
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 0.875rem;
+}
+
+.sai-d1odzamh__badge {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.sai-d1odzamh__badge svg {
+  inline-size: 1em;
+  block-size: 1em;
+}
+
+.sai-d1odzamh__badge--verified {
+  gap: 0.25em;
+  color: var(--sai-d1odzamh-badge-bg);
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.sai-d1odzamh__card-title {
+  margin: 0;
+  font-family: var(--sai-font-body);
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 1rem;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.sai-d1odzamh__card-body {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  white-space: pre-line;
+}
+
+/* ── Merchant Reply ───────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__reply {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-2);
+  margin-block-start: var(--sai-size-2);
+  padding: var(--sai-size-4);
+  background: var(--sai-d1odzamh-surface);
+  border-radius: var(--sai-radius-md);
+}
+
+.sai-d1odzamh__reply-label {
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+}
+
+.sai-d1odzamh__reply-date {
+  font-size: 0.8125rem;
+  opacity: 0.5;
+}
+
+.sai-d1odzamh__reply-body {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  opacity: 0.85;
+  white-space: pre-line;
+}
+
+/* ── Review Media ─────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__media {
+  display: flex;
+  gap: var(--sai-size-2);
+  flex-wrap: wrap;
+}
+
+.sai-d1odzamh .sai-d1odzamh__media-thumb {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 4rem;
+  block-size: 4rem;
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  background: var(--sai-d1odzamh-surface);
+  padding: 0;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.sai-d1odzamh__media-thumb img {
+  inline-size: 100%;
+  block-size: 100%;
+  object-fit: cover;
+}
+
+.sai-d1odzamh__media-thumb--video {
+  background: color-mix(in srgb, currentColor 5%, transparent);
+}
+
+.sai-d1odzamh__media-play {
+  opacity: 0.7;
+}
+
+/* ── Media Lightbox ───────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__lightbox {
+  --_lb-overlay: color-mix(in srgb, var(--sai-color-fg, #000) 85%, transparent);
+  --_lb-btn-bg: color-mix(in srgb, var(--sai-color-bg, #fff) 70%, transparent);
+  --_lb-btn-fg: var(--sai-color-fg, #000);
+  position: fixed;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  padding: 0;
+  max-width: 100vw;
+  max-height: 100vh;
+  width: 100vw;
+  height: 100vh;
+  background: var(--_lb-overlay);
+}
+
+.sai-d1odzamh__lightbox[open] {
+  display: flex;
+}
+
+.sai-d1odzamh__lightbox::backdrop {
+  background: transparent;
+}
+
+.sai-d1odzamh__lightbox-panel {
+  position: relative;
+  display: flex;
+  width: min(60rem, 90vw);
+  max-height: 85vh;
+  border-radius: var(--sai-radius-lg);
+  overflow: hidden;
+  background: var(--sai-color-bg);
+}
+
+.sai-d1odzamh__lightbox-media-side {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 50%;
+  min-inline-size: 0;
+  background: color-mix(in srgb, var(--sai-color-fg, #000) 4%, transparent);
+  overflow: hidden;
+}
+
+.sai-d1odzamh__lightbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.sai-d1odzamh__lightbox-media {
+  max-width: 100%;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.sai-d1odzamh__lightbox-review-side {
+  flex: 1 1 50%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: var(--sai-size-6);
+  color: var(--sai-color-fg);
+  border-inline-start: 1px solid var(--sai-d1odzamh-divider);
+}
+
+.sai-d1odzamh__lightbox-review-side[hidden] {
+  display: none;
+}
+
+.sai-d1odzamh__lightbox-media-side[hidden] {
+  display: none;
+}
+
+.sai-d1odzamh__lightbox-media-side[hidden] ~ .sai-d1odzamh__lightbox-review-side {
+  flex: 1 1 100%;
+  border-inline-start: 0;
+}
+
+.sai-d1odzamh__lightbox-review-stars {
+  display: flex;
+  gap: 1px;
+  margin-block-end: var(--sai-size-2);
+  color: var(--sai-d1odzamh-star-color);
+}
+
+.sai-d1odzamh__lightbox-review-stars .sai-d1odzamh__star-sm--empty {
+  color: var(--sai-d1odzamh-star-empty);
+}
+
+.sai-d1odzamh__lightbox-review-date {
+  display: block;
+  font-size: 0.8125rem;
+  opacity: 0.6;
+  margin-block-end: var(--sai-size-3);
+}
+
+.sai-d1odzamh__lightbox-review-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-2);
+  margin-block-end: var(--sai-size-4);
+}
+
+.sai-d1odzamh__lightbox-review-title {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0 0 var(--sai-size-2);
+  text-transform: uppercase;
+}
+
+.sai-d1odzamh__lightbox-review-body {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  opacity: 0.85;
+}
+
+@media (max-width: 767px) {
+  .sai-d1odzamh__lightbox-panel {
+    flex-direction: column;
+    width: 95vw;
+  }
+  .sai-d1odzamh__lightbox-media-side {
+    max-height: 50vh;
+  }
+  .sai-d1odzamh__lightbox-review-side {
+    flex: 0 0 auto;
+    max-height: 35vh;
+    border-inline-start: 0;
+    border-block-start: 1px solid var(--sai-d1odzamh-divider);
+  }
+}
+
+.sai-d1odzamh .sai-d1odzamh__lightbox-close {
+  position: absolute;
+  top: var(--sai-size-3);
+  right: var(--sai-size-3);
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border: 0;
+  border-radius: var(--sai-radius-round);
+  background: var(--_lb-btn-bg);
+  color: var(--_lb-btn-fg);
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.sai-d1odzamh__lightbox-counter {
+  position: absolute;
+  bottom: var(--sai-size-3);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  padding: var(--sai-size-1) var(--sai-size-3);
+  border-radius: var(--sai-radius-sm);
+  background: var(--_lb-btn-bg);
+  color: var(--_lb-btn-fg);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  backdrop-filter: blur(4px);
+}
+
+.sai-d1odzamh .sai-d1odzamh__lightbox-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border: 0;
+  border-radius: var(--sai-radius-round);
+  background: var(--_lb-btn-bg);
+  color: var(--_lb-btn-fg);
+  cursor: pointer;
+  backdrop-filter: blur(4px);
+}
+
+.sai-d1odzamh__lightbox-nav--prev {
+  left: var(--sai-size-3);
+}
+.sai-d1odzamh__lightbox-nav--next {
+  right: var(--sai-size-3);
+}
+
+.sai-d1odzamh__lightbox-nav[hidden] {
+  display: none;
+}
+
+.sai-d1odzamh__lightbox--closing .sai-d1odzamh__lightbox-panel {
+  animation: sai-d1odzamh-lightbox-out 0.25s ease-out forwards;
+}
+
+@keyframes sai-d1odzamh-lightbox-out {
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+/* ── Voting ───────────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__votes {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--sai-size-3);
+  margin-block-start: var(--sai-size-1);
+}
+
+.sai-d1odzamh .sai-d1odzamh__vote-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--sai-size-1);
+  padding: var(--sai-size-1) var(--sai-size-3);
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  background: transparent;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.8125rem;
+  color: var(--sai-color-fg);
+  cursor: pointer;
+  transition: border-color var(--sai-duration-1) var(--sai-ease-out-1), background
+    var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__vote-btn:hover {
+  background: var(--sai-d1odzamh-surface);
+  background-color: var(--sai-d1odzamh-surface);
+}
+
+.sai-d1odzamh__vote-btn--active {
+  border-color: var(--sai-color-fg);
+  font-weight: var(--sai-font-body-weight-bold);
+}
+
+.sai-d1odzamh__vote-divider {
+  opacity: 0.3;
+  margin-inline: var(--sai-size-1);
+}
+
+.sai-d1odzamh__vote-count {
+  min-inline-size: 1ch;
+}
+
+/* ── Medium thumbnail size modifier ──────────────────────────────────────── */
+
+.sai-d1odzamh--thumb-md .sai-d1odzamh__media-thumb {
+  inline-size: 4.5rem;
+  block-size: 4.5rem;
+}
+
+/* ── Pagination ───────────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sai-size-4);
+  padding-block: var(--sai-size-5);
+}
+
+.sai-d1odzamh .sai-d1odzamh__page-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  inline-size: 2.25rem;
+  block-size: 2.25rem;
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  background: transparent;
+  background-color: transparent;
+  color: var(--sai-color-fg);
+  cursor: pointer;
+  transition: background var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__page-btn:hover:not([disabled]) {
+  background: var(--sai-d1odzamh-surface);
+  background-color: var(--sai-d1odzamh-surface);
+}
+
+.sai-d1odzamh__page-btn[disabled] {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.sai-d1odzamh__page-info {
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+
+/* ── Hidden state — override Dawn/theme CSS that strips [hidden] ──────────── */
+
+.sai-d1odzamh__pagination[hidden] {
+  display: none !important;
+}
+
+.sai-d1odzamh__load-more {
+  display: flex;
+  justify-content: center;
+  padding-block: var(--sai-size-5);
+}
+
+.sai-d1odzamh__load-more[hidden] {
+  display: none !important;
+}
+
+.sai-d1odzamh .sai-d1odzamh__load-more-btn {
+  padding: var(--sai-size-3) var(--sai-size-6);
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-md);
+  background: transparent;
+  font-family: var(--sai-font-body);
+  font-weight: var(--sai-font-body-weight-bold);
+  font-size: 0.9375rem;
+  color: inherit;
+  cursor: pointer;
+  transition: opacity var(--sai-duration-1) var(--sai-ease-out-1);
+}
+
+.sai-d1odzamh__load-more-btn:hover {
+  opacity: 0.75;
+}
+
+.sai-d1odzamh__scroll-sentinel {
+  min-block-size: 1px;
+}
+
+.sai-d1odzamh__scroll-sentinel > .sai-d1odzamh__shimmer {
+  padding-block: 0;
+  margin-block-start: var(--sai-size-4);
+  animation: sai-d1odzamh-fade-in var(--sai-duration-3) var(--sai-ease-out-1) both;
+}
+
+@keyframes sai-d1odzamh-fade-in {
+  from { opacity: 0; }
+}
+
+/* ── Loading Shimmer ──────────────────────────────────────────────────────── */
+
+.sai-d1odzamh__shimmer {
+  display: flex;
+  gap: var(--sai-size-4);
+  padding-block: var(--sai-size-5);
+  inline-size: 100%;
+}
+
+.sai-d1odzamh__shimmer-col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-4);
+  min-inline-size: 0;
+}
+
+.sai-d1odzamh__shimmer-card {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-lg);
+  background: var(--sai-d1odzamh-surface);
+}
+
+.sai-d1odzamh__shimmer-media {
+  aspect-ratio: 4 / 5;
+  background: var(--sai-d1odzamh-bar-bg);
+  animation: sai-d1odzamh-shimmer 1.2s ease-in-out infinite;
+}
+
+.sai-d1odzamh__shimmer-body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sai-size-3);
+  padding: var(--sai-size-5);
+}
+
+.sai-d1odzamh__shimmer-line,
+.sai-d1odzamh__shimmer-line:empty {
+  display: block;
+  block-size: 0.75rem;
+  min-block-size: 0.75rem;
+  border-radius: var(--sai-radius-round);
+  background: var(--sai-d1odzamh-bar-bg);
+  animation: sai-d1odzamh-shimmer 1.2s ease-in-out infinite;
+}
+
+.sai-d1odzamh__shimmer-line--stars {
+  inline-size: 5rem;
+}
+.sai-d1odzamh__shimmer-line--short {
+  inline-size: 6rem;
+}
+.sai-d1odzamh__shimmer-line--medium {
+  inline-size: 60%;
+}
+.sai-d1odzamh__shimmer-line--long {
+  inline-size: 90%;
+}
+
+.sai-d1odzamh__shimmer-row {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-2);
+}
+
+.sai-d1odzamh__shimmer-avatar {
+  inline-size: 1.75rem;
+  block-size: 1.75rem;
+  border-radius: var(--sai-radius-round);
+  background: var(--sai-d1odzamh-bar-bg);
+  flex-shrink: 0;
+  animation: sai-d1odzamh-shimmer 1.2s ease-in-out infinite;
+}
+
+@keyframes sai-d1odzamh-shimmer {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+}
+
+/* ── Active filter indicator ──────────────────────────────────────────────── */
+
+.sai-d1odzamh__active-filter {
+  display: flex;
+  align-items: center;
+  gap: var(--sai-size-3);
+  padding: var(--sai-size-3) var(--sai-size-4);
+  background: var(--sai-d1odzamh-surface);
+  border-radius: var(--sai-radius-sm);
+  font-size: 0.875rem;
+}
+
+.sai-d1odzamh .sai-d1odzamh__clear-filter {
+  padding: var(--sai-size-1) var(--sai-size-2);
+  border: 1px solid var(--sai-d1odzamh-divider);
+  border-radius: var(--sai-radius-sm);
+  background: transparent;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 0.8125rem;
+  color: var(--sai-color-fg);
+  cursor: pointer;
+}
+
+/* ── Reduced Motion ───────────────────────────────────────────────────────── */
+
+@media (prefers-reduced-motion: reduce) {
+  .sai-d1odzamh__histogram-fill,
+  .sai-d1odzamh__histogram-row,
+  .sai-d1odzamh__write-btn,
+  .sai-d1odzamh__vote-btn,
+  .sai-d1odzamh__page-btn {
+    transition: none;
+  }
+  .sai-d1odzamh__shimmer-line {
+    animation: none;
+  }
+}
+{% endstylesheet %}
+
+<script src="{{ 'sai-snippet-d1odzamh.js' | asset_url }}" async></script>
+
+{%- assign content = variant.content | default: props -%}
+{%- assign heading       = content.heading              | default: 'Customer Reviews' -%}
+{%- assign per_page      = content.reviews_per_page     | default: 10 -%}
+{%- assign write_label   = content.write_review_label   | default: 'Write A Review' -%}
+{%- assign write_url_base = content.write_review_url     | default: '/#write-review' -%}
+{%- if write_url_base contains '?' -%}
+  {%- assign write_url = write_url_base | append: '&product=' | append: product.handle -%}
+{%- else -%}
+  {%- assign write_url = write_url_base | append: '?product=' | append: product.handle -%}
+{%- endif -%}
+{%- assign empty_text    = content.empty_state_text     | default: 'No reviews yet. Be the first to share your experience!' -%}
+{%- assign pag_type      = content.pagination_type       | default: 'numbered' -%}
+{%- assign default_sort  = content.default_sort         | default: 'newest' -%}
+{%- assign cols_mobile   = content.cols_mobile          | default: 1 -%}
+{%- assign cols_tablet   = content.cols_tablet          | default: 2 -%}
+{%- assign cols_desktop  = content.cols_desktop         | default: 3 -%}
+{%- assign show_hist     = content.show_histogram -%}
+{%- if show_hist == nil -%}{%- assign show_hist = true -%}{%- endif -%}
+{%- assign show_media    = content.show_media -%}
+{%- if show_media == nil -%}{%- assign show_media = true -%}{%- endif -%}
+{%- assign gallery_limit = content.gallery_limit | default: 20 | times: 1 -%}
+{%- assign show_badge    = content.show_verified_badge -%}
+{%- if show_badge == nil -%}{%- assign show_badge = true -%}{%- endif -%}
+{%- assign show_count    = content.show_review_count -%}
+{%- if show_count == nil -%}{%- assign show_count = true -%}{%- endif -%}
+{%- assign date_fmt      = content.date_format          | default: 'absolute' -%}
+{%- assign help_style    = content.helpful_style        | default: 'text_icon' -%}
+{%- assign thumb_size    = content.thumbnail_size       | default: 'small' -%}
+{%- assign star_filled   = content.star_color_filled    | default: '#f5a623' -%}
+{%- assign star_empty    = content.star_color_empty     | default: '#e8e8e8' -%}
+{%- assign bar_color     = content.bar_color            | default: '#f5a623' -%}
+{%- assign bar_bg        = content.bar_bg_color         | default: '#e8e8e8' -%}
+{%- assign reply_label_raw = content.reply_label -%}
+{%- if reply_label_raw == nil or reply_label_raw == blank -%}
+  {%- assign reply_label = shop.name | append: ' Reply' -%}
+{%- else -%}
+  {%- assign reply_label = reply_label_raw -%}
+{%- endif -%}
+
+{%- assign stats_raw     = product.metafields.spectrum.review_stats.value -%}
+{%- assign config_raw    = shop.metafields.spectrum.reviews_config.value -%}
+{%- assign reviews_ref   = product.metafields.spectrum.product_reviews.value -%}
+{%- assign gallery_raw   = product.metafields.spectrum.review_image_gallery.value -%}
+
+{%- if stats_raw -%}
+  {%- assign avg_rating    = stats_raw.averageRating | times: 1.0 -%}
+  {%- assign total_count   = stats_raw.totalCount | times: 1 -%}
+  {%- assign histogram     = stats_raw.ratingHistogram -%}
+{%- else -%}
+  {%- assign avg_rating    = 0 -%}
+  {%- assign total_count   = 0 -%}
+{%- endif -%}
+
+{%- comment -%}
+  Empty-state display mode (only matters when total_count == 0):
+    minimal — just the empty text + Write A Review button (default)
+    full    — heading + rating summary + zeroed histogram + Write A Review
+              + empty text. No count/sort bar (nothing to sort).
+{%- endcomment -%}
+{%- assign empty_mode = content.empty_state_display | default: 'minimal' -%}
+{%- assign is_minimal_empty = false -%}
+{%- if total_count == 0 and empty_mode == 'minimal' -%}{%- assign is_minimal_empty = true -%}{%- endif -%}
+
+<sai-d1odzamh
+  class="sai-d1odzamh"
+  data-product-handle="{{ product.handle }}"
+  data-product-id="{{ product.id }}"
+  data-per-page="{{ per_page }}"
+  data-total-count="{{ total_count }}"
+  data-avg-rating="{{ avg_rating }}"
+  data-date-format="{{ date_fmt }}"
+  data-helpful-style="{{ help_style }}"
+  data-pagination-type="{{ pag_type }}"
+  data-show-media="{{ show_media }}"
+  data-show-badge="{{ show_badge }}"
+  data-default-sort="{{ default_sort }}"
+  data-empty-text="{{ empty_text }}"
+  data-reply-label="{{ reply_label }}"
+  style="--sai-d1odzamh-cols-mobile: {{ cols_mobile }}; --sai-d1odzamh-cols-tablet: {{ cols_tablet }}; --sai-d1odzamh-cols-desktop: {{ cols_desktop }};{%- if star_filled != '#f5a623' -%} --sai-d1odzamh-star-color: {{ star_filled }};{%- endif -%}{%- if star_empty != '#e8e8e8' -%} --sai-d1odzamh-star-empty: {{ star_empty }};{%- endif -%}{%- if bar_color != '#f5a623' -%} --sai-d1odzamh-bar-fill: {{ bar_color }};{%- endif -%}{%- if bar_bg != '#e8e8e8' -%} --sai-d1odzamh-bar-bg: {{ bar_bg }};{%- endif -%}"
+>
+  <div class="sai-d1odzamh__container">
+
+    {%- if is_minimal_empty -%}
+    {%- comment -%} ── Minimal empty state: prompt + CTA only ── {%- endcomment -%}
+    <div class="sai-d1odzamh__empty-state">
+      <p class="sai-d1odzamh__empty">{{ empty_text }}</p>
+      <a class="sai-d1odzamh__write-btn" href="{{ write_url }}" data-action="write-review">{{ write_label }}</a>
+    </div>
+    {%- else -%}
+
+    {%- comment -%} ── Heading ── {%- endcomment -%}
+    <h2 class="sai-d1odzamh__heading">{{ heading }}</h2>
+
+    {%- comment -%} ── Summary Section ── {%- endcomment -%}
+    <div class="sai-d1odzamh__summary-section">
+      <div class="sai-d1odzamh__summary-left">
+        <span class="sai-d1odzamh__avg-text">{{ avg_rating | round: 1 }}/5</span>
+        <div class="sai-d1odzamh__avg-stars" aria-label="{{ avg_rating | round: 1 }} out of 5 stars">
+          {%- assign avg_rounded = avg_rating | times: 2 | round | divided_by: 2.0 -%}
+          {%- for i in (1..5) -%}
+            {%- assign half_threshold = i | minus: 0.5 -%}
+            {%- if avg_rounded >= i -%}
+              <svg class="sai-d1odzamh__star sai-d1odzamh__star--full" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            {%- elsif avg_rounded >= half_threshold -%}
+              <svg class="sai-d1odzamh__star sai-d1odzamh__star--half" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sai-d1odzamh-half-{{ i }}"><stop offset="50%" stop-color="{{ star_filled }}"/><stop offset="50%" stop-color="{{ star_empty }}"/></linearGradient></defs><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z" fill="url(#sai-d1odzamh-half-{{ i }})"/></svg>
+            {%- else -%}
+              <svg class="sai-d1odzamh__star sai-d1odzamh__star--empty" width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+        {%- if show_count -%}
+          <p class="sai-d1odzamh__based-on">Based on {{ total_count }} review{%- if total_count != 1 -%}s{%- endif -%}</p>
+        {%- endif -%}
+      </div>
+
+      {%- comment -%}
+        Histogram shows when reviews exist, or in 'full' empty mode (zeroed).
+        Not gated on `histogram` being present — an empty review_stats has no
+        ratingHistogram, but the loop defaults each row to 0, so 'full' still
+        paints the five empty bars.
+      {%- endcomment -%}
+      {%- assign render_histogram = false -%}
+      {%- if show_hist -%}
+        {%- if total_count > 0 or empty_mode == 'full' -%}
+          {%- assign render_histogram = true -%}
+        {%- endif -%}
+      {%- endif -%}
+      {%- if render_histogram -%}
+        <div class="sai-d1odzamh__histogram">
+          {%- for star in (1..5) -%}
+            {%- assign star_key = 5 | minus: star | plus: 1 | append: '' -%}
+            {%- assign star_count = histogram[star_key] | default: 0 | times: 1 -%}
+            {%- if total_count > 0 -%}
+              {%- assign bar_pct = star_count | times: 100.0 | divided_by: total_count -%}
+            {%- else -%}
+              {%- assign bar_pct = 0 -%}
+            {%- endif -%}
+            <button class="sai-d1odzamh__histogram-row" type="button" data-rating-filter="{{ star_key }}" data-count="{{ star_count }}" aria-label="Filter by {{ star_key }} star reviews ({{ star_count }})">
+              <span class="sai-d1odzamh__histogram-stars" aria-hidden="true">
+                {%- for s in (1..5) -%}
+                  {%- assign sk = star_key | times: 1 -%}
+                  {%- if s <= sk -%}
+                    <svg class="sai-d1odzamh__star-sm sai-d1odzamh__star-sm--full" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  {%- else -%}
+                    <svg class="sai-d1odzamh__star-sm sai-d1odzamh__star-sm--empty" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                  {%- endif -%}
+                {%- endfor -%}
+              </span>
+              <span class="sai-d1odzamh__histogram-bar">
+                <span class="sai-d1odzamh__histogram-fill" style="width: {{ bar_pct }}%"></span>
+              </span>
+              <span class="sai-d1odzamh__histogram-count">({{ star_count }})</span>
+            </button>
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+
+      <div class="sai-d1odzamh__summary-actions">
+        <a class="sai-d1odzamh__write-btn" href="{{ write_url }}" data-action="write-review">{{ write_label }}</a>
+      </div>
+    </div>
+
+    {%- comment -%} ── Media Gallery (aggregate from all reviews) ── {%- endcomment -%}
+    {%- if show_media -%}
+      {%- assign gallery_has_items = false -%}
+      {%- for item in gallery_raw -%}
+        {%- if item.media.url != blank -%}
+          {%- assign gallery_has_items = true -%}
+          {%- break -%}
+        {%- endif -%}
+      {%- endfor -%}
+      {%- if gallery_has_items -%}
+        <div class="sai-d1odzamh__gallery" data-slot="gallery">
+          {%- assign _gal_shown = 0 -%}
+          {%- for item in gallery_raw -%}
+            {%- if _gal_shown >= gallery_limit -%}{%- break -%}{%- endif -%}
+            {%- if item.media.url != blank -%}
+              {%- assign _gal_shown = _gal_shown | plus: 1 -%}
+              {%- assign _gal_type = item.media.mediaType | default: 'image' -%}
+              <button
+                class="sai-d1odzamh__gallery-thumb{%- if _gal_type == 'video' %} sai-d1odzamh__gallery-thumb--video{%- endif -%}"
+                type="button"
+                data-action="media-open"
+                data-media-url="{{ item.media.url }}"
+                data-media-type="{{ _gal_type }}"
+                data-review-rating="{{ item.review.rating | default: 0 }}"
+                data-review-author="{{ item.review.authorName | default: 'Anonymous' }}"
+                data-review-title="{{ item.review.title }}"
+                data-review-body="{{ item.review.body }}"
+                data-review-date="{{ item.review.reviewedAt }}"
+                data-review-verified="{{ item.review.verificationStatus }}"
+                aria-label="{%- if _gal_type == 'video' -%}Play video{%- else -%}View review photo{%- endif -%}"
+              >
+                {%- if _gal_type == 'video' -%}
+                  <video src="{{ item.media.url }}" preload="metadata" muted playsinline></video>
+                  <svg class="sai-d1odzamh__play-overlay sai-d1odzamh__play-overlay--sm" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                {%- else -%}
+                  <img src="{{ item.media.url }}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'">
+                {%- endif -%}
+              </button>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      {%- endif -%}
+    {%- endif -%}
+
+    {%- comment -%} ── Controls bar (count + sort). Only shown when reviews exist. ── {%- endcomment -%}
+    {%- if total_count > 0 -%}
+    <div class="sai-d1odzamh__controls">
+      <span class="sai-d1odzamh__card-count">Reviews ({{ total_count }})</span>
+      <div class="sai-d1odzamh__sort">
+        <span class="sai-d1odzamh__sort-label">Sort By</span>
+        <select class="sai-d1odzamh__sort-select" data-action="sort" aria-label="Sort reviews">
+          <option value="newest"{% if default_sort == 'newest' %} selected{% endif %}>Most Recent</option>
+          <option value="highest"{% if default_sort == 'highest' %} selected{% endif %}>Highest Rating</option>
+          <option value="lowest"{% if default_sort == 'lowest' %} selected{% endif %}>Lowest Rating</option>
+          <option value="most_helpful"{% if default_sort == 'most_helpful' %} selected{% endif %}>Most Helpful</option>
+        </select>
+      </div>
+    </div>
+    {%- endif -%}
+
+    {%- comment -%} ── Masonry Card Grid ── {%- endcomment -%}
+    <div class="sai-d1odzamh__grid sai-d1odzamh__grid--ssr" data-slot="reviews">
+      {%- if total_count == 0 -%}
+        <p class="sai-d1odzamh__empty">{{ empty_text }}</p>
+      {%- else -%}
+        {%- for review_mo in reviews_ref -%}
+          {%- if forloop.index > per_page -%}{%- break -%}{%- endif -%}
+
+          {%- assign r_rating = review_mo.rating.value | append: '' | plus: 0 | round -%}
+          {%- assign r_title = review_mo.title.value -%}
+          {%- assign r_body = review_mo.body.value -%}
+          {%- assign r_author = review_mo.author_display_name.value -%}
+          {%- assign r_date = review_mo.submitted_at.value -%}
+          {%- assign r_verify = review_mo.app_verification_status.value -%}
+          {%- assign r_reply = review_mo.merchant_reply.value -%}
+
+          <article class="sai-d1odzamh__card" data-review-index="{{ forloop.index0 }}" data-action="card-preview">
+            {%- assign r_media_raw = review_mo.media_urls.value -%}
+            {%- if r_media_raw != blank and r_media_raw.size > 0 -%}
+              <div class="sai-d1odzamh__card-media">
+                {%- assign first_media = r_media_raw | first -%}
+                {%- assign _fm_is_video = false -%}
+                {%- if first_media contains '.mp4' or first_media contains '.webm' or first_media contains '.mov' -%}
+                  {%- assign _fm_is_video = true -%}
+                {%- endif -%}
+                <button
+                  class="sai-d1odzamh__card-media-hero{%- if _fm_is_video %} sai-d1odzamh__card-media-hero--video{%- endif -%}"
+                  type="button"
+                  data-action="media-open"
+                  data-media-url="{{ first_media }}"
+                  data-media-type="{%- if _fm_is_video -%}video{%- else -%}image{%- endif -%}"
+                  data-media-all='{{ r_media_raw | json }}'
+                  data-review-rating="{{ r_rating }}"
+                  data-review-author="{{ r_author }}"
+                  data-review-title="{{ r_title }}"
+                  data-review-body="{{ r_body }}"
+                  data-review-date="{{ r_date }}"
+                  data-review-verified="{{ r_verify }}"
+                  aria-label="{%- if _fm_is_video -%}Play video{%- else -%}View image{%- endif -%}"
+                >
+                  {%- if _fm_is_video -%}
+                    <video src="{{ first_media }}" preload="metadata" muted playsinline></video>
+                    <svg class="sai-d1odzamh__play-overlay" width="48" height="48" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                  {%- else -%}
+                    <img src="{{ first_media }}" alt="" loading="lazy" onerror="this.parentElement.style.display='none'">
+                  {%- endif -%}
+                </button>
+                {%- if r_media_raw.size > 1 -%}
+                  <span class="sai-d1odzamh__card-media-count"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="2"/><rect x="7" y="7" width="10" height="10" rx="1"/></svg>+{{ r_media_raw.size | minus: 1 }}</span>
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+
+            <div class="sai-d1odzamh__card-meta">
+              <span class="sai-d1odzamh__card-author">{{ r_author }}</span>
+              {%- if show_badge and r_verify == 'verified_buyer' -%}
+                <span class="sai-d1odzamh__badge sai-d1odzamh__badge--verified" aria-label="Verified buyer">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                  <span>Verified</span>
+                </span>
+              {%- endif -%}
+            </div>
+
+            {%- if r_date -%}
+              <time class="sai-d1odzamh__card-date">{{ r_date | date: '%m/%d/%Y' }}</time>
+            {%- endif -%}
+
+            <div class="sai-d1odzamh__card-stars" aria-label="{{ r_rating }} out of 5 stars">
+              {%- for s in (1..5) -%}
+                {%- if s <= r_rating -%}
+                  <svg class="sai-d1odzamh__star-sm sai-d1odzamh__star-sm--full" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                {%- else -%}
+                  <svg class="sai-d1odzamh__star-sm sai-d1odzamh__star-sm--empty" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.27 5.82 22 7 14.14l-5-4.87 6.91-1.01L12 2z"/></svg>
+                {%- endif -%}
+              {%- endfor -%}
+            </div>
+
+            {%- if r_title != blank -%}
+              <h3 class="sai-d1odzamh__card-title">{{ r_title }}</h3>
+            {%- endif -%}
+
+            {%- if r_body != blank -%}
+              <p class="sai-d1odzamh__card-body">{{ r_body }}</p>
+            {%- endif -%}
+
+            {%- if r_reply != blank -%}
+              <div class="sai-d1odzamh__reply">
+                <span class="sai-d1odzamh__reply-label">{{ reply_label }}</span>
+                <div class="sai-d1odzamh__reply-body">{{ r_reply }}</div>
+              </div>
+            {%- endif -%}
+
+            {%- assign r_handle = review_mo.system.handle -%}
+            {%- if r_handle != blank and customer -%}
+            <div class="sai-d1odzamh__votes">
+              <span class="sai-d1odzamh__votes-label">Helpful?</span>
+              <button class="sai-d1odzamh__vote-btn" type="button" data-action="vote" data-vote-type="helpful" data-review-id="{{ r_handle }}">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M14 9V5a3 3 0 00-3-3l-4 9v11h11.28a2 2 0 002-1.7l1.38-9a2 2 0 00-2-2.3H14z"/><path d="M7 22H4a2 2 0 01-2-2v-7a2 2 0 012-2h3"/></svg><span class="sai-d1odzamh__vote-divider">|</span><span class="sai-d1odzamh__vote-count">0</span>
+              </button>
+              <button class="sai-d1odzamh__vote-btn" type="button" data-action="vote" data-vote-type="not_helpful" data-review-id="{{ r_handle }}">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 15v4a3 3 0 003 3l4-9V2H5.72a2 2 0 00-2 1.7l-1.38 9a2 2 0 002 2.3H10z"/><path d="M17 2h2.67A2.31 2.31 0 0122 4v7a2.31 2.31 0 01-2.33 2H17"/></svg><span class="sai-d1odzamh__vote-divider">|</span><span class="sai-d1odzamh__vote-count">0</span>
+              </button>
+            </div>
+            {%- endif -%}
+          </article>
+        {%- endfor -%}
+      {%- endif -%}
+    </div>
+
+    {%- comment -%} ── Pagination ── {%- endcomment -%}
+    {%- assign total_pages = total_count | divided_by: per_page -%}
+    {%- assign remainder = total_count | modulo: per_page -%}
+    {%- if remainder > 0 -%}{%- assign total_pages = total_pages | plus: 1 -%}{%- endif -%}
+
+    <nav class="sai-d1odzamh__pagination" data-slot="pagination" aria-label="Review pages"
+      {%- if total_pages <= 1 or pag_type != 'numbered' %} hidden{%- endif -%}
+    >
+      <button class="sai-d1odzamh__page-btn" type="button" data-action="prev-page" disabled aria-label="Previous page">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M10 3L5 8L10 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <span class="sai-d1odzamh__page-info" data-slot="page-info">Page 1 of {{ total_pages }}</span>
+      <button class="sai-d1odzamh__page-btn" type="button" data-action="next-page" aria-label="Next page"
+        {%- if total_pages <= 1 %} disabled{%- endif -%}
+      >
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M6 3L11 8L6 13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </nav>
+
+    <div class="sai-d1odzamh__load-more" data-slot="load-more"
+      {%- if total_pages <= 1 or pag_type != 'load_more' %} hidden{%- endif -%}
+    >
+      <button class="sai-d1odzamh__load-more-btn" type="button" data-action="load-more">Load More Reviews</button>
+    </div>
+
+    {%- endif -%}
+  </div>
+</sai-d1odzamh>
+
+<script type="application/json" data-sai-d1odzamh-seed>
+{
+  "stats": {
+    "averageRating": {{ avg_rating | json }},
+    "totalCount": {{ total_count | json }},
+    "histogram": {
+      "1": {{ histogram['1'] | default: 0 | json }},
+      "2": {{ histogram['2'] | default: 0 | json }},
+      "3": {{ histogram['3'] | default: 0 | json }},
+      "4": {{ histogram['4'] | default: 0 | json }},
+      "5": {{ histogram['5'] | default: 0 | json }}
+    }
+  },
+  {%- if config_raw -%}
+  "config": {
+    "defaultStorefrontSort": {{ config_raw.defaultStorefrontSort | default: 'newest' | json }}
+  },
+  {%- else -%}
+  "config": {
+    "defaultStorefrontSort": "newest"
+  },
+  {%- endif -%}
+  "perPage": {{ per_page | json }}
+}
+</script>

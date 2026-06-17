@@ -28,7 +28,18 @@
 {% render 'quick-add-styles' %}
 {% render 'quick-add-modal-styles' %}
 {% render 'product-badges-styles' %}
-<product-recommendations
+{%- comment -%}
+  Spectrum Similar Products: this section renders our similar-products snippet
+  (frpxf1zz, instance cji65) instead of Shopify's native recommendations. The
+  custom element is swapped for a plain <div> so product-recommendations.js
+  never hydrates it and the native grid never renders.
+{%- endcomment -%}
+{%- capture _sai_url -%}{%- render '_sai-preview-detect' -%}{%- endcapture -%}
+{%- assign _sai_preview = false -%}
+{%- if _sai_url contains '_spectrum_ai_preview' -%}
+  {%- assign _sai_preview = true -%}
+{%- endif -%}
+<div
   id="product-recommendations-{{ section.id }}"
   class="product-recommendations"
   data-url="{{ routes.product_recommendations_url }}?limit={{ section.settings.max_products }}"
@@ -56,121 +67,19 @@
       {{ styles }}
     "
   >
-    <div class="section-resource-list__content">
-      {% content_for 'blocks' %}
-    </div>
-
-    {%- if recommendations.performed or section.settings.product == blank -%}
-      {% liquid
-        if section.settings.product == blank
-          assign products = null
-          # Onboarding mode: Show placeholder products
-          for i in (1..section.settings.max_products)
-            assign products = products | append: ', '
-            assign products = products | split: ','
-          endfor
-        elsif recommendations.performed and recommendations.products_count == 0
-          # No recommendations found, pull from catalog
-          if section.settings.recommendation_type == 'related'
-            assign products = collections.all.products | reject: 'id', section.settings.product.id
-          elsif section.settings.recommendation_type == 'complementary'
-            # Do not recommend the All collection as complementary products
-            assign products = null
-          endif
-
-        else
-          assign products = recommendations.products
-        endif
-      %}
-      {% capture list_items %}
-        {% for product in products limit: section.settings.max_products %}
-          <div class="resource-list__item">
-            {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
-          </div>
-          {% unless forloop.last %}
-            <!--@list/split-->
-          {% endunless %}
-        {% endfor %}
-      {% endcapture %}
-
-      {% liquid
-        # Create an array from the list items to be used in the carousel
-        assign slide_content = list_items | strip
-        assign slides = slide_content | split: '<!--@list/split-->'
-
-        if products != blank and products.size > 0
-          assign has_recommendations = 'true'
-        else
-          assign has_recommendations = 'false'
-        endif
-      %}
-
-      <div
-        class="
-          resource-list
-          {% if section.settings.layout_type == 'carousel' %}
-            force-full-width
-          {% endif %}
-          {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
-            hidden--mobile
-          {% endif %}
-          {{ classes }}
-        "
-        {% if section.settings.layout_type == 'grid' %}
-          data-testid="resource-list-grid"
-        {% endif %}
-        data-has-recommendations="{{ has_recommendations }}"
-      >
-        {% case section.settings.layout_type %}
-          {% when 'grid' %}
-            {{ list_items }}
-          {% when 'carousel' %}
-            {% render 'resource-list-carousel',
-              ref: 'resourceListCarousel',
-              slides: slides,
-              slide_count: recommendations.products.size,
-              settings: section.settings
-            %}
-        {% endcase %}
-      </div>
-
-      {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
-        {% liquid
-          assign mobile_carousel_gap = section.settings.columns_gap
-        %}
-        <div
-          class="
-            resource-list
-            hidden--desktop
-            force-full-width
-          "
-          style="
-            --resource-list-gap: {{ mobile_carousel_gap }}px;
-            --column-count: {{ section.settings.columns }};
-          "
-        >
-          {% render 'resource-list-carousel',
-            ref: 'resourceListCarouselMobile',
-            slides: slides,
-            slide_count: recommendations.products.size,
-            settings: section.settings
-          %}
-        </div>
-      {% endif %}
+    {%- comment -%}
+      Native "Goes well with..." header block intentionally not rendered — our
+      Spectrum similar-products snippet provides its own heading.
+    {%- endcomment -%}
+    {%- unless request.design_mode -%}
+    {%- if _sai_preview and _sai_url contains '_spectrum_ai_preview=_system-155719762098' or _sai_url contains '|_system-155719762098|' -%}
+      {% render '_sai-cji65wosjxlmb1ki6g3h60bm', sai_state: 'draft' %}
     {%- else -%}
-      <div
-        class="resource-list resource-list--grid"
-      >
-        {% for i in (1..section.settings.columns) %}
-          <div
-            class="product-recommendations__skeleton-item"
-            aria-label="{{ 'accessibility.loading_product_recommendations' | t }}"
-          ></div>
-        {% endfor %}
-      </div>
+      {% render '_sai-cji65wosjxlmb1ki6g3h60bm', sai_state: 'live' %}
     {%- endif -%}
+    {%- endunless -%}
   </div>
-</product-recommendations>
+</div>
 
 {% schema %}
 {

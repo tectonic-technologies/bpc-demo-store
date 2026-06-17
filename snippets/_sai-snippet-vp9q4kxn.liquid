@@ -1,0 +1,195 @@
+{%- comment -%}
+  Sales Velocity — PDP / collection social-proof signal.
+
+  Wrapper contract (per docs/tech/studio-liquid-snippets.md "Library Snippets"):
+    - variant            : default variant from mo.variants.value.variants
+                           variant.content carries the snippet settings.
+    - mo                 : spectrum_snippet_instance metaobject drop.
+                           Carries `mo.images.value` for the icon_image pool.
+    - mutation_handle    : 'mut-{instanceId}' (consumed by wrapper outer div).
+    - experience_handle  : (consumed by wrapper outer div).
+
+  Velocity data source: product metafield spectrum.sales_velocity_callout
+  (json). Shape per row:
+    { targetingTree, saleCount, durationCount, durationUnit }
+  durationUnit is 'minutes'|'hours'|'days'|'weeks'|'months'|'all_time'.
+  When durationUnit === 'all_time', durationCount may be null/omitted.
+
+  Multiple rows may exist; client-side targeting picks the first match.
+  A row with no targetingTree is a catch-all and short-circuits. The
+  realistic v1 shape is a single catch-all row.
+
+  SSR renders the first-row-derived copy to avoid empty-DOM flash, but
+  ALWAYS leaves data-spectrum-vis="off" on the container. JS flips to
+  "on" only after picker + min_count both succeed.
+
+  Sizing uses `em` (not `rem`) — Dawn-family themes set
+  `html { font-size: 62.5% }`, which crushes rem-sized chrome.
+{%- endcomment -%}
+
+{% stylesheet %}
+.sai-vp9q4kxn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: var(--font-body-family, inherit);
+  font-size: 1em;
+  color: var(--color-foreground, inherit);
+  line-height: 1.4;
+}
+
+.sai-vp9q4kxn[data-spectrum-vis="off"] {
+  display: none;
+}
+
+.sai-vp9q4kxn__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  flex: 0 0 auto;
+  font-size: 1.1em;
+}
+
+.sai-vp9q4kxn__icon-image {
+  display: block;
+  width: 1.1em;
+  height: 1.1em;
+  object-fit: contain;
+}
+
+.sai-vp9q4kxn__message {
+  font-weight: 500;
+}
+
+.sai-vp9q4kxn__count {
+  font-weight: 600;
+}
+{% endstylesheet %}
+
+{%- liquid
+  assign settings = variant.content
+  assign message_template = settings.message_template | default: '{count} sold in the last {period}'
+  assign display_format = settings.display_format | default: 'exact'
+  assign icon_emoji = settings.icon_emoji | default: '🔥'
+
+  comment
+    Resolve icon_image via the image pool on the snippet instance metaobject.
+    variant.content.icon_image carries { kind: "images", refId: "<id>" } when
+    set; mo.images.value is the typed pool of resolved image drops. Iterate
+    by id-as-string (coerce both sides per generated-liquid rule #4).
+  endcomment
+  assign icon_image_url = ''
+-%}
+{%- if settings.icon_image and settings.icon_image.refId and mo.images.value -%}
+  {%- assign target_refid = settings.icon_image.refId | append: '' -%}
+  {%- for img in mo.images.value -%}
+    {%- assign img_id = img.id | append: '' -%}
+    {%- if img_id == target_refid -%}
+      {%- assign icon_image_url = img.src | default: img.url | default: '' -%}
+      {%- break -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- liquid
+  comment
+    SSR initial-row resolution. The full rows array is emitted in a JSON
+    island below so the JS can apply runtime targeting.
+  endcomment
+  assign rows_raw = product.metafields.spectrum.sales_velocity_callout.value
+  assign initial_row = nil
+-%}
+{%- if rows_raw != blank -%}
+  {%- for row in rows_raw limit: 1 -%}
+    {%- assign initial_row = row -%}
+  {%- endfor -%}
+{%- endif -%}
+
+{%- assign ssr_count_text = '' -%}
+{%- assign ssr_period = '' -%}
+{%- assign ssr_message_before = '' -%}
+{%- assign ssr_message_after = '' -%}
+{%- assign ssr_has_message = false -%}
+
+{%- if initial_row != nil -%}
+  {%- comment -%}
+    SSR count formatter — Liquid lacks locale-aware grouping, so SSR emits
+    the raw integer for every display_format. JS replaces this with the
+    formatted value on hydrate. Acceptable because vis=off keeps SSR
+    hidden until JS runs.
+  {%- endcomment -%}
+  {%- assign ssr_count_text = initial_row.saleCount | default: 0 -%}
+
+  {%- assign dur_unit = initial_row.durationUnit -%}
+  {%- assign dur_count = initial_row.durationCount -%}
+  {%- if dur_unit == 'all_time' -%}
+    {%- assign ssr_period = 'all time' -%}
+  {%- elsif dur_count != nil -%}
+    {%- if dur_count == 1 -%}
+      {%- assign unit_singular = dur_unit | replace_last: 's', '' -%}
+      {%- assign ssr_period = dur_count | append: ' ' | append: unit_singular -%}
+    {%- else -%}
+      {%- assign ssr_period = dur_count | append: ' ' | append: dur_unit -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  {%- comment -%}
+    Substitute {period} into the template, then split around {count} so
+    the count span stays distinct from the surrounding prose — `count`
+    is its own style node and merchants style it independently of the
+    message wrapper.
+  {%- endcomment -%}
+  {%- assign tpl_with_period = message_template | replace: '{period}', ssr_period -%}
+  {%- assign tpl_parts = tpl_with_period | split: '{count}' -%}
+  {%- assign ssr_message_before = tpl_parts | first -%}
+  {%- if tpl_parts.size > 1 -%}
+    {%- assign ssr_message_after = tpl_parts | last -%}
+  {%- endif -%}
+  {%- assign ssr_has_message = true -%}
+{%- endif -%}
+
+{%- comment -%}
+  Velocity callouts island — the full rows array verbatim. Per
+  generated-liquid rule #5 the JSON value is emitted through `| json`,
+  which both serialises cleanly and escapes any payload chars that
+  could break the <script> element (e.g. `</script>` inside string
+  values is rewritten to a unicode escape).
+{%- endcomment -%}
+<script type="application/json" data-spectrum-vp9q4kxn-rows>
+{{ product.metafields.spectrum.sales_velocity_callout.value | json }}
+</script>
+
+<script type="application/json" data-spectrum-vp9q4kxn-settings>
+{
+  "message_template": {{ message_template | json }},
+  "display_format": {{ display_format | json }},
+  "min_count": {{ settings.min_count | json }},
+  "icon_emoji": {{ icon_emoji | json }},
+  "icon_image_url": {{ icon_image_url | json }}
+}
+</script>
+
+<div
+  class="sai-vp9q4kxn"
+  data-spectrum-vis="off"
+  aria-live="polite"
+  aria-label="Sales velocity information"
+>
+  <span class="sai-vp9q4kxn__icon" aria-hidden="true">
+    {%- if icon_image_url != '' -%}
+      <img class="sai-vp9q4kxn__icon-image" src="{{ icon_image_url | escape }}" alt="">
+    {%- else -%}
+      {{ icon_emoji | escape }}
+    {%- endif -%}
+  </span>
+  <span class="sai-vp9q4kxn__message">
+    {%- if ssr_has_message -%}
+      {{ ssr_message_before | escape }}<span class="sai-vp9q4kxn__count">{{ ssr_count_text | escape }}</span>{{ ssr_message_after | escape }}
+    {%- else -%}
+      <span class="sai-vp9q4kxn__count"></span>
+    {%- endif -%}
+  </span>
+</div>
+
+<script src="{{ 'sai-snippet-vp9q4kxn.js' | asset_url }}" defer></script>
