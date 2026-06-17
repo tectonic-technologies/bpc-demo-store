@@ -1,3 +1,4 @@
+// quick-add open-reliability fix v2 (deploy 2026-06-17)
 import { morph } from '@theme/morph';
 import { Component } from '@theme/component';
 import { CartUpdateEvent, ThemeEvents, VariantSelectedEvent } from '@theme/events';
