@@ -145,9 +145,27 @@ export class QuickAddComponent extends Component {
 
     dialogComponent.showDialog();
 
+    // MAREN fix: showDialog() opens the native <dialog> inside a requestAnimationFrame,
+    // which is nondeterministic after the modal content was just morphed (the dialog ref
+    // can be stale/detached), leaving the quick-add popup blank or never opening for
+    // variant products. Force-open the live <dialog> as a reliable fallback over a couple
+    // of frames.
+    const forceOpen = () => {
+      const liveDialog = dialogComponent.refs?.dialog || dialogComponent.querySelector('dialog');
+      if (liveDialog && !liveDialog.open) {
+        try {
+          liveDialog.showModal();
+        } catch (e) {}
+      }
+    };
+    requestAnimationFrame(() => {
+      forceOpen();
+      requestAnimationFrame(forceOpen);
+    });
+
     // is nondeterministic when the open attribute is set on the dialog element after .showDialog() is called.
     // Waiting until the open animation starts seemed to be the most reliable metric here.
-    const dialog = dialogComponent.refs?.dialog;
+    const dialog = dialogComponent.refs?.dialog || dialogComponent.querySelector('dialog');
     if (!dialog) return;
     dialog.addEventListener('animationstart', this.#resetScroll.bind(this), { once: true });
   };
