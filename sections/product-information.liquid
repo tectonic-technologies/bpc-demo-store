@@ -325,6 +325,23 @@
       align-self: start;
     }
   }
+  /* MAREN: keep the PDP media within the viewport on desktop. The gallery renders
+     square images at the full column width, so on a normal laptop the primary image
+     overflows the screen. Cap each image to the viewport height and contain it. */
+  @media screen and (min-width: 750px) {
+    .product-information__media .product-media-container,
+    .product-information__media .product-media-container img,
+    .product-information__media img {
+      max-height: calc(100vh - 96px);
+    }
+    .product-information__media .product-media-container img,
+    .product-information__media img {
+      width: auto;
+      max-width: 100%;
+      margin-inline: auto;
+      object-fit: contain;
+    }
+  }
   .sai-pdp-title {
     margin: 0;
     padding-block-start: 20px;
