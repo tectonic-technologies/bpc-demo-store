@@ -49,8 +49,16 @@
   line-height: 1.35;
 }
 
+/* Visibility gate — fail-closed. The per-mode rules below (meter / beacon) set
+ * the root's `display` at attribute specificity, which ties this rule and wins
+ * on source order, leaving a gated snippet visible (a no-data product with no
+ * matched tier then leaks a bare meter / beacon). `!important` keeps the hidden
+ * state authoritative — beating the mode rules and any merchant-baked `display`
+ * — without raising this author selector's specificity above the package's
+ * (0,1,0) convention. Only fires on `vis="off"`, so baked `display` still
+ * applies while the snippet is shown. */
 .sai-ur0h3zgp[data-spectrum-vis="off"] {
-  display: none;
+  display: none !important;
 }
 
 /* Grid + place-items centers emoji glyphs reliably; flex+align-items aligns
@@ -213,6 +221,124 @@
   background: var(--sai-ur0h3zgp-urgent-fill, #ea580c);
 }
 
+/* ── Mode: beacon ── pulsing dot + thin full-width depletion bar ──
+ *
+ * A minimal scarcity treatment: a coloured dot with a radar "ping" ring
+ * replaces the emoji badge, and a hairline depletion bar spans the full row
+ * width beneath the message. The dot is the only urgency colour — the
+ * message stays neutral (see message override below).
+ *
+ * Layout is a 2-col grid so the bar can span both columns on its own row,
+ * sitting under the dot AND the text (the meter's bar lives inside the text
+ * column, so beacon needs its own full-width bar element). */
+
+.sai-ur0h3zgp__beacon-dot,
+.sai-ur0h3zgp__beacon-bar {
+  display: none;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 0.625em;
+  row-gap: 0.5em;
+  width: 100%;
+  max-width: 100%;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__icon-badge,
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__sub-message,
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__meter {
+  display: none;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__beacon-dot {
+  display: block;
+  grid-area: 1 / 1;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__content {
+  grid-area: 1 / 2;
+}
+
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__beacon-bar {
+  display: block;
+  grid-area: 2 / 1 / 3 / 3;
+}
+
+/* Message stays neutral in beacon mode even for urgent tiers — the dot
+ * carries the urgency colour, not the text. */
+.sai-ur0h3zgp[data-spectrum-mode="beacon"] .sai-ur0h3zgp__message,
+.sai-ur0h3zgp[data-spectrum-mode="beacon"].sai-ur0h3zgp--urgent .sai-ur0h3zgp__message {
+  color: inherit;
+  font-weight: 500;
+}
+
+/* Dot fill and ring both read `currentColor`, so a single per-instance
+ * `color` override recolours both at once. */
+.sai-ur0h3zgp__beacon-dot {
+  position: relative;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 999px;
+  color: var(--sai-ur0h3zgp-beacon-color, #f0564b);
+  background: currentColor;
+  flex: 0 0 auto;
+}
+
+.sai-ur0h3zgp__beacon-dot::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: currentColor;
+  opacity: 0;
+}
+
+.sai-ur0h3zgp__beacon-bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 999px;
+  background: var(--sai-ur0h3zgp-beacon-track, rgba(240, 86, 75, 0.18));
+  overflow: hidden;
+}
+
+/* Theme defense: Dawn-family `div:empty { display: none }` would collapse the
+ * intentionally-empty fill. Class+:empty beats the element-selector rule. */
+.sai-ur0h3zgp__beacon-bar-fill:empty {
+  display: block;
+}
+
+.sai-ur0h3zgp__beacon-bar-fill {
+  height: 100%;
+  width: 0%;
+  /* Floor — keep a visible sliver even when availableQuantity/total < ~1%. */
+  min-width: 3px;
+  border-radius: inherit;
+  background: var(--sai-ur0h3zgp-beacon-fill, #f0564b);
+  transition: width 360ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .sai-ur0h3zgp[data-spectrum-mode="beacon"].sai-ur0h3zgp--pulse .sai-ur0h3zgp__beacon-dot::after {
+    animation: sai-ur0h3zgp-ping var(--sai-ur0h3zgp-pulse-duration, 1800ms)
+      cubic-bezier(0, 0, 0.2, 1) infinite;
+  }
+
+  @keyframes sai-ur0h3zgp-ping {
+    0% {
+      transform: scale(1);
+      opacity: 0.55;
+    }
+    75%,
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+}
+
 /* ── Pulse ── */
 
 @media (prefers-reduced-motion: no-preference) {
@@ -245,23 +371,43 @@
   assign stock_templates = settings.stock_templates
 
   comment
+    Inventory data source. 'metafield' (default) reads the per-variant
+    spectrum.inventory_callout metafield synced by the product-sync concern.
+    'real_inventory' reads each variant's live tracked inventory_quantity
+    directly from the theme — no sync, no targeting; tracked variants only.
+  endcomment
+  assign inventory_source = settings.inventory_source | default: 'metafield'
+
+  comment
     SSR initial-row resolution. The full per-variant rows array is emitted in
     a JSON island below so the JS can re-pick on Shopify-variant change.
   endcomment
   assign initial_variant = product.selected_or_first_available_variant
-  assign initial_rows = initial_variant.metafields.spectrum.inventory_callout.value
   assign initial_row = nil
   assign initial_qty = nil
   assign initial_total = nil
 -%}
-{%- if initial_rows != blank -%}
-  {%- for row in initial_rows limit: 1 -%}
-    {%- assign initial_row = row -%}
-  {%- endfor -%}
-{%- endif -%}
-{%- if initial_row != nil -%}
-  {%- assign initial_qty = initial_row.availableQuantity -%}
-  {%- assign initial_total = initial_row.totalQuantity -%}
+{%- if inventory_source == 'real_inventory' -%}
+  {%- comment -%}
+    Live mode: derive the SSR quantity from the variant's tracked inventory.
+    `inventory_quantity` returns 0 for untracked variants, so gate on
+    `inventory_management` to avoid a false "0 left". Untracked → no qty → hidden.
+    No totalQuantity is available; the meter falls back to the configured denominator.
+  {%- endcomment -%}
+  {%- if initial_variant.inventory_management != blank -%}
+    {%- assign initial_qty = initial_variant.inventory_quantity -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign initial_rows = initial_variant.metafields.spectrum.inventory_callout.value -%}
+  {%- if initial_rows != blank -%}
+    {%- for row in initial_rows limit: 1 -%}
+      {%- assign initial_row = row -%}
+    {%- endfor -%}
+  {%- endif -%}
+  {%- if initial_row != nil -%}
+    {%- assign initial_qty = initial_row.availableQuantity -%}
+    {%- assign initial_total = initial_row.totalQuantity -%}
+  {%- endif -%}
 {%- endif -%}
 
 {%- comment -%}
@@ -284,7 +430,7 @@
 {%- assign tier_icon_image_url = '' -%}
 {%- assign is_urgent_initial = false -%}
 {%- if matched_tier != nil -%}
-  {%- if matched_tier.display_type == 'inline' or matched_tier.display_type == 'meter' -%}
+  {%- if matched_tier.display_type == 'inline' or matched_tier.display_type == 'meter' or matched_tier.display_type == 'beacon' -%}
     {%- assign effective_mode = matched_tier.display_type -%}
   {%- endif -%}
   {%- assign message_text = matched_tier.message | default: '' | replace: '{count}', initial_qty -%}
@@ -293,6 +439,22 @@
   {%- assign tier_icon_image_url = matched_tier.icon_image_url | default: '' -%}
   {%- if settings.urgency_escalation_enabled and matched_tier.urgency -%}
     {%- assign is_urgent_initial = true -%}
+  {%- endif -%}
+{%- endif -%}
+
+{%- comment -%}
+  Pulse gating for SSR. Beacon mode pulses its ring whenever the merchant
+  hasn't disabled the animation (the ring is the indicator). Inline/meter
+  pulse the emoji only when the matched tier is urgent. The JS re-derives
+  this on hydrate; the SSR class just avoids a first-paint flash.
+  `pulse_animation` defaults on, so treat nil as enabled (!= false).
+{%- endcomment -%}
+{%- assign want_pulse = false -%}
+{%- if settings.pulse_animation != false -%}
+  {%- if effective_mode == 'beacon' -%}
+    {%- assign want_pulse = true -%}
+  {%- elsif is_urgent_initial -%}
+    {%- assign want_pulse = true -%}
   {%- endif -%}
 {%- endif -%}
 
@@ -331,14 +493,28 @@
 {%- comment -%}
   Per-variant inventory rows. Key is a string (JSON object keys MUST be
   strings) — coerce v.id with `| append: ''` per generated-liquid rule #4.
-  Value is the raw metafield JSON (rows array or nil). Rule #5: every
-  interpolation in <script type="application/json"> pipes through | json.
+  Both sources emit the same value shape consumed by the JS: a rows array
+  `[{ targetingTree, availableQuantity }]`, or `null` for a variant with no
+  data (untracked in live mode / no metafield in synced mode) so the JS hides.
+  Rule #5: every interpolation in <script type="application/json"> pipes through
+  | json. In live mode `targetingTree` is always the literal `null` (catch-all).
 {%- endcomment -%}
 <script type="application/json" data-spectrum-ur0h3zgp-inv-callouts>
 {
-{%- for v in product.variants -%}
-  {{ v.id | append: '' | json }}: {{ v.metafields.spectrum.inventory_callout.value | json }}{%- unless forloop.last -%},{%- endunless -%}
-{%- endfor -%}
+{%- if inventory_source == 'real_inventory' -%}
+  {%- for v in product.variants -%}
+    {%- if v.inventory_management != blank -%}
+      {{ v.id | append: '' | json }}: [{"targetingTree":null,"availableQuantity":{{ v.inventory_quantity | json }}}]
+    {%- else -%}
+      {{ v.id | append: '' | json }}: null
+    {%- endif -%}
+    {%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+{%- else -%}
+  {%- for v in product.variants -%}
+    {{ v.id | append: '' | json }}: {{ v.metafields.spectrum.inventory_callout.value | json }}{%- unless forloop.last -%},{%- endunless -%}
+  {%- endfor -%}
+{%- endif -%}
 }
 </script>
 
@@ -348,6 +524,7 @@
 
 <script type="application/json" data-spectrum-ur0h3zgp-settings>
 {
+  "inventory_source": {{ inventory_source | json }},
   "display_type": {{ default_mode | json }},
   "stock_templates": {{ settings.stock_templates | json }},
   "icon_emoji": {{ default_icon_emoji | json }},
@@ -362,12 +539,13 @@
 </script>
 
 <div
-  class="sai-ur0h3zgp{% if is_urgent_initial %} sai-ur0h3zgp--urgent{% endif %}"
+  class="sai-ur0h3zgp{% if is_urgent_initial %} sai-ur0h3zgp--urgent{% endif %}{% if want_pulse %} sai-ur0h3zgp--pulse{% endif %}"
   data-spectrum-vis="off"
   data-spectrum-mode="{{ effective_mode }}"
   aria-live="polite"
   aria-label="Product availability"
 >
+  <span class="sai-ur0h3zgp__beacon-dot" aria-hidden="true"></span>
   <span class="sai-ur0h3zgp__icon-badge" aria-hidden="true">
     {%- if effective_icon_image_url != '' -%}
       <img class="sai-ur0h3zgp__icon sai-ur0h3zgp__icon--image" src="{{ effective_icon_image_url | escape }}" alt="" loading="lazy" decoding="async">
@@ -382,6 +560,7 @@
       class="sai-ur0h3zgp__meter"
       {% if effective_mode != 'meter' %}hidden{% endif %}
       role="progressbar"
+      aria-label="Stock level"
       aria-valuemin="0"
       aria-valuemax="100"
       aria-valuenow="{{ meter_pct | round: 0 }}"
@@ -393,6 +572,17 @@
         ></div>
       </div>
     </div>
+  </div>
+  <div
+    class="sai-ur0h3zgp__beacon-bar"
+    {% if effective_mode != 'beacon' %}hidden{% endif %}
+    role="progressbar"
+    aria-label="Stock level"
+    aria-valuemin="0"
+    aria-valuemax="100"
+    aria-valuenow="{{ meter_pct | round: 0 }}"
+  >
+    <div class="sai-ur0h3zgp__beacon-bar-fill" style="width: {{ meter_pct }}%;"></div>
   </div>
 </div>
 

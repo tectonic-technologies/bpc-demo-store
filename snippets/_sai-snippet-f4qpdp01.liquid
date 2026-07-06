@@ -635,13 +635,26 @@
 {%- else -%}
   {%- assign show_branding = content.show_branding -%}
 {%- endif -%}
+{%- comment -%} max_faqs: 0/blank = show all; default caps the list. {%- endcomment -%}
+{%- assign max_faqs = content.max_faqs | default: 6 -%}
+{%- if content.single_open == nil -%}
+  {%- assign single_open = true -%}
+{%- else -%}
+  {%- assign single_open = content.single_open -%}
+{%- endif -%}
 {%- assign items       = entry.content.items -%}
+{%- assign faq_limit = items.size -%}
+{%- if max_faqs > 0 -%}
+  {%- assign faq_limit = max_faqs -%}
+{%- endif -%}
 
 <sai-f4qpdp01
   class="sai-f4qpdp01"
   data-product-id="{{ product.id }}"
   data-product-handle="{{ product.handle }}"
   data-proxy-base="/apps/spectrum"
+  data-single-open="{{ single_open }}"
+  data-max-faqs="{{ max_faqs }}"
 >
   <div class="sai-f4qpdp01__container">
 
@@ -657,7 +670,7 @@
 
       {%- if items.size > 0 -%}
         <div class="sai-f4qpdp01__accordion" role="list">
-        {%- for item in items -%}
+        {%- for item in items limit: faq_limit -%}
           <details
             class="sai-f4qpdp01__item"
             data-faq-id="{{ item.question | handleize }}"

@@ -530,11 +530,12 @@
 .sai-hn2hxz5f__image-block {
   position: relative;
   background: color-mix(in srgb, var(--sai-color-fg, #000) 4%, transparent);
-  aspect-ratio: 1 / 1;
+  aspect-ratio: var(--sai-hn2hxz5f-spotlight-aspect, 1 / 1);
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 .sai-hn2hxz5f__media {
@@ -611,8 +612,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: var(--sai-hn2hxz5f-spotlight-aspect, 1 / 1);
   overflow: hidden;
+  cursor: pointer;
 }
 
 .sai-hn2hxz5f__slide-media {
@@ -620,6 +622,23 @@
   width: 100%;
   height: 100%;
   object-fit: var(--sai-hn2hxz5f-spotlight-fit, cover);
+}
+
+/* Natural-height mode: the ratio constraint is dropped, so each image's own
+   aspect drives the container height. `height: 100%` on the media would
+   resolve to zero against an auto-height container, so the media switches to
+   natural height and contain (nothing to crop into). */
+sai-hn2hxz5f[data-spotlight-aspect="auto"] .sai-hn2hxz5f__image-block,
+sai-hn2hxz5f[data-spotlight-aspect="auto"] .sai-hn2hxz5f__slide {
+  aspect-ratio: auto;
+  height: auto;
+}
+
+sai-hn2hxz5f[data-spotlight-aspect="auto"] .sai-hn2hxz5f__media,
+sai-hn2hxz5f[data-spotlight-aspect="auto"] .sai-hn2hxz5f__slide-media {
+  height: auto;
+  max-height: none;
+  object-fit: contain;
 }
 
 /* ── Progress bar ── */
@@ -739,6 +758,24 @@
   margin-bottom: 0;
   opacity: 1;
 }
+/* ───── Native fallback: no Spectrum metafields yet — show native product.media ───── */
+.sai-hn2hxz5f__native {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sai-hn2hxz5f__native-item {
+  width: 100%;
+}
+.sai-hn2hxz5f__native-media,
+.sai-hn2hxz5f__native-item img,
+.sai-hn2hxz5f__native-item video,
+.sai-hn2hxz5f__native-item model-viewer,
+.sai-hn2hxz5f__native-item iframe {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 {% endstylesheet %}
 
 {%- assign asset_list = product.metafields.spectrum.media_assets.value -%}
@@ -746,8 +783,18 @@
 {%- assign selected_variant = product.selected_or_first_available_variant -%}
 {%- assign variant_slots = selected_variant.metafields.spectrum.media_slots.value -%}
 {%- assign product_slots = product.metafields.spectrum.media_slots.value -%}
+
+{%- comment -%}
+  Variant-specific gallery is opt-in. When on, the selected variant's own gallery
+  wins and falls back to the product gallery when the variant has none. When off
+  (the default), the product gallery always shows: variant slots are ignored here
+  and withheld from the client pool below so variant changes never swap galleries.
+{%- endcomment -%}
+{%- assign enable_variant_gallery = variant.content.enable_variant_gallery -%}
+{%- if enable_variant_gallery == nil -%}{%- assign enable_variant_gallery = false -%}{%- endif -%}
+
 {%- assign slot = nil -%}
-{%- if variant_slots != blank and variant_slots['gallery'] != blank -%}
+{%- if enable_variant_gallery and variant_slots != blank and variant_slots['gallery'] != blank -%}
   {%- assign slot = variant_slots['gallery'] -%}
 {%- elsif product_slots != blank and product_slots['gallery'] != blank -%}
   {%- assign slot = product_slots['gallery'] -%}
@@ -777,6 +824,23 @@
 {%- if _c.show_zoom_controls == nil -%}{%- assign show_zoom_controls = true -%}{%- else -%}{%- assign show_zoom_controls = _c.show_zoom_controls -%}{%- endif -%}
 {%- if _c.spotlight_object_fit == nil or _c.spotlight_object_fit == blank -%}{%- assign spotlight_object_fit = 'contain' -%}{%- else -%}{%- assign spotlight_object_fit = _c.spotlight_object_fit -%}{%- endif -%}
 {%- if _c.lightbox_object_fit == nil or _c.lightbox_object_fit == blank -%}{%- assign lightbox_object_fit = 'contain' -%}{%- else -%}{%- assign lightbox_object_fit = _c.lightbox_object_fit -%}{%- endif -%}
+{%- comment -%} Aspect ratio of the main image container. Unknown / missing values fall back to the square default (generated-liquid rule #2). {%- endcomment -%}
+{%- if _c.spotlight_aspect_ratio == nil or _c.spotlight_aspect_ratio == blank -%}{%- assign spotlight_aspect_ratio = '1 / 1' -%}{%- else -%}{%- assign spotlight_aspect_ratio = _c.spotlight_aspect_ratio -%}{%- endif -%}
+{%- if spotlight_aspect_ratio == 'custom' -%}
+  {%- comment -%} Custom ratio: parse "W / H" and re-emit the COERCED numbers, never the raw input, so only digits / dot / slash / space can reach the inline <style> (generated-liquid rule #5). Non-numeric or non-positive falls back to square. {%- endcomment -%}
+  {%- assign _spot_parts = _c.spotlight_aspect_ratio_custom | split: '/' -%}
+  {%- assign spotlight_aspect_ratio = '1 / 1' -%}
+  {%- if _spot_parts.size == 2 -%}
+    {%- assign _spot_w = _spot_parts[0] | strip | times: 1.0 -%}
+    {%- assign _spot_h = _spot_parts[1] | strip | times: 1.0 -%}
+    {%- if _spot_w > 0 and _spot_h > 0 -%}
+      {%- assign spotlight_aspect_ratio = _spot_w | append: ' / ' | append: _spot_h -%}
+    {%- endif -%}
+  {%- endif -%}
+{%- else -%}
+  {%- assign _valid_spot_ars = '1 / 1|4 / 5|3 / 4|2 / 3|4 / 3|3 / 2|16 / 9|auto' | split: '|' -%}
+  {%- unless _valid_spot_ars contains spotlight_aspect_ratio -%}{%- assign spotlight_aspect_ratio = '1 / 1' -%}{%- endunless -%}
+{%- endif -%}
 {%- if _c.autoplay_video == nil -%}{%- assign autoplay_video = true -%}{%- else -%}{%- assign autoplay_video = _c.autoplay_video -%}{%- endif -%}
 {%- if _c.show_play_pause == nil -%}{%- assign show_play_pause = true -%}{%- else -%}{%- assign show_play_pause = _c.show_play_pause -%}{%- endif -%}
 {%- if _c.filter_cta_label == nil or _c.filter_cta_label == blank -%}{%- assign filter_cta_label = 'Select model' -%}{%- else -%}{%- assign filter_cta_label = _c.filter_cta_label -%}{%- endif -%}
@@ -794,11 +858,13 @@
   data-show-zoom-controls="{{ show_zoom_controls }}"
   data-autoplay-video="{{ autoplay_video }}"
   data-show-play-pause="{{ show_play_pause }}"
+  data-spotlight-aspect="{{ spotlight_aspect_ratio }}"
 >
   <style>
     sai-hn2hxz5f {
       --sai-hn2hxz5f-spotlight-fit: {{ spotlight_object_fit }};
       --sai-hn2hxz5f-lightbox-fit: {{ lightbox_object_fit }};
+      --sai-hn2hxz5f-spotlight-aspect: {{ spotlight_aspect_ratio }};
     }
   </style>
   {%- comment -%} ── Filter dialog (bottom sheet on mobile, centered on desktop) ── {%- endcomment -%}
@@ -1046,6 +1112,8 @@
     {%- endif -%}
   },
   "variantSlots": {
+    {%- comment -%} Withheld unless variant gallery is enabled — keeps the client from swapping galleries on variant change when the feature is off. {%- endcomment -%}
+    {%- if enable_variant_gallery -%}
     {%- assign first_vs = true -%}
     {%- for v in product.variants -%}
       {%- assign v_slots = v.metafields.spectrum.media_slots.value -%}
@@ -1068,6 +1136,7 @@
         }
       {%- endif -%}
     {%- endfor -%}
+    {%- endif -%}
   },
   "displayConfigImages": {
     {%- assign first_dci = true -%}
@@ -1085,4 +1154,31 @@
   }
 }
 </script>
+{%- else -%}
+  {%- comment -%}
+    Native fallback — the Spectrum gallery metafields are absent or empty (a product still mirroring,
+    or one whose only media Spectrum cannot faithfully mirror yet). Render the native product.media so
+    the PDP is never blank. Self-contained: no web component, no JS, so it renders whether or not the
+    mirror has run, and shows whatever Shopify has natively (including 3D / external video).
+  {%- endcomment -%}
+  {%- if product.media.size > 0 -%}
+    <div class="sai-hn2hxz5f__native">
+      {%- for media in product.media -%}
+        <div class="sai-hn2hxz5f__native-item">
+          {%- if media.media_type == 'image' -%}
+            <img
+              class="sai-hn2hxz5f__native-media"
+              src="{{ media.preview_image | image_url: width: 1200 }}"
+              alt="{{ media.alt | escape }}"
+              width="{{ media.preview_image.width }}"
+              height="{{ media.preview_image.height }}"
+              {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}
+            />
+          {%- else -%}
+            {{ media | media_tag }}
+          {%- endif -%}
+        </div>
+      {%- endfor -%}
+    </div>
+  {%- endif -%}
 {%- endif -%}

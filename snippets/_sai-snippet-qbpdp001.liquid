@@ -443,6 +443,16 @@
   cursor: not-allowed;
 }
 
+/* In-flight add-to-cart: the shared .sai-spinner (from _sai-artifacts.liquid)
+   shows beside the label. Spinner inherits the button text colour + font size. */
+.sai-qbpdp001__button--loading {
+  cursor: progress;
+}
+
+.sai-qbpdp001__spinner {
+  margin-inline-end: 8px;
+}
+
 .sai-qbpdp001__message {
   margin: 0;
   font-size: 0.85rem;
@@ -869,18 +879,39 @@
   {%- assign currency_code = cart.currency.iso_code | default: shop.currency -%}
   {%- capture quantity_bundle_json -%}{{ bundle_content | json }}{%- endcapture -%}
 
-  <sai-qbpdp001 class="sai-qbpdp001" data-selected-variant-id="{{ selected_variant.id }}">
-    <div class="sai-qbpdp001__container">
-      <div class="sai-qbpdp001__root" data-role="root"></div>
-      <p class="sai-qbpdp001__message" data-role="message" hidden></p>
-    </div>
-  </sai-qbpdp001>
-
   {%- comment -%}
     Snippet-instance props (Studio-configurable). Defaults mirror meta.json
     so an unconfigured drop renders the canonical baseline.
   {%- endcomment -%}
   {%- assign sai_props = variant.content -%}
+
+  {%- comment -%}
+    Heading is resolved and rendered server-side; the rest of the bundle is
+    client-rendered into the root. Override text wins, otherwise fall back to
+    the bundle's own name. show_heading gates both — compared against `false`
+    rather than `| default:`, because the default filter coerces an explicit
+    `false` back to visible.
+  {%- endcomment -%}
+  {%- assign sai_heading = '' -%}
+  {%- if sai_props.show_heading != false -%}
+    {%- if sai_props.heading_text != blank -%}
+      {%- assign sai_heading = sai_props.heading_text -%}
+    {%- elsif bundle_content.heading != blank -%}
+      {%- assign sai_heading = bundle_content.heading -%}
+    {%- elsif bundle_content.bundleName != blank -%}
+      {%- assign sai_heading = bundle_content.bundleName -%}
+    {%- endif -%}
+  {%- endif -%}
+
+  <sai-qbpdp001 class="sai-qbpdp001" data-selected-variant-id="{{ selected_variant.id }}">
+    <div class="sai-qbpdp001__container">
+      {%- if sai_heading != blank -%}
+        <h2 class="sai-qbpdp001__heading" data-role="heading">{{ sai_heading | escape }}</h2>
+      {%- endif -%}
+      <div class="sai-qbpdp001__root" data-role="root"></div>
+      <p class="sai-qbpdp001__message" data-role="message" hidden></p>
+    </div>
+  </sai-qbpdp001>
   {%- comment -%}
     Boolean values are emitted raw (no `| default:` filter — that would coerce
     an explicit `false` back to its default). The JS layer applies defaults via

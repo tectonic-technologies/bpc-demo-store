@@ -309,7 +309,13 @@
   border-radius: 999px;
   overflow: hidden;
 }
-.sai-frpxf1zz__scrollbar-thumb {
+/* The thumb is an empty <div>; merchant themes (Horizon/Dawn) ship
+   `div:empty { display: none }` (specificity 0,1,1) which would collapse it to
+   0×0 and the scroll-position indicator would silently never appear. Scoping
+   under `.__scrollbar` lifts this to (0,2,0) so it outranks that reset WITHOUT
+   `!important` — per-instance baked rules (0,3,0) still win the cascade. */
+.sai-frpxf1zz__scrollbar .sai-frpxf1zz__scrollbar-thumb {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
