@@ -51,14 +51,19 @@
     }
     {%- endcapture -%}
 
+    {%- assign sai_section_width = sai_default.content.section_width -%}
     <style data-spectrum-style="w4s0fq4u6nskhe6z5ka50aa4">
     {%- for sai_v in sai_mo.variants.value.variants -%}
       {%- if sai_v.css != blank -%}{{ sai_v.css }}{%- endif -%}
     {%- endfor -%}
     </style>
-    <div data-spectrum-instance-id="w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-snippet-id="hn2hxz5f" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-lq-snippet="mut-w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="product_gallery">
+    <div data-spectrum-instance-id="w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-snippet-id="hn2hxz5f" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-section-width="{{ sai_section_width }}" data-spectrum-lq-snippet="mut-w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="product_gallery">
       <script type="application/json" data-spectrum-envelope>{{ sai_envelope | replace: '</script>', '<\/script>' }}</script>
       {% render '_sai-snippet-hn2hxz5f', variant: sai_default, mo: sai_mo, mutation_handle: 'mut-w4s0fq4u6nskhe6z5ka50aa4', experience_handle: '_system-155719762098' %}
     </div>
   {%- endif -%}
+{%- elsif sai_state == 'draft' -%}
+  <div data-spectrum-instance-id="w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-snippet-id="hn2hxz5f" data-spectrum-vis="{{ sai_vis }}" data-spectrum-lq-snippet="mut-w4s0fq4u6nskhe6z5ka50aa4" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="product_gallery">
+    <!-- SAI:WRAPPER:EMPTY_DRAFT_MO_MISSING snippetId=hn2hxz5f instanceId=w4s0fq4u6nskhe6z5ka50aa4 -->
+  </div>
 {%- endif -%}
