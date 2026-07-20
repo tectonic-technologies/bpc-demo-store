@@ -133,14 +133,19 @@
     }
     {%- endcapture -%}
 
+    {%- assign sai_section_width = sai_default.content.section_width -%}
     <style data-spectrum-style="whv7i0pmwtx5by9450g3nif2">
     {%- for sai_v in sai_mo.variants.value.variants -%}
       {%- if sai_v.css != blank -%}{{ sai_v.css }}{%- endif -%}
     {%- endfor -%}
     </style>
-    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="q0zon0xy" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-resource-id="{{ sai_resource.id }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
+    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="q0zon0xy" data-spectrum-variant-id="{{ sai_default.variantId }}" data-spectrum-vis="{{ sai_vis }}" data-spectrum-section-width="{{ sai_section_width }}" data-spectrum-resource-id="{{ sai_resource.id }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
       <script type="application/json" data-spectrum-envelope>{{ sai_envelope | replace: '</script>', '<\/script>' }}</script>
       {% render '_sai-snippet-q0zon0xy', variant: sai_default, slot: sai_default_slot, slot_payload: sai_default_payload, entry: sai_default_entry, mo: sai_mo, mutation_handle: 'mut-whv7i0pmwtx5by9450g3nif2', experience_handle: '_system-155719762098' %}
+    </div>
+  {%- elsif sai_default and sai_state == 'draft' -%}
+    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="q0zon0xy" data-spectrum-vis="{{ sai_vis }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
+      <!-- SAI:WRAPPER:EMPTY_DRAFT feature=recommendations_fbt -->
     </div>
   {%- elsif sai_default and sai_default_slot == nil -%}
     <!-- SAI:WRAPPER:NO_SLOT_KEY slotkey={{ sai_default_slotkey | default: 'NIL' }} feature=recommendations_fbt -->
@@ -150,3 +155,10 @@
     <!-- SAI:WRAPPER:MULTIPLE_DEFAULT_ENTRIES feature=recommendations_fbt slotkey={{ sai_default_slotkey | default: 'NIL' }} count={{ sai_default_entry_count }} -->
   {%- endif -%}
 {%- endif -%}
+{%- unless sai_resource -%}
+  {%- if sai_state == 'draft' -%}
+    <div data-spectrum-instance-id="whv7i0pmwtx5by9450g3nif2" data-spectrum-snippet-id="q0zon0xy" data-spectrum-vis="{{ sai_vis }}" data-spectrum-lq-snippet="mut-whv7i0pmwtx5by9450g3nif2" data-spectrum-experience="_system-155719762098" data-spectrum-feature-slug="recommendations_fbt">
+      <!-- SAI:WRAPPER:EMPTY_DRAFT_NO_RESOURCE feature=recommendations_fbt resourceType=product -->
+    </div>
+  {%- endif -%}
+{%- endunless -%}
