@@ -63,11 +63,33 @@
   }
 
   function resolveSlotVariant(slot) {
-    if (!slot?.variants) return null
+    if (!slot?.variants || !slot.variants.length) return null
+    // Personalisation: return the first targeted variant whose targeting tree
+    // matches the live shopper (author priority order), else the untargeted
+    // default. Targeting is evaluated with the storefront SDK engine
+    // (window.__spectrumAi.targeting) — the same one that resolves experience
+    // and snippet-instance targeting. session.utm_source / cart.* are only
+    // knowable client-side, so this runs here, never in Liquid; the default is
+    // SSR-rendered and swapped once the engine has resolved.
+    const engine = window.__spectrumAi && window.__spectrumAi.targeting
+    let fallback = null
     for (const v of slot.variants) {
-      if (!v.targeting) return v
+      if (!v.targeting) {
+        if (!fallback) fallback = v
+        continue
+      }
+      if (engine && typeof engine.evaluate === 'function') {
+        try {
+          const result = engine.evaluate(v.targeting)
+          const matched = Array.isArray(result) ? result[0] : result
+          if (matched) return v
+        } catch (_err) {
+          // A malformed tree or engine fault must never blank the gallery —
+          // skip this variant and fall through to the default.
+        }
+      }
     }
-    return slot.variants[0] || null
+    return fallback || slot.variants[0] || null
   }
 
   function resolveAssets(pool, handles) {

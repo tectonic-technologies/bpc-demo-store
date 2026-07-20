@@ -776,6 +776,14 @@ sai-hn2hxz5f[data-spotlight-aspect="auto"] .sai-hn2hxz5f__slide-media {
   width: 100%;
   height: auto;
 }
+
+/* Closed <dialog> guard: some merchant themes ship the legacy reset
+   `dialog { display: block }`, an author rule that overrides the UA
+   `dialog:not([open])` default and would otherwise leave these overlays
+   painting over the page while closed. Hide them explicitly; the [open]
+   rules restore display when the dialog opens. */
+.sai-hn2hxz5f__lightbox:not([open]),
+.sai-hn2hxz5f__filter-dialog:not([open]) { display: none; }
 {% endstylesheet %}
 
 {%- assign asset_list = product.metafields.spectrum.media_assets.value -%}

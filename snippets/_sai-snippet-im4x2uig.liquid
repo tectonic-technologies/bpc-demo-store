@@ -1002,6 +1002,14 @@ sai-im4x2uig[data-spotlight-aspect="auto"] .sai-im4x2uig__spotlight-media {
   width: 100%;
   height: auto;
 }
+
+/* Closed <dialog> guard: some merchant themes ship the legacy reset
+   `dialog { display: block }`, an author rule that overrides the UA
+   `dialog:not([open])` default and would otherwise leave these overlays
+   painting over the page while closed. Hide them explicitly; the [open]
+   rules restore display when the dialog opens. */
+.sai-im4x2uig__lightbox:not([open]),
+.sai-im4x2uig__filter-dialog:not([open]) { display: none; }
 {% endstylesheet %}
 
 {%- assign asset_list = product.metafields.spectrum.media_assets.value -%}
