@@ -91,6 +91,7 @@
  *   Spectrum.wishlist.updateWishlist(id, data)    → rename etc.
  *   Spectrum.wishlist.deleteWishlist(id)          → delete wishlist
  *   Spectrum.wishlist.addItem(wishlistId, data)   → add (guest-aware)
+ *   Spectrum.wishlist.addItemToCart(wishlistId, item, opts?) → add saved item to cart + track wishlist intent
  *   Spectrum.wishlist.removeItem(wId, itemId)     → remove item
  *   Spectrum.wishlist.updateItem(wId, itemId, d)  → update item
  *   Spectrum.wishlist.removeByProduct(productGid) → remove (guest-aware)
@@ -440,6 +441,48 @@ function _wishlistAddProps(wishlistId, data, guest) {
     props.price = { amount: data.metadata.priceAtAdd, currencyCode: data.metadata.currencyCode };
   }
   return props;
+}
+
+function _wishlistCartVariantId(item, opts) {
+  const raw =
+    opts?.variant_id ??
+    opts?.variantId ??
+    opts?.shopify_variant_id ??
+    opts?.shopifyVariantId ??
+    opts?.shopifyVariantGid ??
+    item?.variant_id ??
+    item?.variantId ??
+    item?.shopify_variant_id ??
+    item?.shopifyVariantId ??
+    item?.shopifyVariantGid;
+  return _numericId(raw);
+}
+
+function _wishlistAddToCartProps(wishlistId, item, line, opts) {
+  const metadata = item?.metadata && typeof item.metadata === 'object' ? item.metadata : {};
+  return _pickDefined({
+    wishlist_id: wishlistId ?? item?.wishlistId ?? item?.wishlist_id,
+    wishlist_item_id: opts?.wishlist_item_id ?? opts?.wishlistItemId ?? item?.itemId ?? item?.id,
+    product_id: _numericId(
+      opts?.product_id ??
+      opts?.productId ??
+      opts?.shopify_product_id ??
+      opts?.shopifyProductId ??
+      opts?.shopifyProductGid ??
+      item?.product_id ??
+      item?.productId ??
+      item?.shopify_product_id ??
+      item?.shopifyProductId ??
+      item?.shopifyProductGid,
+    ),
+    product_handle: opts?.product_handle ?? opts?.productHandle ?? item?.handle ?? item?.productHandle,
+    product_title: opts?.product_title ?? opts?.productTitle ?? item?.title,
+    variant_id: _numericId(line?.id),
+    quantity: Number(line?.quantity || 1),
+    guest: opts?.guest ?? !_isLoggedIn(),
+    surface: opts?.surface ?? item?.surface ?? metadata.surface,
+    placement: opts?.placement ?? item?.placement ?? metadata.placement,
+  });
 }
 
 // ─── Internal — PA Auto-Apply ────────────────────────────────────────
@@ -1400,6 +1443,33 @@ const wishlist = {
     return result;
   },
 
+  /**
+   * Add a saved wishlist item to the cart and record wishlist-origin commerce intent.
+   * The cart line stays clean: no analytics attribution is written to line properties.
+   *
+   * @param {string} wishlistId
+   * @param {Object} item Saved wishlist item or product payload with shopifyVariantGid/variantId
+   * @param {Object} [opts]
+   * @param {number} [opts.quantity=1]
+   * @param {boolean} [opts.openCart=false] Use cart.addAndOpen() after a successful add
+   * @param {string|string[]} [opts.sections] Section IDs for cart UI refresh
+   * @param {string} [opts.sourceId] Source ID for cart UI refresh events
+   * @param {AbortSignal} [opts.signal]
+   * @returns {Promise<Object>} The cart-add response
+   */
+  async addItemToCart(wishlistId, item, opts = {}) {
+    const variantId = _wishlistCartVariantId(item, opts);
+    if (!variantId) throw new Error('Wishlist item is missing a variant id');
+    const quantity = Number(opts.quantity ?? item?.quantity ?? 1) || 1;
+    const line = { id: variantId, quantity };
+    const response = opts.openCart
+      ? await cart.addAndOpen(line, { signal: opts.signal, sections: opts.sections, sourceId: opts.sourceId || 'spectrum-wishlist' })
+      : await cart.add(line, { signal: opts.signal, sections: opts.sections });
+    if (response && response.ok === false) return response;
+    _track('wishlist:add_to_cart', _wishlistAddToCartProps(wishlistId, item, line, opts));
+    return response;
+  },
+
   async removeItem(wishlistId, itemId, metadata) {
     const base = _proxyBase();
     if (!base) return _normalizeError('Proxy not configured', 'NO_PROXY');
@@ -1541,14 +1611,18 @@ function _predictiveCacheSet(key, result) {
 /**
  * Cross-bundle localStorage contract with the analytics SDK's activity
  * tracker. Key `__spectrum_activity_context` holds:
- *   { activity: { productViews: {
- *       recent: [{ productId: string, viewedAt: epochMs }],   // ≤10 entries
- *       countsByProductId: { [productId]: number } } } }
- * The activity tracker owns the shape; this side only reads it. Serialized
- * as `va=<productId>:<count>:<epochSeconds>,…` (≤10 triplets). The server
- * treats `va` as best-effort and drops malformed/stale triplets itself, so
- * this helper's only hard requirements are: never throw, never block a
- * search call, emit nothing when there is no usable view history.
+ *   { activity: { product_views: {
+ *       recent: [{ product_id: string, viewed_at: epochMs }],   // ≤10 entries
+ *       counts_by_product_id: { [productId]: number } } } }
+ * The activity tracker owns the shape; this side only reads it. This reader
+ * also accepts the pre-rename camelCase spelling (productViews / productId /
+ * viewedAt / countsByProductId) because theme assets and CDN bundles deploy
+ * on different cycles — whichever side is older, the `va` param keeps
+ * working. Serialized as `va=<productId>:<count>:<epochSeconds>,…`
+ * (≤10 triplets). The server treats `va` as best-effort and drops
+ * malformed/stale triplets itself, so this helper's only hard requirements
+ * are: never throw, never block a search call, emit nothing when there is
+ * no usable view history.
  */
 
 // Mirrors the server-side seed cap (MAX_AFFINITY_SEEDS in the affinity engine) —
@@ -1560,20 +1634,25 @@ function _buildViewActivityParam() {
     const raw = localStorage.getItem('__spectrum_activity_context');
     if (!raw) return null;
     const state = JSON.parse(raw);
-    const views = state && state.activity && state.activity.productViews;
+    const activity = state && state.activity;
+    const views = activity && (activity.product_views || activity.productViews);
     if (!views || !Array.isArray(views.recent)) return null;
-    const counts =
-      views.countsByProductId && typeof views.countsByProductId === 'object'
-        ? views.countsByProductId
-        : {};
+    const rawCounts = views.counts_by_product_id || views.countsByProductId;
+    const counts = rawCounts && typeof rawCounts === 'object' ? rawCounts : {};
     const triplets = [];
     for (const entry of views.recent) {
       if (triplets.length >= _VA_MAX_TRIPLETS) break;
-      if (!entry || typeof entry.productId !== 'string' || !entry.productId) continue;
-      const seconds = Math.floor(Number(entry.viewedAt) / 1000);
+      if (!entry) continue;
+      const productId = typeof entry.product_id === 'string' && entry.product_id
+        ? entry.product_id
+        : typeof entry.productId === 'string' && entry.productId
+          ? entry.productId
+          : null;
+      if (!productId) continue;
+      const seconds = Math.floor(Number(entry.viewed_at != null ? entry.viewed_at : entry.viewedAt) / 1000);
       if (!Number.isFinite(seconds) || seconds <= 0) continue;
-      const count = Math.max(1, Math.floor(Number(counts[entry.productId])) || 1);
-      triplets.push(`${entry.productId}:${count}:${seconds}`);
+      const count = Math.max(1, Math.floor(Number(counts[productId])) || 1);
+      triplets.push(`${productId}:${count}:${seconds}`);
     }
     return triplets.length > 0 ? triplets.join(',') : null;
   } catch {
