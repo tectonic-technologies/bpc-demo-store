@@ -273,10 +273,15 @@
     "sai_section_n7ahthab": {
       "type": "sai-section-n7ahthab",
       "settings": {}
+    },
+    "sai_section_ipkabnev": {
+      "type": "sai-section-ipkabnev",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "sai_section_ipkabnev",
     "sai_section_n7ahthab",
     "spectrum_rich_content",
     "spectrum_shoppable_video",
