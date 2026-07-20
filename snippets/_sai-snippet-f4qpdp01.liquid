@@ -36,12 +36,12 @@
               }>
 
   Trust boundary:
-    Backend-supplied content is trusted by contract. The snippet is a
-    passive renderer: answerHtml is emitted raw via {{ item.answerHtml }}
-    with no sanitisation, no transform, no escape. If the data shape is
-    wrong, the playbook author / portal write path is responsible — not
-    this template. Do NOT add `| escape`, `| strip_html`, or any other
-    filter here in an attempt to defend against hostile content.
+    answerHtml is centrally sanitized before persistence and is the only FAQ
+    item field emitted raw via {{ item.answerHtml }}.
+    Question and category are always escaped at this render boundary; the
+    handleized id is escaped too.
+    Do NOT add a filter to answerHtml without changing the central rich-content
+    contract, because escaping it would display approved markup as text.
 
   Analytics:
     - data-faq-id is derived from `item.question | handleize` so analytics
@@ -454,6 +454,44 @@
   margin-block-end: 0;
 }
 
+.sai-f4qpdp01__feedback {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-block-start: 12px;
+  padding-block-start: 10px;
+  border-block-start: 1px solid var(--sai-f4qpdp01-divider);
+  font-family: var(--sai-font-body);
+}
+.sai-f4qpdp01__feedback-label {
+  font-size: 0.8125rem;
+  color: color-mix(in srgb, var(--sai-color-fg) 55%, transparent);
+}
+.sai-f4qpdp01__feedback-btn {
+  appearance: none;
+  cursor: pointer;
+  border: 1px solid var(--sai-f4qpdp01-divider-strong);
+  background: transparent;
+  color: color-mix(in srgb, var(--sai-color-fg) 85%, transparent);
+  font-family: inherit;
+  font-size: 0.8125rem;
+  line-height: 1;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: border-color 120ms ease, color 120ms ease;
+}
+.sai-f4qpdp01__feedback-btn:hover {
+  border-color: var(--sai-f4qpdp01-divider-strong);
+}
+.sai-f4qpdp01__feedback-btn--active {
+  border-color: var(--sai-color-primary);
+  color: var(--sai-color-primary);
+}
+.sai-f4qpdp01__feedback[data-voted] .sai-f4qpdp01__feedback-btn:not(.sai-f4qpdp01__feedback-btn--active) {
+  opacity: 0.45;
+  cursor: default;
+}
+
 /* Shimmer skeleton — two lines while waiting for the response. */
 .sai-f4qpdp01__shimmer {
   display: block;
@@ -655,6 +693,8 @@
   data-proxy-base="/apps/spectrum"
   data-single-open="{{ single_open }}"
   data-max-faqs="{{ max_faqs }}"
+  data-show-qa="{{ show_qa }}"
+  data-show-branding="{{ show_branding }}"
 >
   <div class="sai-f4qpdp01__container">
 
@@ -673,13 +713,13 @@
         {%- for item in items limit: faq_limit -%}
           <details
             class="sai-f4qpdp01__item"
-            data-faq-id="{{ item.question | handleize }}"
-            data-faq-category="{{ item.category | default: '' }}"
+            data-faq-id="{{ item.question | handleize | escape }}"
+            data-faq-category="{{ item.category | default: '' | escape }}"
             data-index="{{ forloop.index0 }}"
             role="listitem"
           >
             <summary class="sai-f4qpdp01__summary">
-              <span class="sai-f4qpdp01__question">{{ item.question }}</span>
+              <span class="sai-f4qpdp01__question">{{ item.question | escape }}</span>
               <span class="sai-f4qpdp01__chevron" aria-hidden="true">
                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" focusable="false">
                   <path d="M3 5L7 9L11 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -693,9 +733,7 @@
       {%- endif -%}
     </div>
 
-    <section class="sai-f4qpdp01__ask" data-spectrum-ai-required
-      {%- unless show_qa %} hidden{%- endunless -%}
-    >
+    <section class="sai-f4qpdp01__ask" data-spectrum-ai-required hidden>
       <div class="sai-f4qpdp01__ask-header">
         <span class="sai-f4qpdp01__sparkles" aria-hidden="true">
           <svg width="18" height="18" viewBox="0 0 18 18" fill="none" focusable="false">
@@ -727,9 +765,7 @@
       <div class="sai-f4qpdp01__exchange" data-slot="exchange" role="status" aria-live="polite" hidden></div>
     </section>
 
-    <footer class="sai-f4qpdp01__footer" data-branding
-      {%- unless show_branding %} hidden{%- endunless -%}
-    >
+    <footer class="sai-f4qpdp01__footer" data-branding hidden>
       <span class="sai-f4qpdp01__brand">Powered by Spectrum AI</span>
       <span class="sai-f4qpdp01__divider" aria-hidden="true">|</span>
       <span class="sai-f4qpdp01__disclaimer">This answer is AI-generated. Please double check important information.</span>
