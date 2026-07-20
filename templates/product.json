@@ -15,8 +15,8 @@
         "price_rating": {
           "type": "group",
           "name": "Price & Rating",
+          "static": true,
           "settings": {
-            "open_in_new_tab": false,
             "content_direction": "row",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -40,11 +40,12 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "placeholder": "",
             "toggle_overlay": false,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
+            "open_in_new_tab": false,
+            "placeholder": "",
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
@@ -88,11 +89,11 @@
           "block_order": [
             "price_97GqNF",
             "review_QhdEwM"
-          ],
-          "static": true
+          ]
         },
         "variant_picker": {
           "type": "variant-picker",
+          "static": true,
           "settings": {
             "variant_style": "buttons",
             "show_swatches": true,
@@ -102,11 +103,11 @@
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {},
-          "static": true
+          "blocks": {}
         },
         "buy_buttons": {
           "type": "buy-buttons",
+          "static": true,
           "settings": {
             "stacking": true,
             "show_pickup_availability": false,
@@ -138,17 +139,17 @@
               "blocks": {}
             }
           },
-          "block_order": [],
-          "static": true
+          "block_order": []
         },
         "maren_watchlist": {
           "type": "maren-watchlist",
-          "settings": {},
-          "static": true
+          "static": true,
+          "settings": {}
         },
         "divider": {
           "type": "_divider",
           "name": "t:names.divider",
+          "static": true,
           "settings": {
             "thickness": 1.5,
             "corner_radius": "square",
@@ -156,18 +157,17 @@
             "padding-block-start": 0,
             "padding-block-end": 0
           },
-          "blocks": {},
-          "static": true
+          "blocks": {}
         },
         "maren_product_groups": {
           "type": "maren-product-groups",
-          "settings": {},
-          "static": true
+          "static": true,
+          "settings": {}
         },
         "maren_aplus": {
           "type": "maren-aplus",
-          "settings": {},
-          "static": true
+          "static": true,
+          "settings": {}
         }
       },
       "settings": {
@@ -269,10 +269,15 @@
     "spectrum_shoppable_video": {
       "type": "spectrum-shoppable_video",
       "settings": {}
+    },
+    "sai_section_n7ahthab": {
+      "type": "sai-section-n7ahthab",
+      "settings": {}
     }
   },
   "order": [
     "main",
+    "sai_section_n7ahthab",
     "spectrum_rich_content",
     "spectrum_shoppable_video",
     "spectrum_shop_the_look",
